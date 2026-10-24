@@ -14,7 +14,7 @@ python3 engine/make.py specs/<id>.json             # full render -> build/<id>/f
 | `id` | file stem, also the build folder name |
 | `format` | `long` (1920x1080) or `short` (1080x1920, must end up under 59 s) |
 | `topic` | slug of the topic from `state/topics.json` |
-| `voice` | Kokoro voice, always `am_michael` for this channel |
+| `voice` | Kokoro voice, always `blend` for this channel (`speed` defaults to 1.1; `camera` zoom defaults to 0.045, `false` to disable) |
 | `publish` | `title`, `description` (may contain `{chapters}`), `tags`, `category`, `chapters` (one label per scene, long only; scenes sharing a label are merged) |
 | `captions` | burned-in word-by-word captions: default on for `short`, off for `long`; `false` to disable, or `{"y": 1500, "size": 78, "color": "yellow", "words": 3}` |
 | `thumbnail` | long only: `scene` index, `at` time ref, `shift` px to move the frame left, `x` centre of the text, `lines` [{text, y, size, color, glow}] |

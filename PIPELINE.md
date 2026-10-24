@@ -4,7 +4,7 @@
 
 * Repo: `Kosyanvag/channel-media`, working copy `/home/claude/channel-media`.
 * Metricool brand `blogId` **7630681**, timezone **Asia/Yerevan**, network `youtube`.
-* Voice: Kokoro `am_michael` (free, open licence). Visual language and every element: `ELEMENTS.md`.
+* Voice: Kokoro `blend` = 0.6 am_michael + 0.4 am_fenrir at speed 1.1, each scene voiced as one continuous take (free, open licence). Visual language and every element: `ELEMENTS.md`.
 * Reference specs: `specs/2026-10-26-first-bitcoin.json` (long), `specs/short-fake-exchange-site.json` (short). Read the matching one before writing a new spec.
 
 ## 0. Start of every run

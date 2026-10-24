@@ -13,6 +13,7 @@ SPEC = None
 SCENES = None
 OUT = None
 CAPTIONS = None
+CAMERA = 0.045
 
 
 def canvas(fmt):
@@ -24,12 +25,12 @@ def canvas(fmt):
 
 def build_audio(spec, speed):
     scenes = []
-    voice = spec.get("voice", "am_michael")
+    voice = spec.get("voice", "blend")
     for i, sc in enumerate(spec["scenes"]):
         sents = sc["narration"]
         if isinstance(sents, str):
             sents = [sents]
-        pad = sc.get("pad", 1.2)
+        pad = sc.get("pad", 0.55)
         a, st, en, dur = V.scene_audio(sents, voice, speed * sc.get("speed", 1.0), pad=pad, min_dur=sc.get("min_dur", 0))
         dur += sc.get("hold", 0)
         if len(a) < int(dur * V.SR):
@@ -44,7 +45,7 @@ def scene_frame(idx, t):
     f = E.draw_scene(sc["elements"], t, X)
     if CAPTIONS is not None:
         E.draw_captions(f, sc, t, CAPTIONS)
-    fade = max(1 - C.prog(t, 0, 0.35), C.prog(t, sc["dur"] - 0.5, sc["dur"]))
+    fade = max(1 - C.prog(t, 0, 0.18), C.prog(t, sc["dur"] - 0.25, sc["dur"]))
     return f.finish(fade)
 
 
@@ -98,6 +99,20 @@ def dynamic_windows(sc):
     return merged
 
 
+def camera(img, idx, t):
+    if not CAMERA:
+        return img
+    sc = SCENES[idx]
+    k = t / max(sc["dur"], 0.1)
+    z = 1.0 + CAMERA * (k if idx % 2 == 0 else 1 - k)
+    d = 1 if (idx // 2) % 2 == 0 else -1
+    w, h = C.W / z, C.H / z
+    cx = C.W / 2 + d * (C.W - w) / 2 * 0.6 * (k - 0.5) * 2
+    cx = min(max(cx, w / 2), C.W - w / 2)
+    cy = C.H / 2
+    return img.resize((C.W, C.H), Image.BILINEAR, box=(cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2))
+
+
 def render_scene(idx):
     sc = SCENES[idx]
     out = os.path.join(OUT, f"scene{idx+1:02d}.mp4")
@@ -105,16 +120,14 @@ def render_scene(idx):
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{C.W}x{C.H}", "-r", str(C.FPS), "-i", "-",
                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
     wins = [(0, sc["dur"] + 1)] if CAPTIONS is not None else dynamic_windows(sc)
-    last, last_static = None, False
+    base, last_static = None, False
     for i in range(n):
         t = i / C.FPS
         static = not any(a <= t <= b for a, b in wins)
-        if static and last_static and last is not None:
-            p.stdin.write(last)
-            continue
-        last = scene_frame(idx, t).tobytes()
+        if not (static and last_static and base is not None):
+            base = scene_frame(idx, t)
         last_static = static
-        p.stdin.write(last)
+        p.stdin.write(camera(base, idx, t).tobytes())
     p.stdin.close()
     p.wait()
     print(f"rendered {sc['name']} ({sc['dur']:.1f}s)", flush=True)
@@ -184,7 +197,7 @@ def thumbnail(spec):
 
 
 def main():
-    global SPEC, SCENES, OUT, CAPTIONS
+    global SPEC, SCENES, OUT, CAPTIONS, CAMERA
     ap = argparse.ArgumentParser()
     ap.add_argument("spec")
     ap.add_argument("--out", default=None)
@@ -194,12 +207,14 @@ def main():
     SPEC = json.load(open(args.spec))
     fmt = SPEC.get("format", "long")
     canvas(fmt)
+    cam = SPEC.get("camera", True)
+    CAMERA = 0.045 if cam is True else (float(cam) if cam else 0.0)
     cap = SPEC.get("captions", fmt == "short")
     if cap:
         CAPTIONS = cap if isinstance(cap, dict) else {}
     OUT = args.out or os.path.join("build", SPEC["id"])
     os.makedirs(OUT, exist_ok=True)
-    speed = args.speed * SPEC.get("speed", 1.0)
+    speed = args.speed * SPEC.get("speed", 1.1)
     SCENES = build_audio(SPEC, speed)
     total = sum(s["dur"] for s in SCENES)
     if fmt == "short" and total > 58.5:
@@ -229,7 +244,10 @@ def main():
     voice = np.concatenate([s["audio"] for s in SCENES])
     voice = voice / (np.max(np.abs(voice)) or 1) * 0.89
     if SPEC.get("music", True):
-        voice = voice + V.music_bed(len(voice) / V.SR) * SPEC.get("music_level", 0.07)
+        mb = V.music_bed(len(voice) / V.SR + 0.1)[: len(voice)]
+        if len(mb) < len(voice):
+            mb = np.concatenate([mb, np.zeros(len(voice) - len(mb), dtype=np.float32)])
+        voice = voice + mb * SPEC.get("music_level", 0.07)
         voice = np.clip(voice, -0.98, 0.98)
     wav = os.path.join(OUT, "audio.wav")
     sf.write(wav, voice, V.SR)

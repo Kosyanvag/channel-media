@@ -35,27 +35,40 @@ def trim(a, thr=0.012, keep=0.04):
     return a[s:e]
 
 
-def tts(text, voice="am_michael", speed=1.0):
-    a, sr = kokoro().create(text, voice=voice, speed=speed, lang="en-us")
+BLENDS = {"blend": [("am_michael", 0.6), ("am_fenrir", 0.4)]}
+
+
+def resolve_voice(voice):
+    if voice in BLENDS:
+        k = kokoro()
+        return sum(w * k.get_voice_style(v) for v, w in BLENDS[voice])
+    return voice
+
+
+def tts(text, voice="blend", speed=1.0):
+    a, sr = kokoro().create(text, voice=resolve_voice(voice), speed=speed, lang="en-us")
     assert sr == SR
     return trim(np.asarray(a, dtype=np.float32))
 
 
-def scene_audio(sentences, voice="am_michael", speed=1.0, lead=0.45, gap=0.32, pad=1.2, min_dur=0.0):
-    parts, starts, ends = [], [], []
+def scene_audio(sentences, voice="blend", speed=1.0, lead=0.2, gap=0.12, pad=0.55, min_dur=0.0):
+    full = tts(" ".join(s.strip() for s in sentences), voice, speed)
+    if len(sentences) == 1:
+        lens = [len(full) / SR]
+    else:
+        lens = [len(tts(s, voice, speed)) / SR for s in sentences]
+    total = len(full) / SR
+    scale = total / (sum(lens) or 1)
+    starts, ends = [], []
     cur = lead
-    for s in sentences:
-        a = tts(s, voice, speed)
+    for ln in lens:
         starts.append(cur)
-        cur += len(a) / SR
+        cur += ln * scale
         ends.append(cur)
-        parts.append(a)
-        cur += gap
-    dur = max(cur - gap + pad, min_dur)
+    dur = max(lead + total + pad, min_dur)
     out = np.zeros(int(round(dur * SR)), dtype=np.float32)
-    for a, st in zip(parts, starts):
-        i = int(st * SR)
-        out[i:i + len(a)] += a[: len(out) - i]
+    i = int(lead * SR)
+    out[i:i + len(full)] += full[: len(out) - i]
     return out, starts, ends, dur
 
 
