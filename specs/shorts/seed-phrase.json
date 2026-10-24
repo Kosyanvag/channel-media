@@ -1,0 +1,134 @@
+{
+ "id": "short-seed-phrase",
+ "format": "short",
+ "topic": "seed-phrase",
+ "voice": "am_michael",
+ "publish": {
+  "title": "If anyone asks for these 12 words, it's a scam #shorts",
+  "description": "Your seed phrase is your crypto. No support agent, app or website will ever ask for it. Keep it on paper, offline.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "seed phrase",
+   "crypto wallet",
+   "crypto scam",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "If anyone asks for these twelve words, it's a scam.",
+    "This is your seed phrase.",
+    "Whoever has it owns your crypto. No password needed.",
+    "No real support agent, wallet app or website will ever ask for it.",
+    "Write it on paper, keep it offline, and never type it anywhere online.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "in": 0,
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "in": "s6",
+     "y": 150
+    },
+    {
+     "type": "heading",
+     "text": "Your seed phrase",
+     "y": 320,
+     "in": "s2",
+     "size": 70
+    },
+    {
+     "type": "words",
+     "in": 0,
+     "x": 90,
+     "y": 420,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 96,
+     "hide": "s5+2.5",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 960,
+     "text": "= your money",
+     "color": "red",
+     "in": "s3",
+     "size": 44
+    },
+    {
+     "type": "bullets",
+     "x": 150,
+     "y": 1200,
+     "gap": 100,
+     "size": 46,
+     "in": "s4",
+     "out": "s5",
+     "title": "They never ask for it:",
+     "title_size": 52,
+     "items": [
+      {
+       "text": "Support agents",
+       "in": "s4+0.4"
+      },
+      {
+       "text": "Wallet apps",
+       "in": "s4+1.4"
+      },
+      {
+       "text": "Websites",
+       "in": "s4+2.4"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 660,
+     "text": "NEVER SHARE",
+     "in": "s5",
+     "size": 110
+    },
+    {
+     "type": "flash",
+     "at": "s5"
+    },
+    {
+     "type": "heading",
+     "text": "Paper. Offline. Never online.",
+     "y": 1250,
+     "size": 70,
+     "w": 900,
+     "in": "s5+0.4",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

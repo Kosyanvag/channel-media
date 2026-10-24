@@ -1,0 +1,198 @@
+{
+ "id": "short-sent-too-much",
+ "format": "short",
+ "topic": "sent-too-much",
+ "voice": "am_michael",
+ "publish": {
+  "title": "Got paid too much? Don't refund it #shorts",
+  "description": "The overpayment trick: the buyer sends extra, asks for it back, then the original payment is reversed. Cancel through the platform instead.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "p2p scam",
+   "overpayment scam",
+   "crypto scam",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "If a buyer sends you too much money, don't send the extra back.",
+    "Here is the trick.",
+    "You sell five hundred dollars of crypto, and receive seven hundred.",
+    "The buyer asks you to return two hundred.",
+    "But the payment came from a stolen card, and it gets reversed.",
+    "You lose the crypto, and the two hundred you sent.",
+    "Cancel the order through the platform, and let support handle it.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "in": 0,
+     "y": 150,
+     "out": "s8"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "in": "s8",
+     "y": 150
+    },
+    {
+     "type": "heading",
+     "text": "Received too much?",
+     "y": 330,
+     "in": 0,
+     "out": "s3",
+     "size": 76
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 310,
+     "text": "Order $500  \u00b7  Received $700",
+     "color": "yellow",
+     "in": "s3",
+     "out": "s5",
+     "size": 38
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 310,
+     "text": "Stolen card \u00b7 reversed",
+     "color": "red",
+     "in": "s5",
+     "out": "s7",
+     "size": 38
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 980,
+     "scale": 1.2,
+     "in": 0,
+     "out": "s7",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s3+0.4",
+       "yellow"
+      ],
+      [
+       "s5+0.8",
+       "red"
+      ]
+     ],
+     "shake": "s5+0.8",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "MyBank",
+       "sub": "Selling 500 USDT"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         1240
+        ],
+        [
+         "s3+0.4",
+         1940
+        ],
+        [
+         "s4+1.5",
+         1740
+        ],
+        [
+         "s5+0.8",
+         1040
+        ]
+       ],
+       "color": [
+        [
+         0,
+         "white"
+        ],
+        [
+         "s5+0.8",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Reversed",
+         "amount": "-$700.00",
+         "color": "red",
+         "in": "s5+0.8"
+        },
+        {
+         "label": "Sent back",
+         "amount": "-$200.00",
+         "color": "white",
+         "in": "s4+1.5"
+        },
+        {
+         "label": "From buyer",
+         "amount": "+$700.00",
+         "color": "yellow",
+         "in": "s3+0.4"
+        },
+        {
+         "label": "Grocery store",
+         "amount": "-$38.20"
+        }
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s4",
+       "out": "s5",
+       "title": "Buyer: sent $200 extra",
+       "sub": "Please send it back",
+       "color": "yellow",
+       "icon": "msg",
+       "letter": "B"
+      }
+     ]
+    },
+    {
+     "type": "flash",
+     "at": "s5+0.8"
+    },
+    {
+     "type": "icon",
+     "kind": "check",
+     "x": 540,
+     "y": 820,
+     "size": 90,
+     "in": "s7+0.2"
+    },
+    {
+     "type": "heading",
+     "text": "Cancel through the platform. Don't refund.",
+     "y": 1060,
+     "size": 72,
+     "w": 900,
+     "in": "s7+0.2",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

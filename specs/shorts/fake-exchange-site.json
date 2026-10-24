@@ -1,0 +1,197 @@
+{
+ "id": "short-fake-exchange-site",
+ "format": "short",
+ "topic": "fake-exchange-sites",
+ "voice": "am_michael",
+ "publish": {
+  "title": "This crypto site is FAKE (one letter) #shorts",
+  "description": "Scammers copy real crypto exchange sites and buy ads so they show up first. Always type the address yourself or use a bookmark.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #bitcoin #shorts",
+  "tags": [
+   "crypto scam",
+   "fake exchange",
+   "phishing",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "This website looks exactly like a real crypto exchange.",
+    "But look at the address.",
+    "One extra letter.",
+    "Scammers copy real sites pixel for pixel, then buy ads so they show up first in search.",
+    "You log in, and they take over your account in seconds.",
+    "Always type the address yourself, or use a bookmark.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "in": 0,
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "card",
+     "x": 90,
+     "y": 230,
+     "w": 900,
+     "h": 180,
+     "in": 0,
+     "color": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "lines": [
+      {
+       "text": "Address",
+       "size": 30,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "cryptoaap.com",
+       "size": 60,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 470,
+     "text": "one extra letter",
+     "color": "red",
+     "in": "s3",
+     "size": 38
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 1050,
+     "scale": 1.25,
+     "in": 0,
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s5",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoApp",
+       "sub": "Log in to your account"
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      },
+      {
+       "type": "text",
+       "text": "Email",
+       "size": 20,
+       "color": "muted"
+      },
+      {
+       "type": "skeleton",
+       "rows": 1
+      },
+      {
+       "type": "text",
+       "text": "Password",
+       "size": 20,
+       "color": "muted"
+      },
+      {
+       "type": "skeleton",
+       "rows": 1
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Log in",
+         "green"
+        ],
+        [
+         "s5+0.6",
+         "Account taken over",
+         "red"
+        ]
+       ],
+       "press": "s5+0.3"
+      },
+      {
+       "type": "notification",
+       "in": "s5+0.6",
+       "title": "New login detected",
+       "sub": "Funds withdrawn",
+       "color": "red",
+       "icon": "warn"
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 1000,
+     "text": "FAKE",
+     "in": "s3+0.2",
+     "out": "s4+0.5",
+     "size": 170
+    },
+    {
+     "type": "flash",
+     "at": "s3+0.2"
+    },
+    {
+     "type": "flash",
+     "at": "s5+0.6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "in": "s7",
+     "y": 150
+    },
+    {
+     "type": "icon",
+     "kind": "check",
+     "x": 540,
+     "y": 820,
+     "size": 90,
+     "in": "s6+0.2"
+    },
+    {
+     "type": "heading",
+     "text": "Type the address yourself, or use a bookmark",
+     "y": 1060,
+     "size": 72,
+     "w": 900,
+     "in": "s6+0.2",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

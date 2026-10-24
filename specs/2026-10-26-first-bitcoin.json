@@ -1,0 +1,214 @@
+{
+  "id": "2026-10-26-first-bitcoin",
+  "format": "long",
+  "topic": "how-to-buy-first-bitcoin-safely",
+  "voice": "am_michael",
+  "publish": {
+    "title": "How to Buy Your First Bitcoin Safely (Step by Step for Beginners)",
+    "description": "Buying your first Bitcoin is easy. Buying it safely takes a few extra steps that most beginners skip. In this video: how to pick a trusted exchange, how to spot fake exchange sites, how to lock your account with 2FA, why you should start small, and when to move your Bitcoin to your own wallet.\n\n{chapters}\n\nThis video is for educational purposes only and is not financial advice.\n\n#bitcoin #crypto #cryptoforbeginners",
+    "tags": ["how to buy bitcoin", "buy bitcoin safely", "bitcoin for beginners", "first bitcoin", "crypto for beginners", "crypto security"],
+    "category": "EDUCATION",
+    "chapters": ["Intro", "Step 1: Trusted exchange", "Step 2: Fake sites", "Step 3: Lock your account", "Step 4: Buy small", "Step 5: Your own wallet", "Recap"]
+  },
+  "thumbnail": {
+    "scene": 0,
+    "at": "s2+1.2",
+    "shift": 300,
+    "x": 1400,
+    "lines": [
+      {"text": "YOUR FIRST", "y": 360, "size": 150, "color": "white", "glow": "green"},
+      {"text": "BITCOIN", "y": 560, "size": 190, "color": "green", "glow": "green"},
+      {"text": "THE SAFE WAY", "y": 770, "size": 90, "color": "white", "glow": "red"}
+    ]
+  },
+  "scenes": [
+    {
+      "name": "hook",
+      "narration": [
+        "Buying your first Bitcoin takes about ten minutes.",
+        "But one wrong click can cost you everything you put in.",
+        "In this video, I'll walk you through it step by step, the safe way.",
+        "No hype. No shortcuts."
+      ],
+      "elements": [
+        {"type": "phone", "x": 960, "y": 545, "scale": 0.95, "in": 0, "out": "s3+0.3", "shake": "s2+0.4",
+         "accent": [[0, "green"], ["s2+0.4", "red"]],
+         "widgets": [
+           {"type": "header", "title": "CryptoApp", "sub": "Buy Bitcoin"},
+           {"type": "order", "label": "Your first order", "amount": "0.0015 BTC", "who": "about $100", "status": [[0, "Ready", "green"], ["s2+0.4", "Blocked", "red"]]},
+           {"type": "skeleton", "rows": 3},
+           {"type": "button", "label": [[0, "Buy Bitcoin", "green"], ["s2+0.4", "Stop", "gray"]]},
+           {"type": "notification", "in": "s2+0.4", "title": "Fake website", "sub": "This is not the real app", "color": "red", "icon": "warn"}
+         ]},
+        {"type": "flash", "at": "s2+0.4"},
+        {"type": "bigtitle", "in": "s3+0.4", "text": "FIRST BITCOIN", "sub": "step by step, the safe way", "glow": "green", "underline": "green"},
+        {"type": "tag", "in": "s4", "x": 960, "y": 900, "text": "No hype  ·  No shortcuts", "color": "white", "size": 34}
+      ]
+    },
+    {
+      "name": "step1-exchange",
+      "narration": [
+        "Step one: pick a trusted exchange.",
+        "Look for a platform that is licensed in your country, has been around for years, and has millions of users.",
+        "Avoid apps you found through a random ad, or a link someone sent you in a chat.",
+        "If a deal looks too good to be true, it is."
+      ],
+      "elements": [
+        {"type": "section", "kicker": "STEP", "num": 1, "title": "Pick a trusted exchange", "color": "green", "in": 0, "out": "s2"},
+        {"type": "icon", "kind": "shield", "x": 420, "y": 520, "size": 150, "in": "s2", "out": "s3"},
+        {"type": "bullets", "x": 800, "y": 420, "gap": 130, "in": "s2", "out": "s3", "title": "A good exchange is:", "items": [
+          {"text": "Licensed in your country", "kind": "check", "in": "s2+0.6"},
+          {"text": "Years on the market", "kind": "check", "in": "s2+2.6"},
+          {"text": "Used by millions of people", "kind": "check", "in": "s2+4.2"}
+        ]},
+        {"type": "heading", "text": "Red flags", "y": 230, "in": "s3+0.2", "color": "red", "glow": "red"},
+        {"type": "card", "x": 330, "y": 360, "w": 560, "h": 300, "in": "s3+0.6", "color": "red", "lines": [
+          {"text": "App from a", "size": 40, "color": "muted", "weight": "semi"},
+          {"text": "random ad", "size": 64, "weight": "black"}
+        ], "badge": {"text": "Avoid", "color": "red"}},
+        {"type": "card", "x": 1030, "y": 360, "w": 560, "h": 300, "in": "s3+2.6", "color": "red", "lines": [
+          {"text": "Link sent", "size": 40, "color": "muted", "weight": "semi"},
+          {"text": "in a chat", "size": 64, "weight": "black"}
+        ], "badge": {"text": "Avoid", "color": "red"}},
+        {"type": "rule", "in": "s4", "kind": "bad", "text": "Too good to be true = scam"}
+      ]
+    },
+    {
+      "name": "step2-fake-sites",
+      "narration": [
+        "Step two: always type the exchange address yourself, or use the official app.",
+        "Scammers build perfect copies of real exchange websites.",
+        "Often, the only difference is one letter in the address.",
+        "So bookmark the real site, and never log in through a link."
+      ],
+      "elements": [
+        {"type": "section", "kicker": "STEP", "num": 2, "title": "Avoid fake websites", "color": "green", "in": 0, "out": "s2"},
+        {"type": "heading", "text": "Which one is real?", "y": 220, "in": "s2+0.2"},
+        {"type": "card", "x": 330, "y": 360, "w": 560, "h": 300, "in": "s2+0.6", "color": [[0, "muted"], ["s3+0.6", "green"]], "lines": [
+          {"text": "Address", "size": 34, "color": "muted", "weight": "semi"},
+          {"text": "cryptoapp.com", "size": 56, "weight": "black"}
+        ]},
+        {"type": "card", "x": 1030, "y": 360, "w": 560, "h": 300, "in": "s2+1.4", "color": [[0, "muted"], ["s3+0.6", "red"]], "lines": [
+          {"text": "Address", "size": 34, "color": "muted", "weight": "semi"},
+          {"text": "cryptoaap.com", "size": 56, "weight": "black"}
+        ]},
+        {"type": "icon", "kind": "check", "x": 610, "y": 610, "size": 34, "in": "s3+0.6"},
+        {"type": "icon", "kind": "x", "x": 1310, "y": 610, "size": 34, "in": "s3+0.6"},
+        {"type": "tag", "x": 1310, "y": 740, "text": "one extra letter", "color": "red", "in": "s3+1.0", "size": 34},
+        {"type": "flash", "at": "s3+0.6", "strength": 0.5},
+        {"type": "rule", "in": "s4", "kind": "ok", "text": "Bookmark the real site"}
+      ]
+    },
+    {
+      "name": "step3-security",
+      "narration": [
+        "Step three: lock your account before you deposit a single dollar.",
+        "Use a strong password that you don't use anywhere else.",
+        "And turn on two-factor authentication with an authenticator app, not SMS.",
+        "Text message codes can be stolen with a SIM swap."
+      ],
+      "elements": [
+        {"type": "section", "kicker": "STEP", "num": 3, "title": "Lock your account", "color": "green", "in": 0, "out": "s2"},
+        {"type": "phone", "x": 600, "y": 545, "scale": 0.95, "in": "s2", "accent": [[0, "muted"], ["s3+1.5", "green"]],
+         "widgets": [
+           {"type": "header", "title": "CryptoApp", "sub": "Security settings"},
+           {"type": "rows", "items": [
+             {"label": "Unique password", "amount": "On", "color": "green", "in": "s2+0.6"},
+             {"label": "Authenticator app", "amount": "On", "color": "green", "in": "s3+1.0"},
+             {"label": "SMS codes", "amount": "Off", "color": "red", "in": "s4+0.4"}
+           ]},
+           {"type": "button", "in": "s3+1.5", "label": [[0, "Account secured", "green"]]}
+         ]},
+        {"type": "bullets", "x": 1120, "y": 400, "gap": 125, "in": "s2", "title": "Security checklist", "items": [
+          {"text": "Unique password", "kind": "check", "in": "s2+0.6"},
+          {"text": "Authenticator app", "kind": "check", "in": "s3+1.0"},
+          {"text": "Not SMS codes", "kind": "x", "in": "s3+2.6"},
+          {"text": "SIM swap risk", "kind": "warn", "in": "s4+0.4", "color": "red"}
+        ]}
+      ]
+    },
+    {
+      "name": "step4-buy-small",
+      "narration": [
+        "Step four: deposit money and make your first purchase.",
+        "A bank transfer usually has lower fees than a card.",
+        "Start small, with an amount you can afford to lose.",
+        "Crypto prices can drop thirty percent in a single week, and that is normal."
+      ],
+      "elements": [
+        {"type": "section", "kicker": "STEP", "num": 4, "title": "Start small", "color": "green", "in": 0, "out": "s2"},
+        {"type": "phone", "x": 600, "y": 545, "scale": 0.95, "in": "s2",
+         "widgets": [
+           {"type": "header", "title": "CryptoApp", "sub": "Deposit and buy"},
+           {"type": "balance", "label": "Your balance", "value": [[0, 0], ["s2+0.8", 100]], "decimals": 2},
+           {"type": "rows", "items": [
+             {"label": "Bank transfer", "amount": "Low fee", "color": "green", "in": "s2+0.4"},
+             {"label": "Card", "amount": "Higher fee", "color": "yellow", "in": "s2+1.6"}
+           ]},
+           {"type": "button", "in": "s3", "press": "s3+1.4", "label": [[0, "Buy $100 of Bitcoin", "green"], ["s3+1.6", "Bought 0.0015 BTC", "green"]]}
+         ]},
+        {"type": "counter", "x": 1330, "y": 400, "size": 150, "prefix": "$", "value": 100, "color": "green", "in": "s3"},
+        {"type": "text", "x": 1330, "y": 520, "text": "an amount you can afford to lose", "size": 36, "color": "muted", "in": "s3+0.4", "w": 700},
+        {"type": "icon", "kind": "chart_down", "x": 1330, "y": 740, "size": 100, "color": "red", "in": "s4"},
+        {"type": "tag", "x": 1330, "y": 900, "text": "-30% in a week is normal", "color": "red", "in": "s4+0.8", "size": 32}
+      ]
+    },
+    {
+      "name": "step5-own-wallet",
+      "narration": [
+        "Step five: for bigger amounts, move your Bitcoin to your own wallet.",
+        "When you create a wallet, you get a seed phrase of twelve or twenty-four words.",
+        "Write it on paper, and keep it offline.",
+        "Anyone who has these words has your money. Never type them into a website, and never send them to anyone."
+      ],
+      "elements": [
+        {"type": "section", "kicker": "STEP", "num": 5, "title": "Your own wallet", "color": "green", "in": 0, "out": "s2"},
+        {"type": "heading", "text": "Your seed phrase", "y": 180, "in": "s2+0.2"},
+        {"type": "words", "in": "s2+0.6", "x": 360, "y": 280, "w": 1200, "cols": 4, "hide": "s4+3.0",
+         "words": ["river", "anchor", "pilot", "velvet", "harbor", "ember", "lunar", "maple", "orbit", "candle", "frost", "willow"]},
+        {"type": "tag", "x": 960, "y": 650, "text": "on paper, offline", "color": "green", "in": "s3+0.4", "size": 34},
+        {"type": "stamp", "x": 960, "y": 450, "text": "NEVER SHARE", "in": "s4+0.6", "size": 120},
+        {"type": "flash", "at": "s4+0.6", "strength": 0.6},
+        {"type": "rule", "in": "s4+3.2", "kind": "bad", "text": "Never type it into a website"}
+      ]
+    },
+    {
+      "name": "recap",
+      "narration": [
+        "Let's recap.",
+        "One: a trusted, licensed exchange.",
+        "Two: type the address yourself.",
+        "Three: a strong password, and an authenticator app.",
+        "Four: start small.",
+        "Five: big amounts go to your own wallet, and your seed phrase stays on paper."
+      ],
+      "elements": [
+        {"type": "heading", "text": "Your first Bitcoin, safely", "y": 150, "in": 0, "size": 68, "glow": "green"},
+        {"type": "checklist", "y": 300, "items": [
+          {"text": "Trusted, licensed exchange", "in": "s2", "done": "s2e"},
+          {"text": "Type the address yourself", "in": "s3", "done": "s3e"},
+          {"text": "Strong password + authenticator app", "in": "s4", "done": "s4e"},
+          {"text": "Start small", "in": "s5", "done": "s5e"},
+          {"text": "Own wallet, seed phrase on paper", "in": "s6", "done": "s6e"}
+        ]}
+      ]
+    },
+    {
+      "name": "outro",
+      "hold": 11,
+      "narration": [
+        "If this helped, subscribe.",
+        "Next, I'll show you how hot and cold wallets work, and which one you actually need.",
+        "And tell me in the comments: did you already buy your first Bitcoin?"
+      ],
+      "elements": [
+        {"type": "icon", "kind": "shield", "x": 960, "y": 260, "size": 100, "in": 0, "out": "s3e+0.6"},
+        {"type": "subscribe", "y": 500, "in": 0.6, "click": "s1e", "out": "s3e+0.6"},
+        {"type": "tag", "x": 960, "y": 660, "text": "NEXT VIDEO", "color": "green", "in": "s2", "out": "s3e+0.6", "size": 26, "weight": "bold"},
+        {"type": "heading", "text": "Hot wallet vs cold wallet", "y": 760, "size": 58, "weight": "bold", "in": "s2+0.3", "out": "s3e+0.6"},
+        {"type": "comment", "text": "Did you already buy your first Bitcoin?", "y": 920, "in": "s3", "out": "s3e+0.6"},
+        {"type": "endscreen", "in": "s3e+0.8"}
+      ]
+    }
+  ]
+}

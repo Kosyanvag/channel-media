@@ -1,0 +1,117 @@
+{
+ "rules": "Pick the first 'todo' in order. When fewer than 5 'todo' remain, research and append new beginner crypto safety / how-to topics (no price predictions, no coin picks).",
+ "topics": [
+  {
+   "slug": "p2p-scams",
+   "idea": "5 P2P crypto scams and how to avoid them",
+   "status": "published",
+   "video": "2026-10-24-p2p-scams",
+   "date": "2026-10-24"
+  },
+  {
+   "slug": "buy-first-bitcoin",
+   "idea": "How to buy your first Bitcoin safely",
+   "status": "scheduled",
+   "video": "2026-10-26-first-bitcoin",
+   "date": "2026-10-26"
+  },
+  {
+   "slug": "hot-vs-cold-wallet",
+   "idea": "Hot wallet vs cold wallet: which one you actually need",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "seed-phrase",
+   "idea": "Seed phrase explained: the 12 words that ARE your money",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "fake-exchange-sites",
+   "idea": "How to spot a fake crypto exchange or wallet site",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "network-fees",
+   "idea": "Why the same USDT costs different fees (networks explained)",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "send-crypto-safely",
+   "idea": "How to send crypto without losing it (wrong network, wrong address)",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "telegram-dm-scams",
+   "idea": "Telegram and DM crypto scams: fake support, fake admins, fake giveaways",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "account-security-2fa",
+   "idea": "Protect your exchange account: 2FA, passwords, SIM swap",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "stablecoins",
+   "idea": "Stablecoins explained: crypto that doesn't crash, and the catch",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "limit-vs-market",
+   "idea": "Limit vs market order: the beginner mistake that costs money",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "read-crypto-chart",
+   "idea": "How to read a crypto chart in 3 minutes",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "pump-and-dump",
+   "idea": "Pump and dump schemes: how new coins rob beginners",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "fake-investment-platforms",
+   "idea": "Fake crypto investment platforms and 'guaranteed returns'",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "how-p2p-works",
+   "idea": "How P2P crypto trading works, step by step",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "crypto-taxes-basics",
+   "idea": "Crypto taxes basics: what beginners usually miss",
+   "status": "todo",
+   "video": null,
+   "date": null
+  }
+ ]
+}
