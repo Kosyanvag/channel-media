@@ -1,5 +1,5 @@
 {
- "rules": "Pick the first 'todo' in order. When fewer than 5 'todo' remain, research and append new beginner crypto safety / how-to topics (no price predictions, no coin picks).",
+ "rules": "Pick the first 'todo' in order. Ideas are phrased as real YouTube search queries. When fewer than 5 'todo' remain, research and append new search-driven beginner crypto safety / how-to topics (no price predictions, no coin picks).",
  "topics": [
   {
    "slug": "p2p-scams",
@@ -17,98 +17,98 @@
   },
   {
    "slug": "hot-vs-cold-wallet",
-   "idea": "Hot wallet vs cold wallet: which one you actually need",
+   "idea": "Hot wallet vs cold wallet: which one do you need? (beginner guide)",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "seed-phrase",
-   "idea": "Seed phrase explained: the 12 words that ARE your money",
+   "idea": "What is a seed phrase and how to store it safely",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "fake-exchange-sites",
-   "idea": "How to spot a fake crypto exchange or wallet site",
+   "idea": "How to tell if a crypto website or app is legit or a scam",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "network-fees",
-   "idea": "Why the same USDT costs different fees (networks explained)",
+   "idea": "TRC20 vs ERC20 vs BEP20: which network to use for USDT",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "send-crypto-safely",
-   "idea": "How to send crypto without losing it (wrong network, wrong address)",
+   "idea": "How to send crypto safely (and what happens if you choose the wrong network)",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "telegram-dm-scams",
-   "idea": "Telegram and DM crypto scams: fake support, fake admins, fake giveaways",
+   "idea": "Crypto scams on Telegram: fake support, fake admins and giveaways",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "account-security-2fa",
-   "idea": "Protect your exchange account: 2FA, passwords, SIM swap",
+   "idea": "How to secure your crypto exchange account (2FA, passwords, SIM swap)",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "stablecoins",
-   "idea": "Stablecoins explained: crypto that doesn't crash, and the catch",
+   "idea": "What are stablecoins? USDT and USDC explained for beginners",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "limit-vs-market",
-   "idea": "Limit vs market order: the beginner mistake that costs money",
+   "idea": "Limit order vs market order explained for beginners",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "read-crypto-chart",
-   "idea": "How to read a crypto chart in 3 minutes",
+   "idea": "How to read crypto charts for beginners",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "pump-and-dump",
-   "idea": "Pump and dump schemes: how new coins rob beginners",
+   "idea": "What is a pump and dump in crypto and how to avoid it",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "fake-investment-platforms",
-   "idea": "Fake crypto investment platforms and 'guaranteed returns'",
+   "idea": "Fake crypto investment platforms: how the 'guaranteed returns' scam works",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "how-p2p-works",
-   "idea": "How P2P crypto trading works, step by step",
+   "idea": "How to buy USDT on P2P safely, step by step",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
    "slug": "crypto-taxes-basics",
-   "idea": "Crypto taxes basics: what beginners usually miss",
+   "idea": "Crypto taxes for beginners: what you need to know",
    "status": "todo",
    "video": null,
    "date": null
