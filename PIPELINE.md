@@ -30,7 +30,7 @@
    * `publish`: title ≤ 70 chars, curiosity + clear benefit ("How to…", "X scams that…", "Stop doing…"); description 2–3 sentences + `{chapters}` + the line "This video is for educational purposes only and is not financial advice." + 3 hashtags; 6–10 tags; `category` `EDUCATION`; `chapters` one label per scene (outro scene gets no label).
    * `thumbnail`: 2–3 short uppercase lines (max ~4 words total), one in red or green, over a striking frame (`shift` 300 so the frame sits left).
 5. **Preview**: `python3 engine/make.py specs/<id>.json --preview`. Read EVERY `build/<id>/preview_*.png` and `thumb.jpg`. Fix overlaps, text running off screen, empty screens, elements appearing at the wrong sentence. Repeat until clean (usually 2–3 rounds).
-6. **Render**: `python3 engine/make.py specs/<id>.json` (roughly 10–15 min per minute of video, run it in the background and wait). Then `python3 scripts/meta.py specs/<id>.json` → `build/<id>/publish.json`. Grab 3 frames with ffmpeg from the final video and look at them.
+6. **Render**: `python3 engine/make.py specs/<id>.json` (roughly 4–6 min per minute of video; run it in the background and wait). Then `python3 scripts/meta.py specs/<id>.json` → `build/<id>/publish.json`. Grab 3 frames with ffmpeg from the final video and look at them.
 7. **Shorts from this video**: write 3–4 vertical short specs into `specs/shorts/<id>-<n>.json` (see section B for the short format), each one self-contained tip from the video, and append their paths to `state/shorts_queue.json`. Preview each once and fix it; do not render them now.
 8. **Publish**:
    * `bash scripts/upload.sh build/<id>/<id>.mp4 build/<id>/<id>.jpg` → prints the two public URLs.
