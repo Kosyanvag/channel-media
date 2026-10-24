@@ -870,3 +870,60 @@ def draw_scene(elements, t, X):
             raise ValueError(f"unknown element type {e.get('type')!r}")
         fn(f, e, t, X)
     return f
+
+
+def caption_chunks(sc, max_words=3, max_chars=20):
+    out = []
+    for sent, st, en in zip(sc["sentences"], sc["starts"], sc["ends"]):
+        words = sent.split()
+        total = sum(len(w) + 1 for w in words) or 1
+        t = st
+        chunk, ch_words = [], []
+        for w in words:
+            dt = (en - st) * (len(w) + 1) / total
+            ch_words.append((w, t, t + dt))
+            t += dt
+            if len(ch_words) >= max_words or sum(len(x[0]) + 1 for x in ch_words) >= max_chars or w[-1] in ".,!?:;":
+                chunk.append(ch_words)
+                ch_words = []
+        if ch_words:
+            chunk.append(ch_words)
+        out.extend(chunk)
+    return out
+
+
+def draw_captions(f, sc, t, cfg):
+    key = "_cap_chunks"
+    if key not in sc:
+        sc[key] = caption_chunks(sc, cfg.get("words", 3), cfg.get("chars", 20))
+    cur = None
+    for ch in sc[key]:
+        if ch[0][1] - 0.05 <= t <= ch[-1][2] + 0.25:
+            cur = ch
+    if cur is None:
+        return
+    size = cfg.get("size", 78 if C.W < C.H else 52)
+    y = cfg.get("y", 1500 if C.W < C.H else C.H - 60)
+    fn = font(BLACK, size)
+    words = [w for w, _, _ in cur]
+    gap = size * 0.28
+    widths = [fn.getlength(w) for w in words]
+    tw = sum(widths) + gap * (len(words) - 1)
+    if tw > C.W - 80:
+        fn = font(BLACK, size * (C.W - 80) / tw)
+        widths = [fn.getlength(w) for w in words]
+        gap = fn.size * 0.28
+        tw = sum(widths) + gap * (len(words) - 1)
+    k = ease_out(prog(t, cur[0][1] - 0.05, cur[0][1] + 0.12))
+    sc_k = lerp(0.85, 1.0, k)
+    x = C.W / 2 - tw / 2
+    hi = COLORS.get(cfg.get("color", "yellow"), YELLOW)
+    stroke = max(3, int(fn.size * 0.12))
+    for w, (word, a, b), wd in zip(words, cur, widths):
+        active = a <= t <= b + 0.05
+        col = hi if active else WHITE
+        cy = y - (6 if active else 0) * k
+        f.d.text((x + wd / 2, cy), word, font=fn, fill=ca(col, k), anchor="mm", stroke_width=stroke, stroke_fill=ca((0, 0, 0), k))
+        if active:
+            f.g.text((x + wd / 2, cy), word, font=fn, fill=ca(hi, 0.45 * k), anchor="mm")
+        x += wd + gap

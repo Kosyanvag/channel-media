@@ -75,8 +75,8 @@
     {
      "type": "phone",
      "x": 540,
-     "y": 980,
-     "scale": 1.2,
+     "y": 930,
+     "scale": 1.1,
      "in": 0,
      "out": "s7",
      "accent": [

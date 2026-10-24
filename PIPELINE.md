@@ -12,7 +12,7 @@
 1. If `/home/claude/channel-media` is missing: attach the repo with the add-repo tool (owner `Kosyanvag`, repo `channel-media`, access `push`), then `git clone --depth 1 https://github.com/Kosyanvag/channel-media /home/claude/channel-media`.
 2. `cd /home/claude/channel-media && git pull -q && bash scripts/setup.sh` (installs Kokoro and downloads the voice model, ~1–2 min).
 3. Load the Metricool tools with ToolSearch (`metricool scheduled post`).
-4. Read `state/topics.json`, `state/log.json`, `state/shorts_queue.json`.
+4. Read `state/topics.json`, `state/log.json`, `state/shorts_queue.json` and `state/insights.md` (if present) and follow the rules in insights.
 
 ## A. Long video (Mon / Wed / Fri)
 
@@ -46,10 +46,12 @@
 ## B. Short (every day)
 
 0. If `state/log.json` already has a `short` entry dated today, stop.
-1. Take the first path from `state/shorts_queue.json`. If the queue is empty, write a new short yourself from a topic already covered in `state/log.json` (one tip, 20–45 s).
+1. **News check first** (about 5 minutes): web-search crypto scam / hack / fraud / phishing news from the last 48 hours. If there is a significant event covered by at least two reputable news sources, and `state/log.json` shows fewer than 3 news shorts in the last 7 days, make today's short about it: what happened (facts only, from the sources, no speculation or blame beyond what they report), then the one lesson viewers should take from it. Name real companies only as the sources do; on screen still use invented apps. Title starts with the hook, not the brand. Put `"news": true` and the source URLs under `publish.sources` in the spec, and log it with `"type": "short", "news": true`. The queue stays untouched that day.
+   Otherwise take the first path from `state/shorts_queue.json`. If the queue is empty, write a new short yourself from a topic already covered in `state/log.json` (one tip, 20–45 s).
 2. Short format: `"format": "short"`, ONE scene, 5–8 sentences, 70–110 words, 20–45 s.
    * Sentence 1 is the hook (a claim or a shock: "This website is fake."). Last sentence: "Follow for one crypto safety tip every day."
-   * Big visuals: phone at `scale` 1.25 centred (x 540), `label` "CRYPTO SAFETY TIP" at the top (switch to "FOLLOW FOR DAILY TIPS" on the last sentence), the takeaway as a centred `heading` + `icon` after the phone fades out. Keep inside the short safe area.
+   * Burned-in word captions are added automatically for shorts at y ≈ 1500: keep y 1420–1580 free of other elements.
+   * Big visuals: phone at `scale` 1.1 centred (x 540, y 930), `label` "CRYPTO SAFETY TIP" at the top (switch to "FOLLOW FOR DAILY TIPS" on the last sentence), the takeaway as a centred `heading` + `icon` after the phone fades out. Keep inside the short safe area.
    * `publish`: title ≤ 60 chars ending with `#shorts`; description 1–2 sentences + (if the short came from a long video in `state/log.json` that is already published) "Full video on the channel: search \"<long video title>\"" + "Educational content, not financial advice." + hashtags; 4–6 tags.
    * Also set Metricool `firstCommentText` to "Full breakdown in the long video on our channel 👆" when the short came from a long video.
 3. Preview, read the sheet, fix, then render. Check `timings.json` total < 59 s.
@@ -65,3 +67,11 @@
 ## Style that stays the same
 
 Dark navy background with a faint grid, neon green = safe, neon red = scam/danger, yellow = caution, blue = money/bank. Inter font. Fictional apps (CryptoApp, CryptoP2P, MyBank). Calm male narrator, no hype words ("insane", "to the moon").
+
+## C. Weekly review (Sunday)
+
+1. Load the Metricool tools (ToolSearch "metricool analytics"). Use `getAnalyticsAvailableMetrics` for network `youtube`, then `getAnalyticsDataByMetrics` for blogId 7630681 over the last 7 and last 28 days: views, watch time, average view duration, subscribers gained, per-video numbers where available.
+2. Compare videos and shorts: which topics, titles, thumbnails and hooks did best and worst (views per day since publishing, average view duration, subs gained).
+3. Write `state/insights.md` (replace the file): date, a short table of the last 28 days, 3–5 concrete takeaways, and the rules future runs must follow because of them (e.g. "scam-story hooks beat how-to hooks: open with a loss"). Keep it under 60 lines. Long-video and short runs read this file in step 0 and follow its rules.
+4. Reorder the `todo` topics in `state/topics.json` so the most promising come first, and add new search-driven topics in the directions that worked.
+5. Commit and push. End with a short summary in Russian for Vagh: subscribers, total watch hours (toward 4000), best video, what changes this week.

@@ -12,6 +12,7 @@ from engine import voice as V
 SPEC = None
 SCENES = None
 OUT = None
+CAPTIONS = None
 
 
 def canvas(fmt):
@@ -33,7 +34,7 @@ def build_audio(spec, speed):
         dur += sc.get("hold", 0)
         if len(a) < int(dur * V.SR):
             a = np.concatenate([a, np.zeros(int(dur * V.SR) - len(a), dtype=np.float32)])
-        scenes.append({"audio": a, "starts": st, "ends": en, "dur": dur, "elements": sc["elements"], "name": sc.get("name", f"scene{i+1}")})
+        scenes.append({"audio": a, "starts": st, "ends": en, "dur": dur, "elements": sc["elements"], "name": sc.get("name", f"scene{i+1}"), "sentences": sents})
     return scenes
 
 
@@ -41,6 +42,8 @@ def scene_frame(idx, t):
     sc = SCENES[idx]
     X = E.Ctx(sc["starts"], sc["ends"], sc["dur"])
     f = E.draw_scene(sc["elements"], t, X)
+    if CAPTIONS is not None:
+        E.draw_captions(f, sc, t, CAPTIONS)
     fade = max(1 - C.prog(t, 0, 0.35), C.prog(t, sc["dur"] - 0.5, sc["dur"]))
     return f.finish(fade)
 
@@ -101,7 +104,7 @@ def render_scene(idx):
     n = int(round(sc["dur"] * C.FPS))
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{C.W}x{C.H}", "-r", str(C.FPS), "-i", "-",
                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
-    wins = dynamic_windows(sc)
+    wins = [(0, sc["dur"] + 1)] if CAPTIONS is not None else dynamic_windows(sc)
     last, last_static = None, False
     for i in range(n):
         t = i / C.FPS
@@ -181,7 +184,7 @@ def thumbnail(spec):
 
 
 def main():
-    global SPEC, SCENES, OUT
+    global SPEC, SCENES, OUT, CAPTIONS
     ap = argparse.ArgumentParser()
     ap.add_argument("spec")
     ap.add_argument("--out", default=None)
@@ -191,6 +194,9 @@ def main():
     SPEC = json.load(open(args.spec))
     fmt = SPEC.get("format", "long")
     canvas(fmt)
+    cap = SPEC.get("captions", fmt == "short")
+    if cap:
+        CAPTIONS = cap if isinstance(cap, dict) else {}
     OUT = args.out or os.path.join("build", SPEC["id"])
     os.makedirs(OUT, exist_ok=True)
     speed = args.speed * SPEC.get("speed", 1.0)
