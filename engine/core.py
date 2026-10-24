@@ -123,10 +123,11 @@ class F:
 
     def finish(self, fade=0.0):
         small = self.gimg.resize((W // 4, H // 4), Image.BILINEAR)
-        b1 = small.filter(ImageFilter.GaussianBlur(5)).resize((W, H), Image.BILINEAR)
-        b2 = small.filter(ImageFilter.GaussianBlur(16)).resize((W, H), Image.BILINEAR)
-        out = ImageChops.add(self.img, b1)
-        out = ImageChops.add(out, b2)
+        if small.getbbox():
+            b = ImageChops.add(small.filter(ImageFilter.GaussianBlur(5)), small.filter(ImageFilter.GaussianBlur(16)))
+            out = ImageChops.add(self.img, b.resize((W, H), Image.BILINEAR))
+        else:
+            out = self.img
         if self.flash > 0:
             out = Image.blend(out, Image.new("RGB", (W, H), self.flash_col), 0.35 * clamp(self.flash))
         out = ImageChops.multiply(out, VIG)

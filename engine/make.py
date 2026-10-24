@@ -1,4 +1,4 @@
-import argparse, json, os, subprocess, sys, math
+import argparse, json, os, re, subprocess, sys, math
 from multiprocessing import Pool
 import numpy as np
 import soundfile as sf
@@ -45,14 +45,73 @@ def scene_frame(idx, t):
     return f.finish(fade)
 
 
+REF_RE = re.compile(r"^(s\d+e?|end|start)([+-]\d+(\.\d+)?)?$")
+TIME_KEYS = {"in", "out", "at", "done", "press", "click", "shake", "shatter", "reform", "hide", "open", "check", "warn", "turn_from", "turn_to"}
+
+
+def dynamic_windows(sc):
+    X = E.Ctx(sc["starts"], sc["ends"], sc["dur"])
+    win = [(0, 0.6), (sc["dur"] - 0.8, sc["dur"] + 1)]
+
+    def add(ref, before=1.5, after=3.0):
+        try:
+            t = X.T(ref)
+        except Exception:
+            return
+        win.append((t - before, t + after))
+
+    def walk(v, key=None):
+        if isinstance(v, dict):
+            if v.get("type") == "phone_grid":
+                win.append((X.T(v.get("in", 0)) - 1, X.T(v.get("out", "end")) + 1))
+            if v.get("type") == "receipt" and v.get("edit"):
+                win.append((X.T(v["edit"][0]) - 1, X.T(v["edit"][1]) + 1))
+            if v.get("type") == "arrow":
+                tr = v.get("traveler")
+                du = tr.get("dur", 1.6) if isinstance(tr, dict) else 1.6
+                add(v.get("in", 0), 1.0, v.get("draw", 1.0) + du + 2.5)
+            for k, x in v.items():
+                walk(x, k)
+        elif isinstance(v, list):
+            if v and isinstance(v[0], list):
+                for item in v:
+                    if item:
+                        add(item[0])
+            for x in v:
+                walk(x, key)
+        elif isinstance(v, str) and REF_RE.match(v.replace(" ", "")):
+            add(v)
+        elif isinstance(v, (int, float)) and not isinstance(v, bool) and key in TIME_KEYS:
+            add(v)
+
+    walk(sc["elements"])
+    win.sort()
+    merged = []
+    for a, b in win:
+        if merged and a <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], b))
+        else:
+            merged.append((a, b))
+    return merged
+
+
 def render_scene(idx):
     sc = SCENES[idx]
     out = os.path.join(OUT, f"scene{idx+1:02d}.mp4")
     n = int(round(sc["dur"] * C.FPS))
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{C.W}x{C.H}", "-r", str(C.FPS), "-i", "-",
                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
+    wins = dynamic_windows(sc)
+    last, last_static = None, False
     for i in range(n):
-        p.stdin.write(scene_frame(idx, i / C.FPS).tobytes())
+        t = i / C.FPS
+        static = not any(a <= t <= b for a, b in wins)
+        if static and last_static and last is not None:
+            p.stdin.write(last)
+            continue
+        last = scene_frame(idx, t).tobytes()
+        last_static = static
+        p.stdin.write(last)
     p.stdin.close()
     p.wait()
     print(f"rendered {sc['name']} ({sc['dur']:.1f}s)", flush=True)
