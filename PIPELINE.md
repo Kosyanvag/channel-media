@@ -1,6 +1,6 @@
 # Channel pipeline
 
-Faceless English YouTube channel about crypto safety and beginner how-tos. Owner: Vagh. Every video is made here end to end: topic → script → animated scenes → voice → render → publish via Metricool → state update. The owner reviews after publishing and deletes anything bad himself, so a run never waits for approval, but it must never publish something broken or wrong.
+**Crypto Safe Zone** — faceless English YouTube channel about crypto safety and beginner how-tos. Owner: Vagh. Every video is made here end to end: topic → script → animated scenes → voice → render → publish via Metricool → state update. The owner reviews after publishing and deletes anything bad himself, so a run never waits for approval, but it must never publish something broken or wrong.
 
 * Repo: `Kosyanvag/channel-media`, working copy `/home/claude/channel-media`.
 * Metricool brand `blogId` **7630681**, timezone **Asia/Yerevan**, network `youtube`.
