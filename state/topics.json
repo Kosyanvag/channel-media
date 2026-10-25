@@ -37,15 +37,15 @@
    "date": null
   },
   {
-   "slug": "network-fees",
-   "idea": "TRC20 vs ERC20 vs BEP20: which network to use for USDT",
+   "slug": "pig-butchering",
+   "idea": "What is a pig butchering scam? How crypto romance scams work",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
-   "slug": "send-crypto-safely",
-   "idea": "How to send crypto safely (and what happens if you choose the wrong network)",
+   "slug": "fake-investment-platforms",
+   "idea": "Fake crypto investment platforms: how the 'guaranteed returns' scam works",
    "status": "todo",
    "video": null,
    "date": null
@@ -65,8 +65,57 @@
    "date": null
   },
   {
+   "slug": "wallet-drainer",
+   "idea": "Wallet drainer scams: how one click on 'approve' empties your wallet",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "send-crypto-safely",
+   "idea": "How to send crypto safely (and what happens if you choose the wrong network)",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "network-fees",
+   "idea": "TRC20 vs ERC20 vs BEP20: which network to use for USDT",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "recovery-scams",
+   "idea": "Crypto recovery scams: 'we can get your money back' explained",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "how-p2p-works",
+   "idea": "How to buy USDT on P2P safely, step by step",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "keep-on-exchange",
+   "idea": "Is it safe to keep crypto on an exchange?",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
    "slug": "stablecoins",
    "idea": "What are stablecoins? USDT and USDC explained for beginners",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "pump-and-dump",
+   "idea": "What is a pump and dump in crypto and how to avoid it",
    "status": "todo",
    "video": null,
    "date": null
@@ -81,27 +130,6 @@
   {
    "slug": "read-crypto-chart",
    "idea": "How to read crypto charts for beginners",
-   "status": "todo",
-   "video": null,
-   "date": null
-  },
-  {
-   "slug": "pump-and-dump",
-   "idea": "What is a pump and dump in crypto and how to avoid it",
-   "status": "todo",
-   "video": null,
-   "date": null
-  },
-  {
-   "slug": "fake-investment-platforms",
-   "idea": "Fake crypto investment platforms: how the 'guaranteed returns' scam works",
-   "status": "todo",
-   "video": null,
-   "date": null
-  },
-  {
-   "slug": "how-p2p-works",
-   "idea": "How to buy USDT on P2P safely, step by step",
    "status": "todo",
    "video": null,
    "date": null
