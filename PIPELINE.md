@@ -3,7 +3,7 @@
 **Crypto Safe Zone** — faceless English YouTube channel about crypto safety and beginner how-tos. Owner: Vagh. Every video is made here end to end: topic → script → animated scenes → voice → render → publish via Metricool → state update. The owner reviews after publishing and deletes anything bad himself, so a run never waits for approval, but it must never publish something broken or wrong.
 
 * Repo: `Kosyanvag/channel-media`, working copy `/home/claude/channel-media`.
-* Metricool brand `blogId` **7630681**, timezone **Asia/Yerevan**, network `youtube`.
+* Metricool brand `blogId` **7630681**, network `youtube`. Audience is the US: all publish times are in **America/New_York**.
 * Voice: Kokoro `blend` = 0.6 am_michael + 0.4 am_fenrir at speed 1.1, each scene voiced as one continuous take (free, open licence). Visual language and every element: `ELEMENTS.md`.
 * Reference specs: `specs/2026-10-26-first-bitcoin.json` (long), `specs/short-fake-exchange-site.json` (short). Read the matching one before writing a new spec.
 
@@ -37,8 +37,8 @@
 7. **Shorts from this video**: write 3–4 vertical short specs into `specs/shorts/<id>-<n>.json` (see section B for the short format), each one self-contained tip from the video, and append their paths to `state/shorts_queue.json`. Preview each once and fix it; do not render them now.
 8. **Publish**:
    * `bash scripts/upload.sh build/<id>/<id>.mp4 build/<id>/<id>.jpg` → prints the two public URLs.
-   * Metricool `createScheduledPost`: `blogId` 7630681, `date` = today 21:30 Asia/Yerevan (or now + 20 min if that has passed), `info`:
-     `{"autoPublish": true, "draft": false, "descendants": [], "firstCommentText": "", "hasNotReadNotes": false, "media": [<video url>], "videoThumbnailUrl": <thumb url>, "mediaAltText": [], "providers": [{"network": "youtube"}], "publicationDate": {"dateTime": "<same as date, no offset>", "timezone": "Asia/Yerevan"}, "shortener": false, "smartLinkData": {"ids": []}, "text": <description>, "youtubeData": {"title": <title>, "type": "video", "privacy": "public", "tags": [...], "category": "EDUCATION", "madeForKids": false, "isAiGeneratedContent": false}}`
+   * Metricool `createScheduledPost`: `blogId` 7630681, publish at **15:30 America/New_York** on the run day (US audience; Metricool handles daylight saving): `date` = that moment with its New York offset, e.g. `2026-10-28T15:30:00-04:00` (−05:00 after the first Sunday of November); if it has already passed, now + 20 min, `info`:
+     `{"autoPublish": true, "draft": false, "descendants": [], "firstCommentText": "", "hasNotReadNotes": false, "media": [<video url>], "videoThumbnailUrl": <thumb url>, "mediaAltText": [], "providers": [{"network": "youtube"}], "publicationDate": {"dateTime": "<same as date, no offset>", "timezone": "America/New_York"}, "shortener": false, "smartLinkData": {"ids": []}, "text": <description>, "youtubeData": {"title": <title>, "type": "video", "privacy": "public", "tags": [...], "category": "EDUCATION", "madeForKids": false, "isAiGeneratedContent": false}}`
    * `isAiGeneratedContent` stays false: the videos are animated graphics, not realistic synthetic people or events, which is what YouTube's disclosure is for. If a video ever shows a realistic-looking person, place or event that didn't happen, set it to true.
    * If the thumbnail is rejected, retry once without `videoThumbnailUrl`.
 9. **State**: set the topic `status` to `scheduled` with `video` and `date`; append to `state/log.json` (date, type, id, title, Metricool post id, status). Commit the spec, shorts specs and state (never `build/`), `git pull --rebase -q && git push -q`.
@@ -56,7 +56,7 @@
    * `publish`: title ≤ 60 chars ending with `#shorts`; description 1–2 sentences + (if the short came from a long video in `state/log.json` that is already published) "Full video on the channel: search \"<long video title>\"" + "Educational content, not financial advice." + hashtags; 4–6 tags.
    * Also set Metricool `firstCommentText` to "Full breakdown in the long video on our channel 👆" when the short came from a long video.
 3. Preview, read the sheet, fix, then render. Check `timings.json` total < 59 s.
-4. Publish exactly like A.8 but with `youtubeData.type` `"short"`, no `videoThumbnailUrl`, no `category`, and `date` = today 19:00 Asia/Yerevan (or now + 15 min if passed).
+4. Publish exactly like A.8 but with `youtubeData.type` `"short"`, no `videoThumbnailUrl`, no `category`, and publish at **18:30 America/New_York** on the run day (`publicationDate.timezone` "America/New_York"; if passed, now + 15 min).
 5. Remove the path from the queue, append to `state/log.json`, commit and push.
 
 ## If something breaks
