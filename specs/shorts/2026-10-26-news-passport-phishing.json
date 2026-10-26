@@ -1,0 +1,200 @@
+{
+ "id": "2026-10-26-news-passport-phishing",
+ "format": "short",
+ "topic": "news-passport-phishing",
+ "voice": "blend",
+ "news": true,
+ "publish": {
+  "title": "This scam email knew buyers' real names #shorts",
+  "description": "Foundation, maker of the Passport bitcoin wallet, warned customers about phishing emails sent from its own domain, some with buyers' real names and addresses, that pushed people to enter their recovery phrase; the company says funds and devices are safe. A real sender and your real details never make a request for your recovery phrase safe.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #phishing #shorts",
+  "tags": [
+   "crypto phishing email",
+   "crypto news",
+   "hardware wallet",
+   "recovery phrase",
+   "crypto safety",
+   "shorts"
+  ],
+  "sources": [
+   "https://unchainedcrypto.com/passport-wallet-maker-foundation-traces-phishing-emails-to-backend-breach-promises-report/",
+   "https://coincentral.com/foundation-passport-users-get-phishing-emails-with-real-purchase-details",
+   "https://www.cryptotimes.io/2026/10/26/foundation-says-compromised-cloudflare-api-keys-fueled-passport-wallet-phishing-emails/"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "This scam email came from a real wallet company's address.",
+    "This weekend, Foundation, the maker of the Passport bitcoin wallet, warned customers about phishing emails.",
+    "Some used buyers' real names, home addresses or phone numbers.",
+    "They said your funds were at risk, and linked to a page asking for your recovery phrase.",
+    "Foundation says customer funds and devices are safe, and it cut off the attackers' email access.",
+    "The lesson: a real sender and your real details do not make a message safe.",
+    "No wallet company will ever ask for your recovery phrase.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO NEWS",
+     "color": "red",
+     "y": 150,
+     "out": "s8"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s8"
+    },
+    {
+     "type": "heading",
+     "text": "Phishing from a real address",
+     "y": 260,
+     "size": 64,
+     "w": 900,
+     "out": "s6",
+     "glow": "red"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 930,
+     "scale": 1.1,
+     "out": "s6",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s4",
+       "red"
+      ]
+     ],
+     "shake": "s4",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "WalletCo Support",
+         "white"
+        ]
+       ],
+       "verified": true,
+       "sub": "support@walletco.com"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Hi J. Carter,",
+         "side": "l",
+         "in": "s1+0.6"
+        },
+        {
+         "text": "Order shipped to 12 Oak St, Springfield.",
+         "side": "l",
+         "in": "s3"
+        },
+        {
+         "text": "Your phone: (555) 014-2290",
+         "side": "l",
+         "in": "s3+1.2"
+        },
+        {
+         "text": "Your wallet funds are at risk!",
+         "side": "l",
+         "in": "s4",
+         "color": "red"
+        },
+        {
+         "text": "Secure them: enter your recovery phrase at walletco-secure.app",
+         "side": "l",
+         "in": "s4+1.6",
+         "color": "red"
+        }
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s2+0.3",
+       "out": "s3",
+       "title": "Security alert",
+       "sub": "From: WalletCo Support",
+       "color": "yellow",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 1290,
+     "text": "PHISHING",
+     "in": "s4+2.6",
+     "out": "s5+1.5",
+     "size": 120,
+     "angle": -8
+    },
+    {
+     "type": "flash",
+     "at": "s4+2.6"
+    },
+    {
+     "type": "tag",
+     "text": "FUNDS + DEVICES SAFE",
+     "x": 540,
+     "y": 380,
+     "color": "green",
+     "in": "s5",
+     "out": "s6"
+    },
+    {
+     "type": "icon",
+     "kind": "warn",
+     "x": 540,
+     "y": 640,
+     "size": 110,
+     "color": "yellow",
+     "in": "s6+0.2",
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "Real sender + your real details ≠ safe",
+     "y": 960,
+     "size": 70,
+     "w": 880,
+     "in": "s6+0.2",
+     "out": "s7",
+     "glow": "yellow",
+     "color": "yellow"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 540,
+     "y": 640,
+     "size": 110,
+     "color": "green",
+     "in": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "No wallet company will ever ask for your recovery phrase",
+     "y": 980,
+     "size": 66,
+     "w": 900,
+     "in": "s7",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

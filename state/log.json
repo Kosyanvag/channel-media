@@ -28,6 +28,20 @@
     "https://crypto.news/keystone-wallet-hack-customer-addresses-exposed/",
     "https://cryptobriefing.com/keystone-data-breach-exposed-2026/"
    ]
+  },
+  {
+   "date": "2026-10-26",
+   "type": "short",
+   "news": true,
+   "id": "2026-10-26-news-passport-phishing",
+   "title": "This scam email knew buyers' real names #shorts",
+   "metricool_post": 406533152,
+   "status": "scheduled 2026-10-26 18:30 America/New_York",
+   "sources": [
+    "https://unchainedcrypto.com/passport-wallet-maker-foundation-traces-phishing-emails-to-backend-breach-promises-report/",
+    "https://coincentral.com/foundation-passport-users-get-phishing-emails-with-real-purchase-details",
+    "https://www.cryptotimes.io/2026/10/26/foundation-says-compromised-cloudflare-api-keys-fueled-passport-wallet-phishing-emails/"
+   ]
   }
  ]
 }

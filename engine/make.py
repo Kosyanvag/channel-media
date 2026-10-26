@@ -143,11 +143,14 @@ def preview(sheet_cols=None):
             for key in ("in", "at"):
                 if key in e:
                     ts.add(round(X.T(e[key]) + 0.9, 2))
+        for st in sc["starts"]:
+            ts.add(round(st + 0.9, 2))
         ts.add(round(sc["dur"] - 0.8, 2))
         ts = sorted(x for x in ts if 0 < x < sc["dur"])
-        if len(ts) > 8:
-            step = len(ts) / 8
-            ts = [ts[int(i * step)] for i in range(8)]
+        cap = 12
+        if len(ts) > cap:
+            step = len(ts) / cap
+            ts = [ts[int(i * step)] for i in range(cap)]
         cols = sheet_cols or (2 if C.W > C.H else 4)
         tw = 960 if C.W > C.H else 360
         th = int(tw * C.H / C.W)
