@@ -1,0 +1,63 @@
+{
+ "id": "2026-10-27-news-electrum-fee-bump",
+ "format": "short",
+ "topic": "news-electrum-fee-bump",
+ "voice": "blend",
+ "news": true,
+ "publish": {
+  "title": "Speeding up this bitcoin payment sent it to a thief #shorts",
+  "description": "The Electrum bitcoin wallet patched a flaw (fixed in version 4.8.3) that let rogue servers show a fake pending payment, so raising the fee signed a real payment to the attacker; at least one user lost funds. Keep your wallet updated and check the full address before you sign anything, even a fee bump.\n\nEducational content, not financial advice.\n\n#crypto #bitcoin #cryptoscam #shorts",
+  "tags": [
+   "bitcoin wallet bug",
+   "crypto news",
+   "replace by fee",
+   "crypto safety",
+   "shorts"
+  ],
+  "sources": [
+   "https://coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
+   "https://bitcoinist.com/electrum-wallet-flaw-allowed-servers-to-trick-users-into-paying-hackers"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Speeding up a bitcoin payment just cost someone their coins.",
+    "Last weekend, the Electrum bitcoin wallet patched a flaw that rogue servers were already exploiting.",
+    "A malicious server could show a fake pending payment that sent your coins to the attacker.",
+    "When a user raised the fee to speed it up, the wallet signed a real payment to the thief.",
+    "At least one user lost funds. Version 4.8.3 fixes it.",
+    "The lesson: keep your wallet updated, and check the full address before you sign anything, even a fee bump.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {"type": "label", "text": "CRYPTO NEWS", "color": "red", "y": 150, "out": "s7"},
+    {"type": "label", "text": "FOLLOW FOR DAILY TIPS", "color": "white", "y": 150, "in": "s7"},
+    {"type": "heading", "text": "Wallet bug: rogue servers", "y": 260, "size": 64, "w": 900, "out": "s5", "glow": "red"},
+    {"type": "phone", "x": 540, "y": 930, "scale": 1.1, "out": "s6",
+     "accent": [[0, "green"], ["s3", "yellow"], ["s4+1.2", "red"]],
+     "shake": "s4+1.2",
+     "widgets": [
+      {"type": "header", "title": "BTCWallet", "sub": "Send bitcoin"},
+      {"type": "order", "label": "Sending", "amount": "0.05 BTC", "who": "Pending payment",
+       "status": [[0, "Pending", "yellow"], ["s3", "Pending (fake)", "red"], ["s4+1.2", "Sent to thief", "red"]]},
+      {"type": "rows", "items": [
+        {"label": "To", "amount": "bc1q8xk...7f3a", "color": "green", "in": "s1+0.8"},
+        {"label": "Fake", "amount": "bc1qz9m...7f3a", "color": "red", "in": "s3+0.5"}
+      ]},
+      {"type": "button", "label": [[0, "Speed up (raise fee)", "yellow"], ["s4+1.2", "Signed", "red"]], "press": "s4+0.8"},
+      {"type": "notification", "in": "s4+1.2", "title": "Payment confirmed", "sub": "To bc1qz9m...7f3a", "color": "red", "icon": "warn"}
+     ]},
+    {"type": "tag", "text": "same last 4 characters", "x": 540, "y": 380, "color": "yellow", "in": "s3+1.5", "out": "s4+1.2", "size": 36},
+    {"type": "stamp", "x": 540, "y": 760, "text": "STOLEN", "in": "s4+1.4", "out": "s5+1.0", "size": 130, "angle": -8},
+    {"type": "flash", "at": "s4+1.4"},
+    {"type": "tag", "text": "FIXED IN VERSION 4.8.3", "x": 540, "y": 380, "color": "green", "in": "s5", "out": "s6"},
+    {"type": "icon", "kind": "shield", "x": 540, "y": 600, "size": 110, "color": "green", "in": "s6+0.2"},
+    {"type": "heading", "text": "Update your wallet", "y": 820, "size": 72, "w": 900, "in": "s6+0.2", "glow": "green"},
+    {"type": "heading", "text": "Check the FULL address, even on a fee bump", "y": 1080, "size": 64, "w": 880, "in": "s6+2.0", "color": "yellow", "glow": "yellow"}
+   ]
+  }
+ ]
+}
