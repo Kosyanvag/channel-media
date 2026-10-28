@@ -1,15 +1,15 @@
 {
- "id": "short-fake-exchange-site",
+ "id": "2026-10-28-quiz-fake-exchange-site",
  "format": "short",
  "topic": "fake-exchange-sites",
  "voice": "blend",
  "publish": {
-  "title": "This crypto site is FAKE (one letter) #shorts",
-  "description": "Scammers copy real crypto exchange sites and buy ads so they show up first. Always type the address yourself or use a bookmark.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #bitcoin #shorts",
+  "title": "Real or scam? This crypto login page #shorts",
+  "description": "Scammers copy real crypto exchange sites and buy search ads so the fake shows up first. Always type the address yourself or use a bookmark.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #phishing #shorts",
   "tags": [
-   "crypto scam",
-   "fake exchange",
-   "phishing",
+   "real or scam",
+   "fake crypto website",
+   "crypto phishing",
    "crypto safety",
    "shorts"
   ]
@@ -19,12 +19,13 @@
    "name": "short",
    "pad": 1.0,
    "narration": [
-    "This website looks exactly like a real crypto exchange.",
-    "But look at the address.",
-    "One extra letter.",
+    "You searched for your exchange and clicked the top result. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's a scam. Look at the address: one extra letter.",
     "Scammers copy real sites pixel for pixel, then buy ads so they show up first in search.",
-    "You log in, and they take over your account in seconds.",
+    "Log in there, and they take over your account in seconds.",
     "Always type the address yourself, or use a bookmark.",
+    "Comment if you got it right.",
     "Follow for one crypto safety tip every day."
    ],
    "elements": [
@@ -32,30 +33,36 @@
      "type": "label",
      "text": "CRYPTO SAFETY TIP",
      "color": "green",
-     "in": 0,
      "y": 150,
-     "out": "s7"
+     "out": "s8"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s8"
     },
     {
      "type": "card",
      "x": 90,
-     "y": 230,
+     "y": 200,
      "w": 900,
      "h": 180,
-     "in": 0,
+     "out": "s6",
      "color": [
       [
        0,
        "muted"
       ],
       [
-       "s3",
+       "s3+1.0",
        "red"
       ]
      ],
      "lines": [
       {
-       "text": "Address",
+       "text": "Address  \u00b7  Sponsored result",
        "size": 30,
        "color": "muted",
        "weight": "semi"
@@ -70,18 +77,28 @@
     {
      "type": "tag",
      "x": 540,
-     "y": 470,
-     "text": "one extra letter",
+     "y": 430,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 40,
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 430,
+     "text": "one extra letter: cryptoaap",
      "color": "red",
-     "in": "s3",
-     "size": 38
+     "size": 38,
+     "in": "s3+1.0",
+     "out": "s6"
     },
     {
      "type": "phone",
      "x": 540,
-     "y": 930,
-     "scale": 1.1,
-     "in": 0,
+     "y": 960,
+     "scale": 1.0,
+     "out": "s6",
      "accent": [
       [
        0,
@@ -92,7 +109,7 @@
        "red"
       ]
      ],
-     "shake": "s5",
+     "shake": "s5+0.6",
      "widgets": [
       {
        "type": "header",
@@ -147,49 +164,76 @@
        "color": "red",
        "icon": "warn"
       }
-     ],
-     "out": "s6"
+     ]
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 960,
+     "size": 300,
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2,
+     "color": "yellow",
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ]
     },
     {
      "type": "stamp",
      "x": 540,
-     "y": 900,
-     "text": "FAKE",
-     "in": "s3+0.2",
-     "out": "s4+0.5",
+     "y": 930,
+     "text": "SCAM",
+     "in": "s3",
+     "out": "s4",
      "size": 170
     },
     {
      "type": "flash",
-     "at": "s3+0.2"
+     "at": "s3"
     },
     {
      "type": "flash",
      "at": "s5+0.6"
     },
     {
-     "type": "label",
-     "text": "FOLLOW FOR DAILY TIPS",
-     "color": "white",
-     "in": "s7",
-     "y": 150
-    },
-    {
      "type": "icon",
      "kind": "check",
      "x": 540,
-     "y": 820,
+     "y": 560,
      "size": 90,
      "in": "s6+0.2"
     },
     {
      "type": "heading",
      "text": "Type the address yourself, or use a bookmark",
-     "y": 1060,
+     "y": 820,
      "size": 72,
      "w": 900,
      "in": "s6+0.2",
      "glow": "green"
+    },
+    {
+     "type": "comment",
+     "text": "I got it right!",
+     "y": 1180,
+     "in": "s7"
     }
    ]
   }

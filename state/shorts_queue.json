@@ -1,6 +1,5 @@
 {
  "queue": [
-  "specs/shorts/fake-exchange-site.json",
   "specs/shorts/seed-phrase.json",
   "specs/shorts/fake-screenshot.json",
   "specs/shorts/sent-too-much.json"
