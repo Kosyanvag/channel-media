@@ -1,0 +1,145 @@
+{
+ "id": "2026-10-28-hot-vs-cold-wallet-3",
+ "format": "short",
+ "topic": "hot-vs-cold-wallet",
+ "voice": "blend",
+ "publish": {
+  "title": "You copied one address and pasted another #shorts",
+  "description": "Clipboard malware swaps the crypto address you copy for a scammer's look-alike. Compare the whole address after you paste, and send a small test first.\n\nFull video on the channel: search \"Hot Wallet vs Cold Wallet: Which One Do You Need? (Beginner Guide)\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #cryptosafety #shorts",
+  "tags": [
+   "clipboard malware",
+   "crypto address",
+   "send crypto safely",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "You copied the right address, but you pasted a different one.",
+    "Some malware watches your clipboard, and swaps crypto addresses for the scammer's.",
+    "The fake one often starts and ends the same way, so a quick glance won't catch it.",
+    "After you paste, compare the whole address, including the middle characters.",
+    "And for a new address, send a small test amount first.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "card",
+     "x": 80,
+     "y": 260,
+     "w": 860,
+     "h": 200,
+     "color": "green",
+     "lines": [
+      {
+       "text": "You copied",
+       "size": 32,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "0x7a3F 52c1 9e04 d81E",
+       "size": 64,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 80,
+     "y": 500,
+     "w": 860,
+     "h": 200,
+     "in": "s1+1.6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "You pasted",
+       "size": 32,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "0x7a3F 8b77 1f30 d81E",
+       "size": 64,
+       "weight": "black",
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "type": "flash",
+     "at": "s1+1.6",
+     "strength": 0.5
+    },
+    {
+     "type": "icon",
+     "kind": "warn",
+     "x": 540,
+     "y": 880,
+     "size": 70,
+     "in": "s2",
+     "out": "s5",
+     "label": "clipboard malware",
+     "label_size": 48,
+     "label_color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1130,
+     "text": "same start  ·  same end",
+     "color": "yellow",
+     "size": 44,
+     "in": "s3+0.4",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1130,
+     "text": "check the middle too",
+     "color": "red",
+     "size": 44,
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "heading",
+     "text": "New address? Send a small test first",
+     "y": 960,
+     "size": 76,
+     "w": 880,
+     "in": "s5",
+     "glow": "green"
+    },
+    {
+     "type": "icon",
+     "kind": "check",
+     "x": 540,
+     "y": 1230,
+     "size": 70,
+     "in": "s5+0.4"
+    }
+   ]
+  }
+ ]
+}

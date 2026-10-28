@@ -85,6 +85,7 @@ Every element accepts `in` (default 0), `out` (optional, fades out there) and `f
 | `subscribe` | `x`, `y`, `click` (ref) — button with cursor click |
 | `comment` | `text`, `y` — comment bubble |
 | `endscreen` | placeholders for YouTube end-screen elements, last ~10 s of a long video |
+| `device` | `kind` `hw` (hardware wallet, default) or `laptop`, `x`, `y` (number timelines), `scale`, `color`, `screen` (text, a state list, or a list of state lists = one per line; empty text hides a line), `size`, `press` (ref, hw confirm button), `shake`, `label` |
 | `phone` | see below |
 
 ### phone

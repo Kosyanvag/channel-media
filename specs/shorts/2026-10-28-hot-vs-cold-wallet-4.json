@@ -1,0 +1,193 @@
+{
+ "id": "2026-10-28-hot-vs-cold-wallet-4",
+ "format": "short",
+ "topic": "hot-vs-cold-wallet",
+ "voice": "blend",
+ "publish": {
+  "title": "Lost your hardware wallet? Your crypto isn't gone #shorts",
+  "description": "Your coins live on the blockchain, not in the device. With your seed phrase you can restore them on a new device, so the paper backup is what you really need to protect.\n\nFull video on the channel: search \"Hot Wallet vs Cold Wallet: Which One Do You Need? (Beginner Guide)\"\n\nEducational content, not financial advice.\n\n#crypto #hardwarewallet #seedphrase #shorts",
+  "tags": [
+   "lost hardware wallet",
+   "seed phrase",
+   "cold wallet",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Lost your hardware wallet? Your crypto is not gone.",
+    "Your coins live on the blockchain, not inside the device.",
+    "Whoever finds it still needs your PIN.",
+    "Get a new device, enter your seed phrase, and your wallet comes back.",
+    "But if you lose the seed phrase too, nobody can recover your coins. Not the maker, not support.",
+    "So keep that paper backup safe.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "device",
+     "x": 540,
+     "y": 560,
+     "scale": 1.5,
+     "out": "s4",
+     "color": [
+      [
+       0,
+       "green"
+      ],
+      [
+       0.8,
+       "red"
+      ]
+     ],
+     "shake": 0.8,
+     "screen": [
+      [
+       [
+        0,
+        "VaultKey",
+        "white"
+       ],
+       [
+        0.8,
+        "Lost",
+        "red"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 860,
+     "text": "coins still on the blockchain",
+     "color": "green",
+     "size": 44,
+     "in": "s2",
+     "out": "s4"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 540,
+     "y": 1080,
+     "size": 60,
+     "in": "s3",
+     "out": "s4",
+     "color": "yellow",
+     "label": "finder needs your PIN",
+     "label_size": 44,
+     "label_gap": 20
+    },
+    {
+     "type": "words",
+     "x": 80,
+     "y": 300,
+     "w": 860,
+     "cols": 3,
+     "cell_h": 80,
+     "in": "s4",
+     "out": "s5",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "arrow",
+     "from": [
+      540,
+      710
+     ],
+     "to": [
+      540,
+      830
+     ],
+     "color": "green",
+     "in": "s4+1.5",
+     "out": "s5",
+     "draw": 0.5
+    },
+    {
+     "type": "device",
+     "x": 540,
+     "y": 1030,
+     "scale": 1.1,
+     "in": "s4+2.0",
+     "out": "s5",
+     "color": "green",
+     "screen": [
+      [
+       [
+        0,
+        "Wallet restored",
+        "green"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Lose the seed phrase too?",
+     "y": 420,
+     "size": 76,
+     "w": 880,
+     "in": "s5",
+     "color": "red",
+     "glow": "red"
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 760,
+     "text": "NO RECOVERY",
+     "in": "s5+2.2",
+     "size": 92,
+     "angle": -10
+    },
+    {
+     "type": "flash",
+     "at": "s5+2.2",
+     "strength": 0.6
+    },
+    {
+     "type": "heading",
+     "text": "Protect your paper backup",
+     "y": 1120,
+     "size": 72,
+     "w": 880,
+     "in": "s6",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

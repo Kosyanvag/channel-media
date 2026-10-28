@@ -855,7 +855,87 @@ def r_words(f, e, t, X):
             rrect(f, [cx0 + 60, cy0 + ch / 2 - 10, cx0 + cw - 24, cy0 + ch / 2 + 10], 10, fill=CARD2, o=o * kk * hk)
 
 
-RENDER = {"words": r_words,
+def _state_lines(X, v, t, default_col="white"):
+    """screen text: a string, a state list [[ref, text, color], ...] or a list of those (one per line)."""
+    if v is None:
+        return []
+    if isinstance(v, str):
+        return [(v, X.col(default_col, t))]
+    if isinstance(v, list) and v and isinstance(v[0], list) and v[0] and isinstance(v[0][0], list):
+        out = []
+        for st in v:
+            out += _state_lines(X, st, t, default_col)
+        return out
+    cur = X.state(v, t)
+    txt = cur[0] if cur else ""
+    col = X.col(cur[1] if len(cur) > 1 else default_col, t)
+    return [(txt, col)] if txt else []
+
+
+def r_device(f, e, t, X):
+    """Hardware wallet (kind "hw", default) or a laptop (kind "laptop") with a small text screen."""
+    o, k, tin = X.vis(e, t, 0.6)
+    if o <= 0:
+        return
+    s = X.num(e.get("scale", 1.0), t)
+    x = X.num(e.get("x", C.W / 2), t)
+    y = X.num(e.get("y", C.H / 2), t) + (1 - k) * 30
+    if e.get("shake") is not None:
+        st = X.T(e["shake"])
+        if st < t < st + 0.6:
+            x += math.sin(t * 110) * 12 * (1 - prog(t, st, st + 0.6))
+    acc = X.col(e.get("color", "green"), t)
+    lines = _state_lines(X, e.get("screen"), t)
+    if e.get("kind", "hw") == "laptop":
+        w, h = 620 * s, 380 * s
+        box = [x - w / 2, y - h / 2, x + w / 2, y + h / 2]
+        rrect(f, box, 22 * s, fill=(26, 32, 46), outline=acc, w=max(2, int(5 * s)), o=o, glow=acc, gw=10)
+        inner = [box[0] + 22 * s, box[1] + 22 * s, box[2] - 22 * s, box[3] - 22 * s]
+        rrect(f, inner, 10 * s, fill=(12, 18, 28), o=o)
+        rrect(f, [inner[0], inner[1], inner[2], inner[1] + 40 * s], 10 * s, fill=CARD2, o=o)
+        for i, c in enumerate((RED, YELLOW, GREEN)):
+            ellipse(f, inner[0] + (26 + i * 30) * s, inner[1] + 20 * s, 8 * s, fill=c, o=o * 0.8)
+        base = [(x - w / 2 - 50 * s, y + h / 2 + 34 * s), (x + w / 2 + 50 * s, y + h / 2 + 34 * s), (x + w / 2, y + h / 2 + 4 * s), (x - w / 2, y + h / 2 + 4 * s)]
+        f.d.polygon(base, fill=ca((52, 60, 78), o))
+        n = max(1, len(lines))
+        size = e.get("size", 44) * s
+        cy0 = (inner[1] + 40 * s + inner[3]) / 2 - (n - 1) * size * 0.65
+        for i, (txt, col) in enumerate(lines):
+            fn = fit_font(BOLD, size, txt, inner[2] - inner[0] - 40 * s)
+            text(f, (x, cy0 + i * size * 1.3), txt, fn, col, o)
+    else:
+        w, h = 400 * s, 270 * s
+        box = [x - w / 2, y - h / 2, x + w / 2, y + h / 2]
+        rrect(f, box, 46 * s, fill=(30, 36, 52), outline=acc, w=max(2, int(6 * s)), o=o, glow=acc, gw=12)
+        scr = [box[0] + 36 * s, box[1] + 32 * s, box[2] - 36 * s, box[1] + 162 * s]
+        rrect(f, scr, 14 * s, fill=(6, 8, 12), outline=CARD2, w=2, o=o)
+        n = max(1, len(lines))
+        size = e.get("size", 34) * s
+        cy0 = (scr[1] + scr[3]) / 2 - (n - 1) * size * 0.62
+        for i, (txt, col) in enumerate(lines):
+            fn = fit_font(BOLD, size, txt, scr[2] - scr[0] - 24 * s)
+            text(f, (x, cy0 + i * size * 1.24), txt, fn, col, o)
+        pk = 0.0
+        if e.get("press") is not None:
+            pt = X.T(e["press"])
+            pk = math.sin(math.pi * prog(t, pt, pt + 0.35))
+            done = t > pt + 0.2
+        else:
+            done = False
+        by = box[1] + 215 * s
+        ellipse(f, x - 80 * s, by, 26 * s, fill=CARD2, o=o)
+        x_icon(f, x - 80 * s, by, 12 * s, o, col=MUTED)
+        bc = acc if done else CARD2
+        ellipse(f, x + 80 * s, by + pk * 4 * s, (26 - pk * 4) * s, fill=bc, o=o, glow=acc if done else None)
+        check_icon(f, x + 80 * s, by + pk * 4 * s, 12 * s, o, col=DARK if done else MUTED)
+        if pk > 0:
+            ellipse(f, x + 80 * s, by, 40 * s, outline=acc, w=3, o=o * pk)
+    if e.get("label"):
+        ly = y + (h / 2 + (90 if e.get("kind") == "laptop" else 60) * s)
+        text(f, (x, ly), e["label"], font(BOLD, e.get("label_size", 38)), X.col(e.get("label_color", "white"), t), o)
+
+
+RENDER = {"words": r_words, "device": r_device,
 "section": r_section, "label": r_label, "heading": r_heading, "text": r_text, "tag": r_tag, "rule": r_rule, "person": r_person,
           "arrow": r_arrow, "icon": r_icon, "stamp": r_stamp, "flash": r_flash, "phone": r_phone, "checklist": r_checklist,
           "bullets": r_bullets, "card": r_card, "counter": r_counter, "escrow": r_escrow, "receipt": r_receipt, "phone_grid": r_phone_grid,

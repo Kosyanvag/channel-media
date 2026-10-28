@@ -64,6 +64,21 @@
    "title": "Real or scam? This crypto login page #shorts",
    "metricool_post": 408851689,
    "status": "scheduled 2026-10-28 18:30 America/New_York"
+  },
+  {
+   "date": "2026-10-28",
+   "type": "video",
+   "id": "2026-10-28-hot-vs-cold-wallet",
+   "title": "Hot Wallet vs Cold Wallet: Which One Do You Need? (Beginner Guide)",
+   "metricool_post": 409061286,
+   "status": "scheduled 2026-10-28 15:30 America/New_York (23:30 Yerevan)",
+   "duration_s": 464.4,
+   "shorts_queued": [
+    "specs/shorts/2026-10-28-hot-vs-cold-wallet-1.json",
+    "specs/shorts/2026-10-28-hot-vs-cold-wallet-2.json",
+    "specs/shorts/2026-10-28-hot-vs-cold-wallet-3.json",
+    "specs/shorts/2026-10-28-hot-vs-cold-wallet-4.json"
+   ]
   }
  ]
 }

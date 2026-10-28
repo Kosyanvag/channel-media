@@ -18,9 +18,9 @@
   {
    "slug": "hot-vs-cold-wallet",
    "idea": "Hot wallet vs cold wallet: which one do you need? (beginner guide)",
-   "status": "todo",
-   "video": null,
-   "date": null
+   "status": "scheduled",
+   "video": "2026-10-28-hot-vs-cold-wallet",
+   "date": "2026-10-28"
   },
   {
    "slug": "seed-phrase",

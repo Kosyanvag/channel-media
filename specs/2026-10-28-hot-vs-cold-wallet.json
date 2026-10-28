@@ -1,0 +1,2788 @@
+{
+  "id": "2026-10-28-hot-vs-cold-wallet",
+  "format": "long",
+  "topic": "hot-vs-cold-wallet",
+  "voice": "blend",
+  "publish": {
+    "title": "Hot Wallet vs Cold Wallet: Which One Do You Need? (Beginner Guide)",
+    "description": "Hot wallet or cold wallet: which one do you actually need? In this beginner guide: what a crypto wallet really holds, how hot wallets and hardware wallets work, the scams that target each one (fake wallet apps, address-swapping malware, tampered hardware wallets, fake support), how to set up a hardware wallet safely, and a simple rule for where to keep your crypto.\n\n{chapters}\n\nThis video is for educational purposes only and is not financial advice.\n\n#cryptowallet #crypto #cryptoforbeginners",
+    "tags": [
+      "hot wallet vs cold wallet",
+      "cold wallet",
+      "hot wallet",
+      "hardware wallet",
+      "crypto wallet for beginners",
+      "crypto security",
+      "seed phrase",
+      "crypto safety"
+    ],
+    "category": "EDUCATION",
+    "chapters": [
+      "Intro",
+      "What a wallet really holds",
+      "Where your key lives",
+      "Hot wallets",
+      "Scam 1: Fake wallet apps",
+      "Scam 2: Address swap",
+      "Cold wallets",
+      "Scam 3: Tampered devices",
+      "Rule 1: Buy it the right way",
+      "Tip: Set it up safely",
+      "Myth: Cold means untouchable",
+      "Tip: Lost device?",
+      "Scam 4: Fake support",
+      "Side by side",
+      "Which one you need",
+      "Recap"
+    ]
+  },
+  "thumbnail": {
+    "scene": 6,
+    "at": "s2+2",
+    "shift": 300,
+    "x": 1400,
+    "lines": [
+      {
+        "text": "HOT",
+        "y": 320,
+        "size": 200,
+        "color": "red",
+        "glow": "red"
+      },
+      {
+        "text": "OR COLD?",
+        "y": 540,
+        "size": 150,
+        "color": "white",
+        "glow": "green"
+      },
+      {
+        "text": "WALLET",
+        "y": 740,
+        "size": 100,
+        "color": "green",
+        "glow": "green"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "name": "hook",
+      "narration": [
+        "Picture this: Maria keeps all her crypto in a wallet app on her phone.",
+        "One evening, a message tells her to update the app through a link.",
+        "She taps it. The next morning, her balance is zero.",
+        "Nobody hacked a bank. The money was taken straight from her own wallet.",
+        "In this video, you'll learn what hot and cold wallets really are, how each one gets attacked, and which one you actually need."
+      ],
+      "elements": [
+        {
+          "type": "phone",
+          "x": 960,
+          "y": 545,
+          "scale": 0.95,
+          "in": 0,
+          "out": "s4e+0.2",
+          "shake": "s3+1.2",
+          "accent": [
+            [
+              0,
+              "green"
+            ],
+            [
+              "s2+0.4",
+              "yellow"
+            ],
+            [
+              "s3+1.2",
+              "red"
+            ]
+          ],
+          "widgets": [
+            {
+              "type": "header",
+              "title": "CryptoWallet",
+              "sub": "My wallet"
+            },
+            {
+              "type": "balance",
+              "label": "Balance",
+              "value": [
+                [
+                  0,
+                  3200
+                ],
+                [
+                  "s3+1.2",
+                  0
+                ]
+              ],
+              "decimals": 2,
+              "color": [
+                [
+                  0,
+                  "green"
+                ],
+                [
+                  "s3+1.2",
+                  "red"
+                ]
+              ]
+            },
+            {
+              "type": "skeleton",
+              "rows": 3
+            },
+            {
+              "type": "button",
+              "label": [
+                [
+                  0,
+                  "Send",
+                  "green"
+                ],
+                [
+                  "s2+0.4",
+                  "Update now",
+                  "yellow"
+                ],
+                [
+                  "s3+1.2",
+                  "Wallet empty",
+                  "gray"
+                ]
+              ],
+              "press": "s3+0.2"
+            },
+            {
+              "type": "notification",
+              "in": "s2+0.4",
+              "out": "s3+0.4",
+              "title": "Update required",
+              "sub": "Tap the link to install",
+              "color": "yellow",
+              "icon": "msg"
+            }
+          ]
+        },
+        {
+          "type": "flash",
+          "at": "s3+1.2"
+        },
+        {
+          "type": "tag",
+          "x": 1480,
+          "y": 545,
+          "text": "her own wallet",
+          "color": "red",
+          "in": "s4+1.2",
+          "out": "s4e+0.2",
+          "size": 36
+        },
+        {
+          "type": "bigtitle",
+          "in": "s5",
+          "text": "HOT vs COLD",
+          "sub": "which wallet do you actually need?",
+          "glow": "green",
+          "underline": "green"
+        }
+      ]
+    },
+    {
+      "name": "keys",
+      "narration": [
+        "First, one thing most beginners get wrong.",
+        "A crypto wallet does not actually hold your coins.",
+        "Your coins live on the blockchain, a public record that anyone can see.",
+        "What your wallet holds is a private key: a secret that lets you move those coins.",
+        "That key is backed up by your seed phrase, twelve or twenty-four words.",
+        "Whoever controls the key controls the money.",
+        "So the real question is: where does your key live, and who can reach it?",
+        "Stay to the end, because I'll give you a simple rule for choosing."
+      ],
+      "elements": [
+        {
+          "type": "heading",
+          "text": "Your wallet doesn't hold coins",
+          "y": 200,
+          "in": "s1+0.3",
+          "out": "s4",
+          "size": 68
+        },
+        {
+          "type": "icon",
+          "kind": "x",
+          "x": 960,
+          "y": 520,
+          "size": 90,
+          "in": "s2+0.8",
+          "out": "s3"
+        },
+        {
+          "type": "card",
+          "x": 160,
+          "y": 400,
+          "w": 340,
+          "h": 190,
+          "in": "s3",
+          "out": "s4",
+          "color": "blue",
+          "lines": [
+            {
+              "text": "Block",
+              "size": 30,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "#1201",
+              "size": 54,
+              "weight": "black"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 580,
+          "y": 400,
+          "w": 340,
+          "h": 190,
+          "in": "s3+0.4",
+          "out": "s4",
+          "color": "blue",
+          "lines": [
+            {
+              "text": "Block",
+              "size": 30,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "#1202",
+              "size": 54,
+              "weight": "black"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 1000,
+          "y": 400,
+          "w": 340,
+          "h": 190,
+          "in": "s3+0.8",
+          "out": "s4",
+          "color": "blue",
+          "lines": [
+            {
+              "text": "Block",
+              "size": 30,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "#1203",
+              "size": 54,
+              "weight": "black"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 1420,
+          "y": 400,
+          "w": 340,
+          "h": 190,
+          "in": "s3+1.2",
+          "out": "s4",
+          "color": "blue",
+          "lines": [
+            {
+              "text": "Block",
+              "size": 30,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "#1204",
+              "size": 54,
+              "weight": "black"
+            }
+          ]
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 700,
+          "text": "the blockchain: a public record",
+          "color": "blue",
+          "in": "s3+1.6",
+          "out": "s4",
+          "size": 36
+        },
+        {
+          "type": "icon",
+          "kind": "lock",
+          "x": 480,
+          "y": 470,
+          "size": 100,
+          "in": "s4",
+          "out": "s7",
+          "color": "green",
+          "label": "PRIVATE KEY",
+          "label_gap": 60
+        },
+        {
+          "type": "heading",
+          "text": "Your seed phrase",
+          "x": 1260,
+          "y": 270,
+          "size": 52,
+          "in": "s5",
+          "out": "s7"
+        },
+        {
+          "type": "words",
+          "in": "s5+0.3",
+          "out": "s7",
+          "x": 820,
+          "y": 340,
+          "w": 880,
+          "cols": 3,
+          "cell_h": 76,
+          "words": [
+            "river",
+            "anchor",
+            "pilot",
+            "velvet",
+            "harbor",
+            "ember",
+            "lunar",
+            "maple",
+            "orbit",
+            "candle",
+            "frost",
+            "willow"
+          ]
+        },
+        {
+          "type": "rule",
+          "in": "s6",
+          "out": "s7",
+          "kind": "warn",
+          "text": "Whoever has the key has the money"
+        },
+        {
+          "type": "heading",
+          "text": "Where does your key live?",
+          "y": 430,
+          "size": 84,
+          "in": "s7",
+          "glow": "yellow"
+        },
+        {
+          "type": "heading",
+          "text": "And who can reach it?",
+          "y": 560,
+          "size": 60,
+          "color": "muted",
+          "in": "s7+1.8"
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 760,
+          "text": "a simple rule at the end",
+          "color": "green",
+          "in": "s8",
+          "size": 36
+        }
+      ]
+    },
+    {
+      "name": "places",
+      "narration": [
+        "Your key can live in three places.",
+        "On an exchange, the company holds the key for you. That's called a custodial wallet.",
+        "It's easy, and you can reset your password, but you're trusting that company. If it gets hacked or freezes withdrawals, your money is stuck with it.",
+        "In a hot wallet, the key lives in an app on your phone or computer, which is connected to the internet.",
+        "In a cold wallet, the key lives on a small hardware device that stays offline.",
+        "Hot and cold wallets belong to you alone. No company can freeze them, and no company can rescue them.",
+        "Let's look at each one, starting with the type most people already use."
+      ],
+      "elements": [
+        {
+          "type": "heading",
+          "text": "3 places your key can live",
+          "y": 180,
+          "in": 0.2,
+          "size": 64
+        },
+        {
+          "type": "card",
+          "x": 150,
+          "y": 310,
+          "w": 520,
+          "h": 380,
+          "in": "s2",
+          "color": "blue",
+          "lines": [
+            {
+              "text": "EXCHANGE",
+              "size": 56,
+              "weight": "black"
+            },
+            {
+              "text": "The company",
+              "size": 36,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "holds your key",
+              "size": 36,
+              "color": "muted",
+              "weight": "semi"
+            }
+          ],
+          "badge": {
+            "text": "Custodial",
+            "color": "blue"
+          }
+        },
+        {
+          "type": "tag",
+          "x": 410,
+          "y": 790,
+          "text": "easy, but you trust them",
+          "color": "yellow",
+          "in": "s3+0.6",
+          "size": 32
+        },
+        {
+          "type": "card",
+          "x": 700,
+          "y": 310,
+          "w": 520,
+          "h": 380,
+          "in": "s4",
+          "color": "orange",
+          "lines": [
+            {
+              "text": "HOT WALLET",
+              "size": 56,
+              "weight": "black"
+            },
+            {
+              "text": "App on your phone",
+              "size": 36,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "Online",
+              "size": 36,
+              "color": "orange",
+              "weight": "semi"
+            }
+          ],
+          "badge": {
+            "text": "Yours",
+            "color": "green"
+          }
+        },
+        {
+          "type": "card",
+          "x": 1250,
+          "y": 310,
+          "w": 520,
+          "h": 380,
+          "in": "s5",
+          "color": "green",
+          "lines": [
+            {
+              "text": "COLD WALLET",
+              "size": 56,
+              "weight": "black"
+            },
+            {
+              "text": "Hardware device",
+              "size": 36,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "Offline",
+              "size": 36,
+              "color": "green",
+              "weight": "semi"
+            }
+          ],
+          "badge": {
+            "text": "Yours",
+            "color": "green"
+          }
+        },
+        {
+          "type": "tag",
+          "x": 1235,
+          "y": 790,
+          "text": "no freeze  ·  no rescue",
+          "color": "white",
+          "in": "s6+1.0",
+          "size": 32
+        },
+        {
+          "type": "rule",
+          "in": "s7",
+          "kind": "warn",
+          "text": "You hold the key = you are the security"
+        }
+      ]
+    },
+    {
+      "name": "hot",
+      "narration": [
+        "A hot wallet is an app on your phone, or an extension in your browser.",
+        "It's free, it takes a couple of minutes to set up, and you can send crypto in seconds.",
+        "That makes it great for small amounts you use often.",
+        "The weak spot is right in the name. Hot means online.",
+        "If your phone or computer gets infected, or you get tricked, your key can be stolen from anywhere in the world.",
+        "So lock the app with a PIN or face unlock, and keep your phone updated."
+      ],
+      "elements": [
+        {
+          "type": "label",
+          "text": "HOT WALLET",
+          "color": "orange",
+          "in": 0
+        },
+        {
+          "type": "phone",
+          "x": 600,
+          "y": 515,
+          "scale": 0.92,
+          "in": 0.2,
+          "shake": "s5+2.5",
+          "accent": [
+            [
+              0,
+              "orange"
+            ],
+            [
+              "s5+2.5",
+              "red"
+            ]
+          ],
+          "widgets": [
+            {
+              "type": "header",
+              "title": "CryptoWallet",
+              "sub": "Hot wallet"
+            },
+            {
+              "type": "balance",
+              "label": "Balance",
+              "value": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  "s2+0.5",
+                  150
+                ]
+              ],
+              "decimals": 2
+            },
+            {
+              "type": "rows",
+              "items": [
+                {
+                  "label": "Coffee shop",
+                  "amount": "-$6",
+                  "color": "white",
+                  "in": "s3+0.3"
+                },
+                {
+                  "label": "Friend",
+                  "amount": "-$20",
+                  "color": "white",
+                  "in": "s3+1.0"
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "label": [
+                [
+                  0,
+                  "Send",
+                  "green"
+                ],
+                [
+                  "s2+3.4",
+                  "Sent in 5 sec",
+                  "green"
+                ]
+              ],
+              "press": "s2+3.2"
+            },
+            {
+              "type": "notification",
+              "in": "s5+2.5",
+              "title": "Key stolen",
+              "sub": "Remote access detected",
+              "color": "red",
+              "icon": "warn"
+            }
+          ]
+        },
+        {
+          "type": "bullets",
+          "x": 1110,
+          "y": 420,
+          "gap": 120,
+          "in": "s2",
+          "out": "s4",
+          "title": "Hot wallet",
+          "items": [
+            {
+              "text": "Free",
+              "kind": "check",
+              "in": "s2+0.3"
+            },
+            {
+              "text": "Set up in minutes",
+              "kind": "check",
+              "in": "s2+1.4"
+            },
+            {
+              "text": "Send in seconds",
+              "kind": "check",
+              "in": "s2+2.8"
+            },
+            {
+              "text": "Good for small amounts",
+              "kind": "check",
+              "in": "s3",
+              "color": "green"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hot = online",
+          "x": 1380,
+          "y": 300,
+          "size": 80,
+          "color": "orange",
+          "glow": "orange",
+          "in": "s4+0.8"
+        },
+        {
+          "type": "person",
+          "x": 1480,
+          "y": 560,
+          "scale": 0.85,
+          "hood": true,
+          "in": "s5+1.2",
+          "label": "anywhere in the world",
+          "label_size": 34,
+          "color": "red"
+        },
+        {
+          "type": "arrow",
+          "from": [
+            1330,
+            560
+          ],
+          "to": [
+            860,
+            560
+          ],
+          "via": [
+            1100,
+            470
+          ],
+          "color": "red",
+          "in": "s5+1.6",
+          "draw": 0.9,
+          "dashed": true,
+          "warn": "s5+2.4"
+        },
+        {
+          "type": "flash",
+          "at": "s5+2.5",
+          "strength": 0.5
+        },
+        {
+          "type": "rule",
+          "in": "s6",
+          "kind": "ok",
+          "text": "PIN lock on, phone updated"
+        }
+      ]
+    },
+    {
+      "name": "scam1-fake-apps",
+      "narration": [
+        "Scam number one: fake wallet apps.",
+        "Scammers copy the name, the logo and the screenshots of a popular wallet.",
+        "Security researchers have found fake wallet apps even in official app stores.",
+        "You install the copy, it asks you to import your seed phrase, and the words go straight to the scammer.",
+        "How to spot it: check the developer name, the number of downloads, and the reviews.",
+        "Even better, go to the wallet's official website and use the download link from there.",
+        "And remember: a real wallet only asks for your seed phrase when you choose to restore it yourself."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "SCAM",
+          "num": 1,
+          "title": "Fake wallet apps",
+          "color": "red",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "heading",
+          "text": "Which one is real?",
+          "y": 200,
+          "in": "s2+0.2",
+          "out": "s4"
+        },
+        {
+          "type": "card",
+          "x": 330,
+          "y": 320,
+          "w": 560,
+          "h": 330,
+          "in": "s2+0.6",
+          "out": "s4",
+          "color": [
+            [
+              0,
+              "muted"
+            ],
+            [
+              "s3+0.5",
+              "green"
+            ]
+          ],
+          "lines": [
+            {
+              "text": "CryptoWallet",
+              "size": 52,
+              "weight": "black"
+            },
+            {
+              "text": "by CryptoWallet Ltd",
+              "size": 32,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "10M+ downloads",
+              "size": 32,
+              "color": "green",
+              "weight": "semi"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 1030,
+          "y": 320,
+          "w": 560,
+          "h": 330,
+          "in": "s2+1.4",
+          "out": "s4",
+          "color": [
+            [
+              0,
+              "muted"
+            ],
+            [
+              "s3+0.5",
+              "red"
+            ]
+          ],
+          "lines": [
+            {
+              "text": "CryptoWallet",
+              "size": 52,
+              "weight": "black"
+            },
+            {
+              "text": "by Wallet Apps Dev",
+              "size": 32,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "5K downloads",
+              "size": 32,
+              "color": "red",
+              "weight": "semi"
+            }
+          ]
+        },
+        {
+          "type": "stamp",
+          "x": 1310,
+          "y": 480,
+          "text": "FAKE",
+          "in": "s3+0.5",
+          "out": "s4",
+          "size": 110
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 780,
+          "text": "found even in official app stores",
+          "color": "yellow",
+          "in": "s3+1.2",
+          "out": "s4",
+          "size": 36
+        },
+        {
+          "type": "phone",
+          "x": 600,
+          "y": 560,
+          "scale": 0.92,
+          "in": "s4",
+          "out": "s5",
+          "accent": [
+            [
+              0,
+              "muted"
+            ],
+            [
+              "s4+3.2",
+              "red"
+            ]
+          ],
+          "widgets": [
+            {
+              "type": "header",
+              "title": "CryptoWallet",
+              "sub": "Import wallet"
+            },
+            {
+              "type": "text",
+              "text": "Enter your 12-word seed phrase",
+              "size": 30,
+              "color": "white",
+              "weight": "semi"
+            },
+            {
+              "type": "skeleton",
+              "rows": 3
+            },
+            {
+              "type": "button",
+              "label": [
+                [
+                  0,
+                  "Import",
+                  "green"
+                ],
+                [
+                  "s4+3.0",
+                  "Importing...",
+                  "gray"
+                ]
+              ],
+              "press": "s4+2.8"
+            }
+          ]
+        },
+        {
+          "type": "person",
+          "x": 1480,
+          "y": 540,
+          "scale": 0.85,
+          "hood": true,
+          "in": "s4+1.5",
+          "out": "s5",
+          "label": "scammer",
+          "color": "red"
+        },
+        {
+          "type": "arrow",
+          "from": [
+            860,
+            540
+          ],
+          "to": [
+            1320,
+            540
+          ],
+          "via": [
+            1090,
+            450
+          ],
+          "color": "red",
+          "in": "s4+3.0",
+          "out": "s5",
+          "draw": 0.8,
+          "traveler": {
+            "kind": "coin",
+            "count": 3,
+            "symbol": "#",
+            "color": "red",
+            "dur": 1.2
+          }
+        },
+        {
+          "type": "flash",
+          "at": "s4+3.2",
+          "strength": 0.5
+        },
+        {
+          "type": "bullets",
+          "x": 560,
+          "y": 380,
+          "gap": 130,
+          "in": "s5",
+          "title": "Before you install, check:",
+          "w": 1200,
+          "items": [
+            {
+              "text": "Developer name",
+              "kind": "check",
+              "in": "s5+1.2"
+            },
+            {
+              "text": "Number of downloads",
+              "kind": "check",
+              "in": "s5+2.4"
+            },
+            {
+              "text": "Reviews",
+              "kind": "check",
+              "in": "s5+3.8"
+            },
+            {
+              "text": "Link from the official website",
+              "kind": "check",
+              "in": "s6",
+              "color": "green",
+              "glow": true
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "in": "s7",
+          "kind": "warn",
+          "text": "Seed phrase only when YOU restore"
+        }
+      ]
+    },
+    {
+      "name": "scam2-address-swap",
+      "narration": [
+        "Scam number two hides in your clipboard.",
+        "Some malware quietly watches what you copy. It's called clipboard hijacking.",
+        "When you copy a crypto address, it swaps it for the scammer's address, one that often starts and ends the same way.",
+        "You paste, you press send, and the money goes to a stranger.",
+        "So after you paste, compare the whole address, not just the first and last few characters.",
+        "And when an address is new, send a small test amount first."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "SCAM",
+          "num": 2,
+          "title": "The address swap",
+          "color": "red",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "device",
+          "kind": "laptop",
+          "x": 700,
+          "y": 450,
+          "scale": 1.0,
+          "in": "s2",
+          "out": "s5",
+          "size": 40,
+          "color": [
+            [
+              0,
+              "muted"
+            ],
+            [
+              "s3+2.0",
+              "red"
+            ]
+          ],
+          "screen": [
+            [
+              [
+                0,
+                "Copied address:",
+                "muted"
+              ]
+            ],
+            [
+              [
+                0,
+                "0x7a3F 52c1 9e04 d81E",
+                "green"
+              ],
+              [
+                "s3+2.0",
+                "0x7a3F 8b77 1f30 d81E",
+                "red"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "icon",
+          "kind": "warn",
+          "x": 700,
+          "y": 780,
+          "size": 40,
+          "in": "s2+0.8",
+          "out": "s5",
+          "label": "malware is watching",
+          "label_color": "red",
+          "label_gap": 10
+        },
+        {
+          "type": "flash",
+          "at": "s3+2.0",
+          "strength": 0.5
+        },
+        {
+          "type": "tag",
+          "x": 700,
+          "y": 200,
+          "text": "same start, same end",
+          "color": "yellow",
+          "in": "s3+3.0",
+          "out": "s5",
+          "size": 34
+        },
+        {
+          "type": "person",
+          "x": 1520,
+          "y": 520,
+          "scale": 0.8,
+          "hood": true,
+          "in": "s4",
+          "out": "s5",
+          "label": "stranger",
+          "color": "red"
+        },
+        {
+          "type": "arrow",
+          "from": [
+            1030,
+            450
+          ],
+          "to": [
+            1380,
+            500
+          ],
+          "via": [
+            1200,
+            400
+          ],
+          "color": "red",
+          "in": "s4+1.0",
+          "out": "s5",
+          "draw": 0.7,
+          "traveler": {
+            "kind": "coin",
+            "count": 3,
+            "dur": 1.2,
+            "color": "red"
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Compare the WHOLE address",
+          "y": 200,
+          "in": "s5",
+          "size": 62
+        },
+        {
+          "type": "card",
+          "x": 410,
+          "y": 290,
+          "w": 1100,
+          "h": 210,
+          "in": "s5+0.3",
+          "color": "green",
+          "lines": [
+            {
+              "text": "You copied",
+              "size": 30,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "0x7a3F 52c1 9e04 d81E",
+              "size": 64,
+              "weight": "black"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 410,
+          "y": 540,
+          "w": 1100,
+          "h": 210,
+          "in": "s5+1.0",
+          "color": "red",
+          "lines": [
+            {
+              "text": "You pasted",
+              "size": 30,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "0x7a3F 8b77 1f30 d81E",
+              "size": 64,
+              "weight": "black",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 830,
+          "text": "the middle is different",
+          "color": "red",
+          "in": "s5+2.4",
+          "out": "s6",
+          "size": 34
+        },
+        {
+          "type": "rule",
+          "in": "s6",
+          "kind": "ok",
+          "text": "New address? Send a small test first"
+        }
+      ]
+    },
+    {
+      "name": "cold",
+      "narration": [
+        "Now let's go cold. And stay with me, because scam number three targets people who are trying to be careful.",
+        "A cold wallet is a small hardware device, often about the size of a USB stick or a credit card.",
+        "Most cost somewhere between fifty and two hundred and fifty dollars.",
+        "Your key is created inside the device, and it never leaves it.",
+        "When you send crypto, your computer prepares the payment and passes it to the device.",
+        "The device shows the address and the amount on its own screen.",
+        "You check it, and you press the button. Only then is the payment signed.",
+        "So even if your computer is full of malware, it can't move your coins without your finger on that button."
+      ],
+      "elements": [
+        {
+          "type": "label",
+          "text": "COLD WALLET",
+          "color": "green",
+          "in": 0
+        },
+        {
+          "type": "heading",
+          "text": "Hot  →  Cold",
+          "y": 480,
+          "size": 120,
+          "in": 0.2,
+          "out": "s2",
+          "glow": "green"
+        },
+        {
+          "type": "device",
+          "x": [
+            [
+              0,
+              960
+            ],
+            [
+              "s5",
+              1400
+            ]
+          ],
+          "y": 470,
+          "scale": 1.3,
+          "in": "s2",
+          "color": "green",
+          "press": "s7+1.6",
+          "screen": [
+            [
+              [
+                0,
+                "VaultKey",
+                "white"
+              ],
+              [
+                "s4",
+                "Key stays here",
+                "green"
+              ],
+              [
+                "s6",
+                "To 0x7a3F...d81E",
+                "white"
+              ]
+            ],
+            [
+              [
+                0,
+                "",
+                "white"
+              ],
+              [
+                "s6+0.5",
+                "0.05 BTC",
+                "yellow"
+              ],
+              [
+                "s7+1.8",
+                "Signed",
+                "green"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "$50 – $250",
+          "y": 820,
+          "size": 96,
+          "color": "green",
+          "glow": "green",
+          "in": "s3",
+          "out": "s4"
+        },
+        {
+          "type": "icon",
+          "kind": "lock",
+          "x": 960,
+          "y": 800,
+          "size": 60,
+          "in": "s4+0.4",
+          "out": "s5",
+          "color": "green",
+          "label": "never leaves the device",
+          "label_gap": 30
+        },
+        {
+          "type": "device",
+          "kind": "laptop",
+          "x": 560,
+          "y": 450,
+          "scale": 0.85,
+          "in": "s5",
+          "size": 44,
+          "color": [
+            [
+              0,
+              "muted"
+            ],
+            [
+              "s8",
+              "red"
+            ]
+          ],
+          "screen": [
+            [
+              [
+                0,
+                "Send 0.05 BTC",
+                "white"
+              ],
+              [
+                "s8",
+                "Malware",
+                "red"
+              ]
+            ],
+            [
+              [
+                0,
+                "waiting for device...",
+                "muted"
+              ],
+              [
+                "s7+1.8",
+                "Payment signed",
+                "green"
+              ],
+              [
+                "s8",
+                "can't sign",
+                "red"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "arrow",
+          "from": [
+            860,
+            450
+          ],
+          "to": [
+            1120,
+            450
+          ],
+          "color": "green",
+          "in": "s5+1.0",
+          "draw": 0.6,
+          "traveler": {
+            "kind": "card",
+            "count": 1,
+            "dur": 1.0,
+            "color": "blue"
+          }
+        },
+        {
+          "type": "tag",
+          "x": 1400,
+          "y": 760,
+          "text": "check the screen",
+          "color": "yellow",
+          "in": "s6+0.8",
+          "size": 34
+        },
+        {
+          "type": "rule",
+          "in": "s8+1.0",
+          "kind": "ok",
+          "text": "No button press = no payment"
+        }
+      ]
+    },
+    {
+      "name": "scam3-tampered",
+      "narration": [
+        "Scam number three: the tampered hardware wallet.",
+        "Imagine Alex. He wants to be safe, so he orders a hardware wallet from a marketplace seller, at a nice discount.",
+        "Inside the box is a card with twenty-four words already printed on it. Your recovery phrase, it says.",
+        "Alex sets up the device with those words, and moves his savings onto it.",
+        "A few weeks later, everything is gone.",
+        "The seller printed that phrase, so the seller had a copy all along.",
+        "In other cases, criminals have sold fake devices with modified software that only pretended to create a new key."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "SCAM",
+          "num": 3,
+          "title": "The tampered hardware wallet",
+          "color": "red",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "person",
+          "x": 360,
+          "y": 520,
+          "scale": 0.95,
+          "in": "s2",
+          "color": [
+            [
+              0,
+              "green"
+            ],
+            [
+              "s5",
+              "red"
+            ]
+          ],
+          "label": "Alex",
+          "label_color": "white"
+        },
+        {
+          "type": "card",
+          "x": 760,
+          "y": 340,
+          "w": 860,
+          "h": 380,
+          "in": "s2+1.5",
+          "out": "s3",
+          "color": "yellow",
+          "lines": [
+            {
+              "text": "Hardware wallet",
+              "size": 56,
+              "weight": "black"
+            },
+            {
+              "text": "Marketplace seller",
+              "size": 36,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "-40% today only",
+              "size": 40,
+              "color": "yellow",
+              "weight": "bold"
+            }
+          ],
+          "badge": {
+            "text": "Deal",
+            "color": "yellow"
+          }
+        },
+        {
+          "type": "heading",
+          "text": "\"Your recovery phrase\"",
+          "x": 1190,
+          "y": 220,
+          "size": 50,
+          "in": "s3",
+          "out": "s7"
+        },
+        {
+          "type": "words",
+          "in": "s3+0.4",
+          "out": "s7",
+          "x": 690,
+          "y": 290,
+          "w": 1060,
+          "cols": 4,
+          "cell_h": 62,
+          "words": [
+            "globe",
+            "tiger",
+            "ocean",
+            "plastic",
+            "silver",
+            "number",
+            "clock",
+            "bridge",
+            "gentle",
+            "music",
+            "forest",
+            "stone",
+            "window",
+            "rabbit",
+            "salad",
+            "voyage",
+            "copper",
+            "dream",
+            "pencil",
+            "valley",
+            "honey",
+            "wagon",
+            "letter",
+            "blanket"
+          ]
+        },
+        {
+          "type": "device",
+          "x": 1220,
+          "y": 860,
+          "scale": 0.6,
+          "in": "s4",
+          "out": "s6",
+          "color": [
+            [
+              0,
+              "green"
+            ],
+            [
+              "s5",
+              "red"
+            ]
+          ],
+          "shake": "s5",
+          "screen": [
+            [
+              [
+                0,
+                "Savings: $8,000",
+                "green"
+              ],
+              [
+                "s5",
+                "Balance: $0",
+                "red"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "flash",
+          "at": "s5"
+        },
+        {
+          "type": "stamp",
+          "x": 1220,
+          "y": 520,
+          "text": "PRE-FILLED",
+          "in": "s6",
+          "out": "s7",
+          "size": 120
+        },
+        {
+          "type": "person",
+          "x": 1220,
+          "y": 860,
+          "scale": 0.5,
+          "hood": true,
+          "in": "s6+0.6",
+          "out": "s7",
+          "color": "red"
+        },
+        {
+          "type": "tag",
+          "x": 1520,
+          "y": 900,
+          "text": "had a copy all along",
+          "color": "red",
+          "in": "s6+1.0",
+          "out": "s7",
+          "size": 32
+        },
+        {
+          "type": "device",
+          "x": 1220,
+          "y": 470,
+          "scale": 1.1,
+          "in": "s7",
+          "color": "red",
+          "screen": [
+            [
+              [
+                0,
+                "Creating new key...",
+                "white"
+              ],
+              [
+                "s7+3.0",
+                "Same key as the",
+                "red"
+              ]
+            ],
+            [
+              [
+                0,
+                "",
+                "white"
+              ],
+              [
+                "s7+3.0",
+                "criminals have",
+                "red"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "tag",
+          "x": 1220,
+          "y": 790,
+          "text": "fake device, modified software",
+          "color": "red",
+          "in": "s7+1.0",
+          "size": 34
+        }
+      ]
+    },
+    {
+      "name": "rule1-buy-right",
+      "narration": [
+        "Rule number one: buy your hardware wallet only from the maker's official store, or a reseller listed on its official website.",
+        "Never use a seed phrase that came in the box.",
+        "A real device creates the phrase on its own screen during setup.",
+        "If the packaging looks opened, or the device is already set up, don't use it. Contact the manufacturer.",
+        "And install updates only through the official app.",
+        "One more thing: big online stores have third-party sellers too, so check exactly who is selling, not just which store."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "RULE",
+          "num": 1,
+          "title": "Buy it the right way",
+          "color": "green",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "device",
+          "x": 450,
+          "y": 520,
+          "scale": 1.05,
+          "in": "s2",
+          "color": [
+            [
+              0,
+              "green"
+            ],
+            [
+              "s4",
+              "yellow"
+            ],
+            [
+              "s5",
+              "green"
+            ]
+          ],
+          "screen": [
+            [
+              [
+                0,
+                "Write down word 1",
+                "white"
+              ],
+              [
+                "s4",
+                "Device already",
+                "yellow"
+              ],
+              [
+                "s5",
+                "Update from",
+                "white"
+              ]
+            ],
+            [
+              [
+                0,
+                "harbor",
+                "green"
+              ],
+              [
+                "s4",
+                "set up?",
+                "yellow"
+              ],
+              [
+                "s5",
+                "official app",
+                "green"
+              ]
+            ]
+          ],
+          "label_color": "muted",
+          "label_size": 32
+        },
+        {
+          "type": "bullets",
+          "x": 900,
+          "y": 350,
+          "gap": 112,
+          "in": "s2",
+          "title": "Hardware wallet checklist",
+          "w": 880,
+          "items": [
+            {
+              "text": "Official store or listed reseller",
+              "kind": "check",
+              "in": "s2"
+            },
+            {
+              "text": "Never a phrase from the box",
+              "kind": "x",
+              "in": "s2+0.6",
+              "color": "red"
+            },
+            {
+              "text": "Phrase created on the device",
+              "kind": "check",
+              "in": "s3+0.4"
+            },
+            {
+              "text": "Opened box? Don't use it",
+              "kind": "warn",
+              "in": "s4+0.4",
+              "color": "yellow"
+            },
+            {
+              "text": "Updates from the official app",
+              "kind": "check",
+              "in": "s5+0.3"
+            },
+            {
+              "text": "Check who the seller is",
+              "kind": "check",
+              "in": "s6+0.5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tip-setup",
+      "narration": [
+        "Tip number one: how to set up a hardware wallet the safe way.",
+        "Unbox it, and check that it's new and not already set up.",
+        "Set a PIN on the device itself.",
+        "Write the recovery words on paper, in order, and check every word twice.",
+        "Then send a small amount first, and check the receive address on the device screen, not just on your computer.",
+        "Once that works, you can move the rest."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "TIP",
+          "num": 1,
+          "title": "Set it up the safe way",
+          "color": "green",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "device",
+          "x": 450,
+          "y": 500,
+          "scale": 1.05,
+          "in": "s2",
+          "color": "green",
+          "press": "s6",
+          "screen": [
+            [
+              [
+                0,
+                "Set up as",
+                "white"
+              ],
+              [
+                "s3",
+                "Choose a PIN",
+                "white"
+              ],
+              [
+                "s4",
+                "Word 1 of 24",
+                "muted"
+              ],
+              [
+                "s5",
+                "Receive to",
+                "white"
+              ],
+              [
+                "s6",
+                "All good",
+                "green"
+              ]
+            ],
+            [
+              [
+                0,
+                "new device",
+                "green"
+              ],
+              [
+                "s3",
+                "* * * *",
+                "green"
+              ],
+              [
+                "s4",
+                "harbor",
+                "green"
+              ],
+              [
+                "s5",
+                "0x7a3F...d81E",
+                "yellow"
+              ],
+              [
+                "s6",
+                "Ready",
+                "green"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "checklist",
+          "x": 800,
+          "w": 980,
+          "y": 300,
+          "row_h": 120,
+          "items": [
+            {
+              "text": "New, not already set up",
+              "in": "s2",
+              "done": "s2e"
+            },
+            {
+              "text": "PIN set on the device",
+              "in": "s3",
+              "done": "s3e"
+            },
+            {
+              "text": "Words on paper, checked twice",
+              "in": "s4",
+              "done": "s4e"
+            },
+            {
+              "text": "Small test, address on device",
+              "in": "s5",
+              "done": "s5e"
+            },
+            {
+              "text": "Then move the rest",
+              "in": "s6",
+              "done": "s6e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "myth-untouchable",
+      "narration": [
+        "Now, a myth that even careful people believe. My coins are in a cold wallet, so nobody can touch them.",
+        "The device protects your key. But your seed phrase is a full copy of that key.",
+        "If you type those words into a website, save them in your notes app, or take a photo of them, your cold wallet just became hot.",
+        "And no hardware wallet can save you if you approve a scam transaction yourself.",
+        "So read the device screen before you confirm. Every time."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "MYTH",
+          "num": 1,
+          "title": "\"Cold means untouchable\"",
+          "color": "yellow",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "device",
+          "x": 560,
+          "y": 420,
+          "scale": 1.0,
+          "in": "s2",
+          "out": "s4",
+          "color": [
+            [
+              0,
+              "green"
+            ],
+            [
+              "s3+4.6",
+              "red"
+            ]
+          ],
+          "screen": [
+            [
+              [
+                0,
+                "Key protected",
+                "green"
+              ],
+              [
+                "s3+4.6",
+                "Key exposed",
+                "red"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "ring",
+          "x": 560,
+          "y": 420,
+          "rx": 290,
+          "ry": 210,
+          "in": "s2+0.3",
+          "out": "s4",
+          "color": "green",
+          "shatter": "s3+4.6"
+        },
+        {
+          "type": "heading",
+          "text": "Seed phrase = full copy",
+          "x": 1320,
+          "y": 250,
+          "size": 48,
+          "in": "s2+2.2",
+          "out": "s4"
+        },
+        {
+          "type": "words",
+          "in": "s2+2.5",
+          "out": "s4",
+          "x": 980,
+          "y": 310,
+          "w": 700,
+          "cols": 3,
+          "cell_h": 64,
+          "words": [
+            "river",
+            "anchor",
+            "pilot",
+            "velvet",
+            "harbor",
+            "ember",
+            "lunar",
+            "maple",
+            "orbit",
+            "candle",
+            "frost",
+            "willow"
+          ]
+        },
+        {
+          "type": "tag",
+          "x": 400,
+          "y": 790,
+          "text": "typed into a website",
+          "color": "red",
+          "in": "s3+1.0",
+          "out": "s4",
+          "size": 32
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 790,
+          "text": "saved in notes",
+          "color": "red",
+          "in": "s3+2.6",
+          "out": "s4",
+          "size": 32
+        },
+        {
+          "type": "tag",
+          "x": 1460,
+          "y": 790,
+          "text": "photo of it",
+          "color": "red",
+          "in": "s3+3.8",
+          "out": "s4",
+          "size": 32
+        },
+        {
+          "type": "flash",
+          "at": "s3+4.6",
+          "strength": 0.6
+        },
+        {
+          "type": "device",
+          "x": 960,
+          "y": 470,
+          "scale": 1.3,
+          "in": "s4",
+          "color": "yellow",
+          "press": "s5+2.0",
+          "screen": [
+            [
+              [
+                0,
+                "To 0xBAD1...91F2",
+                "red"
+              ]
+            ],
+            [
+              [
+                0,
+                "Approve?",
+                "white"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 220,
+          "text": "you approve = it's sent",
+          "color": "yellow",
+          "in": "s4+1.0",
+          "size": 34
+        },
+        {
+          "type": "rule",
+          "in": "s5",
+          "kind": "warn",
+          "text": "Read the screen before you confirm"
+        }
+      ]
+    },
+    {
+      "name": "tip-lost-device",
+      "narration": [
+        "Tip number two: what if you lose the device?",
+        "Good news: if your hardware wallet is lost or broken, your coins are not gone.",
+        "Whoever finds it would still need your PIN to open it.",
+        "And because your coins live on the blockchain, you can buy a new device, enter your seed phrase, and your wallet comes back.",
+        "But it works the other way too.",
+        "If you lose the seed phrase, and the device fails, nobody can recover your coins. Not the maker, not support, nobody.",
+        "So your paper backup matters even more than the device itself."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "TIP",
+          "num": 2,
+          "title": "Lost or broken device?",
+          "color": "green",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "device",
+          "x": 520,
+          "y": 420,
+          "scale": 1.0,
+          "in": "s2",
+          "out": "s5",
+          "color": [
+            [
+              0,
+              "green"
+            ],
+            [
+              "s2+1.0",
+              "red"
+            ]
+          ],
+          "shake": "s2+1.0",
+          "screen": [
+            [
+              [
+                0,
+                "VaultKey",
+                "white"
+              ],
+              [
+                "s2+1.0",
+                "Lost",
+                "red"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "tag",
+          "x": 520,
+          "y": 620,
+          "text": "coins still on the blockchain",
+          "color": "green",
+          "in": "s2+2.4",
+          "out": "s5",
+          "size": 30
+        },
+        {
+          "type": "icon",
+          "kind": "lock",
+          "x": 520,
+          "y": 790,
+          "size": 44,
+          "in": "s3",
+          "out": "s5",
+          "color": "yellow",
+          "label": "finder needs your PIN",
+          "label_gap": 14,
+          "label_size": 32
+        },
+        {
+          "type": "words",
+          "in": "s4+1.2",
+          "out": "s5",
+          "x": 1000,
+          "y": 250,
+          "w": 760,
+          "cols": 3,
+          "cell_h": 62,
+          "words": [
+            "river",
+            "anchor",
+            "pilot",
+            "velvet",
+            "harbor",
+            "ember",
+            "lunar",
+            "maple",
+            "orbit",
+            "candle",
+            "frost",
+            "willow"
+          ]
+        },
+        {
+          "type": "arrow",
+          "from": [
+            1380,
+            580
+          ],
+          "to": [
+            1380,
+            700
+          ],
+          "color": "green",
+          "in": "s4+3.0",
+          "out": "s5",
+          "draw": 0.5
+        },
+        {
+          "type": "device",
+          "x": 1380,
+          "y": 840,
+          "scale": 0.6,
+          "in": "s4+3.4",
+          "out": "s5",
+          "color": "green",
+          "screen": [
+            [
+              [
+                0,
+                "Wallet restored",
+                "green"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Lose BOTH?",
+          "y": 200,
+          "size": 72,
+          "in": "s5+0.3",
+          "color": "red",
+          "glow": "red"
+        },
+        {
+          "type": "device",
+          "x": 560,
+          "y": 520,
+          "scale": 0.9,
+          "in": "s6",
+          "color": "red",
+          "screen": [
+            [
+              [
+                0,
+                "Device error",
+                "red"
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "card",
+          "x": 1000,
+          "y": 400,
+          "w": 620,
+          "h": 240,
+          "in": "s6+1.4",
+          "color": "red",
+          "lines": [
+            {
+              "text": "Seed phrase",
+              "size": 34,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "Lost",
+              "size": 64,
+              "weight": "black",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "type": "stamp",
+          "x": 960,
+          "y": 800,
+          "text": "NO RECOVERY",
+          "in": "s6+3.6",
+          "size": 100
+        },
+        {
+          "type": "flash",
+          "at": "s6+3.6",
+          "strength": 0.5
+        },
+        {
+          "type": "rule",
+          "in": "s7",
+          "kind": "warn",
+          "text": "Your paper backup matters most"
+        }
+      ]
+    },
+    {
+      "name": "scam4-fake-support",
+      "narration": [
+        "Scam number four works on hot and cold wallets alike: fake wallet support.",
+        "You post a question online, or your wallet shows an error, and a helpful agent messages you first.",
+        "He says your wallet needs to be synced, validated or upgraded, and he sends you a link.",
+        "The page looks official, and it asks for your seed phrase.",
+        "Real support never messages you first, and never asks for your seed phrase. Not once, not for any reason."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "SCAM",
+          "num": 4,
+          "title": "Fake wallet support",
+          "color": "red",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "phone",
+          "x": 600,
+          "y": 515,
+          "scale": 0.92,
+          "in": "s2",
+          "accent": [
+            [
+              0,
+              "muted"
+            ],
+            [
+              "s4+1.0",
+              "red"
+            ]
+          ],
+          "shake": "s4+1.0",
+          "screens": [
+            {
+              "in": 0,
+              "out": "s4",
+              "widgets": [
+                {
+                  "type": "chat_header",
+                  "name": [
+                    [
+                      0,
+                      "Wallet Support",
+                      "white"
+                    ]
+                  ],
+                  "verified": true,
+                  "sub": "online"
+                },
+                {
+                  "type": "bubbles",
+                  "items": [
+                    {
+                      "text": "Hi! I saw your post. I can help.",
+                      "side": "l",
+                      "in": "s2+2.0"
+                    },
+                    {
+                      "text": "Your wallet needs to be validated.",
+                      "side": "l",
+                      "in": "s3+0.6"
+                    },
+                    {
+                      "text": "wallet-validate-help.com",
+                      "side": "l",
+                      "in": "s3+2.6",
+                      "color": "blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "in": "s4",
+              "widgets": [
+                {
+                  "type": "header",
+                  "title": "Wallet Validation",
+                  "sub": "wallet-validate-help.com"
+                },
+                {
+                  "type": "text",
+                  "text": "Enter your 24 words to continue",
+                  "size": 30,
+                  "color": "white",
+                  "weight": "semi"
+                },
+                {
+                  "type": "skeleton",
+                  "rows": 3
+                },
+                {
+                  "type": "button",
+                  "label": [
+                    [
+                      0,
+                      "Validate",
+                      "green"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "person",
+          "x": 1450,
+          "y": 500,
+          "scale": 0.85,
+          "hood": true,
+          "in": "s2+1.5",
+          "label": "fake agent",
+          "color": "red"
+        },
+        {
+          "type": "tag",
+          "x": 1450,
+          "y": 790,
+          "text": "messages you first",
+          "color": "red",
+          "in": "s2+3.0",
+          "out": "s4",
+          "size": 32
+        },
+        {
+          "type": "tag",
+          "x": 1450,
+          "y": 790,
+          "text": "asks for your seed phrase",
+          "color": "red",
+          "in": "s4+0.6",
+          "size": 32
+        },
+        {
+          "type": "flash",
+          "at": "s4+1.0",
+          "strength": 0.5
+        },
+        {
+          "type": "rule",
+          "in": "s5",
+          "kind": "bad",
+          "text": "Real support never asks for your seed phrase"
+        }
+      ]
+    },
+    {
+      "name": "compare",
+      "narration": [
+        "Let's put them side by side.",
+        "A hot wallet is free, fast and always with you. But it's online, so it's exposed.",
+        "A cold wallet costs money and takes a few extra seconds. But your key never touches the internet.",
+        "And an exchange account is the easiest of all. But the company holds the key, not you."
+      ],
+      "elements": [
+        {
+          "type": "heading",
+          "text": "Side by side",
+          "y": 170,
+          "in": 0.2
+        },
+        {
+          "type": "card",
+          "x": 130,
+          "y": 290,
+          "w": 520,
+          "h": 420,
+          "in": "s2",
+          "color": "orange",
+          "lines": [
+            {
+              "text": "HOT",
+              "size": 72,
+              "weight": "black",
+              "color": "orange"
+            },
+            {
+              "text": "Free",
+              "size": 40,
+              "weight": "semi"
+            },
+            {
+              "text": "Fast, always with you",
+              "size": 34,
+              "weight": "semi",
+              "color": "muted"
+            },
+            {
+              "text": "Online = exposed",
+              "size": 40,
+              "weight": "bold",
+              "color": "red",
+              "dy": 60
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 700,
+          "y": 290,
+          "w": 520,
+          "h": 420,
+          "in": "s3",
+          "color": "green",
+          "lines": [
+            {
+              "text": "COLD",
+              "size": 72,
+              "weight": "black",
+              "color": "green"
+            },
+            {
+              "text": "$50 – $250",
+              "size": 40,
+              "weight": "semi"
+            },
+            {
+              "text": "A few extra seconds",
+              "size": 34,
+              "weight": "semi",
+              "color": "muted"
+            },
+            {
+              "text": "Key never online",
+              "size": 40,
+              "weight": "bold",
+              "color": "green",
+              "dy": 60
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 1270,
+          "y": 290,
+          "w": 520,
+          "h": 420,
+          "in": "s4",
+          "color": "blue",
+          "lines": [
+            {
+              "text": "EXCHANGE",
+              "size": 72,
+              "weight": "black",
+              "color": "blue"
+            },
+            {
+              "text": "Easiest",
+              "size": 40,
+              "weight": "semi"
+            },
+            {
+              "text": "Password reset",
+              "size": 34,
+              "weight": "semi",
+              "color": "muted"
+            },
+            {
+              "text": "Company has the key",
+              "size": 40,
+              "weight": "bold",
+              "color": "yellow",
+              "dy": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rule2-which",
+      "narration": [
+        "So which one do you need?",
+        "Think of it like cash. A hot wallet is the wallet in your pocket. A cold wallet is the safe at home.",
+        "If you hold a small amount and you're still learning, an exchange account or a hot wallet is enough to start.",
+        "Keep only pocket money in a hot wallet.",
+        "Once an amount would really hurt to lose, and you plan to hold it for a long time, a cold wallet makes sense.",
+        "Many people use both: a hot wallet for spending, and a cold wallet for savings.",
+        "And whichever you choose, send a small test amount before you move everything."
+      ],
+      "elements": [
+        {
+          "type": "section",
+          "kicker": "RULE",
+          "num": 2,
+          "title": "Which one do you need?",
+          "color": "green",
+          "in": 0,
+          "out": "s2"
+        },
+        {
+          "type": "card",
+          "x": 330,
+          "y": 330,
+          "w": 560,
+          "h": 300,
+          "in": "s2",
+          "out": "s3",
+          "color": "orange",
+          "lines": [
+            {
+              "text": "Hot wallet",
+              "size": 36,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "= your pocket",
+              "size": 62,
+              "weight": "black"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "x": 1030,
+          "y": 330,
+          "w": 560,
+          "h": 300,
+          "in": "s2+2.4",
+          "out": "s3",
+          "color": "green",
+          "lines": [
+            {
+              "text": "Cold wallet",
+              "size": 36,
+              "color": "muted",
+              "weight": "semi"
+            },
+            {
+              "text": "= your safe",
+              "size": 62,
+              "weight": "black"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How much would it hurt to lose?",
+          "y": 220,
+          "size": 56,
+          "in": "s3",
+          "out": "s7"
+        },
+        {
+          "type": "arrow",
+          "from": [
+            260,
+            520
+          ],
+          "to": [
+            1660,
+            520
+          ],
+          "color": "white",
+          "in": "s3",
+          "out": "s7",
+          "draw": 1.4,
+          "width": 5
+        },
+        {
+          "type": "tag",
+          "x": 450,
+          "y": 430,
+          "text": "Small, still learning",
+          "color": "white",
+          "in": "s3+0.6",
+          "out": "s7",
+          "size": 36
+        },
+        {
+          "type": "tag",
+          "x": 450,
+          "y": 620,
+          "text": "Exchange or hot wallet",
+          "color": "orange",
+          "in": "s3+3.0",
+          "out": "s7",
+          "size": 36
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 430,
+          "text": "Pocket money",
+          "color": "white",
+          "in": "s4",
+          "out": "s7",
+          "size": 36
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 620,
+          "text": "Hot wallet",
+          "color": "orange",
+          "in": "s4+0.6",
+          "out": "s7",
+          "size": 36
+        },
+        {
+          "type": "tag",
+          "x": 1460,
+          "y": 430,
+          "text": "Would hurt, long term",
+          "color": "white",
+          "in": "s5",
+          "out": "s7",
+          "size": 36
+        },
+        {
+          "type": "tag",
+          "x": 1460,
+          "y": 620,
+          "text": "Cold wallet",
+          "color": "green",
+          "in": "s5+2.5",
+          "out": "s7",
+          "size": 36
+        },
+        {
+          "type": "heading",
+          "text": "Most people: both",
+          "y": 780,
+          "size": 60,
+          "color": "green",
+          "glow": "green",
+          "in": "s6",
+          "out": "s7"
+        },
+        {
+          "type": "heading",
+          "text": "Spending: hot   ·   Savings: cold",
+          "y": 500,
+          "size": 64,
+          "in": "s7"
+        },
+        {
+          "type": "rule",
+          "in": "s7+0.4",
+          "kind": "ok",
+          "text": "Always send a small test first"
+        }
+      ]
+    },
+    {
+      "name": "recap",
+      "narration": [
+        "Let's recap.",
+        "One: your wallet holds a key, and whoever has the key has the money.",
+        "Two: hot wallets are online. Download them only through the official website.",
+        "Three: check every pasted address, all of it.",
+        "Four: buy hardware wallets from the official store, and never use a phrase that came in the box.",
+        "Five: your seed phrase never goes online.",
+        "Six: pocket money hot, savings cold."
+      ],
+      "elements": [
+        {
+          "type": "heading",
+          "text": "Hot vs cold: the safe way",
+          "y": 150,
+          "in": 0,
+          "size": 66,
+          "glow": "green"
+        },
+        {
+          "type": "checklist",
+          "y": 290,
+          "row_h": 112,
+          "items": [
+            {
+              "text": "Whoever has the key has the money",
+              "in": "s2",
+              "done": "s2e"
+            },
+            {
+              "text": "Wallet apps only via the official site",
+              "in": "s3",
+              "done": "s3e"
+            },
+            {
+              "text": "Check the whole pasted address",
+              "in": "s4",
+              "done": "s4e"
+            },
+            {
+              "text": "Official store, no phrase from the box",
+              "in": "s5",
+              "done": "s5e"
+            },
+            {
+              "text": "Seed phrase never goes online",
+              "in": "s6",
+              "done": "s6e"
+            },
+            {
+              "text": "Pocket money hot, savings cold",
+              "in": "s7",
+              "done": "s7e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "outro",
+      "hold": 11,
+      "narration": [
+        "If this helped, subscribe.",
+        "Next, I'll show you what a seed phrase really is, and how to store it safely.",
+        "And tell me in the comments: do you use a hot wallet, a cold wallet, or both?"
+      ],
+      "elements": [
+        {
+          "type": "icon",
+          "kind": "shield",
+          "x": 960,
+          "y": 260,
+          "size": 100,
+          "in": 0,
+          "out": "s3e+0.6"
+        },
+        {
+          "type": "subscribe",
+          "y": 500,
+          "in": 0.6,
+          "click": "s1e",
+          "out": "s3e+0.6"
+        },
+        {
+          "type": "tag",
+          "x": 960,
+          "y": 660,
+          "text": "NEXT VIDEO",
+          "color": "green",
+          "in": "s2",
+          "out": "s3e+0.6",
+          "size": 26,
+          "weight": "bold"
+        },
+        {
+          "type": "heading",
+          "text": "What is a seed phrase?",
+          "y": 760,
+          "size": 58,
+          "weight": "bold",
+          "in": "s2+0.3",
+          "out": "s3e+0.6"
+        },
+        {
+          "type": "comment",
+          "text": "Hot wallet, cold wallet, or both?",
+          "y": 920,
+          "in": "s3",
+          "out": "s3e+0.6"
+        },
+        {
+          "type": "endscreen",
+          "in": "s3e+0.8"
+        }
+      ]
+    }
+  ]
+}

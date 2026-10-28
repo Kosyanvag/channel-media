@@ -1,0 +1,187 @@
+{
+ "id": "2026-10-28-hot-vs-cold-wallet-1",
+ "format": "short",
+ "topic": "hot-vs-cold-wallet",
+ "voice": "blend",
+ "publish": {
+  "title": "Seed phrase in the box? Your wallet is not safe #shorts",
+  "description": "A real hardware wallet creates its seed phrase on its own screen. A phrase printed on a card in the box means someone else already has a copy.\n\nFull video on the channel: search \"Hot Wallet vs Cold Wallet: Which One Do You Need? (Beginner Guide)\"\n\nEducational content, not financial advice.\n\n#crypto #hardwarewallet #cryptoscam #shorts",
+  "tags": [
+   "hardware wallet scam",
+   "seed phrase",
+   "cold wallet",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "If your new hardware wallet came with a seed phrase in the box, it's a scam.",
+    "A real device creates the phrase on its own screen, during setup.",
+    "A printed phrase means the seller already has a copy.",
+    "Move your savings there, and they can take everything, whenever they want.",
+    "Buy only from the maker's official store, and never use words you didn't see your device create.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "\"Your recovery phrase\"",
+     "y": 300,
+     "size": 64,
+     "out": "s2"
+    },
+    {
+     "type": "words",
+     "x": 80,
+     "y": 380,
+     "w": 860,
+     "cols": 3,
+     "cell_h": 90,
+     "out": "s2",
+     "words": [
+      "globe",
+      "tiger",
+      "ocean",
+      "plastic",
+      "silver",
+      "number",
+      "clock",
+      "bridge",
+      "gentle",
+      "music",
+      "forest",
+      "stone"
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 600,
+     "text": "SCAM",
+     "in": "s1+2.4",
+     "out": "s2",
+     "size": 170
+    },
+    {
+     "type": "flash",
+     "at": "s1+2.4"
+    },
+    {
+     "type": "device",
+     "x": 540,
+     "y": 760,
+     "scale": 1.6,
+     "in": "s2",
+     "out": "s3",
+     "color": "green",
+     "screen": [
+      [
+       [
+        0,
+        "Word 1 of 12",
+        "muted"
+       ]
+      ],
+      [
+       [
+        0,
+        "harbor",
+        "green"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1080,
+     "text": "made ON the device",
+     "color": "green",
+     "in": "s2+1.0",
+     "out": "s3",
+     "size": 44
+    },
+    {
+     "type": "person",
+     "x": 540,
+     "y": 640,
+     "scale": 1.3,
+     "hood": true,
+     "color": "red",
+     "in": "s3",
+     "out": "s5",
+     "label": "the seller has a copy",
+     "label_size": 48
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 1120,
+     "size": 150,
+     "prefix": "$",
+     "value": [
+      [
+       0,
+       8000
+      ],
+      [
+       "s4+1.5",
+       0
+      ]
+     ],
+     "color": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s4+1.5",
+       "red"
+      ]
+     ],
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "flash",
+     "at": "s4+1.5"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 540,
+     "y": 520,
+     "size": 150,
+     "in": "s5+0.2"
+    },
+    {
+     "type": "heading",
+     "text": "Official store only. Phrase made on the device.",
+     "y": 900,
+     "size": 72,
+     "w": 880,
+     "in": "s5+0.4",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}
