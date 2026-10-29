@@ -14,7 +14,13 @@
 3. Load the Metricool tools with ToolSearch (`metricool scheduled post`).
 4. Read `state/topics.json`, `state/log.json`, `state/shorts_queue.json` and `state/insights.md` (if present) and follow the rules in insights.
 
-## A. Long video (Mon / Wed / Fri)
+## Post budget (Metricool free plan: 20 posts per calendar month)
+
+* Schedule: long videos Mon + Thu, shorts Tue + Sat, YouTube only (TikTok is not used by the pipeline). That is at most 17 posts a month.
+* Before creating any Metricool post, count the entries in `state/log.json` whose post was created in the current calendar month (Asia/Yerevan) and that have a `metricool_post` id. If the count is already 19 or more, do NOT post: log the item with `status: "skipped: monthly post budget"`, keep the spec for next month (put shorts back at the front of the queue), commit, push and say so in the summary. Long videos have priority over shorts.
+* Never post the same video twice, never create test posts in Metricool, and never use `updateScheduledPost` unless something is broken (an update may count as a new post).
+
+## A. Long video (Mon / Thu)
 
 0. If `state/log.json` already has a `video` entry dated today (scheduled or published), stop: nothing to do.
 1. **Topic**: the first `todo` in `state/topics.json`. If fewer than 5 `todo` remain, research and append new ones first. Prefer **search-driven** topics people actually type into YouTube ("how to …", "is … safe", "… explained", "… scam"): check YouTube/Google autocomplete-style phrasing with web searches and phrase the `idea` as that query. Beginner crypto safety, scams, how-tos only; never price predictions, coin picks or "how to get rich".
@@ -43,7 +49,7 @@
    * If the thumbnail is rejected, retry once without `videoThumbnailUrl`.
 9. **State**: set the topic `status` to `scheduled` with `video` and `date`; append to `state/log.json` (date, type, id, title, Metricool post id, status). Commit the spec, shorts specs and state (never `build/`), `git pull --rebase -q && git push -q`.
 
-## B. Short (every day)
+## B. Short (Tue / Sat)
 
 0. If `state/log.json` already has a `short` entry dated today, stop.
 1. **Hook rule (both formats)**: the FIRST sentence and the first frame must be the hook, readable in 1 second (a claim, a loss, or "Real or scam?"). Never open with setup like "You searched for…" or "Here is…". Put the hook text big on screen from frame 1.
@@ -58,9 +64,6 @@
    * Also set Metricool `firstCommentText` to "Full breakdown in the long video on our channel 👆" when the short came from a long video.
 3. Preview, read the sheet, fix, then render. Check `timings.json` total < 59 s.
 4. Publish exactly like A.8 but with `youtubeData.type` `"short"`, no `videoThumbnailUrl`, `"videoCoverMilliseconds": 300` (cover = the opening question frame, never the reveal), no `category`, and publish at **18:30 America/New_York** on the run day (`publicationDate.timezone` "America/New_York"; if passed, now + 15 min).
-   * **TikTok cross-post**: if Metricool `getBrandSettings` shows a TikTok account in `networksData` for blogId 7630681, add `{"network": "tiktok"}` to `providers` in the same post and add `"tiktokData": {"privacyOption": "PUBLIC_TO_EVERYONE", "title": <short title without #shorts>, "disableComment": false, "disableDuet": false, "disableStitch": false, "autoAddMusic": false, "commercialContentThirdParty": false, "commercialContentOwnBrand": false, "isAigc": true}`. Text for TikTok = the YouTube description with `#shorts` replaced by `#cryptotok #fyp`. If TikTok rejects the post, publish the YouTube short alone and note the error in the log.
-   * **TikTok 3× per day**: TikTok gets three shorts a day, YouTube one. Besides today's main short, make two more TikTok-only shorts in the same run: take the next two paths from `state/shorts_queue.json` (or, if the queue is short, write new ones from topics already covered in `state/log.json`, alternating tip and quiz). Preview, fix and render them like the main one (each takes ~2 min). Publish each as its own Metricool post with only `{"network": "tiktok"}` in `providers` and the same `tiktokData` as below, at **09:00 and 13:00 America/New_York** on the next day (the main short goes out at 18:30 on the run day on both networks). Remove their paths from the queue too and log them with `"type": "tiktok_short"`. Never post the same video twice on TikTok.
-   * **Metricool plan limit**: if Metricool refuses a post because the plan's monthly post limit is reached, do not retry: publish what still fits in this order (main short on YouTube+TikTok, then the long video on its days, then TikTok extras), log the refusal with `status: "failed: metricool plan limit"`, commit, push, and say so in the run summary.
 5. Remove the path from the queue, append to `state/log.json`, commit and push.
 
 ## If something breaks
