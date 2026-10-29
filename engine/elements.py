@@ -982,21 +982,23 @@ def draw_captions(f, sc, t, cfg):
             cur = ch
     if cur is None:
         return
-    size = cfg.get("size", 78 if C.W < C.H else 52)
-    y = cfg.get("y", 1500 if C.W < C.H else C.H - 60)
+    short = C.W < C.H
+    size = cfg.get("size", 70 if short else 52)
+    y = cfg.get("y", 1360 if short else C.H - 60)
+    cx = cfg.get("x", 455 if short else C.W / 2)
+    maxw = cfg.get("w", 800 if short else C.W - 80)
     fn = font(BLACK, size)
     words = [w for w, _, _ in cur]
     gap = size * 0.28
     widths = [fn.getlength(w) for w in words]
     tw = sum(widths) + gap * (len(words) - 1)
-    if tw > C.W - 80:
-        fn = font(BLACK, size * (C.W - 80) / tw)
+    if tw > maxw:
+        fn = font(BLACK, size * maxw / tw)
         widths = [fn.getlength(w) for w in words]
         gap = fn.size * 0.28
         tw = sum(widths) + gap * (len(words) - 1)
     k = ease_out(prog(t, cur[0][1] - 0.05, cur[0][1] + 0.12))
-    sc_k = lerp(0.85, 1.0, k)
-    x = C.W / 2 - tw / 2
+    x = cx - tw / 2
     hi = COLORS.get(cfg.get("color", "yellow"), YELLOW)
     stroke = max(3, int(fn.size * 0.12))
     for w, (word, a, b), wd in zip(words, cur, widths):

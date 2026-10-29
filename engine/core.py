@@ -121,7 +121,7 @@ class F:
         self.flash_col = (120, 0, 16)
         self.dx = 0
 
-    def finish(self, fade=0.0):
+    def finish(self, fade=0.0, vignette=True):
         small = self.gimg.resize((W // 4, H // 4), Image.BILINEAR)
         if small.getbbox():
             b = ImageChops.add(small.filter(ImageFilter.GaussianBlur(5)), small.filter(ImageFilter.GaussianBlur(16)))
@@ -130,7 +130,8 @@ class F:
             out = self.img
         if self.flash > 0:
             out = Image.blend(out, Image.new("RGB", (W, H), self.flash_col), 0.35 * clamp(self.flash))
-        out = ImageChops.multiply(out, VIG)
+        if vignette:
+            out = ImageChops.multiply(out, VIG)
         if fade > 0:
             out = Image.blend(out, BLACKIMG, clamp(fade))
         return out

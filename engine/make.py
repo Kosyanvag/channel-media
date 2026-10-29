@@ -13,6 +13,9 @@ SPEC = None
 SCENES = None
 OUT = None
 CAPTIONS = None
+SAFE = None
+SAFE_SHORT = {"src": (0, 90, 1080, 1470), "dst": (30, 250, 880, 1336)}
+UNSAFE_SHORT = [(0, 0, 1080, 240), (0, 1410, 1080, 1920), (895, 760, 1080, 1920)]
 CAMERA = 0.045
 
 
@@ -43,9 +46,18 @@ def scene_frame(idx, t):
     sc = SCENES[idx]
     X = E.Ctx(sc["starts"], sc["ends"], sc["dur"])
     f = E.draw_scene(sc["elements"], t, X)
+    fade = max(1 - C.prog(t, 0, 0.18), C.prog(t, sc["dur"] - 0.25, sc["dur"]))
+    if SAFE:
+        x0, y0, x1, y1 = SAFE["src"]
+        dx0, dy0, dx1, dy1 = SAFE["dst"]
+        content = f.finish(0, vignette=False).crop((x0, y0, x1, y1)).resize((dx1 - dx0, dy1 - dy0), Image.LANCZOS)
+        g = C.F()
+        g.img.paste(content, (dx0, dy0))
+        g.d = ImageDraw.Draw(g.img, "RGBA")
+        g.flash, g.flash_col = 0, f.flash_col
+        f = g
     if CAPTIONS is not None:
         E.draw_captions(f, sc, t, CAPTIONS)
-    fade = max(1 - C.prog(t, 0, 0.18), C.prog(t, sc["dur"] - 0.25, sc["dur"]))
     return f.finish(fade)
 
 
@@ -162,6 +174,20 @@ def preview(sheet_cols=None):
             x, y = (i % cols) * tw, (i // cols) * (th + 40)
             sheet.paste(im, (x, y + 40))
             d.text((x + 10, y + 8), f"{sc['name']}  t={t:.1f}s", fill=(255, 255, 0), font=C.font(C.BOLD, 22))
+        if SAFE:
+            dd = ImageDraw.Draw(sheet, "RGBA")
+            for i in range(len(ts)):
+                ox, oy = (i % cols) * tw, (i // cols) * (th + 40) + 40
+                for x0, y0, x1, y1 in UNSAFE_SHORT:
+                    k = tw / C.W
+                    dd.rectangle([ox + x0 * k, oy + y0 * k, ox + x1 * k, oy + y1 * k], fill=(255, 0, 0, 45), outline=(255, 0, 0, 160))
+        if SAFE:
+            dd = ImageDraw.Draw(sheet, "RGBA")
+            for i in range(len(ts)):
+                ox, oy = (i % cols) * tw, (i // cols) * (th + 40) + 40
+                k = tw / C.W
+                for x0, y0, x1, y1 in UNSAFE_SHORT:
+                    dd.rectangle([ox + x0 * k, oy + y0 * k, ox + x1 * k, oy + y1 * k], fill=(255, 0, 0, 40), outline=(255, 0, 0, 150))
         p = os.path.join(OUT, f"preview_{idx+1:02d}.png")
         sheet.save(p)
         paths.append(p)
@@ -200,7 +226,7 @@ def thumbnail(spec):
 
 
 def main():
-    global SPEC, SCENES, OUT, CAPTIONS, CAMERA
+    global SPEC, SCENES, OUT, CAPTIONS, CAMERA, SAFE
     ap = argparse.ArgumentParser()
     ap.add_argument("spec")
     ap.add_argument("--out", default=None)
@@ -210,6 +236,8 @@ def main():
     SPEC = json.load(open(args.spec))
     fmt = SPEC.get("format", "long")
     canvas(fmt)
+    if fmt == "short" and SPEC.get("safe_frame", True):
+        SAFE = SAFE_SHORT
     cam = SPEC.get("camera", True)
     CAMERA = 0.045 if cam is True else (float(cam) if cam else 0.0)
     cap = SPEC.get("captions", fmt == "short")
