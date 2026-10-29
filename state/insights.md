@@ -32,3 +32,11 @@ Shorts: none published yet (none in state/log.json).
 * Alternate scam topics and how-to topics in the long videos so next week's review can compare the two types.
 * Do not change format, length, hooks or thumbnail style yet; there is nothing to compare against.
 * Weekly review: when the owner gives a number from YouTube Studio, use it and mark it "owner-reported". If a metric is still null, say so and do not invent conclusions. The first meaningful comparison needs about 3 long videos and 5+ shorts with 3+ days of data each.
+
+## Update 2026-10-29 (manual check)
+
+* Metricool YouTube channel views: 13 (10-24), 5 (10-25), 7 (10-26), later days not reported yet; 0 subscribers. Per-video rows still empty.
+* TikTok (@crypto.safezone, posted manually by the owner, not via Metricool yet): first quiz short "Real or scam? This crypto login page" — 64 views, 1 like in ~5 h (owner-reported).
+* Observed on TikTok: the platform's search bar covered the top of the frame and the right-side buttons hit the captions → the engine now renders shorts into a safe frame (fixed 2026-10-29).
+* The quiz short opened with "You searched for…" — weak first second. New rule: hook first (see PIPELINE B).
+* 3 of the first 4 shorts were news about niche wallet brands (Keystone, Passport, Electrum) — likely low appeal for beginners. New rule: news shorts only for events that matter to ordinary users, max 2 per 7 days.
