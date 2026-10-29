@@ -26,7 +26,7 @@ Vagh approved using the rest of the October Metricool budget. These rules apply 
 
 * Every publish time must fall before **2026-10-31 23:45 Asia/Yerevan** (= 15:45 America/New_York on Oct 31), so it counts in October. If a time would fall later, move it earlier the same day.
 * The day's main short goes to **YouTube + TikTok** in one Metricool post: `providers` `[{"network": "youtube"}, {"network": "tiktok"}]` plus `"tiktokData": {"privacyOption": "PUBLIC_TO_EVERYONE", "title": <title without #shorts>, "disableComment": false, "disableDuet": false, "disableStitch": false, "autoAddMusic": false, "commercialContentThirdParty": false, "commercialContentOwnBrand": false, "isAigc": true}`. Publish time: Oct 30 → 18:30 New York; Oct 31 → 15:00 New York.
-* Plus **two TikTok-only shorts per day**: next two paths from `state/shorts_queue.json` (or new ones from topics already covered, alternating tip and quiz; never a video already posted on TikTok — the owner posted manually: quiz-fake-exchange-site, news-electrum-fee-bump, news-passport-phishing). Render each (preview + check like any short), upload, and create one Metricool post each with only `{"network": "tiktok"}` and the `tiktokData` above, at 09:00 and 13:00 New York the same day (if already passed: now + 20 min and now + 2 h, still before the October cut-off). TikTok text = the short's description with `#shorts` replaced by `#cryptotok #fyp`. Log them with `"type": "tiktok_short"`.
+* No TikTok-only posts through Metricool: Vagh schedules extra TikTok videos himself.
 * Post budget for October: stop creating posts once `state/log.json` has 18 entries with a `metricool_post` id created in October.
 * If TikTok rejects a post, keep the YouTube part, log the error and continue.
 
