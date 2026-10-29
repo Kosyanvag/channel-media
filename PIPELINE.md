@@ -93,3 +93,15 @@ Dark navy background with a faint grid, neon green = safe, neon red = scam/dange
 3. Write `state/insights.md` (replace the file): date, a short table of the last 28 days, 3–5 concrete takeaways, and the rules future runs must follow because of them (e.g. "scam-story hooks beat how-to hooks: open with a loss"). Keep it under 60 lines. Long-video and short runs read this file in step 0 and follow its rules.
 4. Reorder the `todo` topics in `state/topics.json` so the most promising come first, and add new search-driven topics in the directions that worked.
 5. Commit and push. End with a short summary in Russian for Vagh: subscribers, total watch hours (toward 4000), best video, what changes this week.
+
+## D. Weekly TikTok batch (Saturday, from 2026-10-31)
+
+Vagh posts TikTok himself with TikTok's own scheduler (free, no Metricool). Each Saturday run prepares the **next Sunday–Saturday: 3 videos per day = 21 videos**.
+
+1. Read `state/tiktok_log.json` (create `{"entries": []}` if missing): every video ever given for TikTok. Also already on TikTok (posted by Vagh or Metricool before November): quiz-fake-exchange-site, news-electrum-fee-bump, news-passport-phishing, and every `tiktok_short` / TikTok-provider entry in `state/log.json`. Never repeat any of them.
+2. Pick 21 videos in this order: (a) shorts already published on YouTube (from `state/log.json`) that are not yet on TikTok, skipping news older than 7 days; (b) specs in `state/shorts_queue.json` (do NOT remove them from the queue — YouTube still uses them); (c) new specs written now into `specs/tiktok/<date>-<slug>.json`, from topics already covered in the long videos, alternating quiz ("Real or scam?") and tip formats, with a strong first-second hook (section B rules: short format, safe frame, 20–45 s). Spread topics so no two neighbours are the same topic.
+3. Preview every spec, look at every sheet, fix problems, render. Rendering 21 shorts takes ~60 min: run renders in the background and wait.
+4. Name the files `NN_<id>.mp4` in posting order (01–21) and upload them with `scripts/upload.sh` into the media branch (they land at its root; that is fine).
+5. Write `TIKTOK_<sun-date>.md` (also uploaded to the media branch) with a table: NN, file name, post date, time **Asia/Yerevan** (09:00, 13:00 and 19:00 America/New_York converted; e.g. in November 18:00, 22:00, 04:00 next day), and the ready caption (hook sentence + 1 line + `#crypto #cryptoscam #bitcoin #fyp`, ≤ 150 characters). At the top: "In TikTok upload → More options → turn on 'AI-generated content'. Schedule each video at the time in the table."
+6. Append the 21 ids to `state/tiktok_log.json` with their planned dates, commit and push (main branch).
+7. End with a short summary in Russian for Vagh containing the direct link `https://github.com/Kosyanvag/channel-media/tree/media` and the name of the TIKTOK_*.md file.
