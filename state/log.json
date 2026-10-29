@@ -79,6 +79,17 @@
     "specs/shorts/2026-10-28-hot-vs-cold-wallet-3.json",
     "specs/shorts/2026-10-28-hot-vs-cold-wallet-4.json"
    ]
+  },
+  {
+   "date": "2026-10-29",
+   "type": "short",
+   "format": "tip",
+   "id": "2026-10-29-seed-phrase",
+   "title": "If anyone asks for these 12 words, it's a scam #shorts",
+   "metricool_post": 409980673,
+   "status": "scheduled 2026-10-29 18:30 America/New_York",
+   "duration_s": 23.4,
+   "tiktok": "not connected"
   }
  ]
 }

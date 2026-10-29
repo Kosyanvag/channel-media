@@ -1,11 +1,11 @@
 {
- "id": "short-seed-phrase",
+ "id": "2026-10-29-seed-phrase",
  "format": "short",
  "topic": "seed-phrase",
  "voice": "blend",
  "publish": {
   "title": "If anyone asks for these 12 words, it's a scam #shorts",
-  "description": "Your seed phrase is your crypto. No support agent, app or website will ever ask for it. Keep it on paper, offline.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "description": "Your seed phrase is your crypto. No support agent, app or website will ever ask for it. Keep it on paper, offline.\n\nFull video on the channel: search \"Hot Wallet vs Cold Wallet: Which One Do You Need? (Beginner Guide)\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
   "tags": [
    "seed phrase",
    "crypto wallet",
@@ -21,9 +21,10 @@
    "narration": [
     "If anyone asks for these twelve words, it's a scam.",
     "This is your seed phrase.",
-    "Whoever has it owns your crypto. No password needed.",
+    "Whoever has it owns your crypto. No password, no code, nothing else needed.",
     "No real support agent, wallet app or website will ever ask for it.",
-    "Write it on paper, keep it offline, and never type it anywhere online.",
+    "Scammers ask through fake support chats and pages that say \"sync your wallet\".",
+    "Write it on paper, keep it offline, and never type it into a site or a chat.",
     "Follow for one crypto safety tip every day."
    ],
    "elements": [
@@ -33,13 +34,13 @@
      "color": "green",
      "in": 0,
      "y": 150,
-     "out": "s6"
+     "out": "s7"
     },
     {
      "type": "label",
      "text": "FOLLOW FOR DAILY TIPS",
      "color": "white",
-     "in": "s6",
+     "in": "s7",
      "y": 150
     },
     {
@@ -57,7 +58,7 @@
      "w": 900,
      "cols": 3,
      "cell_h": 96,
-     "hide": "s5+2.5",
+     "hide": "s6+2.5",
      "words": [
       "river",
       "anchor",
@@ -80,12 +81,13 @@
      "text": "= your money",
      "color": "red",
      "in": "s3",
-     "size": 44
+     "size": 44,
+     "out": "s4"
     },
     {
      "type": "bullets",
      "x": 150,
-     "y": 1200,
+     "y": 1080,
      "gap": 100,
      "size": 46,
      "in": "s4",
@@ -108,24 +110,49 @@
      ]
     },
     {
+     "type": "bullets",
+     "x": 150,
+     "y": 1050,
+     "gap": 100,
+     "size": 46,
+     "in": "s5",
+     "out": "s6",
+     "title": "How they ask:",
+     "title_size": 52,
+     "items": [
+      {
+       "text": "Fake support chats",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+0.6"
+      },
+      {
+       "text": "\"Sync your wallet\" pages",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+2.2"
+      }
+     ]
+    },
+    {
      "type": "stamp",
      "x": 540,
      "y": 660,
      "text": "NEVER SHARE",
-     "in": "s5",
+     "in": "s6",
      "size": 110
     },
     {
      "type": "flash",
-     "at": "s5"
+     "at": "s6"
     },
     {
      "type": "heading",
-     "text": "Paper. Offline. Never online.",
+     "text": "Write it on paper. Keep it offline.",
      "y": 1150,
-     "size": 70,
+     "size": 64,
      "w": 900,
-     "in": "s5+0.4",
+     "in": "s6+0.4",
      "glow": "green"
     }
    ]
