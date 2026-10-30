@@ -90,6 +90,46 @@
    "status": "scheduled 2026-10-29 18:30 America/New_York",
    "duration_s": 23.4,
    "tiktok": "not connected"
+  },
+  {
+   "date": "2026-10-30",
+   "type": "short",
+   "format": "quiz",
+   "id": "2026-10-28-hot-vs-cold-wallet-2",
+   "title": "Real or scam? \"Wallet Support\" sent you a DM #shorts",
+   "metricool_post": 411120107,
+   "providers": [
+    "youtube",
+    "tiktok"
+   ],
+   "status": "scheduled 2026-10-30 18:30 America/New_York (YouTube + TikTok)",
+   "duration_s": 22.0
+  },
+  {
+   "date": "2026-10-30",
+   "type": "tiktok_short",
+   "format": "tip",
+   "id": "short-fake-screenshot",
+   "title": "Never trust a payment screenshot",
+   "metricool_post": 411120288,
+   "providers": [
+    "tiktok"
+   ],
+   "status": "scheduled 2026-10-30 09:00 America/New_York (TikTok only)",
+   "duration_s": 19.9
+  },
+  {
+   "date": "2026-10-30",
+   "type": "tiktok_short",
+   "format": "tip",
+   "id": "short-sent-too-much",
+   "title": "Got paid too much? Don't refund it",
+   "metricool_post": 411120309,
+   "providers": [
+    "tiktok"
+   ],
+   "status": "scheduled 2026-10-30 13:00 America/New_York (TikTok only)",
+   "duration_s": 22.0
   }
  ]
 }
