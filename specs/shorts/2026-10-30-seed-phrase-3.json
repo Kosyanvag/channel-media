@@ -1,0 +1,164 @@
+{
+ "id": "2026-10-30-seed-phrase-3",
+ "format": "short",
+ "topic": "seed-phrase",
+ "voice": "blend",
+ "publish": {
+  "title": "Store your seed phrase like this, not in your phone #shorts",
+  "description": "Paper, by hand, numbered, checked, two copies in two places, and never typed into notes, email or the cloud.\n\nFull video on the channel: search \"What Is a Seed Phrase? How to Store It Safely (Beginner Guide)\"\n\nEducational content, not financial advice.\n\n#crypto #seedphrase #shorts",
+  "tags": [
+   "how to store seed phrase",
+   "seed phrase",
+   "crypto wallet",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Store your seed phrase like this, not in your phone.",
+    "Write the words on paper, by hand, numbered one to twelve.",
+    "Double-check the spelling, because every word and its order matter.",
+    "Make two copies, and keep them in two different safe places.",
+    "Never type them into notes, email or the cloud.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "PAPER, NOT PHONE",
+     "y": 300,
+     "size": 90,
+     "w": 900,
+     "glow": "green",
+     "out": "s4"
+    },
+    {
+     "type": "words",
+     "in": 0,
+     "out": "s4",
+     "x": 110,
+     "y": 430,
+     "w": 860,
+     "cols": 3,
+     "cell_h": 96,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 960,
+     "text": "by hand · numbered 1–12",
+     "color": "green",
+     "size": 42,
+     "in": "s2",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 960,
+     "text": "check every word and the order",
+     "color": "yellow",
+     "size": 42,
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "heading",
+     "text": "2 copies · 2 places",
+     "y": 360,
+     "size": 84,
+     "w": 900,
+     "glow": "green",
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 330,
+     "y": 700,
+     "size": 120,
+     "in": "s4+0.5",
+     "out": "s5",
+     "color": "green",
+     "label": "COPY 1",
+     "label_gap": 60
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 750,
+     "y": 700,
+     "size": 120,
+     "in": "s4+1.2",
+     "out": "s5",
+     "color": "green",
+     "label": "COPY 2",
+     "label_gap": 60
+    },
+    {
+     "type": "bullets",
+     "x": 200,
+     "y": 420,
+     "gap": 130,
+     "size": 56,
+     "in": "s5",
+     "title": "Never type it into:",
+     "title_size": 60,
+     "items": [
+      {
+       "text": "Notes",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+1.0"
+      },
+      {
+       "text": "Email",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+1.6"
+      },
+      {
+       "text": "The cloud",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+2.2"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

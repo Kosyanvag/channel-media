@@ -25,9 +25,9 @@
   {
    "slug": "seed-phrase",
    "idea": "What is a seed phrase and how to store it safely",
-   "status": "todo",
-   "video": null,
-   "date": null
+   "status": "scheduled",
+   "video": "2026-10-30-seed-phrase",
+   "date": "2026-10-30"
   },
   {
    "slug": "fake-exchange-sites",

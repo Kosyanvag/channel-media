@@ -1,0 +1,189 @@
+{
+ "id": "2026-10-30-seed-phrase-1",
+ "format": "short",
+ "topic": "seed-phrase",
+ "voice": "blend",
+ "publish": {
+  "title": "Never screenshot your seed phrase #shorts",
+  "description": "Apps found in official app stores secretly scanned photo galleries for recovery words. Keep your seed phrase on paper, offline.\n\nFull video on the channel: search \"What Is a Seed Phrase? How to Store It Safely (Beginner Guide)\"\n\nEducational content, not financial advice.\n\n#crypto #seedphrase #shorts",
+  "tags": [
+   "seed phrase",
+   "seed phrase screenshot",
+   "crypto wallet",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Never take a screenshot of your seed phrase.",
+    "Researchers found apps in official app stores that secretly scanned people's photo galleries.",
+    "They read the text in screenshots and looked for recovery words.",
+    "And photos sync to the cloud, so one hacked account can expose them too.",
+    "Write your seed phrase on paper, by hand, and keep it offline.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "NEVER SCREENSHOT THIS",
+     "y": 300,
+     "size": 76,
+     "w": 900,
+     "glow": "red",
+     "color": "red",
+     "out": "s2"
+    },
+    {
+     "type": "words",
+     "in": 0,
+     "out": "s2",
+     "x": 110,
+     "y": 430,
+     "w": 860,
+     "cols": 3,
+     "cell_h": 96,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 1020,
+     "text": "NO",
+     "in": 0.8,
+     "out": "s2",
+     "size": 220
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.1,
+     "in": "s2",
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3+0.8",
+       "red"
+      ]
+     ],
+     "shake": "s3+0.8",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Photos",
+       "sub": "Recent"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Screenshot",
+         "amount": "seed words",
+         "color": "yellow",
+         "in": "s2+0.5"
+        },
+        {
+         "label": "Photo",
+         "amount": "paper backup",
+         "color": "yellow",
+         "in": "s2+1.2"
+        },
+        {
+         "label": "Screenshot",
+         "amount": "receipt",
+         "color": "muted",
+         "in": "s2+1.8"
+        }
+       ]
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      },
+      {
+       "type": "notification",
+       "in": "s3+0.8",
+       "title": "Text found",
+       "sub": "12 recovery words",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "hidden in \"harmless\" apps",
+     "color": "yellow",
+     "size": 40,
+     "in": "s2+1.0",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "photos sync to the cloud",
+     "color": "red",
+     "size": 40,
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 540,
+     "y": 560,
+     "size": 120,
+     "in": "s5+0.2",
+     "color": "green"
+    },
+    {
+     "type": "heading",
+     "text": "Paper. By hand. Offline.",
+     "y": 820,
+     "size": 84,
+     "w": 880,
+     "in": "s5+0.2",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

@@ -130,6 +130,20 @@
    ],
    "status": "scheduled 2026-10-30 13:00 America/New_York (TikTok only)",
    "duration_s": 22.0
+  },
+  {
+   "date": "2026-10-30",
+   "type": "video",
+   "id": "2026-10-30-seed-phrase",
+   "title": "What Is a Seed Phrase? How to Store It Safely (Beginner Guide)",
+   "metricool_post": 411320984,
+   "status": "scheduled 2026-10-30 15:30 America/New_York (23:30 Yerevan); extra one-off Friday run approved by owner",
+   "duration_s": 471.3,
+   "shorts_queued": [
+    "specs/shorts/2026-10-30-seed-phrase-1.json",
+    "specs/shorts/2026-10-30-seed-phrase-2.json",
+    "specs/shorts/2026-10-30-seed-phrase-3.json"
+   ]
   }
  ]
 }

@@ -847,7 +847,7 @@ def r_words(f, e, t, X):
         if kk <= 0:
             continue
         rrect(f, [cx0, cy0, cx0 + cw, cy0 + ch], 18, fill=CARD, outline=mix(CARD2, col, 0.6), w=2, o=o * kk)
-        text(f, (cx0 + 34, cy0 + ch / 2), str(i + 1), font(BOLD, 24), MUTED, o * kk)
+        text(f, (cx0 + 34, cy0 + ch / 2), str(i + e.get("start", 1)), font(BOLD, 24), MUTED, o * kk)
         hk = prog(t, blur, blur + 0.5) if blur is not None else 0
         if hk < 1:
             text(f, (cx0 + 64, cy0 + ch / 2), wd, fit_font(SEMI, 34, wd, cw - 80), WHITE, o * kk * (1 - hk), "lm")

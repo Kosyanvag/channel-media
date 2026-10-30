@@ -1,0 +1,3273 @@
+{
+ "id": "2026-10-30-seed-phrase",
+ "format": "long",
+ "topic": "seed-phrase",
+ "voice": "blend",
+ "publish": {
+  "title": "What Is a Seed Phrase? How to Store It Safely (Beginner Guide)",
+  "description": "What is a seed phrase, and how do you store it safely? In this beginner guide: what those 12 or 24 words really are, why they are your money and not just a password, the scams built to steal them (fake \"validate your wallet\" pages, screenshot-scanning apps, the shared-seed trap, seed checker sites), and a simple way to write, store and protect your backup.\n\n{chapters}\n\nThis video is for educational purposes only and is not financial advice.\n\n#seedphrase #crypto #cryptoforbeginners",
+  "tags": [
+   "what is a seed phrase",
+   "seed phrase",
+   "how to store seed phrase",
+   "recovery phrase",
+   "seed phrase scam",
+   "crypto wallet for beginners",
+   "crypto security",
+   "self custody"
+  ],
+  "category": "EDUCATION",
+  "chapters": [
+   "Intro",
+   "What a seed phrase is",
+   "Why it is your money",
+   "Can it be guessed?",
+   "Rule 1: Nobody asks for it",
+   "Scam 1: Validate your wallet",
+   "Scam 2: Screenshots",
+   "Scam 3: The shared seed trap",
+   "Scam 4: Checker sites",
+   "Alex's story",
+   "Step 1: Write it down",
+   "Step 2: Where to keep it",
+   "Myth: Split it in half",
+   "Tip: The 25th word",
+   "Tip: If it leaks",
+   "Recap"
+  ]
+ },
+ "thumbnail": {
+  "scene": 0,
+  "at": "s1+2",
+  "shift": 300,
+  "x": 1400,
+  "lines": [
+   {
+    "text": "12 WORDS",
+    "y": 330,
+    "size": 170,
+    "color": "white",
+    "glow": "green"
+   },
+   {
+    "text": "= YOUR",
+    "y": 540,
+    "size": 130,
+    "color": "white",
+    "glow": "red"
+   },
+   {
+    "text": "MONEY",
+    "y": 730,
+    "size": 190,
+    "color": "red",
+    "glow": "red"
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "name": "hook",
+   "narration": [
+    "Twelve simple words. River, anchor, pilot, velvet.",
+    "To most people, they look like a random shopping list.",
+    "But if a stranger reads those words, he can take every coin in your wallet, from anywhere in the world, in about a minute.",
+    "No password, no code, no permission needed.",
+    "In this video, you'll learn what a seed phrase really is, the tricks scammers use to get it, and exactly how to store it safely."
+   ],
+   "elements": [
+    {
+     "type": "words",
+     "in": 0.2,
+     "out": "s3",
+     "x": 300,
+     "y": 330,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 96,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 540,
+     "text": "just words?",
+     "color": "white",
+     "in": "s2",
+     "out": "s3",
+     "size": 40
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s3",
+     "out": "s5",
+     "shake": "s3+3.2",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s3+3.2",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoWallet",
+       "sub": "My wallet"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         4800
+        ],
+        [
+         "s3+3.2",
+         0
+        ]
+       ],
+       "decimals": 2,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s3+3.2",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Send",
+         "green"
+        ],
+        [
+         "s3+3.2",
+         "Wallet empty",
+         "gray"
+        ]
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s3+3.0",
+       "title": "Outgoing transfer",
+       "sub": "All funds sent",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "person",
+     "x": 1450,
+     "y": 500,
+     "scale": 0.85,
+     "hood": true,
+     "in": "s3+0.8",
+     "out": "s5",
+     "label": "anywhere in the world",
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      860,
+      545
+     ],
+     "via": [
+      1100,
+      440
+     ],
+     "to": [
+      1310,
+      520
+     ],
+     "color": "red",
+     "in": "s3+3.0",
+     "out": "s5",
+     "draw": 0.8,
+     "traveler": {
+      "kind": "coin",
+      "count": 3,
+      "symbol": "$",
+      "color": "red",
+      "dur": 1.2
+     }
+    },
+    {
+     "type": "flash",
+     "at": "s3+3.2",
+     "strength": 0.6
+    },
+    {
+     "type": "tag",
+     "x": 1450,
+     "y": 830,
+     "text": "no password · no code",
+     "color": "red",
+     "in": "s4",
+     "out": "s5",
+     "size": 34
+    },
+    {
+     "type": "bigtitle",
+     "in": "s5",
+     "text": "SEED PHRASE",
+     "sub": "what it is and how to store it safely",
+     "glow": "green",
+     "underline": "green"
+    }
+   ]
+  },
+  {
+   "name": "what-is",
+   "narration": [
+    "So what is a seed phrase?",
+    "When you create a crypto wallet, the app gives you twelve or twenty-four words, in a fixed order.",
+    "Those words come from a standard list of two thousand and forty-eight simple English words.",
+    "Together, they are a human-readable backup of your private key, the secret that controls your coins.",
+    "The last word even works as a checksum, so a wallet can usually spot a word that's wrong.",
+    "One important note: if your crypto sits on an exchange account, you don't have a seed phrase. The exchange holds the keys.",
+    "Seed phrases come with self-custody wallets, apps or devices where you hold the key yourself."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "What is a seed phrase?",
+     "y": 200,
+     "in": 0.2,
+     "out": "s2",
+     "size": 72
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 580,
+     "scale": 0.85,
+     "in": "s2",
+     "out": "s4",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoWallet",
+       "sub": "Create wallet"
+      },
+      {
+       "type": "text",
+       "text": "Write down these words in order",
+       "size": 28,
+       "color": "white",
+       "weight": "semi"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "1. river",
+         "amount": "2. anchor",
+         "color": "white",
+         "in": "s2+0.8"
+        },
+        {
+         "label": "3. pilot",
+         "amount": "4. velvet",
+         "color": "white",
+         "in": "s2+1.2"
+        },
+        {
+         "label": "5. harbor",
+         "amount": "6. ember",
+         "color": "white",
+         "in": "s2+1.6"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "I wrote them down",
+         "green"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 400,
+     "text": "12 or 24 words",
+     "color": "green",
+     "in": "s2+1.5",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 520,
+     "text": "fixed order",
+     "color": "yellow",
+     "in": "s2+3.0",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "counter",
+     "x": 1350,
+     "y": 690,
+     "size": 96,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s3+0.3",
+       2048
+      ]
+     ],
+     "in": "s3",
+     "out": "s4",
+     "color": "blue"
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 800,
+     "text": "words in the standard list",
+     "color": "blue",
+     "in": "s3+0.8",
+     "out": "s4",
+     "size": 32
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 480,
+     "y": 480,
+     "size": 110,
+     "in": "s4",
+     "out": "s6",
+     "color": "green",
+     "label": "PRIVATE KEY",
+     "label_gap": 60
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1000,
+      470
+     ],
+     "to": [
+      640,
+      470
+     ],
+     "color": "green",
+     "in": "s4+0.6",
+     "out": "s6",
+     "draw": 0.6
+    },
+    {
+     "type": "words",
+     "in": "s4",
+     "out": "s6",
+     "x": 1040,
+     "y": 330,
+     "w": 700,
+     "cols": 3,
+     "cell_h": 72,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1390,
+     "y": 690,
+     "text": "last word = checksum",
+     "color": "yellow",
+     "in": "s5+0.5",
+     "out": "s6",
+     "size": 34
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 300,
+     "w": 560,
+     "h": 420,
+     "in": "s6",
+     "color": "blue",
+     "lines": [
+      {
+       "text": "Exchange account",
+       "size": 40,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Exchange holds",
+       "size": 54,
+       "weight": "black"
+      },
+      {
+       "text": "the keys",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "No seed phrase",
+      "color": "blue"
+     }
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 300,
+     "w": 560,
+     "h": 420,
+     "in": "s7",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Self-custody wallet",
+       "size": 40,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "You hold",
+       "size": 54,
+       "weight": "black"
+      },
+      {
+       "text": "the key",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "Seed phrase",
+      "color": "green"
+     }
+    }
+   ]
+  },
+  {
+   "name": "your-money",
+   "narration": [
+    "Here is the part that surprises beginners.",
+    "Your wallet app is just a window. The coins live on the blockchain.",
+    "If you lose your phone, you install a wallet on a new one, type the twelve words, and everything is back.",
+    "That's great news for you.",
+    "But it works exactly the same way for anyone else who types those words.",
+    "There is no reset button, no support line and no bank that can reverse it.",
+    "So your seed phrase isn't a password to your money. It is your money."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "The part that surprises beginners",
+     "y": 470,
+     "in": 0.2,
+     "out": "s2",
+     "size": 70,
+     "glow": "yellow"
+    },
+    {
+     "type": "heading",
+     "text": "Your app is just a window",
+     "y": 130,
+     "in": "s2",
+     "out": "s3",
+     "size": 56
+    },
+    {
+     "type": "phone",
+     "x": 520,
+     "y": 600,
+     "scale": 0.82,
+     "in": "s2",
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "gray"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Old phone",
+       "sub": 0
+      },
+      {
+       "type": "skeleton",
+       "rows": 4
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 520,
+     "y": 600,
+     "text": "LOST",
+     "in": "s3+0.3",
+     "out": "s5",
+     "size": 100,
+     "color": "red"
+    },
+    {
+     "type": "phone",
+     "x": 1400,
+     "y": 600,
+     "scale": 0.82,
+     "in": "s3+1.5",
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s5",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "New phone",
+       "sub": "Restore wallet"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         0
+        ],
+        [
+         "s3+4.0",
+         4800
+        ]
+       ],
+       "decimals": 2
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Restoring...",
+         "gray"
+        ],
+        [
+         "s3+4.0",
+         "Restored",
+         "green"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "arrow",
+     "from": [
+      760,
+      600
+     ],
+     "to": [
+      1160,
+      600
+     ],
+     "color": "green",
+     "in": "s3+1.8",
+     "out": "s5",
+     "draw": 0.8,
+     "traveler": {
+      "kind": "card",
+      "count": 1,
+      "dur": 1.0
+     }
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 510,
+     "text": "12 words",
+     "color": "green",
+     "in": "s3+2.0",
+     "out": "s5",
+     "size": 32
+    },
+    {
+     "type": "icon",
+     "kind": "check",
+     "x": 1400,
+     "y": 920,
+     "size": 46,
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "person",
+     "x": 1450,
+     "y": 500,
+     "scale": 0.85,
+     "hood": true,
+     "in": "s5",
+     "out": "s7",
+     "label": "anyone with the words",
+     "color": "red"
+    },
+    {
+     "type": "words",
+     "in": "s5",
+     "out": "s7",
+     "x": 160,
+     "y": 330,
+     "w": 860,
+     "cols": 3,
+     "cell_h": 80,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 330,
+     "y": 800,
+     "text": "no reset button",
+     "color": "red",
+     "in": "s6+0.4",
+     "out": "s7",
+     "size": 32
+    },
+    {
+     "type": "tag",
+     "x": 750,
+     "y": 800,
+     "text": "no support line",
+     "color": "red",
+     "in": "s6+1.4",
+     "out": "s7",
+     "size": 32
+    },
+    {
+     "type": "tag",
+     "x": 1150,
+     "y": 800,
+     "text": "no reversal",
+     "color": "red",
+     "in": "s6+2.4",
+     "out": "s7",
+     "size": 32
+    },
+    {
+     "type": "heading",
+     "text": "It's not a password.",
+     "y": 400,
+     "in": "s7",
+     "size": 74,
+     "color": "muted"
+    },
+    {
+     "type": "heading",
+     "text": "It IS your money.",
+     "y": 540,
+     "in": "s7+2.2",
+     "size": 100,
+     "glow": "red",
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "name": "guessing",
+   "narration": [
+    "You might wonder: can't a hacker just guess the twelve words?",
+    "No. With two thousand and forty-eight options for every single word, the number of possible combinations is astronomical.",
+    "Every computer on Earth working together couldn't try them all.",
+    "So attackers don't guess your seed phrase. They trick you into handing it over, or they find where you saved it.",
+    "Every scam in this video works that way. It attacks you, not the math.",
+    "And the first one fools even careful people."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Can a hacker guess it?",
+     "y": 250,
+     "in": 0.2,
+     "out": "s2",
+     "size": 76
+    },
+    {
+     "type": "person",
+     "x": 960,
+     "y": 560,
+     "scale": 0.9,
+     "hood": true,
+     "in": 0.6,
+     "out": "s2",
+     "label": "hacker",
+     "color": "red"
+    },
+    {
+     "type": "words",
+     "in": "s2",
+     "out": "s4",
+     "x": 160,
+     "y": 330,
+     "w": 860,
+     "cols": 3,
+     "cell_h": 80,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "counter",
+     "x": 1420,
+     "y": 440,
+     "size": 110,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s2+2.0",
+       2048
+      ]
+     ],
+     "in": "s2+1.0",
+     "out": "s4",
+     "color": "blue"
+    },
+    {
+     "type": "tag",
+     "x": 1420,
+     "y": 560,
+     "text": "options for every word",
+     "color": "blue",
+     "in": "s2+2.4",
+     "out": "s4",
+     "size": 32
+    },
+    {
+     "type": "tag",
+     "x": 1420,
+     "y": 660,
+     "text": "× 12 words",
+     "color": "blue",
+     "in": "s2+4.0",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "rule",
+     "in": "s3",
+     "out": "s4",
+     "kind": "ok",
+     "text": "Too many to ever try"
+    },
+    {
+     "type": "heading",
+     "text": "How they really get it",
+     "y": 220,
+     "in": "s4",
+     "out": "s6",
+     "size": 64
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 330,
+     "w": 560,
+     "h": 300,
+     "in": "s4+0.6",
+     "out": "s6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Method 1",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Trick you",
+       "size": 60,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 330,
+     "w": 560,
+     "h": 300,
+     "in": "s4+3.4",
+     "out": "s6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Method 2",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Find your backup",
+       "size": 52,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 780,
+     "text": "they attack you, not the math",
+     "color": "yellow",
+     "in": "s5",
+     "out": "s6",
+     "size": 38
+    },
+    {
+     "type": "heading",
+     "text": "Scam #1 fools careful people",
+     "y": 440,
+     "in": "s6",
+     "size": 76,
+     "glow": "yellow"
+    }
+   ]
+  },
+  {
+   "name": "rule1-nobody-asks",
+   "narration": [
+    "Rule number one: nobody legitimate will ever ask for your seed phrase.",
+    "Not your wallet's support team. Not your exchange. Not a website, an app update or an airdrop.",
+    "A real wallet asks for those words in exactly one situation: when you choose to restore your wallet yourself, inside the official app.",
+    "If anyone else asks, in a chat, an email, a form or a phone call, the conversation is over.",
+    "That one rule blocks most seed phrase scams on its own.",
+    "Now let's look at how scammers try to get around it."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "RULE",
+     "num": 1,
+     "title": "Nobody asks for it",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "bullets",
+     "x": 560,
+     "y": 330,
+     "gap": 120,
+     "in": "s2",
+     "out": "s3",
+     "title": "They will never ask:",
+     "items": [
+      {
+       "text": "Wallet support",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+0.3"
+      },
+      {
+       "text": "Your exchange",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+1.6"
+      },
+      {
+       "text": "Websites and app updates",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+2.8"
+      },
+      {
+       "text": "Airdrops",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+4.2"
+      }
+     ]
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.92,
+     "in": "s3",
+     "out": "s4",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoWallet",
+       "sub": "Official app"
+      },
+      {
+       "type": "text",
+       "text": "Restore my wallet",
+       "size": 34,
+       "color": "white",
+       "weight": "bold"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Restore",
+         "green"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 450,
+     "text": "YOU choose to restore",
+     "color": "green",
+     "in": "s3+2.0",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 570,
+     "text": "inside the official app",
+     "color": "green",
+     "in": "s3+4.5",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "rule",
+     "in": "s5",
+     "kind": "bad",
+     "text": "Anyone asks = scam. End the conversation."
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 470,
+     "size": 160,
+     "in": "s5",
+     "color": "green"
+    },
+    {
+     "type": "heading",
+     "text": "If anyone else asks:",
+     "y": 330,
+     "in": "s4",
+     "out": "s5",
+     "size": 64
+    },
+    {
+     "type": "tag",
+     "x": 360,
+     "y": 520,
+     "text": "in a chat",
+     "color": "red",
+     "in": "s4+0.6",
+     "out": "s5",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 760,
+     "y": 520,
+     "text": "by email",
+     "color": "red",
+     "in": "s4+1.2",
+     "out": "s5",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1160,
+     "y": 520,
+     "text": "in a form",
+     "color": "red",
+     "in": "s4+1.8",
+     "out": "s5",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1560,
+     "y": 520,
+     "text": "on a call",
+     "color": "red",
+     "in": "s4+2.4",
+     "out": "s5",
+     "size": 40
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 720,
+     "text": "SCAM",
+     "in": "s4+3.4",
+     "out": "s5",
+     "size": 100
+    }
+   ]
+  },
+  {
+   "name": "scam1-validate",
+   "narration": [
+    "Scam number one: the validate your wallet page.",
+    "You get an email, a pop-up or a message that looks like it's from your wallet.",
+    "It says your wallet must be synced, validated or upgraded, or it will be locked.",
+    "Scammers have even mailed printed letters to hardware wallet owners, with a QR code that leads to a fake page.",
+    "The page looks official, and it asks you to type your twelve or twenty-four words.",
+    "The moment you press submit, the scammer has a full copy of your wallet.",
+    "How to spot it: real wallets never need to be validated, and they never set deadlines. Close the page."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 1,
+     "title": "\"Validate your wallet\"",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.92,
+     "in": "s2",
+     "out": "s4",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "yellow"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Inbox",
+       "sub": "1 new message"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "CryptoWallet Team",
+         "amount": "now",
+         "color": "white",
+         "in": "s2+0.5"
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "text": "Your wallet must be validated within 24 hours or it will be locked.",
+       "size": 28,
+       "color": "white",
+       "weight": "semi",
+       "in": "s3"
+      },
+      {
+       "type": "button",
+       "in": "s3+1.0",
+       "label": [
+        [
+         0,
+         "Validate now",
+         "yellow"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 360,
+     "text": "synced",
+     "color": "yellow",
+     "in": "s3+1.2",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 470,
+     "text": "validated",
+     "color": "yellow",
+     "in": "s3+1.8",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 580,
+     "text": "upgraded",
+     "color": "yellow",
+     "in": "s3+2.4",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 720,
+     "text": "\"or it will be locked\"",
+     "color": "red",
+     "in": "s3+3.2",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "card",
+     "x": 660,
+     "y": 300,
+     "w": 600,
+     "h": 400,
+     "in": "s4",
+     "out": "s5",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "Printed letter",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Mandatory",
+       "size": 60,
+       "weight": "black"
+      },
+      {
+       "text": "wallet check",
+       "size": 60,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "By mail",
+      "color": "yellow"
+     }
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 800,
+     "text": "QR code → fake page",
+     "color": "red",
+     "in": "s4+3.5",
+     "out": "s5",
+     "size": 36
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.92,
+     "in": "s5",
+     "out": "s7",
+     "shake": "s6+0.5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s6+0.5",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Wallet Validation",
+       "sub": "cryptowallet-validate.com"
+      },
+      {
+       "type": "text",
+       "text": "Enter your 12 or 24 words",
+       "size": 30,
+       "color": "white",
+       "weight": "semi"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      },
+      {
+       "type": "button",
+       "press": "s6",
+       "label": [
+        [
+         0,
+         "Submit",
+         "green"
+        ],
+        [
+         "s6+0.4",
+         "Submitted",
+         "gray"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "person",
+     "x": 1480,
+     "y": 520,
+     "scale": 0.85,
+     "hood": true,
+     "in": "s5+1.0",
+     "out": "s7",
+     "label": "scammer",
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      860,
+      545
+     ],
+     "via": [
+      1090,
+      450
+     ],
+     "to": [
+      1330,
+      520
+     ],
+     "color": "red",
+     "in": "s6+0.3",
+     "out": "s7",
+     "draw": 0.8,
+     "traveler": {
+      "kind": "card",
+      "count": 2,
+      "dur": 1.0
+     }
+    },
+    {
+     "type": "flash",
+     "at": "s6+0.5",
+     "strength": 0.5
+    },
+    {
+     "type": "tag",
+     "x": 1480,
+     "y": 820,
+     "text": "full copy of your wallet",
+     "color": "red",
+     "in": "s6+1.0",
+     "out": "s7",
+     "size": 32
+    },
+    {
+     "type": "bullets",
+     "x": 560,
+     "y": 360,
+     "gap": 130,
+     "in": "s7",
+     "title": "Real wallets never:",
+     "items": [
+      {
+       "text": "Need to be \"validated\"",
+       "kind": "x",
+       "color": "red",
+       "in": "s7+0.6"
+      },
+      {
+       "text": "Set deadlines",
+       "kind": "x",
+       "color": "red",
+       "in": "s7+2.6"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "in": "s7+3.8",
+     "kind": "bad",
+     "text": "Close the page"
+    }
+   ]
+  },
+  {
+   "name": "scam2-screenshots",
+   "narration": [
+    "Scam number two doesn't even need you to type anything.",
+    "Many beginners take a screenshot or a photo of their seed phrase, just to be safe.",
+    "In twenty twenty-five, security researchers found apps in both major app stores that secretly scanned people's photo galleries.",
+    "They used text recognition to find recovery phrases in screenshots, and sent them to attackers.",
+    "Photos also sync to the cloud, so one hacked cloud account can expose them too.",
+    "So never photograph your seed phrase, and never screenshot it.",
+    "And the next scam is the sneakiest, because it looks like free money."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 2,
+     "title": "Screenshots and photos",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.92,
+     "in": "s2",
+     "out": "s6",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s4+1.0",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Photos",
+       "sub": "Recent"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Screenshot",
+         "amount": "seed words",
+         "color": "yellow",
+         "in": "s2+1.0"
+        },
+        {
+         "label": "Photo",
+         "amount": "paper backup",
+         "color": "yellow",
+         "in": "s2+2.4"
+        },
+        {
+         "label": "Screenshot",
+         "amount": "receipt",
+         "color": "muted",
+         "in": "s2+3.0"
+        }
+       ]
+      },
+      {
+       "type": "skeleton",
+       "rows": 1
+      },
+      {
+       "type": "notification",
+       "in": "s4+1.0",
+       "title": "Text found",
+       "sub": "12 recovery words",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 360,
+     "text": "found in both major app stores",
+     "color": "yellow",
+     "in": "s3+1.5",
+     "out": "s5",
+     "size": 34
+    },
+    {
+     "type": "card",
+     "x": 1080,
+     "y": 430,
+     "w": 540,
+     "h": 230,
+     "in": "s3+3.0",
+     "out": "s5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "\"Harmless\" app",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "scans your gallery",
+       "size": 48,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "arrow",
+     "from": [
+      860,
+      470
+     ],
+     "to": [
+      1300,
+      760
+     ],
+     "via": [
+      1100,
+      700
+     ],
+     "color": "red",
+     "in": "s4+1.5",
+     "out": "s5",
+     "draw": 0.8,
+     "traveler": {
+      "kind": "card",
+      "count": 2,
+      "dur": 1.0
+     }
+    },
+    {
+     "type": "tag",
+     "x": 1450,
+     "y": 800,
+     "text": "sent to attackers",
+     "color": "red",
+     "in": "s4+2.2",
+     "out": "s5",
+     "size": 34
+    },
+    {
+     "type": "icon",
+     "kind": "unlock",
+     "x": 1350,
+     "y": 470,
+     "size": 110,
+     "in": "s5",
+     "out": "s6",
+     "color": "red",
+     "label": "hacked cloud account",
+     "label_gap": 60
+    },
+    {
+     "type": "arrow",
+     "from": [
+      860,
+      545
+     ],
+     "to": [
+      1230,
+      470
+     ],
+     "color": "red",
+     "in": "s5+0.8",
+     "out": "s6",
+     "draw": 0.6,
+     "dashed": true
+    },
+    {
+     "type": "bullets",
+     "x": 600,
+     "y": 380,
+     "gap": 130,
+     "in": "s6",
+     "out": "s7",
+     "title": "Never:",
+     "items": [
+      {
+       "text": "Photograph your seed phrase",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+0.3"
+      },
+      {
+       "text": "Screenshot it",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+2.0"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Next: the sneakiest one",
+     "y": 420,
+     "in": "s7",
+     "size": 76,
+     "glow": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 590,
+     "text": "it looks like free money",
+     "color": "yellow",
+     "in": "s7+1.6",
+     "size": 40
+    }
+   ]
+  },
+  {
+   "name": "scam3-shared-seed",
+   "narration": [
+    "Scam number three flips the trick around. Here, the scammer gives you a seed phrase.",
+    "You see a comment where someone accidentally posts their twelve words, next to a wallet holding thousands of dollars in tokens.",
+    "You import the words, and the balance is real.",
+    "But to move the tokens, you first need a little crypto to pay the network fee.",
+    "So you send twenty dollars for the fee, and an automatic program drains it the second it arrives.",
+    "The same idea hides in a hardware wallet that arrives with words already filled in.",
+    "Rule: never use a seed phrase that someone else gave you, or that you didn't create yourself."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 3,
+     "title": "The shared seed trap",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "card",
+     "x": 360,
+     "y": 260,
+     "w": 1200,
+     "h": 440,
+     "in": "s2",
+     "out": "s3",
+     "color": "yellow",
+     "avatar": {
+      "color": "blue",
+      "name": "J"
+     },
+     "lines": [
+      {
+       "text": "Help! How do I move this to my exchange?",
+       "size": 40,
+       "weight": "bold"
+      },
+      {
+       "text": "orbit frost maple candle river lunar ...",
+       "size": 36,
+       "color": "yellow",
+       "weight": "semi"
+      },
+      {
+       "text": "Balance: $9,400 in tokens",
+       "size": 40,
+       "color": "green",
+       "weight": "bold"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 820,
+     "text": "\"accidentally\" posted",
+     "color": "red",
+     "in": "s2+3.5",
+     "out": "s3",
+     "size": 36
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.92,
+     "in": "s3",
+     "out": "s6",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s5+2.6",
+       "red"
+      ]
+     ],
+     "shake": "s5+2.6",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoWallet",
+       "sub": "Imported wallet"
+      },
+      {
+       "type": "balance",
+       "label": "Tokens",
+       "value": 9400,
+       "decimals": 0,
+       "color": "green"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Fee coins",
+         "amount": 0,
+         "color": "red",
+         "in": "s4"
+        },
+        {
+         "label": "You sent for fee",
+         "amount": "+$20",
+         "color": "yellow",
+         "in": "s5+0.8"
+        },
+        {
+         "label": "Sent out by bot",
+         "amount": "-$20",
+         "color": "red",
+         "in": "s5+2.6"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Withdraw",
+         "green"
+        ],
+        [
+         "s4",
+         "Not enough for fee",
+         "gray"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 360,
+     "text": "balance looks real",
+     "color": "green",
+     "in": "s3+0.6",
+     "out": "s6",
+     "size": 36
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 470,
+     "text": "no coins for the fee",
+     "color": "yellow",
+     "in": "s4+1.0",
+     "out": "s6",
+     "size": 36
+    },
+    {
+     "type": "person",
+     "x": 1450,
+     "y": 640,
+     "scale": 0.7,
+     "hood": true,
+     "in": "s5+1.5",
+     "out": "s6",
+     "label": "sweeper bot",
+     "color": "red"
+    },
+    {
+     "type": "flash",
+     "at": "s5+2.6",
+     "strength": 0.5
+    },
+    {
+     "type": "device",
+     "x": 600,
+     "y": 470,
+     "scale": 1.0,
+     "in": "s6",
+     "out": "s7",
+     "color": "red",
+     "screen": [
+      [
+       [
+        0,
+        "Words included",
+        "red"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1050,
+     "y": 330,
+     "w": 560,
+     "h": 280,
+     "in": "s6+1.2",
+     "out": "s7",
+     "color": "red",
+     "lines": [
+      {
+       "text": "In the box",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Pre-filled",
+       "size": 56,
+       "weight": "black"
+      },
+      {
+       "text": "recovery card",
+       "size": 44,
+       "weight": "bold"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 1330,
+     "y": 700,
+     "text": "TRAP",
+     "in": "s6+2.6",
+     "out": "s7",
+     "size": 110
+    },
+    {
+     "type": "rule",
+     "in": "s7",
+     "kind": "bad",
+     "text": "Only use words YOU created"
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 960,
+     "y": 460,
+     "size": 120,
+     "in": "s7"
+    }
+   ]
+  },
+  {
+   "name": "scam4-checker",
+   "narration": [
+    "Scam number four: seed phrase checker and generator websites.",
+    "You want to check whether your backup is valid, so you search, and you find a free online tool.",
+    "Or a site offers to generate a stronger seed phrase for you.",
+    "Either way, the words pass through someone else's server, and that server can keep them.",
+    "Your wallet is the only place where your seed phrase should ever be created or typed.",
+    "No website, no matter how helpful it looks."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 4,
+     "title": "Checker and generator sites",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.92,
+     "in": "s2",
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s4+0.8",
+       "red"
+      ]
+     ],
+     "shake": "s4+0.8",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Seed Checker",
+       "sub": "free-seed-check.com"
+      },
+      {
+       "type": "text",
+       "text": "Paste your 12 words to check them",
+       "size": 30,
+       "color": "white",
+       "weight": "semi"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      },
+      {
+       "type": "button",
+       "press": "s4",
+       "label": [
+        [
+         0,
+         "Check now",
+         "green"
+        ],
+        [
+         "s4+0.3",
+         "Checking...",
+         "gray"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 420,
+     "text": "free online tool",
+     "color": "yellow",
+     "in": "s2+3.0",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 540,
+     "text": "\"stronger\" seed generator",
+     "color": "yellow",
+     "in": "s3",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "person",
+     "x": 1480,
+     "y": 520,
+     "scale": 0.85,
+     "hood": true,
+     "in": "s4",
+     "out": "s5",
+     "label": "their server",
+     "color": "red"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      860,
+      545
+     ],
+     "via": [
+      1090,
+      450
+     ],
+     "to": [
+      1330,
+      520
+     ],
+     "color": "red",
+     "in": "s4+0.3",
+     "out": "s5",
+     "draw": 0.8,
+     "traveler": {
+      "kind": "card",
+      "count": 2,
+      "dur": 1.0
+     }
+    },
+    {
+     "type": "flash",
+     "at": "s4+0.8",
+     "strength": 0.5
+    },
+    {
+     "type": "tag",
+     "x": 1480,
+     "y": 820,
+     "text": "can keep your words",
+     "color": "red",
+     "in": "s4+2.0",
+     "out": "s5",
+     "size": 32
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 480,
+     "y": 470,
+     "size": 150,
+     "in": "s5",
+     "color": "green"
+    },
+    {
+     "type": "bullets",
+     "x": 820,
+     "y": 380,
+     "gap": 130,
+     "in": "s5",
+     "title": "Your seed phrase is only:",
+     "items": [
+      {
+       "text": "Created in your wallet",
+       "kind": "check",
+       "in": "s5+1.6"
+      },
+      {
+       "text": "Typed in your wallet",
+       "kind": "check",
+       "in": "s5+3.0"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "in": "s6",
+     "kind": "bad",
+     "text": "No website. Ever."
+    }
+   ]
+  },
+  {
+   "name": "story-alex",
+   "narration": [
+    "Now imagine Alex. He's careful. He never shares his words with anyone.",
+    "When he set up his wallet, he typed the seed phrase into his notes app, so he wouldn't lose it.",
+    "The notes synced to his cloud account, which used the same password as an old shopping site.",
+    "That shopping site got breached, and attackers tried the leaked password everywhere.",
+    "They logged into his cloud, searched his notes for wallet words, and found them.",
+    "Alex didn't click a single scam link. His backup was the hole.",
+    "So the next part is the most important one: how to store your seed phrase so this can't happen to you."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "IMAGINE THIS",
+     "color": "yellow",
+     "in": 0,
+     "out": "s7"
+    },
+    {
+     "type": "person",
+     "x": 420,
+     "y": 520,
+     "scale": 1.0,
+     "in": 0.2,
+     "out": "s7",
+     "label": "Alex",
+     "color": "green"
+    },
+    {
+     "type": "phone",
+     "x": 1000,
+     "y": 545,
+     "scale": 0.85,
+     "in": "s2",
+     "out": "s3",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Notes",
+       "sub": "wallet backup"
+      },
+      {
+       "type": "text",
+       "text": "river anchor pilot velvet harbor ember lunar maple orbit candle frost willow",
+       "size": 28,
+       "color": "yellow",
+       "weight": "semi",
+       "in": "s2+1.5"
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1520,
+     "y": 545,
+     "text": "saved in notes",
+     "color": "yellow",
+     "in": "s2+2.5",
+     "out": "s3",
+     "size": 34
+    },
+    {
+     "type": "card",
+     "x": 820,
+     "y": 300,
+     "w": 420,
+     "h": 220,
+     "in": "s3",
+     "out": "s6",
+     "color": "blue",
+     "lines": [
+      {
+       "text": "Cloud",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Notes synced",
+       "size": 44,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1340,
+     "y": 300,
+     "w": 420,
+     "h": 220,
+     "in": "s3+2.0",
+     "out": "s6",
+     "color": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s4",
+       "red"
+      ]
+     ],
+     "lines": [
+      {
+       "text": "Old shopping site",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Same password",
+       "size": 44,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 1550,
+     "y": 410,
+     "text": "BREACHED",
+     "in": "s4",
+     "out": "s6",
+     "size": 70
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1550,
+      560
+     ],
+     "via": [
+      1300,
+      700
+     ],
+     "to": [
+      1090,
+      560
+     ],
+     "color": "red",
+     "in": "s4+2.0",
+     "out": "s6",
+     "draw": 0.8,
+     "dashed": true
+    },
+    {
+     "type": "tag",
+     "x": 1290,
+     "y": 760,
+     "text": "leaked password tried everywhere",
+     "color": "red",
+     "in": "s4+2.4",
+     "out": "s6",
+     "size": 30
+    },
+    {
+     "type": "icon",
+     "kind": "unlock",
+     "x": 690,
+     "y": 410,
+     "size": 70,
+     "in": "s5",
+     "out": "s6",
+     "color": "red"
+    },
+    {
+     "type": "flash",
+     "at": "s5+2.0",
+     "strength": 0.5
+    },
+    {
+     "type": "heading",
+     "text": "No scam link clicked.",
+     "x": 1180,
+     "y": 420,
+     "in": "s6",
+     "out": "s7",
+     "size": 60,
+     "color": "muted"
+    },
+    {
+     "type": "heading",
+     "text": "The backup was the hole.",
+     "x": 1180,
+     "y": 560,
+     "in": "s6+2.0",
+     "out": "s7",
+     "size": 64,
+     "color": "red",
+     "glow": "red"
+    },
+    {
+     "type": "heading",
+     "text": "How to store it safely",
+     "y": 440,
+     "in": "s7",
+     "size": 84,
+     "glow": "green"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 600,
+     "text": "the most important part",
+     "color": "green",
+     "in": "s7+1.0",
+     "size": 38
+    }
+   ]
+  },
+  {
+   "name": "step1-write",
+   "narration": [
+    "Step one: write it down on paper, by hand.",
+    "Do it when you create the wallet, in a private place, with no cameras around and no one watching.",
+    "Number every word, one to twelve or one to twenty-four, because the order matters.",
+    "Write clearly, and double-check the spelling against the screen.",
+    "Many wallets then ask you to confirm a few words. Don't skip that test.",
+    "And never type the words into anything except the wallet itself: no notes, no email, no document.",
+    "Paper can't be hacked from the other side of the world."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 1,
+     "title": "Write it down on paper",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 480,
+     "y": 470,
+     "size": 110,
+     "in": "s2",
+     "out": "s3",
+     "color": "green",
+     "label": "PRIVATE PLACE",
+     "label_gap": 60
+    },
+    {
+     "type": "bullets",
+     "x": 900,
+     "y": 380,
+     "gap": 120,
+     "in": "s2",
+     "out": "s3",
+     "items": [
+      {
+       "text": "When you create the wallet",
+       "kind": "check",
+       "in": "s2+0.4"
+      },
+      {
+       "text": "No cameras around",
+       "kind": "check",
+       "in": "s2+3.0"
+      },
+      {
+       "text": "No one watching",
+       "kind": "check",
+       "in": "s2+4.2"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 360,
+     "y": 260,
+     "w": 1200,
+     "h": 520,
+     "in": "s3",
+     "out": "s6",
+     "color": "white",
+     "lines": [
+      {
+       "text": "1. river    2. anchor    3. pilot",
+       "size": 50,
+       "weight": "bold"
+      },
+      {
+       "text": "4. velvet    5. harbor    6. ember",
+       "size": 50,
+       "weight": "bold"
+      },
+      {
+       "text": "7. lunar    8. maple    9. orbit",
+       "size": 50,
+       "weight": "bold"
+      },
+      {
+       "text": "10. candle    11. frost    12. willow",
+       "size": 50,
+       "weight": "bold"
+      }
+     ],
+     "badge": {
+      "text": "Paper backup",
+      "color": "green"
+     }
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 860,
+     "text": "numbered, in order",
+     "color": "green",
+     "in": "s3+1.5",
+     "out": "s4",
+     "size": 36
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 860,
+     "text": "check the spelling",
+     "color": "yellow",
+     "in": "s4",
+     "out": "s5",
+     "size": 36
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 860,
+     "text": "confirm the test words",
+     "color": "green",
+     "in": "s5",
+     "out": "s6",
+     "size": 36
+    },
+    {
+     "type": "bullets",
+     "x": 560,
+     "y": 360,
+     "gap": 120,
+     "in": "s6",
+     "out": "s7",
+     "title": "Never type it into:",
+     "items": [
+      {
+       "text": "Notes apps",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+2.6"
+      },
+      {
+       "text": "Email",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+3.4"
+      },
+      {
+       "text": "Documents",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+4.0"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "in": "s7",
+     "kind": "ok",
+     "text": "Paper can't be hacked remotely"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 470,
+     "size": 150,
+     "in": "s7"
+    }
+   ]
+  },
+  {
+   "name": "step2-where",
+   "narration": [
+    "Step two: choose where it lives.",
+    "Keep at least two copies, in two different safe places. For example, a locked drawer at home, and a second place you trust, like a bank safe deposit box.",
+    "Paper can burn, get wet or fade. So for larger amounts, many people stamp or engrave the words on a metal backup plate.",
+    "Don't label it crypto seed phrase in big letters.",
+    "And make sure one person you trust knows how to find it if something happens to you.",
+    "The goal is simple: hard to steal, hard to destroy, possible to find."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 2,
+     "title": "Choose where it lives",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 330,
+     "w": 560,
+     "h": 300,
+     "in": "s2+0.5",
+     "out": "s3",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Copy 1",
+       "size": 40,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Locked drawer",
+       "size": 56,
+       "weight": "black"
+      },
+      {
+       "text": "at home",
+       "size": 40,
+       "weight": "semi"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 330,
+     "w": 560,
+     "h": 300,
+     "in": "s2+3.5",
+     "out": "s3",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Copy 2",
+       "size": 40,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Second place",
+       "size": 56,
+       "weight": "black"
+      },
+      {
+       "text": "you trust",
+       "size": 40,
+       "weight": "semi"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "2 copies · 2 places",
+     "color": "green",
+     "in": "s2+1.5",
+     "out": "s3",
+     "size": 38
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 330,
+     "w": 560,
+     "h": 300,
+     "in": "s3",
+     "out": "s4",
+     "color": [
+      [
+       0,
+       "white"
+      ],
+      [
+       "s3+1.0",
+       "red"
+      ]
+     ],
+     "lines": [
+      {
+       "text": "Paper",
+       "size": 40,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Burns, gets wet,",
+       "size": 46,
+       "weight": "black"
+      },
+      {
+       "text": "fades",
+       "size": 46,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 330,
+     "w": 560,
+     "h": 300,
+     "in": "s3+3.5",
+     "out": "s4",
+     "color": "blue",
+     "lines": [
+      {
+       "text": "Metal plate",
+       "size": 40,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Stamped or",
+       "size": 50,
+       "weight": "black"
+      },
+      {
+       "text": "engraved",
+       "size": 50,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 610,
+     "y": 330,
+     "w": 700,
+     "h": 260,
+     "in": "s4",
+     "out": "s5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "CRYPTO SEED PHRASE",
+       "size": 56,
+       "weight": "black",
+       "color": "red"
+      },
+      {
+       "text": "Don't label it like this",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 1310,
+     "y": 330,
+     "size": 46,
+     "in": "s4+0.8",
+     "out": "s5"
+    },
+    {
+     "type": "person",
+     "x": 960,
+     "y": 470,
+     "scale": 0.9,
+     "in": "s5",
+     "out": "s6",
+     "label": "someone you trust",
+     "color": "green"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 800,
+     "text": "knows where to find it",
+     "color": "green",
+     "in": "s5+2.0",
+     "out": "s6",
+     "size": 36
+    },
+    {
+     "type": "bullets",
+     "x": 640,
+     "y": 360,
+     "gap": 130,
+     "in": "s6",
+     "title": "The goal:",
+     "items": [
+      {
+       "text": "Hard to steal",
+       "kind": "check",
+       "in": "s6+1.4"
+      },
+      {
+       "text": "Hard to destroy",
+       "kind": "check",
+       "in": "s6+2.4"
+      },
+      {
+       "text": "Possible to find",
+       "kind": "check",
+       "in": "s6+3.4"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1310,
+     "y": 720,
+     "text": "for larger amounts",
+     "color": "blue",
+     "in": "s3+4.5",
+     "out": "s4",
+     "size": 34
+    }
+   ]
+  },
+  {
+   "name": "myth-split",
+   "narration": [
+    "Now, a popular idea that sounds smart: splitting the phrase in half.",
+    "Six words here, six words there. If a thief finds one half, he's stuck, right?",
+    "The problem: lose either half, and your wallet is gone for good.",
+    "Homemade schemes like this make mistakes more likely, not less.",
+    "If you want an extra layer, there is a better, built-in tool.",
+    "It's called the passphrase, and some people call it the twenty-fifth word."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "MYTH",
+     "num": 1,
+     "title": "\"Split it in half\"",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "words",
+     "in": "s2",
+     "out": "s4",
+     "x": 160,
+     "y": 330,
+     "w": 700,
+     "cols": 2,
+     "cell_h": 76,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember"
+     ]
+    },
+    {
+     "type": "words",
+     "in": "s2+1.0",
+     "out": "s4",
+     "x": 1060,
+     "y": 330,
+     "w": 700,
+     "cols": 2,
+     "cell_h": 76,
+     "hide": "s3+0.6",
+     "words": [
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ],
+     "start": 7
+    },
+    {
+     "type": "tag",
+     "x": 510,
+     "y": 640,
+     "text": "half 1: drawer",
+     "color": "green",
+     "in": "s2+0.6",
+     "out": "s4",
+     "size": 32
+    },
+    {
+     "type": "tag",
+     "x": 1410,
+     "y": 640,
+     "text": "half 2: somewhere else",
+     "color": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s3+0.6",
+       "red"
+      ]
+     ],
+     "in": "s2+1.6",
+     "out": "s4",
+     "size": 32
+    },
+    {
+     "type": "stamp",
+     "x": 1410,
+     "y": 440,
+     "text": "LOST",
+     "in": "s3+0.6",
+     "out": "s4",
+     "size": 110
+    },
+    {
+     "type": "flash",
+     "at": "s3+0.6",
+     "strength": 0.5
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 800,
+     "text": "= wallet gone for good",
+     "color": "red",
+     "in": "s3+1.6",
+     "out": "s4",
+     "size": 38
+    },
+    {
+     "type": "rule",
+     "in": "s4",
+     "out": "s5",
+     "kind": "warn",
+     "text": "Homemade schemes = more mistakes"
+    },
+    {
+     "type": "icon",
+     "kind": "warn",
+     "x": 960,
+     "y": 460,
+     "size": 140,
+     "in": "s4",
+     "out": "s5",
+     "color": "yellow"
+    },
+    {
+     "type": "heading",
+     "text": "A better, built-in tool",
+     "y": 420,
+     "in": "s5",
+     "size": 76,
+     "glow": "green"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 590,
+     "text": "the 25th word",
+     "color": "green",
+     "in": "s6+1.2",
+     "size": 44
+    }
+   ]
+  },
+  {
+   "name": "tip-passphrase",
+   "narration": [
+    "Many wallets support an optional passphrase.",
+    "It's an extra secret that you add on top of your seed phrase.",
+    "With it, the same twelve words open a completely different wallet.",
+    "So if someone finds your paper, without the passphrase they can't reach your main funds.",
+    "But there is a catch. If you forget the passphrase, nobody can recover it. Not even the wallet maker.",
+    "So it's for people who already have a solid backup habit. If you're just starting, master the basics first."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "num": 1,
+     "title": "The 25th word",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "words",
+     "in": "s2",
+     "out": "s5",
+     "x": 160,
+     "y": 300,
+     "w": 800,
+     "cols": 3,
+     "cell_h": 70,
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 560,
+     "y": 720,
+     "text": "+ your passphrase",
+     "color": "green",
+     "in": "s2+1.5",
+     "out": "s5",
+     "size": 40
+    },
+    {
+     "type": "card",
+     "x": 1100,
+     "y": 290,
+     "w": 620,
+     "h": 190,
+     "in": "s3+1.0",
+     "out": "s5",
+     "color": "muted",
+     "lines": [
+      {
+       "text": "12 words only",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Wallet A: $20",
+       "size": 48,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1100,
+     "y": 520,
+     "w": 620,
+     "h": 190,
+     "in": "s3+2.2",
+     "out": "s5",
+     "color": "green",
+     "lines": [
+      {
+       "text": "12 words + passphrase",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Wallet B: main funds",
+       "size": 48,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "person",
+     "x": 960,
+     "y": 860,
+     "scale": 0.7,
+     "hood": true,
+     "in": "s4",
+     "out": "s5",
+     "label": "finds the paper",
+     "color": "red"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 1780,
+     "y": 615,
+     "size": 50,
+     "in": "s4+1.5",
+     "out": "s5",
+     "color": "green"
+    },
+    {
+     "type": "heading",
+     "text": "The catch",
+     "y": 230,
+     "in": "s5",
+     "out": "s6",
+     "size": 72,
+     "color": "yellow",
+     "glow": "yellow"
+    },
+    {
+     "type": "bullets",
+     "x": 600,
+     "y": 380,
+     "gap": 130,
+     "in": "s5",
+     "out": "s6",
+     "items": [
+      {
+       "text": "Forget it = funds lost",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+1.6"
+      },
+      {
+       "text": "Nobody can recover it",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+3.0"
+      },
+      {
+       "text": "Not even the wallet maker",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+4.4"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "in": "s6",
+     "kind": "warn",
+     "text": "Beginners: master the basics first"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 460,
+     "size": 150,
+     "in": "s6",
+     "color": "green"
+    }
+   ]
+  },
+  {
+   "name": "tip-exposed",
+   "narration": [
+    "Last tip: what if you think someone saw your words?",
+    "Maybe you typed them on a suspicious site, or you find an old photo of them in your cloud.",
+    "Don't wait to see what happens.",
+    "Create a brand-new wallet with a brand-new seed phrase, and write it on paper.",
+    "Then move everything from the old wallet to the new one, right away.",
+    "Treat the old phrase as burned. Never use that wallet again."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "num": 2,
+     "title": "If your words leak",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "tag",
+     "x": 600,
+     "y": 450,
+     "text": "typed on a suspicious site",
+     "color": "red",
+     "in": "s2+0.6",
+     "out": "s3",
+     "size": 38
+    },
+    {
+     "type": "tag",
+     "x": 1320,
+     "y": 600,
+     "text": "old photo in your cloud",
+     "color": "red",
+     "in": "s2+3.0",
+     "out": "s3",
+     "size": 38
+    },
+    {
+     "type": "heading",
+     "text": "Don't wait.",
+     "y": 470,
+     "in": "s3",
+     "out": "s4",
+     "size": 110,
+     "glow": "red",
+     "color": "red"
+    },
+    {
+     "type": "phone",
+     "x": 520,
+     "y": 545,
+     "scale": 0.82,
+     "in": "s4",
+     "accent": [
+      [
+       0,
+       "red"
+      ],
+      [
+       "s5+2.0",
+       "gray"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Old wallet",
+       "sub": "exposed"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         4800
+        ],
+        [
+         "s5+1.0",
+         0
+        ]
+       ],
+       "decimals": 2,
+       "color": "red"
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      }
+     ]
+    },
+    {
+     "type": "phone",
+     "x": 1400,
+     "y": 545,
+     "scale": 0.82,
+     "in": "s4+0.8",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "New wallet",
+       "sub": "new seed phrase"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         0
+        ],
+        [
+         "s5+1.0",
+         4800
+        ]
+       ],
+       "decimals": 2,
+       "color": "green"
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      }
+     ]
+    },
+    {
+     "type": "arrow",
+     "from": [
+      760,
+      545
+     ],
+     "to": [
+      1160,
+      545
+     ],
+     "color": "green",
+     "in": "s5",
+     "draw": 0.8,
+     "traveler": "coin"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 450,
+     "text": "right away",
+     "color": "green",
+     "in": "s5+1.0",
+     "size": 32
+    },
+    {
+     "type": "stamp",
+     "x": 520,
+     "y": 545,
+     "text": "BURNED",
+     "in": "s6",
+     "size": 90,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "name": "recap",
+   "narration": [
+    "Let's recap.",
+    "One: your seed phrase is your money, not just a password.",
+    "Two: nobody legitimate will ever ask for it.",
+    "Three: no screenshots, no photos, no notes app, no cloud.",
+    "Four: never use words that someone else gave you.",
+    "Five: paper or metal, numbered, at least two copies in two places.",
+    "Six: if it leaks, move your funds to a new wallet right away."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Seed phrase: the safe way",
+     "y": 150,
+     "in": 0,
+     "size": 66,
+     "glow": "green"
+    },
+    {
+     "type": "checklist",
+     "y": 290,
+     "row_h": 112,
+     "items": [
+      {
+       "text": "It's your money, not a password",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Nobody legit will ever ask for it",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "No screenshots, photos, notes or cloud",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Never use words someone gave you",
+       "in": "s5",
+       "done": "s5e"
+      },
+      {
+       "text": "Paper or metal, 2 copies, 2 places",
+       "in": "s6",
+       "done": "s6e"
+      },
+      {
+       "text": "Leaked? Move funds to a new wallet",
+       "in": "s7",
+       "done": "s7e"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "outro",
+   "hold": 11,
+   "narration": [
+    "If this helped, subscribe.",
+    "Next, I'll show you how to tell if a crypto website or app is legit or a scam.",
+    "And tell me in the comments: has anyone ever asked you for your seed phrase?"
+   ],
+   "elements": [
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 260,
+     "size": 100,
+     "in": 0,
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "subscribe",
+     "y": 500,
+     "in": 0.6,
+     "click": "s1e",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 660,
+     "text": "NEXT VIDEO",
+     "color": "green",
+     "in": "s2",
+     "out": "s3e+0.6",
+     "size": 26,
+     "weight": "bold"
+    },
+    {
+     "type": "heading",
+     "text": "Is this crypto site legit or a scam?",
+     "y": 760,
+     "size": 58,
+     "weight": "bold",
+     "in": "s2+0.3",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "comment",
+     "text": "Has anyone asked for your seed phrase?",
+     "y": 920,
+     "in": "s3",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "endscreen",
+     "in": "s3e+0.8"
+    }
+   ]
+  }
+ ]
+}
