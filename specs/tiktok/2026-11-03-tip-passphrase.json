@@ -1,0 +1,163 @@
+{
+ "id": "2026-11-03-tip-passphrase",
+ "format": "short",
+ "topic": "seed-phrase",
+ "voice": "blend",
+ "tiktok_format": "tip",
+ "publish": {
+  "title": "A thief found your seed phrase and got nothing #shorts",
+  "description": "An optional passphrase turns the same seed phrase into a different wallet. Back it up separately.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "seed phrase passphrase",
+   "25th word",
+   "seed phrase",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "A thief found this seed phrase and still got nothing. The trick: a passphrase. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "A thief found your seed phrase, and still couldn't take your crypto.",
+    "That's because you added a passphrase.",
+    "Many wallets let you add one extra secret on top of the twelve words.",
+    "With it, the same words open a completely different wallet.",
+    "But if you forget the passphrase, nobody can recover it, so back it up separately.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Found: your seed phrase",
+     "y": 300,
+     "size": 64,
+     "out": "s5",
+     "color": "red",
+     "glow": "red"
+    },
+    {
+     "type": "words",
+     "x": 90,
+     "y": 390,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 80,
+     "out": "s5",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 840,
+     "text": "+ passphrase",
+     "color": "yellow",
+     "size": 50,
+     "in": "s2",
+     "out": "s5"
+    },
+    {
+     "type": "text",
+     "text": "one extra secret on top of the 12 words",
+     "y": 960,
+     "size": 40,
+     "w": 880,
+     "in": "s3",
+     "out": "s4",
+     "color": "yellow"
+    },
+    {
+     "type": "card",
+     "x": 100,
+     "y": 960,
+     "w": 400,
+     "h": 230,
+     "in": "s4",
+     "out": "s5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Words only",
+       "size": 36,
+       "color": "muted"
+      },
+      {
+       "text": "$0",
+       "size": 64,
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 580,
+     "y": 960,
+     "w": 400,
+     "h": 230,
+     "in": "s4+1.0",
+     "out": "s5",
+     "color": "green",
+     "lines": [
+      {
+       "text": "+ passphrase",
+       "size": 36,
+       "color": "muted"
+      },
+      {
+       "text": "$4,200",
+       "size": 64,
+       "color": "green"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "warn",
+     "x": 540,
+     "y": 520,
+     "size": 90,
+     "in": "s5+0.2",
+     "color": "yellow"
+    },
+    {
+     "type": "heading",
+     "text": "Back up the passphrase separately",
+     "y": 800,
+     "size": 76,
+     "w": 880,
+     "in": "s5+0.2",
+     "glow": "yellow"
+    }
+   ]
+  }
+ ]
+}

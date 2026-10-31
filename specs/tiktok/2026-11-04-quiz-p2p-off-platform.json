@@ -1,0 +1,193 @@
+{
+ "id": "2026-11-04-quiz-p2p-off-platform",
+ "format": "short",
+ "topic": "p2p-scams",
+ "voice": "blend",
+ "tiktok_format": "quiz",
+ "publish": {
+  "title": "Real or scam? Buyer wants to skip the app #shorts",
+  "description": "Outside the P2P platform there is no escrow and no support. Keep every chat and payment inside the app.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "real or scam",
+   "p2p crypto scam",
+   "escrow",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Your P2P buyer wants to finish the deal outside the app. Real or scam? #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Your buyer wants to finish the deal outside the app. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's a scam. Outside the app, there is no escrow and no support.",
+    "Once you send the crypto, the buyer disappears, and nobody can reverse it.",
+    "Keep every chat and every payment inside the platform.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 44,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s4+1.0",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Buyer_2291",
+         "white"
+        ],
+        [
+         "s4+1.0",
+         "User left chat",
+         "red"
+        ]
+       ],
+       "sub": "CryptoP2P order chat"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Let's skip the app fees.",
+         "side": "l",
+         "in": 0.6
+        },
+        {
+         "text": "Message me on my private chat, I pay you there.",
+         "side": "l",
+         "in": 1.8
+        },
+        {
+         "text": "Send the USDT first, I'm trusted.",
+         "side": "l",
+         "in": 3.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "no escrow outside the app",
+     "color": "red",
+     "size": 40,
+     "in": "s3+1.0",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 540,
+     "y": 560,
+     "size": 90,
+     "in": "s5+0.2",
+     "color": "green"
+    },
+    {
+     "type": "heading",
+     "text": "Stay inside the platform",
+     "y": 820,
+     "size": 80,
+     "w": 880,
+     "in": "s5+0.2",
+     "glow": "green"
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 900,
+     "size": 300,
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2,
+     "color": "yellow",
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 880,
+     "text": "SCAM",
+     "color": "red",
+     "in": "s3",
+     "out": "s4",
+     "size": 170
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "color": "red"
+    },
+    {
+     "type": "comment",
+     "text": "I got it right!",
+     "y": 1180,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}

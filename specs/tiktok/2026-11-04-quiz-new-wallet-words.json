@@ -1,0 +1,193 @@
+{
+ "id": "2026-11-04-quiz-new-wallet-words",
+ "format": "short",
+ "topic": "hot-vs-cold-wallet",
+ "voice": "blend",
+ "tiktok_format": "quiz",
+ "publish": {
+  "title": "Real or scam? Your new wallet shows 12 words #shorts",
+  "description": "A new wallet showing you twelve words at setup is normal: that's your backup. The scam is when someone asks you to type them in.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "real or scam",
+   "seed phrase",
+   "new crypto wallet",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Your new wallet shows you 12 words. Real or scam? Most beginners get this one wrong. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Your new wallet app shows you twelve words. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "This one is real. You just created a wallet, and the app is showing your backup.",
+    "Write the words on paper, in order, and keep them offline.",
+    "The scam version is the opposite: someone asks you to type them in.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 44,
+     "out": "s3"
+    },
+    {
+     "type": "heading",
+     "text": "New wallet: write these down",
+     "y": 430,
+     "size": 60,
+     "w": 900,
+     "out": "s5"
+    },
+    {
+     "type": "words",
+     "x": 90,
+     "y": 530,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 86,
+     "out": "s5",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "this is your backup",
+     "color": "green",
+     "size": 42,
+     "in": "s3+1.0",
+     "out": "s5"
+    },
+    {
+     "type": "bullets",
+     "x": 200,
+     "y": 1020,
+     "gap": 80,
+     "size": 44,
+     "in": "s4",
+     "out": "s5",
+     "items": [
+      {
+       "text": "On paper",
+       "kind": "check",
+       "in": "s4+0.3"
+      },
+      {
+       "text": "In order",
+       "kind": "check",
+       "in": "s4+1.0"
+      },
+      {
+       "text": "Offline",
+       "kind": "check",
+       "in": "s4+1.7"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 540,
+     "y": 560,
+     "size": 90,
+     "in": "s5+0.2"
+    },
+    {
+     "type": "heading",
+     "text": "Asked to type them in? That's the scam.",
+     "y": 820,
+     "size": 74,
+     "w": 880,
+     "in": "s5+0.2",
+     "glow": "red"
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 1110,
+     "size": 260,
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2,
+     "color": "yellow",
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 1110,
+     "text": "REAL",
+     "color": "green",
+     "in": "s3",
+     "out": "s4",
+     "size": 170
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "color": "green"
+    },
+    {
+     "type": "comment",
+     "text": "I got it right!",
+     "y": 1180,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}

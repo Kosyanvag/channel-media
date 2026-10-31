@@ -1,0 +1,168 @@
+{
+ "id": "2026-11-05-tip-wallet-holds-key",
+ "format": "short",
+ "topic": "hot-vs-cold-wallet",
+ "voice": "blend",
+ "tiktok_format": "tip",
+ "publish": {
+  "title": "Your crypto is not inside your wallet #shorts",
+  "description": "Your coins live on the blockchain. Your wallet only holds the key, and whoever has the key, or your seed phrase, has the money.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "how crypto wallets work",
+   "private key",
+   "seed phrase",
+   "crypto for beginners",
+   "shorts"
+  ],
+  "tiktok_caption": "Your crypto is not inside your wallet. Here's where it really is. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Your crypto is not inside your wallet.",
+    "Your coins live on the blockchain, a public record anyone can see.",
+    "Your wallet only holds the key that can move them.",
+    "So whoever has that key, or your seed phrase, has your money.",
+    "Lose your phone, and your coins are still safe, as long as you have your seed phrase.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Your crypto is NOT in your wallet",
+     "y": 340,
+     "size": 76,
+     "w": 880,
+     "out": "s5",
+     "glow": "yellow"
+    },
+    {
+     "type": "icon",
+     "kind": "coin",
+     "x": 540,
+     "y": 640,
+     "size": 90,
+     "in": "s2",
+     "out": "s5",
+     "color": "yellow",
+     "label": "on the blockchain",
+     "label_size": 42
+    },
+    {
+     "type": "arrow",
+     "from": [
+      540,
+      985
+     ],
+     "to": [
+      540,
+      830
+     ],
+     "color": "green",
+     "in": "s3+0.8",
+     "out": "s5",
+     "draw": 0.5
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 540,
+     "y": 1080,
+     "size": 80,
+     "in": "s3",
+     "out": "s5",
+     "color": "green",
+     "label": "your wallet = the key",
+     "label_size": 42
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1290,
+     "text": "key or seed phrase = your money",
+     "color": "red",
+     "size": 40,
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "phone",
+     "x": 290,
+     "y": 780,
+     "scale": 0.75,
+     "in": "s5",
+     "accent": [
+      [
+       0,
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Phone",
+       "sub": "lost"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      }
+     ]
+    },
+    {
+     "type": "words",
+     "x": 560,
+     "y": 520,
+     "w": 420,
+     "cols": 2,
+     "cell_h": 74,
+     "in": "s5+1.5",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple"
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Coins still safe",
+     "y": 1210,
+     "size": 72,
+     "w": 880,
+     "in": "s5+2.5",
+     "color": "green",
+     "glow": "green"
+    },
+    {
+     "type": "stamp",
+     "x": 290,
+     "y": 780,
+     "text": "LOST",
+     "in": "s5+0.4",
+     "size": 100
+    }
+   ]
+  }
+ ]
+}

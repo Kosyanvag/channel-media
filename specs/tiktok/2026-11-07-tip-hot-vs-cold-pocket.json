@@ -1,0 +1,165 @@
+{
+ "id": "2026-11-07-tip-hot-vs-cold-pocket",
+ "format": "short",
+ "topic": "hot-vs-cold-wallet",
+ "voice": "blend",
+ "tiktok_format": "tip",
+ "publish": {
+  "title": "Don't keep your crypto savings in a phone wallet #shorts",
+  "description": "A hot wallet is pocket money, a cold wallet is the safe at home. Spend from the pocket, save in the safe.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "hot wallet vs cold wallet",
+   "cold wallet",
+   "hardware wallet",
+   "crypto for beginners",
+   "shorts"
+  ],
+  "tiktok_caption": "Don't keep your crypto savings in a phone wallet. Think of it like cash. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Don't keep your crypto savings in a phone wallet.",
+    "Think of it like cash.",
+    "A hot wallet is the wallet in your pocket: fast, always online, good for small amounts.",
+    "A cold wallet is the safe at home: a small device that keeps your key offline.",
+    "Spend from the pocket. Save in the safe.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Savings in a phone wallet?",
+     "y": 340,
+     "size": 76,
+     "w": 880,
+     "color": "red",
+     "glow": "red",
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 0.9,
+     "out": "s3",
+     "accent": [
+      [
+       0,
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "MyWallet",
+       "sub": "Hot wallet"
+      },
+      {
+       "type": "balance",
+       "label": "Savings",
+       "value": 12500,
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 340,
+     "text": "think of it like cash",
+     "color": "yellow",
+     "size": 44,
+     "in": "s2+0.3",
+     "out": "s5"
+    },
+    {
+     "type": "phone",
+     "x": 290,
+     "y": 820,
+     "scale": 0.7,
+     "in": "s3",
+     "accent": [
+      [
+       0,
+       "yellow"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Hot wallet",
+       "sub": "always online"
+      },
+      {
+       "type": "balance",
+       "label": "Pocket",
+       "value": 150,
+       "color": "yellow"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 290,
+     "y": 1230,
+     "text": "HOT = pocket",
+     "color": "yellow",
+     "size": 40,
+     "in": "s3+0.5"
+    },
+    {
+     "type": "device",
+     "x": 790,
+     "y": 820,
+     "scale": 1.3,
+     "in": "s4",
+     "color": "green",
+     "screen": [
+      [
+       [
+        0,
+        "Offline",
+        "green"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 790,
+     "y": 1230,
+     "text": "COLD = safe",
+     "color": "green",
+     "size": 40,
+     "in": "s4+0.5"
+    },
+    {
+     "type": "heading",
+     "text": "Spend from the pocket. Save in the safe.",
+     "y": 400,
+     "size": 64,
+     "w": 900,
+     "in": "s5",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

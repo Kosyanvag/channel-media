@@ -1,0 +1,228 @@
+{
+ "id": "2026-11-01-quiz-withdrawal-sms",
+ "format": "short",
+ "topic": "first-bitcoin",
+ "voice": "blend",
+ "tiktok_format": "quiz",
+ "publish": {
+  "title": "Real or scam? \"Withdrawal requested, call us\" #shorts",
+  "description": "Your exchange will never ask you to call a number from a text. Close it and check the official app yourself.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "real or scam",
+   "crypto sms scam",
+   "exchange account security",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "A text says someone is withdrawing your crypto. Real or scam? Comment before you watch the answer. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "A text says someone is withdrawing your crypto. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's a scam. Your exchange will never ask you to call a number from a text.",
+    "The fake agent on the line asks for your login code, and empties your account while you talk.",
+    "Close the text, open the official app yourself, and check your activity there.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 44,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s4+1.5",
+     "screens": [
+      {
+       "in": 0,
+       "out": "s4",
+       "widgets": [
+        {
+         "type": "chat_header",
+         "name": [
+          [
+           0,
+           "CryptoApp Alert",
+           "white"
+          ]
+         ],
+         "sub": "Text message"
+        },
+        {
+         "type": "bubbles",
+         "items": [
+          {
+           "text": "Withdrawal of 0.42 BTC requested.",
+           "side": "l",
+           "in": 0.6
+          },
+          {
+           "text": "Not you? Call support NOW:",
+           "side": "l",
+           "in": 1.8
+          },
+          {
+           "text": "+1 (555) 014-2277",
+           "side": "l",
+           "in": 2.8,
+           "color": "blue"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "in": "s4",
+       "widgets": [
+        {
+         "type": "chat_header",
+         "name": [
+          [
+           0,
+           "Calling \"Support\"",
+           "white"
+          ]
+         ],
+         "sub": "02:14"
+        },
+        {
+         "type": "bubbles",
+         "items": [
+          {
+           "text": "Read me the 6-digit code we sent.",
+           "side": "l",
+           "in": "s4+0.3"
+          }
+         ]
+        },
+        {
+         "type": "code",
+         "digits": "731552",
+         "in": "s4+1.5",
+         "label": "Your login code",
+         "color": "red"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "never call a number from a text",
+     "color": "red",
+     "size": 40,
+     "in": "s3+1.0",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 540,
+     "y": 560,
+     "size": 90,
+     "in": "s5+0.2",
+     "color": "green"
+    },
+    {
+     "type": "heading",
+     "text": "Check activity in the official app",
+     "y": 820,
+     "size": 76,
+     "w": 880,
+     "in": "s5+0.2",
+     "glow": "green"
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 900,
+     "size": 300,
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2,
+     "color": "yellow",
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 880,
+     "text": "SCAM",
+     "color": "red",
+     "in": "s3",
+     "out": "s4",
+     "size": 170
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "color": "red"
+    },
+    {
+     "type": "comment",
+     "text": "I got it right!",
+     "y": 1180,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}

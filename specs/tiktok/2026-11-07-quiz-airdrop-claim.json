@@ -1,0 +1,228 @@
+{
+ "id": "2026-11-07-quiz-airdrop-claim",
+ "format": "short",
+ "topic": "seed-phrase",
+ "voice": "blend",
+ "tiktok_format": "quiz",
+ "publish": {
+  "title": "Real or scam? Free tokens appeared in your wallet #shorts",
+  "description": "Strangers send worthless tokens as bait. The claim site drains your wallet. Ignore tokens you didn't expect.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "real or scam",
+   "airdrop scam",
+   "free crypto scam",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Free tokens just landed in your wallet. Real or scam? Don't click claim yet. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Free tokens just landed in your wallet. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's a scam. Strangers send worthless tokens to thousands of wallets as bait.",
+    "The claim site asks you to connect and sign, or to enter your seed phrase.",
+    "Do that, and it drains your real coins. Just ignore tokens you didn't expect.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 44,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.0,
+     "out": "s5+1.8",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s5",
+     "screens": [
+      {
+       "in": 0,
+       "out": "s4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "MyWallet",
+         "sub": "Tokens"
+        },
+        {
+         "type": "rows",
+         "items": [
+          {
+           "label": "ETH",
+           "amount": "1.20"
+          },
+          {
+           "label": "USDC",
+           "amount": "850.00"
+          },
+          {
+           "label": "FREE-DROP (new!)",
+           "amount": "5,000",
+           "color": "green",
+           "in": 0.8
+          }
+         ]
+        },
+        {
+         "type": "text",
+         "text": "Claim your reward at freedrop-claim.io",
+         "size": 24,
+         "color": "yellow",
+         "in": 1.8
+        }
+       ]
+      },
+      {
+       "in": "s4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "Claim Rewards",
+         "sub": "freedrop-claim.io"
+        },
+        {
+         "type": "text",
+         "text": "Connect your wallet to claim $2,500",
+         "size": 28,
+         "weight": "bold"
+        },
+        {
+         "type": "skeleton",
+         "rows": 2
+        },
+        {
+         "type": "button",
+         "label": [
+          [
+           0,
+           "Connect & sign",
+           "green"
+          ],
+          [
+           "s5",
+           "Wallet drained",
+           "red"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "free tokens are bait",
+     "color": "red",
+     "size": 42,
+     "in": "s3+1.0",
+     "out": "s5+1.8"
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 540,
+     "y": 560,
+     "size": 90,
+     "in": "s5+2.0"
+    },
+    {
+     "type": "heading",
+     "text": "Ignore tokens you didn't expect",
+     "y": 820,
+     "size": 76,
+     "w": 880,
+     "in": "s5+2.0",
+     "glow": "red"
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 900,
+     "size": 300,
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2,
+     "color": "yellow",
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 880,
+     "text": "SCAM",
+     "color": "red",
+     "in": "s3",
+     "out": "s4",
+     "size": 170
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "color": "red"
+    },
+    {
+     "type": "comment",
+     "text": "I got it right!",
+     "y": 1180,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}

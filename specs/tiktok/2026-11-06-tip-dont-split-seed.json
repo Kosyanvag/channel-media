@@ -1,0 +1,201 @@
+{
+ "id": "2026-11-06-tip-dont-split-seed",
+ "format": "short",
+ "topic": "seed-phrase",
+ "voice": "blend",
+ "tiktok_format": "tip",
+ "publish": {
+  "title": "Don't split your seed phrase in half #shorts",
+  "description": "Split a seed phrase and losing either half locks you out for good. Keep two full copies in two safe places.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "seed phrase backup",
+   "split seed phrase",
+   "seed phrase",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Splitting your seed phrase in half sounds smart. It's a trap. Do this instead. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 2.0,
+   "narration": [
+    "Splitting your seed phrase in half is a trap.",
+    "Six words here, six words there. It sounds smart.",
+    "But lose either half, and your wallet is gone for good.",
+    "And half a phrase is much weaker than the full one.",
+    "Keep two full copies, in two safe places, instead.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "SPLITTING IT IS A TRAP",
+     "color": "red",
+     "size": 44,
+     "out": "s5"
+    },
+    {
+     "type": "words",
+     "x": 90,
+     "y": 420,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 86,
+     "out": "s2",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "words",
+     "x": 90,
+     "y": 440,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 80,
+     "in": "s2",
+     "out": "s5",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember"
+     ]
+    },
+    {
+     "type": "words",
+     "x": 90,
+     "y": 820,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 80,
+     "in": "s2+1.2",
+     "out": "s3+1.5",
+     "start": 7,
+     "words": [
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1180,
+     "text": "wallet gone for good",
+     "color": "red",
+     "size": 42,
+     "in": "s3+1.5",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1180,
+     "text": "half a phrase = weaker",
+     "color": "yellow",
+     "size": 42,
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "card",
+     "x": 100,
+     "y": 420,
+     "w": 400,
+     "h": 220,
+     "in": "s5",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Copy 1",
+       "size": 56
+      },
+      {
+       "text": "all 12 words",
+       "size": 40,
+       "color": "green"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 580,
+     "y": 420,
+     "w": 400,
+     "h": 220,
+     "in": "s5+0.6",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Copy 2",
+       "size": 56
+      },
+      {
+       "text": "all 12 words",
+       "size": 40,
+       "color": "green"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Two full copies, two safe places",
+     "y": 900,
+     "size": 76,
+     "w": 880,
+     "in": "s5+1.0",
+     "glow": "green"
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 900,
+     "text": "LOST",
+     "in": "s3+1.0",
+     "out": "s5",
+     "size": 140
+    },
+    {
+     "type": "flash",
+     "at": "s3+1.0",
+     "strength": 0.6
+    }
+   ]
+  }
+ ]
+}

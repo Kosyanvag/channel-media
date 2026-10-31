@@ -1,0 +1,215 @@
+{
+ "id": "2026-11-05-tip-seed-exposed",
+ "format": "short",
+ "topic": "seed-phrase",
+ "voice": "blend",
+ "tiktok_format": "tip",
+ "publish": {
+  "title": "Someone saw your seed phrase? Do this now #shorts",
+  "description": "If your seed phrase was exposed, create a new wallet with a new seed phrase and move everything right away.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "seed phrase exposed",
+   "seed phrase",
+   "crypto wallet safety",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Someone saw your seed phrase? Changing your password won't save you. Do this instead. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "If someone saw your seed phrase, that wallet is already lost.",
+    "Maybe you typed it into a strange site, or found an old photo of it in your cloud.",
+    "Don't wait to see what happens.",
+    "Create a brand-new wallet, with a brand-new seed phrase.",
+    "Then move all your coins to it, right away.",
+    "Changing the app's password does nothing, because the words are the key.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "SEED PHRASE SEEN = WALLET LOST",
+     "color": "red",
+     "size": 42,
+     "out": "s4"
+    },
+    {
+     "type": "words",
+     "x": 90,
+     "y": 420,
+     "w": 900,
+     "cols": 3,
+     "cell_h": 86,
+     "out": "s4",
+     "words": [
+      "river",
+      "anchor",
+      "pilot",
+      "velvet",
+      "harbor",
+      "ember",
+      "lunar",
+      "maple",
+      "orbit",
+      "candle",
+      "frost",
+      "willow"
+     ]
+    },
+    {
+     "type": "bullets",
+     "x": 150,
+     "y": 980,
+     "gap": 100,
+     "size": 46,
+     "in": "s2",
+     "out": "s4",
+     "items": [
+      {
+       "text": "Typed into a strange site",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+0.3"
+      },
+      {
+       "text": "Old photo in the cloud",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+2.2"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "move everything now",
+     "color": "green",
+     "size": 42,
+     "in": "s4",
+     "out": "s6"
+    },
+    {
+     "type": "card",
+     "x": 190,
+     "y": 420,
+     "w": 700,
+     "h": 200,
+     "in": "s4",
+     "out": "s6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Old wallet",
+       "size": 44
+      },
+      {
+       "text": "words exposed",
+       "size": 34,
+       "color": "red"
+      }
+     ]
+    },
+    {
+     "type": "arrow",
+     "from": [
+      540,
+      650
+     ],
+     "to": [
+      540,
+      900
+     ],
+     "color": "green",
+     "in": "s5",
+     "out": "s6",
+     "draw": 0.5,
+     "traveler": "coin"
+    },
+    {
+     "type": "card",
+     "x": 190,
+     "y": 930,
+     "w": 700,
+     "h": 200,
+     "in": "s4+0.8",
+     "out": "s6",
+     "color": "green",
+     "lines": [
+      {
+       "text": "New wallet",
+       "size": 44
+      },
+      {
+       "text": "brand-new seed phrase",
+       "size": 34,
+       "color": "green"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 540,
+     "y": 520,
+     "size": 90,
+     "in": "s6",
+     "color": "red",
+     "label": "new password",
+     "label_size": 40
+    },
+    {
+     "type": "heading",
+     "text": "The words are the key",
+     "y": 900,
+     "size": 80,
+     "w": 880,
+     "in": "s6+0.5",
+     "glow": "yellow"
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 600,
+     "text": "EXPOSED",
+     "in": 0.8,
+     "out": "s4",
+     "size": 140
+    },
+    {
+     "type": "flash",
+     "at": 0.8,
+     "strength": 0.6
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 560,
+     "text": "NOT ENOUGH",
+     "in": "s6+1.5",
+     "size": 110
+    }
+   ]
+  }
+ ]
+}

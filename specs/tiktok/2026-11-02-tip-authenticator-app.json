@@ -1,0 +1,203 @@
+{
+ "id": "2026-11-02-tip-authenticator-app",
+ "format": "short",
+ "topic": "first-bitcoin",
+ "voice": "blend",
+ "tiktok_format": "tip",
+ "publish": {
+  "title": "Turn off SMS codes on your crypto account #shorts",
+  "description": "SIM swappers can receive your SMS login codes. Use an authenticator app for two-factor authentication instead.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "sim swap",
+   "2fa crypto",
+   "authenticator app",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Turn off SMS codes on your crypto account. Here's what a SIM swap does. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Turn off SMS codes on your crypto account.",
+    "Scammers can talk your phone carrier into moving your number to their SIM card.",
+    "It's called a SIM swap, and then your login codes go straight to them.",
+    "Use an authenticator app instead. The codes stay on your phone, and change every thirty seconds.",
+    "Set it up in your account's security settings today.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "SMS CODES CAN BE STOLEN",
+     "color": "red",
+     "size": 44,
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 920,
+     "scale": 1.0,
+     "out": "s6",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s2",
+       "red"
+      ],
+      [
+       "s4",
+       "green"
+      ]
+     ],
+     "shake": "s3",
+     "screens": [
+      {
+       "in": 0,
+       "out": "s4",
+       "widgets": [
+        {
+         "type": "chat_header",
+         "name": [
+          [
+           0,
+           "CryptoApp",
+           "white"
+          ]
+         ],
+         "sub": "Text message"
+        },
+        {
+         "type": "bubbles",
+         "items": [
+          {
+           "text": "Your login code is 482916",
+           "side": "l",
+           "in": 0.4
+          }
+         ]
+        },
+        {
+         "type": "code",
+         "digits": "482916",
+         "in": 1.0,
+         "label": "SMS code",
+         "color": "muted"
+        },
+        {
+         "type": "notification",
+         "in": "s3",
+         "title": "No service",
+         "sub": "Your number moved to another SIM",
+         "color": "red",
+         "icon": "warn"
+        }
+       ]
+      },
+      {
+       "in": "s4",
+       "out": "s5",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "Authenticator",
+         "sub": "CryptoApp account"
+        },
+        {
+         "type": "code",
+         "digits": "731552",
+         "in": "s4+0.3",
+         "label": "Code (new every 30s)",
+         "color": "green"
+        },
+        {
+         "type": "text",
+         "text": "Stored only on this phone",
+         "size": 24,
+         "color": "green"
+        }
+       ]
+      },
+      {
+       "in": "s5",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "CryptoApp",
+         "sub": "Security settings"
+        },
+        {
+         "type": "rows",
+         "items": [
+          {
+           "label": "2FA by SMS",
+           "amount": "Off",
+           "color": "red",
+           "in": "s5+0.3"
+          },
+          {
+           "label": "Authenticator app",
+           "amount": "On",
+           "color": "green",
+           "in": "s5+1.0"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "use an authenticator app",
+     "color": "green",
+     "size": 42,
+     "in": "s4",
+     "out": "s6"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 540,
+     "y": 600,
+     "size": 90,
+     "in": "s6+0.2",
+     "color": "green"
+    },
+    {
+     "type": "heading",
+     "text": "Authenticator app, not SMS",
+     "y": 860,
+     "size": 80,
+     "w": 880,
+     "in": "s6+0.2",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}
