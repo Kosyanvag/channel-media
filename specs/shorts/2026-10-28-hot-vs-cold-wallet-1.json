@@ -43,15 +43,17 @@
     },
     {
      "type": "heading",
-     "text": "\"Your recovery phrase\"",
-     "y": 300,
-     "size": 64,
-     "out": "s2"
+     "text": "Seed phrase in the box?",
+     "y": 320,
+     "size": 96,
+     "out": "s2",
+     "color": "yellow",
+     "w": 900
     },
     {
      "type": "words",
      "x": 80,
-     "y": 380,
+     "y": 520,
      "w": 860,
      "cols": 3,
      "cell_h": 90,
@@ -74,7 +76,7 @@
     {
      "type": "stamp",
      "x": 540,
-     "y": 600,
+     "y": 700,
      "text": "SCAM",
      "in": "s1+2.4",
      "out": "s2",

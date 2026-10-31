@@ -144,6 +144,46 @@
     "specs/shorts/2026-10-30-seed-phrase-2.json",
     "specs/shorts/2026-10-30-seed-phrase-3.json"
    ]
+  },
+  {
+   "date": "2026-10-31",
+   "type": "short",
+   "format": "tip",
+   "id": "2026-10-28-hot-vs-cold-wallet-1",
+   "title": "Seed phrase in the box? Your wallet is not safe #shorts",
+   "metricool_post": 412092706,
+   "providers": [
+    "youtube"
+   ],
+   "status": "scheduled 2026-10-31 15:00 America/New_York (YouTube only: this video is already #04 in the owner's TikTok batch for Nov 2, so not posted to TikTok to avoid a duplicate)",
+   "duration_s": 22.8,
+   "news_check": "Binance $6.3B hack (Oct 29-30) is major news, but 3 news shorts in the last 7 days -> no news short per rule"
+  },
+  {
+   "date": "2026-10-31",
+   "type": "tiktok_short",
+   "format": "tip",
+   "id": "2026-10-31-tip-test-transaction",
+   "title": "Sending crypto? Send a tiny test first",
+   "metricool_post": 412094860,
+   "providers": [
+    "tiktok"
+   ],
+   "status": "scheduled 2026-10-31 09:00 America/New_York (TikTok only)",
+   "duration_s": 20.6
+  },
+  {
+   "date": "2026-10-31",
+   "type": "tiktok_short",
+   "format": "quiz",
+   "id": "2026-10-31-quiz-firmware-email",
+   "title": "Real or scam? \"Urgent update for your wallet\"",
+   "metricool_post": 412094872,
+   "providers": [
+    "tiktok"
+   ],
+   "status": "scheduled 2026-10-31 13:00 America/New_York (TikTok only)",
+   "duration_s": 23.4
   }
  ]
 }

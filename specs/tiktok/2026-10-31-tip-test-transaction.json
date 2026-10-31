@@ -1,0 +1,208 @@
+{
+ "id": "2026-10-31-tip-test-transaction",
+ "format": "short",
+ "topic": "buy-first-bitcoin",
+ "voice": "blend",
+ "tiktok_format": "tip",
+ "publish": {
+  "title": "Sending crypto? Send a tiny test first #shorts",
+  "description": "Crypto transfers can't be undone. Send a small test amount first, check it arrived, then send the rest.\n\nEducational content, not financial advice.\n\n#crypto #bitcoin #shorts",
+  "tags": [
+   "test transaction",
+   "how to send crypto safely",
+   "crypto for beginners",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Sending crypto for the first time? Send a tiny test first. Here's why. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Sending crypto for the first time? Send a tiny test first.",
+    "One wrong character, or the wrong network, and your coins can be gone for good.",
+    "There is no bank to call and no undo button.",
+    "So send a small amount, like five dollars, and check that it arrived.",
+    "Once it shows up, send the rest to that same address.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Send a tiny test first",
+     "y": 310,
+     "size": 88,
+     "w": 900,
+     "color": "yellow",
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 960,
+     "scale": 1.0,
+     "out": "s3",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s2+1.5",
+       "red"
+      ]
+     ],
+     "shake": "s2+1.5",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoApp",
+       "sub": "Send"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "To",
+         "amount": "bc1q...7xk9"
+        },
+        {
+         "label": "Network",
+         "amount": "Bitcoin"
+        },
+        {
+         "label": "Amount",
+         "amount": "$2,000"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Send $2,000",
+         "green"
+        ],
+        [
+         "s2+1.5",
+         "Sent to wrong address",
+         "red"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 540,
+     "y": 560,
+     "size": 150,
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "heading",
+     "text": "No bank. No undo.",
+     "y": 820,
+     "size": 96,
+     "in": "s3+0.2",
+     "out": "s4",
+     "glow": "red"
+    },
+    {
+     "type": "flash",
+     "at": "s2+1.5",
+     "color": "red"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.0,
+     "in": "s4",
+     "out": "s5+2.0",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoApp",
+       "sub": "Send"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Test",
+         "amount": "$5",
+         "in": "s4+0.3"
+        },
+        {
+         "label": "Status",
+         "amount": "Arrived",
+         "color": "green",
+         "in": "s4+2.5"
+        },
+        {
+         "label": "The rest",
+         "amount": "$1,995",
+         "in": "s5"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Send test $5",
+         "green"
+        ],
+        [
+         "s5",
+         "Send $1,995",
+         "green"
+        ]
+       ],
+       "press": "s5+0.8"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "check",
+     "x": 540,
+     "y": 560,
+     "size": 150,
+     "in": "s5+2.2"
+    },
+    {
+     "type": "heading",
+     "text": "Test first. Then send the rest.",
+     "y": 820,
+     "size": 84,
+     "w": 880,
+     "in": "s5+2.4",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

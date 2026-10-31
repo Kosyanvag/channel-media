@@ -1,0 +1,230 @@
+{
+ "id": "2026-10-31-quiz-firmware-email",
+ "format": "short",
+ "topic": "hot-vs-cold-wallet",
+ "voice": "blend",
+ "tiktok_format": "quiz",
+ "publish": {
+  "title": "Real or scam? \"Urgent update for your wallet\" #shorts",
+  "description": "Hardware wallet updates come only through the maker's official app. An email link that asks for your recovery phrase is a scam.\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "real or scam",
+   "hardware wallet update scam",
+   "fake firmware update",
+   "crypto safety",
+   "shorts"
+  ],
+  "tiktok_caption": "Your hardware wallet \"needs an urgent update\". Real or scam? Decide before the reveal. #crypto #cryptoscam #bitcoin #fyp"
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "This email says your hardware wallet needs an urgent update. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's a scam. Look at the sender. That is not the maker's real address.",
+    "The link installs a fake wallet app that asks for your recovery phrase.",
+    "Real updates come only through the maker's official app, and they never ask for your words.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 44,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s4+1.5",
+     "screens": [
+      {
+       "in": 0,
+       "out": "s4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "Mail",
+         "sub": "support@cryptovault-update.net"
+        },
+        {
+         "type": "text",
+         "text": "URGENT: firmware update required",
+         "size": 30,
+         "weight": "bold",
+         "in": 0.4
+        },
+        {
+         "type": "text",
+         "text": "Update now or your device may stop working.",
+         "size": 26,
+         "color": "yellow",
+         "in": 1.4
+        },
+        {
+         "type": "skeleton",
+         "rows": 2
+        },
+        {
+         "type": "button",
+         "label": [
+          [
+           0,
+           "Download update",
+           "green"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "in": "s4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "CryptoVault Update",
+         "sub": "step 2 of 2"
+        },
+        {
+         "type": "text",
+         "text": "Enter your 24-word recovery phrase to restore your wallet",
+         "size": 28,
+         "weight": "semi"
+        },
+        {
+         "type": "skeleton",
+         "rows": 3
+        },
+        {
+         "type": "button",
+         "label": [
+          [
+           0,
+           "Restore",
+           "green"
+          ],
+          [
+           "s4+1.5",
+           "Wallet drained",
+           "red"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "sender: cryptovault-update.net",
+     "color": "red",
+     "size": 38,
+     "in": "s3+1.0",
+     "out": "s5"
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 900,
+     "size": 300,
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2,
+     "color": "yellow",
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 880,
+     "text": "SCAM",
+     "color": "red",
+     "in": "s3",
+     "out": "s4",
+     "size": 170
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "color": "red"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 540,
+     "y": 520,
+     "size": 150,
+     "in": "s5+0.2"
+    },
+    {
+     "type": "heading",
+     "text": "Updates only in the official app. Never type your words.",
+     "y": 860,
+     "size": 72,
+     "w": 880,
+     "in": "s5+0.4",
+     "glow": "green"
+    },
+    {
+     "type": "comment",
+     "text": "I got it right!",
+     "y": 1180,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}
