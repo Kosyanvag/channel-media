@@ -1,0 +1,2552 @@
+{
+ "id": "2026-10-31-fake-crypto-sites",
+ "format": "long",
+ "topic": "fake-exchange-sites",
+ "voice": "blend",
+ "publish": {
+  "title": "How to Tell if a Crypto Website Is Legit or a Scam (8 Checks)",
+  "description": "How do you tell if a crypto website or app is legit or a scam? In this beginner guide: how clone sites copy real exchanges with lookalike addresses and sponsored search ads, how fake wallet apps get into app stores, and how fake trading platforms show made-up profits and then charge \"taxes\" to withdraw. You'll get 8 simple checks, from domain age and registration lookups to the one rule that stops the withdrawal-fee trap.\n\n{chapters}\n\nThis video is for educational purposes only and is not financial advice.\n\n#cryptoscam #crypto #cryptoforbeginners",
+  "tags": [
+   "how to tell if a crypto website is legit",
+   "is this crypto site legit",
+   "fake crypto exchange",
+   "crypto scam website",
+   "fake crypto app",
+   "crypto withdrawal fee scam",
+   "crypto phishing",
+   "crypto for beginners",
+   "crypto security"
+  ],
+  "category": "EDUCATION",
+  "chapters": [
+   "Intro",
+   "Two kinds of fake sites",
+   "Step 1: Read the address",
+   "Step 2: How did you get there?",
+   "Step 3: Check the app",
+   "Step 4: Check the promises",
+   "Step 5: Check the registration",
+   "Step 6: Domain age and contacts",
+   "Step 7: How they want to be paid",
+   "Alex's story",
+   "Step 8: Never pay to withdraw",
+   "Myth: I could withdraw",
+   "Tip: Already caught?",
+   "Recap"
+  ]
+ },
+ "thumbnail": {
+  "scene": 0,
+  "at": "s5-0.3",
+  "shift": 300,
+  "x": 1400,
+  "lines": [
+   {
+    "text": "IS THIS",
+    "y": 330,
+    "size": 150,
+    "color": "white",
+    "glow": "green"
+   },
+   {
+    "text": "SITE",
+    "y": 520,
+    "size": 170,
+    "color": "white",
+    "glow": "red"
+   },
+   {
+    "text": "FAKE?",
+    "y": 730,
+    "size": 200,
+    "color": "red",
+    "glow": "red"
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "name": "hook",
+   "narration": [
+    "Maria wanted to check her crypto balance, so she searched for her exchange.",
+    "She clicked the first result. Same logo, same colors, same login page.",
+    "She typed her password and her two-factor code.",
+    "Ten minutes later, her account was empty. Every coin had gone to a stranger.",
+    "The site was a copy, and its address was off by one letter.",
+    "In this video, you'll learn how to tell if a crypto website or app is legit or a scam, with eight checks that take about five minutes."
+   ],
+   "elements": [
+    {
+     "type": "person",
+     "x": 360,
+     "y": 520,
+     "scale": 0.95,
+     "in": 0.2,
+     "out": "s4",
+     "label": "Maria",
+     "color": "green"
+    },
+    {
+     "type": "device",
+     "kind": "laptop",
+     "x": 1180,
+     "y": 470,
+     "scale": 1.15,
+     "in": 0.4,
+     "out": "s4",
+     "color": [
+      [
+       0,
+       "blue"
+      ],
+      [
+       "s3",
+       "yellow"
+      ]
+     ],
+     "size": 40,
+     "screen": [
+      [
+       [
+        0,
+        "Search: CryptoApp login",
+        "white"
+       ],
+       [
+        "s2",
+        "Sponsored",
+        "yellow"
+       ],
+       [
+        "s2+3.0",
+        "Log in to CryptoApp",
+        "white"
+       ]
+      ],
+      [
+       [
+        0,
+        "",
+        "white"
+       ],
+       [
+        "s2",
+        "crypt0app.com",
+        "white"
+       ],
+       [
+        "s3",
+        "password  ••••••••",
+        "green"
+       ]
+      ],
+      [
+       [
+        0,
+        "",
+        "white"
+       ],
+       [
+        "s3+1.5",
+        "2FA code  482 913",
+        "green"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s4",
+     "out": "s6",
+     "shake": "s4+1.0",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s4+1.0",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoApp",
+       "sub": "Maria's account"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         6200
+        ],
+        [
+         "s4+1.0",
+         0
+        ]
+       ],
+       "decimals": 2,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s4+1.0",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Trade",
+         "green"
+        ],
+        [
+         "s4+1.0",
+         "Account empty",
+         "gray"
+        ]
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s4+0.8",
+       "title": "Withdrawal sent",
+       "sub": "All funds to a new address",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "flash",
+     "at": "s4+1.0",
+     "strength": 0.6
+    },
+    {
+     "type": "tag",
+     "x": 600,
+     "y": 1010,
+     "text": "10 minutes later",
+     "color": "red",
+     "in": "s4+0.4",
+     "out": "s6",
+     "size": 40
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 250,
+     "w": 620,
+     "h": 220,
+     "in": "s5",
+     "out": "s6",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Real",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "cryptoapp.com",
+       "size": 58,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 520,
+     "w": 620,
+     "h": 220,
+     "in": "s5+0.8",
+     "out": "s6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Fake",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "crypt0app.com",
+       "size": 58,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 1340,
+     "y": 840,
+     "text": "ONE LETTER",
+     "in": "s5+2.4",
+     "out": "s6",
+     "size": 80,
+     "color": "red"
+    },
+    {
+     "type": "bigtitle",
+     "in": "s6",
+     "text": "LEGIT OR SCAM?",
+     "sub": "8 checks for any crypto website or app",
+     "glow": "green",
+     "underline": "green"
+    }
+   ]
+  },
+  {
+   "name": "why",
+   "narration": [
+    "Here's why this matters.",
+    "The FBI's crime complaint center logged more than eleven billion dollars in reported crypto fraud losses in 2025.",
+    "Over seven billion of that came from fake investment schemes.",
+    "Fake crypto sites come in two kinds.",
+    "The first is a clone: a copy of a real exchange, built to steal your login.",
+    "The second is a fake platform: an exchange or investment site that only shows you made-up numbers.",
+    "Let's start with the clones, because they can empty an account in minutes."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Why this matters",
+     "y": 470,
+     "in": 0.2,
+     "out": "s2",
+     "size": 84,
+     "glow": "yellow"
+    },
+    {
+     "type": "counter",
+     "x": 560,
+     "y": 430,
+     "size": 130,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s2+1.5",
+       11.4
+      ]
+     ],
+     "decimals": 1,
+     "prefix": "$",
+     "suffix": "B",
+     "color": "red",
+     "in": "s2",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 560,
+     "y": 580,
+     "text": "crypto fraud losses, 2025",
+     "color": "red",
+     "in": "s2+2.0",
+     "out": "s4",
+     "size": 34
+    },
+    {
+     "type": "counter",
+     "x": 1360,
+     "y": 430,
+     "size": 130,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s3+0.6",
+       7.2
+      ]
+     ],
+     "decimals": 1,
+     "prefix": "$",
+     "suffix": "B",
+     "color": "yellow",
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 580,
+     "text": "fake investment schemes",
+     "color": "yellow",
+     "in": "s3+1.0",
+     "out": "s4",
+     "size": 34
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 780,
+     "text": "source: FBI IC3 annual report",
+     "color": "muted",
+     "in": "s2+2.5",
+     "out": "s4",
+     "size": 28
+    },
+    {
+     "type": "heading",
+     "text": "Two kinds of fake",
+     "y": 180,
+     "in": "s4",
+     "size": 72
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 320,
+     "w": 560,
+     "h": 400,
+     "in": "s5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Type 1",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Clone",
+       "size": 72,
+       "weight": "black"
+      },
+      {
+       "text": "copy of a real site",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      }
+     ],
+     "badge": {
+      "text": "steals your login",
+      "color": "red"
+     }
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 320,
+     "w": 560,
+     "h": 400,
+     "in": "s6",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "Type 2",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Fake platform",
+       "size": 64,
+       "weight": "black"
+      },
+      {
+       "text": "made-up numbers",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      }
+     ],
+     "badge": {
+      "text": "takes your deposits",
+      "color": "yellow"
+     }
+    },
+    {
+     "type": "rule",
+     "in": "s7",
+     "kind": "bad",
+     "text": "Clones first: they work in minutes"
+    }
+   ]
+  },
+  {
+   "name": "step1-address",
+   "narration": [
+    "Step one: read the address, letter by letter.",
+    "Scammers register names that look almost right.",
+    "CryptoApp, but with a zero instead of the letter O.",
+    "The real name, plus a dash and the word login.",
+    "Or dot co, instead of dot com.",
+    "On a phone, the address bar is tiny, and your eyes see what they expect to see.",
+    "And the padlock icon doesn't help. It only means the connection is encrypted, not that the site is honest.",
+    "Scam sites get a padlock for free, just like real ones.",
+    "So always read the address itself, not the little lock next to it."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "Read the address letter by letter",
+     "color": "green",
+     "in": 0,
+     "out": "s2",
+     "num": 1
+    },
+    {
+     "type": "heading",
+     "text": "Real:  cryptoapp.com",
+     "y": 230,
+     "in": "s2",
+     "out": "s6",
+     "size": 64,
+     "color": "green",
+     "glow": "green"
+    },
+    {
+     "type": "bullets",
+     "x": 640,
+     "y": 420,
+     "gap": 140,
+     "size": 60,
+     "in": "s2",
+     "out": "s6",
+     "items": [
+      {
+       "text": "crypt0app.com",
+       "kind": "x",
+       "color": "red",
+       "in": "s3"
+      },
+      {
+       "text": "cryptoapp-login.com",
+       "kind": "x",
+       "color": "red",
+       "in": "s4"
+      },
+      {
+       "text": "cryptoapp.co",
+       "kind": "x",
+       "color": "red",
+       "in": "s5"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 420,
+     "text": "0 instead of O",
+     "color": "yellow",
+     "in": "s3+0.8",
+     "out": "s4",
+     "size": 34
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 560,
+     "text": "extra word",
+     "color": "yellow",
+     "in": "s4+0.8",
+     "out": "s5",
+     "size": 34
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 700,
+     "text": ".co, not .com",
+     "color": "yellow",
+     "in": "s5+0.5",
+     "out": "s6",
+     "size": 34
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s6",
+     "out": "s7",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "crypt0app.com",
+       "sub": "Log in to CryptoApp"
+      },
+      {
+       "type": "skeleton",
+       "rows": 4
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Log in",
+         "green"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 430,
+     "text": "tiny address bar",
+     "color": "yellow",
+     "in": "s6+0.8",
+     "out": "s7",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 560,
+     "text": "your eyes fill the gap",
+     "color": "red",
+     "in": "s6+2.8",
+     "out": "s7",
+     "size": 40
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 960,
+     "y": 380,
+     "size": 130,
+     "in": "s7",
+     "color": "green",
+     "label": "HTTPS padlock",
+     "label_gap": 70
+    },
+    {
+     "type": "tag",
+     "x": 680,
+     "y": 780,
+     "text": "= encrypted connection",
+     "color": "green",
+     "in": "s7+1.5",
+     "size": 38
+    },
+    {
+     "type": "tag",
+     "x": 1260,
+     "y": 780,
+     "text": "≠ honest site",
+     "color": "red",
+     "in": "s7+3.8",
+     "size": 38
+    },
+    {
+     "type": "rule",
+     "in": "s8",
+     "kind": "bad",
+     "text": "A padlock is not a safety badge"
+    }
+   ]
+  },
+  {
+   "name": "step2-source",
+   "narration": [
+    "Step two: ask yourself how you got there.",
+    "Scammers buy search ads, so a fake site can sit above the real one, marked as sponsored.",
+    "They also send links by email, text and social media: your account is locked, verify now.",
+    "The fix is simple. Open the real site once, carefully, and bookmark it.",
+    "Or use the official app you already have.",
+    "From then on, never log in from an ad, a search result or a link someone sent you.",
+    "It takes two extra seconds, and it beats every fake ad on the internet."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "How did you get there?",
+     "color": "green",
+     "in": 0,
+     "out": "s2",
+     "num": 2
+    },
+    {
+     "type": "heading",
+     "text": "Search:  cryptoapp login",
+     "y": 170,
+     "in": "s2",
+     "out": "s3",
+     "size": 48,
+     "color": "muted"
+    },
+    {
+     "type": "card",
+     "x": 460,
+     "y": 260,
+     "w": 1000,
+     "h": 190,
+     "in": "s2+0.3",
+     "out": "s3",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Sponsored  ·  crypt0app.com",
+       "size": 32,
+       "color": "yellow",
+       "weight": "semi"
+      },
+      {
+       "text": "CryptoApp – Official Login",
+       "size": 50,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 460,
+     "y": 500,
+     "w": 1000,
+     "h": 190,
+     "in": "s2+1.2",
+     "out": "s3",
+     "color": "green",
+     "lines": [
+      {
+       "text": "cryptoapp.com",
+       "size": 32,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "CryptoApp",
+       "size": 50,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 800,
+     "text": "the fake one is on top",
+     "color": "red",
+     "in": "s2+3.5",
+     "out": "s3",
+     "size": 40
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s3",
+     "out": "s4",
+     "accent": "red",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Messages",
+       "sub": "Today"
+      },
+      {
+       "type": "skeleton",
+       "rows": 4
+      },
+      {
+       "type": "notification",
+       "in": "s3+0.5",
+       "title": "CryptoApp Security",
+       "sub": "Account locked. Verify now",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "bullets",
+     "x": 1150,
+     "y": 420,
+     "gap": 120,
+     "in": "s3",
+     "out": "s4",
+     "kind": "warn",
+     "items": [
+      {
+       "text": "Email",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s3+1.5"
+      },
+      {
+       "text": "Text message",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s3+2.2"
+      },
+      {
+       "text": "Social media",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s3+2.9"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 260,
+     "w": 800,
+     "h": 300,
+     "in": "s4",
+     "color": "green",
+     "lines": [
+      {
+       "text": "★  Your bookmark",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "cryptoapp.com",
+       "size": 76,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "checked once, carefully",
+      "color": "green"
+     }
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 680,
+     "text": "or the official app",
+     "color": "green",
+     "in": "s5",
+     "size": 40
+    },
+    {
+     "type": "rule",
+     "in": "s6",
+     "kind": "bad",
+     "text": "Never log in from an ad or a link"
+    }
+   ]
+  },
+  {
+   "name": "step3-apps",
+   "narration": [
+    "Step three: check an app before you install it.",
+    "Fake crypto apps don't only live on shady websites.",
+    "In April 2026, researchers at Kaspersky reported twenty-six fake wallet apps on Apple's own App Store.",
+    "Some looked like games or calculators, then pushed people to install a fake wallet that stole their seed phrase.",
+    "Before you install, check the developer name, and open the store link from the company's official website.",
+    "And if an app asks you to install a profile, or to download something from outside the store, stop right there.",
+    "So far, those were copies of real companies. The next ones are harder to spot, because the whole company is fake."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "Check the app first",
+     "color": "green",
+     "in": 0,
+     "out": "s2",
+     "num": 3
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "blue"
+      ],
+      [
+       "s4",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "App store",
+       "sub": "Search: crypto wallet"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "CryptoWallet",
+         "amount": "Get",
+         "color": "muted",
+         "in": "s2+0.5"
+        },
+        {
+         "label": "CryptoWa11et",
+         "amount": "Get",
+         "color": "muted",
+         "in": "s2+0.9"
+        },
+        {
+         "label": "Calc Pro",
+         "amount": "Get",
+         "color": [
+          [
+           0,
+           "muted"
+          ],
+          [
+           "s4",
+           "red"
+          ]
+         ],
+         "in": "s2+1.3"
+        },
+        {
+         "label": "Fun Puzzle",
+         "amount": "Get",
+         "color": [
+          [
+           0,
+           "muted"
+          ],
+          [
+           "s4",
+           "red"
+          ]
+         ],
+         "in": "s2+1.7"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "counter",
+     "x": 1400,
+     "y": 420,
+     "size": 150,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s3+1.6",
+       26
+      ]
+     ],
+     "color": "red",
+     "in": "s3+1.4",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1400,
+     "y": 570,
+     "text": "fake wallet apps",
+     "color": "red",
+     "in": "s3+2.5",
+     "out": "s4",
+     "size": 38
+    },
+    {
+     "type": "tag",
+     "x": 1400,
+     "y": 660,
+     "text": "Kaspersky · April 2026",
+     "color": "muted",
+     "in": "s3+3.2",
+     "out": "s4",
+     "size": 30
+    },
+    {
+     "type": "bullets",
+     "x": 1100,
+     "y": 400,
+     "gap": 130,
+     "size": 40,
+     "in": "s4",
+     "out": "s5",
+     "items": [
+      {
+       "text": "Looks like a game",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s4+0.5"
+      },
+      {
+       "text": "Pushes a 'wallet' install",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s4+2.5"
+      },
+      {
+       "text": "Steals your seed phrase",
+       "kind": "x",
+       "color": "red",
+       "in": "s4+4.5"
+      }
+     ]
+    },
+    {
+     "type": "bullets",
+     "x": 560,
+     "y": 440,
+     "gap": 140,
+     "size": 54,
+     "title": "Before you install:",
+     "in": "s5",
+     "out": "s6",
+     "items": [
+      {
+       "text": "Check the developer name",
+       "kind": "check",
+       "in": "s5+0.8"
+      },
+      {
+       "text": "Use the link on the official site",
+       "kind": "check",
+       "in": "s5+3.2"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 380,
+     "text": "STOP",
+     "in": "s6+0.3",
+     "out": "s7",
+     "size": 170,
+     "color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 620,
+     "text": "\"install this profile\"",
+     "color": "red",
+     "in": "s6+1.2",
+     "out": "s7",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 730,
+     "text": "\"download outside the store\"",
+     "color": "red",
+     "in": "s6+3.2",
+     "out": "s7",
+     "size": 40
+    },
+    {
+     "type": "heading",
+     "text": "Next: the whole company is fake",
+     "y": 470,
+     "in": "s7",
+     "size": 76,
+     "glow": "red"
+    }
+   ]
+  },
+  {
+   "name": "step4-promises",
+   "narration": [
+    "Step four: look at what they promise.",
+    "Fake platforms advertise fixed daily profits, like two percent a day, guaranteed.",
+    "Many add VIP levels: deposit more, and your rate goes up.",
+    "Two percent a day sounds small. But it would double your money in about five weeks.",
+    "Real exchanges don't promise you any profit. They just let you buy and sell.",
+    "So when a site guarantees returns, the promise itself is the warning sign.",
+    "No legal investment can promise that, and no real company will try."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "Check the promises",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2",
+     "num": 4
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "out": "s4",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoTradePro",
+       "sub": "AI trading"
+      },
+      {
+       "type": "text",
+       "text": "+2% every day",
+       "size": 46,
+       "color": "green",
+       "weight": "bold"
+      },
+      {
+       "type": "text",
+       "text": "GUARANTEED",
+       "size": 34,
+       "color": "yellow",
+       "weight": "bold"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "VIP 1 · $500",
+         "amount": "2% / day",
+         "color": "muted",
+         "in": "s3"
+        },
+        {
+         "label": "VIP 2 · $5,000",
+         "amount": "3% / day",
+         "color": "yellow",
+         "in": "s3+1.0"
+        },
+        {
+         "label": "VIP 3 · $20,000",
+         "amount": "4% / day",
+         "color": "red",
+         "in": "s3+2.0"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 420,
+     "text": "fixed daily profit",
+     "color": "yellow",
+     "in": "s2+1.5",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 560,
+     "text": "\"guaranteed\"",
+     "color": "red",
+     "in": "s2+3.5",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 1350,
+     "y": 700,
+     "text": "deposit more, earn more",
+     "color": "red",
+     "in": "s3+0.8",
+     "out": "s4",
+     "size": 40
+    },
+    {
+     "type": "counter",
+     "x": 960,
+     "y": 420,
+     "size": 150,
+     "value": [
+      [
+       0,
+       100
+      ],
+      [
+       "s4+2.5",
+       200
+      ]
+     ],
+     "prefix": "$",
+     "color": "yellow",
+     "in": "s4",
+     "out": "s5",
+     "dur": 2.5
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 590,
+     "text": "+2% a day for 35 days",
+     "color": "yellow",
+     "in": "s4+1.0",
+     "out": "s5",
+     "size": 40
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 300,
+     "w": 560,
+     "h": 380,
+     "in": "s5",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Real exchange",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Buy & sell",
+       "size": 64,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "no promised profit",
+      "color": "green"
+     }
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 300,
+     "w": 560,
+     "h": 380,
+     "in": "s6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Fake platform",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Guaranteed %",
+       "size": 64,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "warning sign",
+      "color": "red"
+     }
+    },
+    {
+     "type": "rule",
+     "in": "s6+1.5",
+     "kind": "bad",
+     "text": "Guaranteed returns = scam"
+    }
+   ]
+  },
+  {
+   "name": "step5-registration",
+   "narration": [
+    "Step five: check that the company is registered, on official websites.",
+    "In the U.S., crypto exchanges generally must register with FinCEN as a money services business.",
+    "Many states also require a license. You can look those up on NMLS Consumer Access.",
+    "And the CFTC keeps a RED list of foreign firms that solicit Americans without registering.",
+    "Never trust a certificate shown on the site itself.",
+    "Washington State regulators warned about a fake bitcoin trader license that claimed to come from the city of Seattle. No such license exists.",
+    "Registration doesn't make a company safe. But most scam platforms aren't registered anywhere.",
+    "So treat a missing registration as a stop sign, and a found one as just the first check."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "Check the registration",
+     "color": "blue",
+     "in": 0,
+     "out": "s2",
+     "num": 5
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 260,
+     "w": 560,
+     "h": 300,
+     "in": "s2",
+     "out": "s5",
+     "color": "blue",
+     "lines": [
+      {
+       "text": "FinCEN",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "MSB search",
+       "size": 60,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "federal",
+      "color": "blue"
+     }
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 260,
+     "w": 560,
+     "h": 300,
+     "in": "s3",
+     "out": "s5",
+     "color": "blue",
+     "lines": [
+      {
+       "text": "NMLS Consumer Access",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "State licenses",
+       "size": 60,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "state",
+      "color": "blue"
+     }
+    },
+    {
+     "type": "card",
+     "x": 680,
+     "y": 620,
+     "w": 560,
+     "h": 300,
+     "in": "s4",
+     "out": "s5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "CFTC",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "RED list",
+       "size": 60,
+       "weight": "black"
+      }
+     ],
+     "badge": {
+      "text": "unregistered foreign firms",
+      "color": "red"
+     }
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 230,
+     "w": 800,
+     "h": 440,
+     "in": "s5",
+     "out": "s7",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "CERTIFICATE",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Bitcoin Trader License",
+       "size": 56,
+       "weight": "black"
+      },
+      {
+       "text": "City of Seattle",
+       "size": 40,
+       "color": "muted",
+       "weight": "semi"
+      }
+     ],
+     "badge": {
+      "text": "shown on the site",
+      "color": "yellow"
+     }
+    },
+    {
+     "type": "stamp",
+     "x": 1490,
+     "y": 470,
+     "text": "FAKE",
+     "in": "s6+1.0",
+     "out": "s7",
+     "size": 100,
+     "color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 790,
+     "text": "no such license exists",
+     "color": "red",
+     "in": "s6+5.0",
+     "out": "s7",
+     "size": 40
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 300,
+     "w": 560,
+     "h": 300,
+     "in": "s7",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "Registered",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Not a guarantee",
+       "size": 54,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 300,
+     "w": 560,
+     "h": 300,
+     "in": "s7+2.5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Not registered",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Big red flag",
+       "size": 54,
+       "weight": "black"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "step6-age",
+   "narration": [
+    "Step six: check how old the site is, and who is behind it.",
+    "Type the address into ICANN's free lookup tool to see when the domain was created.",
+    "If a platform says it has served clients since 2015, but its domain is three weeks old, you have your answer.",
+    "Look for a real street address you can check on a map, and a phone number that a person answers.",
+    "If the only contact is a live chat or a messaging app, that's a red flag.",
+    "And search the name plus the word scam. Reviews on the site itself, and awards you've never heard of, prove nothing.",
+    "Real people describing real problems, on other sites, tell you far more."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "Check its age and who is behind it",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2",
+     "num": 6
+    },
+    {
+     "type": "device",
+     "kind": "laptop",
+     "x": 1180,
+     "y": 470,
+     "scale": 1.1,
+     "in": "s2",
+     "out": "s4",
+     "color": [
+      [
+       0,
+       "blue"
+      ],
+      [
+       "s3+4.0",
+       "red"
+      ]
+     ],
+     "size": 40,
+     "screen": [
+      [
+       [
+        0,
+        "lookup.icann.org",
+        "white"
+       ]
+      ],
+      [
+       [
+        0,
+        "",
+        "white"
+       ],
+       [
+        "s2+2.0",
+        "crypt0app.com",
+        "yellow"
+       ]
+      ],
+      [
+       [
+        0,
+        "",
+        "white"
+       ],
+       [
+        "s3+4.0",
+        "Created: 3 weeks ago",
+        "red"
+       ]
+      ]
+     ]
+    },
+    {
+     "type": "card",
+     "x": 150,
+     "y": 330,
+     "w": 460,
+     "h": 260,
+     "in": "s3",
+     "out": "s4",
+     "color": "green",
+     "lines": [
+      {
+       "text": "The site says",
+       "size": 32,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Since 2015",
+       "size": 58,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "flash",
+     "at": "s3+4.0",
+     "strength": 0.5
+    },
+    {
+     "type": "bullets",
+     "x": 600,
+     "y": 400,
+     "gap": 125,
+     "size": 48,
+     "title": "Who is behind it?",
+     "in": "s4",
+     "out": "s6",
+     "items": [
+      {
+       "text": "Real street address",
+       "kind": "check",
+       "in": "s4+0.8"
+      },
+      {
+       "text": "A phone a person answers",
+       "kind": "check",
+       "in": "s4+3.5"
+      },
+      {
+       "text": "Only a live chat",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+0.8"
+      },
+      {
+       "text": "Only a messaging app",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+2.0"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 460,
+     "y": 230,
+     "w": 1000,
+     "h": 170,
+     "in": "s6",
+     "color": "blue",
+     "lines": [
+      {
+       "text": "Search",
+       "size": 30,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "crypt0app.com scam",
+       "size": 54,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "bullets",
+     "x": 640,
+     "y": 560,
+     "gap": 120,
+     "size": 46,
+     "in": "s6+2.5",
+     "items": [
+      {
+       "text": "Reviews on the site itself",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+3.0"
+      },
+      {
+       "text": "Awards you've never heard of",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+4.5"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "in": "s6+6.0",
+     "out": "s7",
+     "kind": "warn",
+     "text": "They prove nothing"
+    },
+    {
+     "type": "rule",
+     "in": "s7",
+     "kind": "ok",
+     "text": "Read reviews on other sites"
+    }
+   ]
+  },
+  {
+   "name": "step7-payment",
+   "narration": [
+    "Step seven: watch how they want to be paid.",
+    "Many fake platforms won't take a bank transfer or a card.",
+    "Instead, they tell you to buy crypto on a licensed exchange, then send it to an address they give you.",
+    "That's on purpose. A crypto transfer can't be reversed. Once it leaves your wallet, it's gone.",
+    "Now let me show you how all of these signs look together, in real life."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "Watch how they want to be paid",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2",
+     "num": 7
+    },
+    {
+     "type": "bullets",
+     "x": 700,
+     "y": 450,
+     "gap": 140,
+     "size": 60,
+     "title": "Deposit methods",
+     "in": "s2",
+     "out": "s3",
+     "items": [
+      {
+       "text": "Bank transfer",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+0.5"
+      },
+      {
+       "text": "Card",
+       "kind": "x",
+       "color": "red",
+       "in": "s2+1.5"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 360,
+     "w": 480,
+     "h": 260,
+     "in": "s3",
+     "out": "s5",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Licensed exchange",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Buy crypto",
+       "size": 56,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      490
+     ],
+     "to": [
+      1230,
+      490
+     ],
+     "color": "red",
+     "in": "s3+3.0",
+     "out": "s5",
+     "draw": 0.8,
+     "traveler": "coin"
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 360,
+     "w": 480,
+     "h": 260,
+     "in": "s3+3.0",
+     "out": "s5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Their address",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "0x7a3…f91",
+       "size": 56,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 760,
+     "text": "NO UNDO",
+     "in": "s4+1.5",
+     "out": "s5",
+     "size": 110,
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "All the signs, in real life",
+     "y": 470,
+     "in": "s5",
+     "size": 80,
+     "glow": "yellow"
+    }
+   ]
+  },
+  {
+   "name": "story-alex",
+   "narration": [
+    "Imagine Alex. A friendly stranger online shows him screenshots of her trading profits.",
+    "She sends him a link to a platform called CryptoTradePro.",
+    "He deposits five hundred dollars, and his balance grows every day.",
+    "He even withdraws a hundred dollars to test it. It arrives.",
+    "So he deposits twenty thousand more. A few weeks later, his balance shows forty thousand.",
+    "When he tries to withdraw, a message appears: pay a fifteen percent tax first.",
+    "He pays. Then comes an anti-money-laundering fee. Then an account upgrade fee.",
+    "The forty thousand never existed. It was just a number on a screen.",
+    "Alex lost twenty thousand five hundred dollars, plus every fee he paid."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "IMAGINE THIS",
+     "color": "yellow",
+     "in": 0,
+     "out": "s8"
+    },
+    {
+     "type": "person",
+     "x": 330,
+     "y": 520,
+     "scale": 0.95,
+     "in": 0.2,
+     "out": "s8",
+     "label": "Alex",
+     "color": "green"
+    },
+    {
+     "type": "person",
+     "x": 1500,
+     "y": 520,
+     "scale": 0.95,
+     "in": 1.0,
+     "out": "s3",
+     "label": "friendly stranger",
+     "color": "yellow"
+    },
+    {
+     "type": "phone",
+     "x": 960,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "out": "s8",
+     "shake": "s6+1.5",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s6+1.5",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoTradePro",
+       "sub": "Alex's account"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         0
+        ],
+        [
+         "s3+0.5",
+         500
+        ],
+        [
+         "s3+3.0",
+         640
+        ],
+        [
+         "s4+0.5",
+         540
+        ],
+        [
+         "s5+1.0",
+         20540
+        ],
+        [
+         "s5+4.5",
+         40000
+        ]
+       ],
+       "decimals": 0,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s6+1.5",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Withdrawal $100",
+         "amount": "Received",
+         "color": "green",
+         "in": "s4+0.8"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Deposit",
+         "green"
+        ],
+        [
+         "s6",
+         "Withdraw",
+         "yellow"
+        ],
+        [
+         "s6+1.5",
+         "On hold",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s6+1.5",
+       "title": "Withdrawal on hold",
+       "sub": "Pay 15% tax first: $6,000",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 420,
+     "text": "the test works",
+     "color": "green",
+     "in": "s4+1.5",
+     "out": "s5",
+     "size": 38
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 420,
+     "text": "+$20,000",
+     "color": "yellow",
+     "in": "s5+0.8",
+     "out": "s6",
+     "size": 44
+    },
+    {
+     "type": "bullets",
+     "x": 1350,
+     "y": 380,
+     "gap": 120,
+     "size": 40,
+     "w": 440,
+     "in": "s6+2.0",
+     "out": "s8",
+     "items": [
+      {
+       "text": "15% \"tax\"",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+2.0"
+      },
+      {
+       "text": "AML fee",
+       "kind": "x",
+       "color": "red",
+       "in": "s7+1.5"
+      },
+      {
+       "text": "Upgrade fee",
+       "kind": "x",
+       "color": "red",
+       "in": "s7+3.0"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "$40,000 never existed.",
+     "y": 440,
+     "in": "s8",
+     "size": 96,
+     "glow": "red",
+     "color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 600,
+     "text": "just a number on a screen",
+     "color": "white",
+     "in": "s8+2.0",
+     "size": 40
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 720,
+     "text": "real loss: $20,500 + every fee",
+     "color": "red",
+     "in": "s9",
+     "size": 44
+    }
+   ]
+  },
+  {
+   "name": "step8-fees",
+   "narration": [
+    "That's step eight: never pay to get your own money out.",
+    "A real platform takes its fees from your balance.",
+    "Taxes go to the government through your own tax return, not to a support agent in a chat.",
+    "If a site says you must send more money before you can withdraw, your money is already gone.",
+    "Stop paying. Every new fee is just one more way to take more."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "title": "Never pay to withdraw",
+     "color": "red",
+     "in": 0,
+     "out": "s2",
+     "num": 8
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 260,
+     "w": 800,
+     "h": 400,
+     "in": "s2",
+     "out": "s3",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Withdraw $1,000",
+       "size": 54,
+       "weight": "black"
+      },
+      {
+       "text": "Fee: $5, taken from balance",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "You receive $995",
+       "size": 46,
+       "color": "green",
+       "weight": "bold"
+      }
+     ],
+     "badge": {
+      "text": "real platform",
+      "color": "green"
+     }
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 300,
+     "w": 560,
+     "h": 320,
+     "in": "s3",
+     "out": "s4",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Taxes",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Your tax return",
+       "size": 54,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 300,
+     "w": 560,
+     "h": 320,
+     "in": "s3+3.0",
+     "out": "s4",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Support chat",
+       "size": 38,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "\"Pay tax here\"",
+       "size": 54,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 1310,
+     "y": 720,
+     "size": 60,
+     "in": "s3+3.6",
+     "out": "s4",
+     "color": "red"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s4",
+     "out": "s5",
+     "accent": "red",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoTradePro",
+       "sub": "Withdrawal"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      },
+      {
+       "type": "notification",
+       "in": "s4+0.5",
+       "title": "Pay $6,000 to unlock",
+       "sub": "Then you can withdraw",
+       "color": "red",
+       "icon": "lock"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 545,
+     "text": "the money is already gone",
+     "color": "red",
+     "in": "s4+3.0",
+     "out": "s5",
+     "size": 40
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 960,
+     "y": 450,
+     "size": 150,
+     "in": "s5",
+     "color": "red"
+    },
+    {
+     "type": "rule",
+     "in": "s5",
+     "kind": "bad",
+     "text": "Stop paying. Never pay to withdraw."
+    }
+   ]
+  },
+  {
+   "name": "myth-withdrawal",
+   "narration": [
+    "Myth: if I could withdraw, it must be real.",
+    "Fake platforms often let you take out a small amount, on purpose.",
+    "It costs them a hundred dollars, and it buys your trust for twenty thousand.",
+    "A small withdrawal proves nothing. A real platform lets you take out all of your money, at any time, with no surprise fees.",
+    "So don't risk money you can't afford to lose just to find out."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "MYTH",
+     "title": "\"I could withdraw, so it's real\"",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2",
+     "num": 1
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "out": "s3",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoTradePro",
+       "sub": "History"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Withdrawal $100",
+         "amount": "Received",
+         "color": "green",
+         "in": "s2+0.8"
+        }
+       ]
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 545,
+     "text": "on purpose",
+     "color": "yellow",
+     "in": "s2+2.5",
+     "out": "s3",
+     "size": 44
+    },
+    {
+     "type": "counter",
+     "x": 520,
+     "y": 430,
+     "size": 120,
+     "value": 100,
+     "prefix": "$",
+     "color": "green",
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 520,
+     "y": 570,
+     "text": "they give back",
+     "color": "green",
+     "in": "s3+0.4",
+     "out": "s4",
+     "size": 36
+    },
+    {
+     "type": "arrow",
+     "from": [
+      760,
+      430
+     ],
+     "to": [
+      1100,
+      430
+     ],
+     "color": "yellow",
+     "in": "s3+1.0",
+     "out": "s4",
+     "draw": 0.6
+    },
+    {
+     "type": "counter",
+     "x": 1400,
+     "y": 430,
+     "size": 120,
+     "value": 20000,
+     "prefix": "$",
+     "color": "red",
+     "in": "s3+1.8",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1400,
+     "y": 570,
+     "text": "they take",
+     "color": "red",
+     "in": "s3+3.0",
+     "out": "s4",
+     "size": 36
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 220,
+     "text": "PROVES NOTHING",
+     "in": "s4",
+     "out": "s5",
+     "size": 90,
+     "color": "yellow"
+    },
+    {
+     "type": "bullets",
+     "x": 640,
+     "y": 560,
+     "gap": 120,
+     "size": 50,
+     "title": "A real platform:",
+     "in": "s4+2.0",
+     "items": [
+      {
+       "text": "All of your money",
+       "kind": "check",
+       "in": "s4+2.6"
+      },
+      {
+       "text": "At any time",
+       "kind": "check",
+       "in": "s4+4.0"
+      },
+      {
+       "text": "No surprise fees",
+       "kind": "check",
+       "in": "s4+5.0"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "in": "s5",
+     "kind": "warn",
+     "text": "Don't risk money you can't lose"
+    }
+   ]
+  },
+  {
+   "name": "tip-caught",
+   "narration": [
+    "Tip: what to do if you think you've already been caught.",
+    "Stop sending money, no matter what fee they ask for.",
+    "If you typed your password into a fake site, change it right away in the real app, and reset your two-factor.",
+    "Report it to the FBI at ic3.gov, and to the FTC at reportfraud.ftc.gov.",
+    "Tell your bank and your exchange too, and keep every screenshot and transaction ID.",
+    "And ignore anyone who offers to recover your money for a fee. That's usually the same scam, part two.",
+    "Real police and real exchanges never charge you upfront to get your money back."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "title": "Already caught? Do this",
+     "color": "green",
+     "in": 0,
+     "out": "s2",
+     "num": 1
+    },
+    {
+     "type": "checklist",
+     "y": 270,
+     "row_h": 125,
+     "out": "s6",
+     "items": [
+      {
+       "text": "Stop sending money",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Change password, reset 2FA",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "Report: ic3.gov · reportfraud.ftc.gov",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Tell bank + exchange, keep proof",
+       "in": "s5",
+       "done": "s5e"
+      }
+     ]
+    },
+    {
+     "type": "person",
+     "x": 700,
+     "y": 520,
+     "scale": 0.95,
+     "hood": true,
+     "in": "s6",
+     "label": "\"recovery expert\"",
+     "color": "red"
+    },
+    {
+     "type": "stamp",
+     "x": 1320,
+     "y": 480,
+     "text": "SCAM, PART 2",
+     "in": "s6+3.5",
+     "size": 90,
+     "color": "red"
+    },
+    {
+     "type": "rule",
+     "in": "s7",
+     "kind": "bad",
+     "text": "No real helper charges upfront"
+    }
+   ]
+  },
+  {
+   "name": "recap",
+   "narration": [
+    "Let's recap the eight checks.",
+    "One: read the address letter by letter. The padlock is not proof.",
+    "Two: use your bookmark, never an ad or a link.",
+    "Three: get apps through the link on the official website.",
+    "Four: guaranteed profits mean scam.",
+    "Five: look up the registration on official sites.",
+    "Six: check the domain age and the real contact details.",
+    "Seven: be careful when they only take crypto.",
+    "Eight: never pay to withdraw your own money."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Legit or scam: 8 checks",
+     "y": 120,
+     "in": 0,
+     "size": 62,
+     "glow": "green"
+    },
+    {
+     "type": "checklist",
+     "y": 235,
+     "row_h": 98,
+     "size": 36,
+     "items": [
+      {
+       "text": "Read the address. Padlock ≠ proof",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Bookmark, never ads or links",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "Apps via the official website",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Guaranteed profit = scam",
+       "in": "s5",
+       "done": "s5e"
+      },
+      {
+       "text": "Check registration officially",
+       "in": "s6",
+       "done": "s6e"
+      },
+      {
+       "text": "Domain age + real contacts",
+       "in": "s7",
+       "done": "s7e"
+      },
+      {
+       "text": "Crypto-only deposits = caution",
+       "in": "s8",
+       "done": "s8e"
+      },
+      {
+       "text": "Never pay to withdraw",
+       "in": "s9",
+       "done": "s9e"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "outro",
+   "hold": 11,
+   "narration": [
+    "If this helped, subscribe.",
+    "Next, I'll explain what a pig butchering scam is, and how crypto romance scams work.",
+    "And tell me in the comments: have you ever landed on a fake crypto site?"
+   ],
+   "elements": [
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 260,
+     "size": 100,
+     "in": 0,
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "subscribe",
+     "y": 500,
+     "in": 0.6,
+     "click": "s1e",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 660,
+     "text": "NEXT VIDEO",
+     "color": "green",
+     "in": "s2",
+     "out": "s3e+0.6",
+     "size": 26,
+     "weight": "bold"
+    },
+    {
+     "type": "heading",
+     "text": "What is a pig butchering scam?",
+     "y": 760,
+     "size": 58,
+     "weight": "bold",
+     "in": "s2+0.3",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "comment",
+     "text": "Ever landed on a fake crypto site?",
+     "y": 920,
+     "in": "s3",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "endscreen",
+     "in": "s3e+0.8"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "id": "2026-10-31-fake-crypto-sites-2",
+ "format": "short",
+ "topic": "fake-exchange-sites",
+ "voice": "blend",
+ "publish": {
+  "title": "Real or scam? \"Pay 15% tax to withdraw\" #shorts",
+  "description": "A platform that makes you pay a \"tax\" or fee before you can withdraw is a scam: real platforms take fees from your balance, and taxes go through your own tax return.\n\nFull video on the channel: search \"How to Tell if a Crypto Website Is Legit or a Scam (8 Checks)\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #realorscam #shorts",
+  "tags": [
+   "real or scam",
+   "crypto withdrawal fee scam",
+   "fake crypto platform",
+   "crypto scam",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Your crypto platform says: pay fifteen percent tax before you can withdraw. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's a scam. The forty thousand on that screen doesn't exist.",
+    "A real platform takes its fees from your balance. Taxes go through your own tax return.",
+    "If you must pay to get your money out, it's already gone. Stop paying.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 52,
+     "out": "s3"
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 900,
+     "size": 300,
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ],
+     "color": "yellow",
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 960,
+     "scale": 1.0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s3",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoTradePro",
+       "sub": "Withdrawal"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": 40000,
+       "decimals": 0,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s3",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "skeleton",
+       "rows": 1
+      },
+      {
+       "type": "notification",
+       "in": 0.3,
+       "title": "Withdrawal on hold",
+       "sub": "Pay 15% tax first: $6,000",
+       "color": "yellow",
+       "icon": "lock"
+      }
+     ]
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 900,
+     "text": "SCAM",
+     "in": "s3",
+     "out": "s5",
+     "size": 200,
+     "color": "red"
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "strength": 0.6
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 330,
+     "text": "fees come from your balance",
+     "color": "green",
+     "size": 40,
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 540,
+     "y": 560,
+     "size": 130,
+     "in": "s5",
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "Never pay to withdraw.",
+     "y": 820,
+     "size": 88,
+     "w": 860,
+     "in": "s5",
+     "glow": "red",
+     "color": "red"
+    },
+    {
+     "type": "comment",
+     "text": "Did you get it right?",
+     "y": 1150,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "id": "2026-10-31-fake-crypto-sites-3",
+ "format": "short",
+ "topic": "fake-exchange-sites",
+ "voice": "blend",
+ "publish": {
+  "title": "The first search result can be a fake crypto site #shorts",
+  "description": "Scammers buy search ads so a copy of your exchange sits above the real one. Bookmark the real site once and never log in from an ad or a link.\n\nFull video on the channel: search \"How to Tell if a Crypto Website Is Legit or a Scam (8 Checks)\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "fake crypto exchange",
+   "crypto phishing ads",
+   "crypto scam website",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "The first search result for your crypto exchange can be a fake.",
+    "Scammers buy search ads, so their copy sits above the real site.",
+    "Same logo, same login page, and one letter off in the address.",
+    "You type your password and code, and they use it right away.",
+    "Open the real site once, bookmark it, and never log in from an ad or a link.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "THE TOP RESULT CAN BE FAKE",
+     "y": 320,
+     "size": 74,
+     "w": 880,
+     "glow": "red",
+     "color": "red",
+     "out": "s2"
+    },
+    {
+     "type": "card",
+     "x": 90,
+     "y": 560,
+     "w": 900,
+     "h": 210,
+     "out": "s4",
+     "color": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s2",
+       "red"
+      ]
+     ],
+     "lines": [
+      {
+       "text": "Sponsored · crypt0app.com",
+       "size": 36,
+       "color": "yellow",
+       "weight": "semi"
+      },
+      {
+       "text": "CryptoApp Login",
+       "size": 56,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 90,
+     "y": 830,
+     "w": 900,
+     "h": 210,
+     "out": "s4",
+     "color": "green",
+     "in": 0.6,
+     "lines": [
+      {
+       "text": "cryptoapp.com",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "CryptoApp",
+       "size": 56,
+       "weight": "black"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 330,
+     "text": "paid ad on top",
+     "color": "red",
+     "size": 48,
+     "in": "s2",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 330,
+     "text": "one letter off",
+     "color": "red",
+     "size": 48,
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.1,
+     "in": "s4",
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "yellow"
+      ],
+      [
+       "s4+1.5",
+       "red"
+      ]
+     ],
+     "shake": "s4+1.5",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "crypt0app.com",
+       "sub": "Log in"
+      },
+      {
+       "type": "code",
+       "digits": "482913",
+       "in": "s4+0.3",
+       "label": "2FA code",
+       "color": "yellow"
+      },
+      {
+       "type": "notification",
+       "in": "s4+1.5",
+       "title": "New login",
+       "sub": "Withdrawal started",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "check",
+     "x": 540,
+     "y": 560,
+     "size": 120,
+     "in": "s5",
+     "color": "green"
+    },
+    {
+     "type": "heading",
+     "text": "Bookmark it. Never log in from an ad.",
+     "y": 820,
+     "size": 76,
+     "w": 860,
+     "in": "s5",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "id": "2026-10-31-fake-crypto-sites-1",
+ "format": "short",
+ "topic": "fake-exchange-sites",
+ "voice": "blend",
+ "publish": {
+  "title": "This padlock does NOT mean the site is safe #shorts",
+  "description": "The padlock only means the connection is encrypted. Scam crypto sites get one for free, so read the address letter by letter instead.\n\nFull video on the channel: search \"How to Tell if a Crypto Website Is Legit or a Scam (8 Checks)\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #shorts",
+  "tags": [
+   "is this crypto site safe",
+   "https padlock",
+   "crypto phishing",
+   "crypto safety",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "This padlock does not mean a crypto site is safe.",
+    "It only means your connection is encrypted.",
+    "Scam sites get a padlock for free, just like real ones.",
+    "So a perfect copy of your exchange can show the very same lock, right next to a fake address.",
+    "Read the address instead, letter by letter: a zero instead of an O is all it takes.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "THIS ≠ SAFE",
+     "y": 300,
+     "size": 96,
+     "w": 880,
+     "glow": "red",
+     "color": "red",
+     "out": "s2"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 540,
+     "y": 700,
+     "size": 200,
+     "color": "green",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1000,
+     "text": "= encrypted connection",
+     "color": "green",
+     "size": 44,
+     "in": "s2",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 1110,
+     "text": "free for scam sites too",
+     "color": "red",
+     "size": 44,
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.1,
+     "in": "s4",
+     "out": "s6",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s5+1.0",
+       "red"
+      ]
+     ],
+     "shake": "s5+1.0",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "crypt0app.com",
+       "sub": "Log in to CryptoApp"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Log in",
+         "green"
+        ],
+        [
+         "s5+1.0",
+         "Fake site",
+         "red"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "0 instead of O",
+     "color": "red",
+     "size": 48,
+     "in": "s5+1.0",
+     "out": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Read the address, not the lock.",
+     "y": 800,
+     "size": 80,
+     "w": 860,
+     "in": "s6",
+     "glow": "green"
+    }
+   ]
+  }
+ ]
+}

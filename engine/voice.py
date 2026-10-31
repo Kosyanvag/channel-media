@@ -45,10 +45,24 @@ def resolve_voice(voice):
     return voice
 
 
+CACHE_DIR = os.environ.get("TTS_CACHE", os.path.expanduser("~/.cache/tts-cache"))
+
+
 def tts(text, voice="blend", speed=1.0):
+    import hashlib
+    key = hashlib.sha1(f"{voice}|{speed:.4f}|{text}".encode()).hexdigest()
+    cp = os.path.join(CACHE_DIR, key + ".npy")
+    if os.path.exists(cp):
+        return np.load(cp)
     a, sr = kokoro().create(text, voice=resolve_voice(voice), speed=speed, lang="en-us")
     assert sr == SR
-    return trim(np.asarray(a, dtype=np.float32))
+    out = trim(np.asarray(a, dtype=np.float32))
+    try:
+        os.makedirs(CACHE_DIR, exist_ok=True)
+        np.save(cp, out)
+    except OSError:
+        pass
+    return out
 
 
 def scene_audio(sentences, voice="blend", speed=1.0, lead=0.2, gap=0.12, pad=0.55, min_dur=0.0):

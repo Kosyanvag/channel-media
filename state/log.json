@@ -184,6 +184,20 @@
    ],
    "status": "scheduled 2026-10-31 13:00 America/New_York (TikTok only)",
    "duration_s": 23.4
+  },
+  {
+   "date": "2026-10-31",
+   "type": "video",
+   "id": "2026-10-31-fake-crypto-sites",
+   "title": "How to Tell if a Crypto Website Is Legit or a Scam (8 Checks)",
+   "metricool_post": 412203742,
+   "status": "scheduled 2026-10-31 15:30 America/New_York (23:30 Yerevan); extra one-off Saturday run approved by owner",
+   "duration_s": 455.3,
+   "shorts_queued": [
+    "specs/shorts/2026-10-31-fake-crypto-sites-1.json",
+    "specs/shorts/2026-10-31-fake-crypto-sites-2.json",
+    "specs/shorts/2026-10-31-fake-crypto-sites-3.json"
+   ]
   }
  ]
 }
