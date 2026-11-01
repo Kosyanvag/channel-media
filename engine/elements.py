@@ -984,9 +984,9 @@ def draw_captions(f, sc, t, cfg):
         return
     short = C.W < C.H
     size = cfg.get("size", 70 if short else 52)
-    y = cfg.get("y", 1360 if short else C.H - 60)
-    cx = cfg.get("x", 455 if short else C.W / 2)
-    maxw = cfg.get("w", 800 if short else C.W - 80)
+    y = cfg.get("y", 1500 if short else C.H - 60)
+    cx = cfg.get("x", 540 if short else C.W / 2)
+    maxw = cfg.get("w", 920 if short else C.W - 80)
     fn = font(BLACK, size)
     words = [w for w, _, _ in cur]
     gap = size * 0.28

@@ -14,8 +14,8 @@ SCENES = None
 OUT = None
 CAPTIONS = None
 SAFE = None
-SAFE_SHORT = {"src": (0, 90, 1080, 1470), "dst": (30, 250, 880, 1336)}
-UNSAFE_SHORT = [(0, 0, 1080, 240), (0, 1410, 1080, 1920), (895, 760, 1080, 1920)]
+SAFE_SHORT = {"src": (0, 90, 1080, 1470), "dst": (60, 230, 1020, 1457)}
+UNSAFE_SHORT = [(0, 0, 1080, 220), (0, 1560, 1080, 1920)]
 CAMERA = 0.045
 
 
