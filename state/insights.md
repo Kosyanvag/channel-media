@@ -1,42 +1,50 @@
 # Channel insights
 
-Updated: 2026-10-25 (weekly review #1). Source: Metricool, brand 7630681, network youtube.
+Updated: 2026-11-01 (weekly review #2). Source: Metricool brand 7630681 (youtube; tiktok for comparison). Only numbers returned by Metricool are listed; "n/a" = Metricool returned null / no rows.
 
-## Data (last 7 and last 28 days — identical, the channel started 2026-10-24)
+## YouTube data
 
-| Metric | Value | Note |
+| Metric | Last 7 days (10-25..11-01) | Last 28 days (10-05..11-01) |
 |---|---|---|
-| Subscribers (YTEV01) | 0 | value on 2026-10-24 |
-| Subscribers gained / lost (YTEV05/06) | 0 / 0 | 2026-10-25 |
-| Channel views (YTEV02) | 0 in Metricool | lags 2–3 days; **owner reports 13 views** (YouTube Studio, 2026-10-25) |
-| Videos published (YTEV04) | 1 | 2026-10-24 |
-| Watch minutes / avg view duration (YTVP07/08) | not reported yet | row exists for the P2P video, values null |
-| Per-video views, likes, comments | not reported yet | |
-| Traffic sources (YTTS) | no rows | |
-| Watch hours toward 4000 | unknown (0 reported) | |
+| Subscribers (YTEV01, last value) | 0 | 0 |
+| Subs gained / lost (YTEV05/06) | 0 / 0 | 0 / 0 |
+| Channel views (YTEV02) | 35 (5, 7, 6, 9, 8 on 10-25..10-29) | 48 (incl. 13 on 10-24) |
+| Daily data after 10-29 | n/a (Metricool lag) | n/a |
+| Watch minutes / avg view duration (YTVP07/08) | n/a | n/a → watch hours toward 4000 unknown |
+| Per-video views / likes / comments (YTVP, YTVV) | n/a (YTVP lists only 3 videos, all null) | n/a |
+| Traffic sources (YTTS) | no rows | no rows |
 
-Videos in range: "5 P2P Crypto Scams That Steal Your Money (And How to Avoid Them)" — published 2026-10-24 17:11; 13 views per owner (Metricool still null).
-Shorts: none published yet (none in state/log.json).
+All 16 Metricool posts since 10-24 show status PUBLISHED (P2P video: published, thumbnail upload warning). Published on YouTube: 5 long videos, 7 shorts.
+
+## TikTok data (Metricool TKPO, for hook/format comparison)
+
+| Posted (NY) | Video | Len s | Views | Likes | Avg watched s |
+|---|---|---|---|---|---|
+| 10-29 | news: Electrum fee bump | 34 | 193 | 3 | 4 |
+| 10-29 | news: Passport phishing email | 38 | 162 | 2 | 2 |
+| 10-30 | quiz: "Wallet Support" DM | 22 | 161 | 2 (+1 comment) | 2 |
+| 10-29 | quiz: fake login page | 23 | 155 | 1 | 2 |
+| 10-31 | tip: send a test first | 20 | 73 | 1 | 1 |
+| 10-31 | quiz: urgent firmware email | 23 | 44 | 0 | 2 |
+| 10-30 | tip: payment screenshot | 19 | 0 | 1 | 6 |
+| 10-30 | tip: overpayment refund | 21 | 0 | 0 | 4 |
+
+Full-video-watched rate ≈ 0% on every TikTok video.
 
 ## Takeaways
 
-1. Almost no performance data yet (13 views on the first video, reported by the owner): one long video, about one day old, and Metricool/YouTube report nulls. Nothing below is evidence-based yet.
-2. With zero subscribers, almost all early views will come from YouTube search and Shorts, not from the subscriber feed.
-3. The 2026-10-26 video promises "hot vs cold wallets" as the next video, so that topic must stay first.
+1. YouTube is still too early/too lagged to judge: ~7–9 channel views per day, 0 subscribers, no per-video, watch-time or traffic-source data. No video-vs-video comparison is possible yet.
+2. TikTok gives 40–190 views per post with zero followers, but viewers leave after 1–6 s of 19–38 s → the first 2 seconds are losing almost everyone. Fixing the opening matters more than anything else in shorts.
+3. On TikTok, "loss story" news and "Real or scam?" quizzes got 155–193 views; plain tips got 0–73 (small sample, one week).
+4. Long videos run ~7 min (recap chapter starts at 6:49–7:07; narration 1336–1470 words), below the 8–11 min target. With no subscribers yet, watch hours will mainly come from long videos found by search.
+5. The 10-31 outro promises the pig butchering video next.
 
-## Rules for future runs (provisional — revisit at review #2)
+## Rules for future runs
 
-* Keep `hot-vs-cold-wallet` as the next long video (it is promised in the 2026-10-26 outro). Always keep the topic named in the latest outro first in `topics.json`.
-* Start the daily shorts now: Shorts are the fastest way for a zero-sub channel to get seen. Never skip a short day.
-* Keep titles phrased as the exact search query (first tag = query, title contains it) — search is the main discovery path until there are subscribers.
-* Alternate scam topics and how-to topics in the long videos so next week's review can compare the two types.
-* Do not change format, length, hooks or thumbnail style yet; there is nothing to compare against.
-* Weekly review: when the owner gives a number from YouTube Studio, use it and mark it "owner-reported". If a metric is still null, say so and do not invent conclusions. The first meaningful comparison needs about 3 long videos and 5+ shorts with 3+ days of data each.
-
-## Update 2026-10-29 (manual check)
-
-* Metricool YouTube channel views: 13 (10-24), 5 (10-25), 7 (10-26), later days not reported yet; 0 subscribers. Per-video rows still empty.
-* TikTok (@crypto.safezone, posted manually by the owner, not via Metricool yet): first quiz short "Real or scam? This crypto login page" — 64 views, 1 like in ~5 h (owner-reported).
-* Observed on TikTok: the platform's search bar covered the top of the frame and the right-side buttons hit the captions → the engine now renders shorts into a safe frame (fixed 2026-10-29).
-* The quiz short opened with "You searched for…" — weak first second. New rule: hook first (see PIPELINE B).
-* 3 of the first 4 shorts were news about niche wallet brands (Keystone, Passport, Electrum) — likely low appeal for beginners. New rule: news shorts only for events that matter to ordinary users, max 2 per 7 days.
+* Next long video = `pig-butchering` (promised in the 10-31 outro). Always keep the topic named in the latest outro first.
+* Long videos: aim for **1500–1700 words** (8+ min). Add depth (one more real-life style scene, one more example per point), never padding.
+* Shorts hook: the first spoken sentence ≤ 8 words and states a loss or a verdict ("He lost $4,000 to this text."); the hook text is on screen at frame 1 and something visibly moves within the first second. No logo/label-only first frame.
+* Shorts format priority: (1) "Real or scam?" quiz, (2) loss-story tip ("This is how Sam lost…"), (3) plain tip. Do not run two plain tips in a row.
+* Keep shorts 20–30 s: retention is the problem, not length; shorter loops better.
+* Titles stay phrased as the exact search query (search is the only discovery path until there are subscribers).
+* Weekly review: if Metricool still returns null watch time / per-video data next Sunday, say so and use owner-reported YouTube Studio numbers if given (mark "owner-reported"). Never estimate watch hours.

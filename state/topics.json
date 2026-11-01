@@ -44,8 +44,15 @@
    "date": null
   },
   {
-   "slug": "fake-investment-platforms",
-   "idea": "Fake crypto investment platforms: how the 'guaranteed returns' scam works",
+   "slug": "wallet-drainer",
+   "idea": "Wallet drainer scams: how one click on 'approve' empties your wallet",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "bitcoin-atm-scam",
+   "idea": "Bitcoin ATM scams: why anyone telling you to pay at a crypto ATM is a scammer",
    "status": "todo",
    "video": null,
    "date": null
@@ -65,8 +72,22 @@
    "date": null
   },
   {
-   "slug": "wallet-drainer",
-   "idea": "Wallet drainer scams: how one click on 'approve' empties your wallet",
+   "slug": "address-poisoning",
+   "idea": "What is an address poisoning scam? How a copy-paste mistake empties your wallet",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "recovery-scams",
+   "idea": "Crypto recovery scams: 'we can get your money back' explained",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "crypto-job-task-scam",
+   "idea": "Crypto task scams: the 'online job' that asks you to deposit USDT",
    "status": "todo",
    "video": null,
    "date": null
@@ -79,15 +100,22 @@
    "date": null
   },
   {
-   "slug": "network-fees",
-   "idea": "TRC20 vs ERC20 vs BEP20: which network to use for USDT",
+   "slug": "fake-airdrop-tokens",
+   "idea": "Random tokens appeared in my wallet: is it a scam? (fake airdrops explained)",
    "status": "todo",
    "video": null,
    "date": null
   },
   {
-   "slug": "recovery-scams",
-   "idea": "Crypto recovery scams: 'we can get your money back' explained",
+   "slug": "fake-investment-platforms",
+   "idea": "Fake crypto investment platforms: how the 'guaranteed returns' scam works",
+   "status": "todo",
+   "video": null,
+   "date": null
+  },
+  {
+   "slug": "network-fees",
+   "idea": "TRC20 vs ERC20 vs BEP20: which network to use for USDT",
    "status": "todo",
    "video": null,
    "date": null
