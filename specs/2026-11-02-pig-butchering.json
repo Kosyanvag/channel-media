@@ -1,0 +1,2887 @@
+{
+ "id": "2026-11-02-pig-butchering",
+ "format": "long",
+ "topic": "pig-butchering",
+ "voice": "blend",
+ "publish": {
+  "title": "What Is a Pig Butchering Scam? How Crypto Romance Scams Work",
+  "description": "What is a pig butchering scam? It often starts with a \"wrong number\" text or a dating app match, turns into a friendship, and ends with a fake crypto platform that shows made-up profits and then demands fees to withdraw. In this beginner guide you'll see the six stages these crypto romance scams follow, who is really behind them, five rules that stop them, and what to do if you think you're already in one.\n\n{chapters}\n\nReport scams: ic3.gov and reportfraud.ftc.gov\n\nThis video is for educational purposes only and is not financial advice.\n\n#cryptoscam #pigbutchering #crypto",
+  "tags": [
+   "pig butchering scam",
+   "what is a pig butchering scam",
+   "crypto romance scam",
+   "wrong number text scam",
+   "pig butchering crypto",
+   "fake crypto investment platform",
+   "crypto scam",
+   "romance scam",
+   "crypto for beginners"
+  ],
+  "category": "EDUCATION",
+  "chapters": [
+   "Intro",
+   "What pig butchering means",
+   "Step 1: The accidental hello",
+   "Step 2: The friendship",
+   "Step 3: The hint",
+   "Step 4: The fake platform",
+   "Daniel's story",
+   "Step 5: The pressure",
+   "Step 6: The butchering",
+   "Who is behind it",
+   "Myth: Only naive people fall for it",
+   "5 rules that stop it",
+   "Already in one? Do this",
+   "Recap"
+  ]
+ },
+ "thumbnail": {
+  "scene": 0,
+  "at": "s2+0.7",
+  "shift": 300,
+  "x": 1400,
+  "lines": [
+   {
+    "text": "\"WRONG",
+    "y": 330,
+    "size": 150,
+    "color": "white",
+    "glow": "yellow"
+   },
+   {
+    "text": "NUMBER\"",
+    "y": 520,
+    "size": 150,
+    "color": "white",
+    "glow": "yellow"
+   },
+   {
+    "text": "= SCAM",
+    "y": 730,
+    "size": 190,
+    "color": "red",
+    "glow": "red"
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "name": "hook",
+   "narration": [
+    "It started with a text from a stranger: Hi David, are we still on for golf on Saturday?",
+    "Linda replied politely: sorry, wrong number.",
+    "The stranger apologized, and they started chatting. Every single day, for weeks.",
+    "Then he showed her how he made money trading crypto, on a special platform.",
+    "Seven months later, Linda had sent him one hundred and eighty thousand dollars. The platform, the profits, even the man, were fake.",
+    "In this video, you'll learn what a pig butchering scam is, the six stages it almost always follows, and the red flags that let you walk away before you lose a dollar."
+   ],
+   "elements": [
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": 0.2,
+     "accent": "blue",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "+1 (555) 014-7731",
+         "white"
+        ]
+       ],
+       "sub": "Text message"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Hi David, are we still on for golf on Saturday?",
+         "side": "l",
+         "in": "s1+0.8"
+        },
+        {
+         "text": "Sorry, wrong number!",
+         "side": "r",
+         "in": "s2+0.4"
+        },
+        {
+         "text": "Oh, so sorry! You seem really kind though.",
+         "side": "l",
+         "in": "s3+0.2"
+        },
+        {
+         "text": "I'm Mark, by the way.",
+         "side": "l",
+         "in": "s3+1.6"
+        }
+       ]
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "unknown number",
+     "color": "yellow",
+     "in": "s1+1.5",
+     "size": 40,
+     "out": "s2"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "a polite reply",
+     "color": "green",
+     "in": "s2+0.8",
+     "size": 40,
+     "out": "s3"
+    },
+    {
+     "type": "counter",
+     "x": 1360,
+     "y": 430,
+     "size": 130,
+     "prefix": "Day ",
+     "value": [
+      [
+       0,
+       1
+      ],
+      [
+       "s3+3.0",
+       49
+      ]
+     ],
+     "decimals": 0,
+     "color": "yellow",
+     "in": "s3+1.0",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 580,
+     "text": "chatting every day",
+     "color": "yellow",
+     "in": "s3+2.0",
+     "size": 36,
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s4",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s5+3.2",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "Linda's account"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         5000
+        ],
+        [
+         "s4+3.0",
+         9200
+        ],
+        [
+         "s5+0.5",
+         186400
+        ],
+        [
+         "s5+3.2",
+         0
+        ]
+       ],
+       "decimals": 0,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s5+3.2",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Deposit",
+         "green"
+        ],
+        [
+         "s5+3.2",
+         "Account closed",
+         "gray"
+        ]
+       ]
+      }
+     ],
+     "out": "s6",
+     "shake": "s5+3.2"
+    },
+    {
+     "type": "icon",
+     "kind": "chart_up",
+     "x": 1360,
+     "y": 420,
+     "size": 110,
+     "color": "green",
+     "in": "s4+1.0",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 580,
+     "text": "\"my special platform\"",
+     "color": "yellow",
+     "in": "s4+2.0",
+     "size": 40,
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 420,
+     "text": "7 months later",
+     "color": "yellow",
+     "in": "s5",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 540,
+     "text": "$180,000 sent",
+     "color": "red",
+     "in": "s5+1.5",
+     "size": 44,
+     "out": "s6"
+    },
+    {
+     "type": "flash",
+     "at": "s5+3.2",
+     "strength": 0.6
+    },
+    {
+     "type": "stamp",
+     "x": 1360,
+     "y": 760,
+     "text": "ALL FAKE",
+     "in": "s5+3.4",
+     "out": "s6",
+     "size": 100,
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "The pig butchering scam",
+     "y": 300,
+     "in": "s6",
+     "size": 88,
+     "glow": "red"
+    },
+    {
+     "type": "tag",
+     "x": 560,
+     "y": 560,
+     "text": "what it is",
+     "color": "white",
+     "in": "s6+2.0",
+     "size": 44
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 560,
+     "text": "6 stages",
+     "color": "yellow",
+     "in": "s6+3.0",
+     "size": 44
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 560,
+     "text": "red flags",
+     "color": "red",
+     "in": "s6+4.6",
+     "size": 44
+    }
+   ]
+  },
+  {
+   "name": "why",
+   "narration": [
+    "First, the strange name.",
+    "Pig butchering comes from a Chinese phrase, sha zhu pan, which loosely means exactly that.",
+    "The victim is the pig. The scammer fattens them up with attention and fake profits, then takes everything at once.",
+    "And it is one of the most expensive scams out there right now.",
+    "In 2025, Americans reported seven point two billion dollars lost to crypto investment fraud, the category these scams fall into, according to the FBI.",
+    "Here's the scary part. When the FBI contacted more than four thousand victims in one operation, about three out of four didn't know they were being scammed.",
+    "So let's walk through the six stages, so you can spot them while it's happening, not after."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Why \"pig butchering\"?",
+     "y": 470,
+     "in": 0.2,
+     "size": 84,
+     "out": "s2",
+     "glow": "yellow"
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 280,
+     "w": 800,
+     "h": 400,
+     "in": "s2",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "Chinese phrase",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "sha zhu pan",
+       "size": 80,
+       "weight": "black"
+      },
+      {
+       "text": "\"pig butchering\"",
+       "size": 40,
+       "color": "white",
+       "weight": "semi"
+      }
+     ],
+     "out": "s3"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 300,
+     "w": 560,
+     "h": 380,
+     "in": "s3",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "Weeks or months",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Fatten up",
+       "size": 60,
+       "weight": "black"
+      },
+      {
+       "text": "attention + fake profits",
+       "size": 32,
+       "color": "muted",
+       "weight": "semi"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      760,
+      490
+     ],
+     "to": [
+      1160,
+      490
+     ],
+     "color": "red",
+     "in": "s3+3.0",
+     "out": "s4",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1180,
+     "y": 300,
+     "w": 560,
+     "h": 380,
+     "in": "s3+3.0",
+     "color": "red",
+     "lines": [
+      {
+       "text": "All at once",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Take it all",
+       "size": 60,
+       "weight": "black"
+      },
+      {
+       "text": "savings, loans, fees",
+       "size": 32,
+       "color": "muted",
+       "weight": "semi"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "heading",
+     "text": "One of the costliest scams",
+     "y": 220,
+     "in": "s4",
+     "size": 72,
+     "out": "s5",
+     "glow": "red"
+    },
+    {
+     "type": "icon",
+     "kind": "chart_down",
+     "x": 960,
+     "y": 520,
+     "size": 130,
+     "color": "red",
+     "in": "s4+0.6",
+     "out": "s5"
+    },
+    {
+     "type": "counter",
+     "x": 960,
+     "y": 420,
+     "size": 160,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s5+2.0",
+       7.2
+      ]
+     ],
+     "decimals": 1,
+     "prefix": "$",
+     "suffix": "B",
+     "color": "red",
+     "in": "s5",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 600,
+     "text": "crypto investment fraud, 2025",
+     "color": "red",
+     "in": "s5+2.5",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 720,
+     "text": "source: FBI IC3 annual report",
+     "color": "muted",
+     "in": "s5+3.5",
+     "size": 28,
+     "out": "s6"
+    },
+    {
+     "type": "counter",
+     "x": 560,
+     "y": 420,
+     "size": 140,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s6+3.0",
+       4300
+      ]
+     ],
+     "decimals": 0,
+     "suffix": "+",
+     "color": "yellow",
+     "in": "s6+0.3",
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 560,
+     "y": 580,
+     "text": "victims contacted",
+     "color": "yellow",
+     "in": "s6+3.2",
+     "size": 36,
+     "out": "s7"
+    },
+    {
+     "type": "counter",
+     "x": 1360,
+     "y": 420,
+     "size": 140,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s6+6.0",
+       76
+      ]
+     ],
+     "decimals": 0,
+     "suffix": "%",
+     "color": "red",
+     "in": "s6+5.0",
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 580,
+     "text": "didn't know it was a scam",
+     "color": "red",
+     "in": "s6+6.5",
+     "size": 36,
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "FBI Operation Level Up",
+     "color": "muted",
+     "in": "s6+2.0",
+     "size": 28,
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "6 stages",
+     "y": 400,
+     "in": "s7",
+     "size": 110,
+     "glow": "yellow"
+    },
+    {
+     "type": "rule",
+     "text": "Spot it while it's happening",
+     "kind": "warn",
+     "in": "s7+2.0"
+    }
+   ]
+  },
+  {
+   "name": "step1-contact",
+   "narration": [
+    "Step one: the accidental hello.",
+    "It often starts with a wrong number text. Hi Jenny, it's Mark. Is dinner still on for tonight?",
+    "Or a match on a dating app, a friend request, or a message on a professional networking site.",
+    "It looks random. It isn't. Messages like this go out to thousands of numbers, from people working from scripts.",
+    "If you reply, even just to say wrong number, you've shown them a real person is reading.",
+    "The safest move is simple: don't reply to texts from numbers you don't know. Delete them and block the number.",
+    "A polite answer feels harmless. But it's exactly the door they're waiting for you to open."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 1,
+     "title": "The accidental hello",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "blue",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "+1 (555) 019-2048",
+         "white"
+        ]
+       ],
+       "sub": "Text message"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Hi Jenny, it's Mark. Is dinner still on for tonight?",
+         "side": "l",
+         "in": "s2+0.6"
+        }
+       ]
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 420,
+     "text": "a \"wrong number\" text",
+     "color": "yellow",
+     "in": "s2+1.2",
+     "size": 40,
+     "out": "s3"
+    },
+    {
+     "type": "bullets",
+     "x": 1100,
+     "y": 380,
+     "gap": 130,
+     "size": 46,
+     "title": "Or:",
+     "in": "s3",
+     "out": "s4",
+     "items": [
+      {
+       "text": "Dating app match",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s3+0.6"
+      },
+      {
+       "text": "Friend request",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s3+2.0"
+      },
+      {
+       "text": "Networking message",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s3+3.2"
+      }
+     ]
+    },
+    {
+     "type": "phone_grid",
+     "in": "s4",
+     "out": "s5",
+     "turn_from": "s4+2.5",
+     "turn_to": "s4+5.5",
+     "ratio": 0.4,
+     "turn_color": "red"
+    },
+    {
+     "type": "rule",
+     "text": "Sent to thousands, from scripts",
+     "kind": "bad",
+     "in": "s4+3.0",
+     "out": "s5"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s5",
+     "accent": [
+      [
+       0,
+       "blue"
+      ],
+      [
+       "s5+2.5",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "+1 (555) 019-2048",
+         "white"
+        ]
+       ],
+       "sub": "Text message"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Hi Jenny, it's Mark. Is dinner still on for tonight?",
+         "side": "l",
+         "in": 0
+        },
+        {
+         "text": "Sorry, wrong number!",
+         "side": "r",
+         "in": "s5+0.8"
+        }
+       ]
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 420,
+     "text": "now they know:",
+     "color": "yellow",
+     "in": "s5+2.0",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 540,
+     "text": "a real person is reading",
+     "color": "red",
+     "in": "s5+3.0",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 250,
+     "w": 800,
+     "h": 380,
+     "in": "s6",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Unknown number?",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Don't reply",
+       "size": 70,
+       "weight": "black"
+      },
+      {
+       "text": "delete + block",
+       "size": 40,
+       "color": "white",
+       "weight": "semi"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 760,
+     "size": 80,
+     "color": "green",
+     "in": "s6+2.0",
+     "out": "s7"
+    },
+    {
+     "type": "rule",
+     "text": "A polite reply opens the door",
+     "kind": "bad",
+     "in": "s7"
+    }
+   ]
+  },
+  {
+   "name": "step2-friendship",
+   "narration": [
+    "Step two: the friendship.",
+    "The stranger is charming, successful, and very interested in you.",
+    "Good morning messages every day. Photos of nice cars, beach trips, and expensive dinners. Usually stolen from someone else's social media.",
+    "Soon, they ask you to move the chat to a different messaging app, away from the dating site or your normal texts.",
+    "That's on purpose. Dating sites can ban scam accounts. A private app keeps you all to themselves.",
+    "They often avoid video calls, with excuses like a broken camera or a bad connection.",
+    "And some scam groups now use real-time face-swapping software, so even a short video call is not proof.",
+    "Notice what hasn't happened yet: nobody has asked you for money. That's what makes this stage so convincing."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 2,
+     "title": "The friendship",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "person",
+     "x": 1420,
+     "y": 480,
+     "scale": 0.95,
+     "in": "s2",
+     "out": "s4",
+     "label": "Mark",
+     "color": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 1420,
+     "y": 880,
+     "text": "charming + successful",
+     "color": "yellow",
+     "in": "s2+1.2",
+     "size": 36,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2+0.3",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Mark",
+         "white"
+        ]
+       ],
+       "sub": "online"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Good morning! Did you sleep well?",
+         "side": "l",
+         "in": "s3+0.3"
+        },
+        {
+         "text": "Dinner in the city tonight",
+         "side": "l",
+         "in": "s3+2.4"
+        },
+        {
+         "text": "You're different from everyone else.",
+         "side": "l",
+         "in": "s3+4.5"
+        }
+       ]
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s4",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Where you met",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Dating app",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      470
+     ],
+     "to": [
+      1230,
+      470
+     ],
+     "color": "yellow",
+     "in": "s4+2.0",
+     "out": "s6",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s4+2.0",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Where they move you",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Private app",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "dating sites can ban scammers",
+     "color": "yellow",
+     "in": "s5+1.0",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 860,
+     "text": "you, all to themselves",
+     "color": "red",
+     "in": "s5+3.5",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s6",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Mark",
+         "white"
+        ]
+       ],
+       "sub": "online"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Can we video call tonight?",
+         "side": "r",
+         "in": "s6+0.3"
+        },
+        {
+         "text": "My camera is broken, sorry!",
+         "side": "l",
+         "in": "s6+1.8"
+        },
+        {
+         "text": "Bad connection here.",
+         "side": "l",
+         "in": "s6+3.0"
+        }
+       ]
+      }
+     ],
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 450,
+     "text": "always an excuse",
+     "color": "red",
+     "in": "s6+2.4",
+     "size": 44,
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "A video call is not proof",
+     "y": 300,
+     "in": "s7",
+     "size": 76,
+     "out": "s8",
+     "glow": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 480,
+     "text": "real-time face-swapping exists",
+     "color": "red",
+     "in": "s7+2.0",
+     "size": 44,
+     "out": "s8"
+    },
+    {
+     "type": "icon",
+     "kind": "warn",
+     "x": 960,
+     "y": 680,
+     "size": 110,
+     "color": "yellow",
+     "in": "s7+0.8",
+     "out": "s8"
+    },
+    {
+     "type": "icon",
+     "kind": "coin",
+     "x": 960,
+     "y": 420,
+     "size": 130,
+     "color": "yellow",
+     "in": "s8"
+    },
+    {
+     "type": "rule",
+     "text": "No one has asked for money... yet",
+     "kind": "warn",
+     "in": "s8+1.5"
+    }
+   ]
+  },
+  {
+   "name": "step3-hint",
+   "narration": [
+    "Step three: the hint.",
+    "After weeks of chatting, money comes up, almost by accident.",
+    "I just made eight thousand dollars this week. My uncle is an analyst, he sends me trading signals.",
+    "They don't push. They wait for you to ask how. That way, it feels like your idea.",
+    "Then they offer to teach you, and they send you a link to the platform they use.",
+    "Here's the red flag: someone you have never met in person is giving you investment advice. That alone is enough to stop.",
+    "The next stage is where the money starts moving, and it's built to feel completely safe."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 3,
+     "title": "The hint",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Mark",
+         "white"
+        ]
+       ],
+       "sub": "online"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Crazy week! Made $8,000",
+         "side": "l",
+         "in": "s3+0.3"
+        },
+        {
+         "text": "My uncle is an analyst. He sends me signals.",
+         "side": "l",
+         "in": "s3+2.8"
+        },
+        {
+         "text": "Wow. How do you do that?",
+         "side": "r",
+         "in": "s4+1.2"
+        },
+        {
+         "text": "I can teach you. I use this one:",
+         "side": "l",
+         "in": "s5+1.0"
+        },
+        {
+         "text": "cryptogainpro.net",
+         "side": "l",
+         "in": "s5+2.6",
+         "color": "blue"
+        }
+       ]
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "money comes up \"by accident\"",
+     "color": "yellow",
+     "in": "s2+0.8",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 520,
+     "text": "no pressure... yet",
+     "color": "yellow",
+     "in": "s4",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 660,
+     "text": "they want you to ask",
+     "color": "red",
+     "in": "s4+1.8",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 800,
+     "text": "their platform",
+     "color": "red",
+     "in": "s5+2.8",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Never met them?",
+     "y": 300,
+     "in": "s6",
+     "size": 84,
+     "out": "s7",
+     "glow": "red"
+    },
+    {
+     "type": "heading",
+     "text": "Don't take their investment advice.",
+     "y": 430,
+     "in": "s6+1.5",
+     "size": 60,
+     "out": "s7",
+     "color": "white"
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 680,
+     "text": "STOP",
+     "in": "s6+4.0",
+     "out": "s7",
+     "size": 150,
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "Next: the money starts moving",
+     "y": 470,
+     "in": "s7",
+     "size": 76,
+     "glow": "yellow"
+    }
+   ]
+  },
+  {
+   "name": "step4-platform",
+   "narration": [
+    "Step four: the fake platform.",
+    "The app looks professional. Live charts, a support chat, a logo that looks like a real exchange, even fake reviews.",
+    "They tell you to buy crypto on a licensed exchange, then send it to a deposit address inside their platform.",
+    "From that moment, your money is gone. The platform is just a website that shows numbers the scammers type in.",
+    "Your first small deposit grows fast. Ten percent, then twenty percent, in a few days.",
+    "They even let you withdraw a little, so you trust it.",
+    "Remember: a small withdrawal proves nothing. It's a cheap way for them to buy your trust.",
+    "If a platform came to you through someone you met online, treat every number on it as fake."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 4,
+     "title": "The fake platform",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "Live trading"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "BTC / USDT",
+         "amount": "+2.4%",
+         "color": "green",
+         "in": "s2+0.6"
+        },
+        {
+         "label": "ETH / USDT",
+         "amount": "+1.8%",
+         "color": "green",
+         "in": "s2+1.0"
+        },
+        {
+         "label": "Support chat",
+         "amount": "online",
+         "color": "muted",
+         "in": "s2+1.4"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Deposit",
+         "green"
+        ]
+       ]
+      }
+     ],
+     "out": "s3"
+    },
+    {
+     "type": "bullets",
+     "x": 1100,
+     "y": 400,
+     "gap": 130,
+     "size": 46,
+     "in": "s2",
+     "out": "s3",
+     "items": [
+      {
+       "text": "Live charts",
+       "kind": "check",
+       "color": "green",
+       "in": "s2+1.5"
+      },
+      {
+       "text": "Support chat",
+       "kind": "check",
+       "color": "green",
+       "in": "s2+2.6"
+      },
+      {
+       "text": "Real-looking logo",
+       "kind": "check",
+       "color": "green",
+       "in": "s2+3.6"
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Licensed exchange",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Buy crypto",
+       "size": 56,
+       "weight": "black"
+      }
+     ],
+     "out": "s5"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      470
+     ],
+     "to": [
+      1230,
+      470
+     ],
+     "color": "red",
+     "in": "s3+3.0",
+     "out": "s5",
+     "draw": 0.8,
+     "traveler": "coin"
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3+3.0",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Their \"deposit address\"",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "0x9f4…c21",
+       "size": 56,
+       "weight": "black"
+      }
+     ],
+     "out": "s5"
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 780,
+     "text": "GONE",
+     "in": "s4+0.5",
+     "out": "s5",
+     "size": 130,
+     "color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 220,
+     "text": "the balance is just typed-in numbers",
+     "color": "yellow",
+     "in": "s4+3.0",
+     "size": 40,
+     "out": "s5"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s5",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "Your account"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         1000
+        ],
+        [
+         "s5+2.0",
+         1100
+        ],
+        [
+         "s5+3.5",
+         1200
+        ],
+        [
+         "s6+0.6",
+         1100
+        ]
+       ],
+       "decimals": 0,
+       "color": "green"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Withdrawal $100",
+         "amount": "Received",
+         "color": "green",
+         "in": "s6+0.8"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Deposit",
+         "green"
+        ]
+       ]
+      }
+     ],
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 420,
+     "text": "+10%",
+     "color": "green",
+     "in": "s5+2.0",
+     "size": 48,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 540,
+     "text": "+20%",
+     "color": "green",
+     "in": "s5+3.5",
+     "size": 48,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 420,
+     "text": "the test withdrawal works",
+     "color": "green",
+     "in": "s6+1.0",
+     "size": 40,
+     "out": "s7"
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 400,
+     "text": "PROVES NOTHING",
+     "in": "s7",
+     "size": 100,
+     "color": "yellow"
+    },
+    {
+     "type": "rule",
+     "text": "A small withdrawal is bait",
+     "kind": "warn",
+     "in": "s7+2.0",
+     "out": "s8"
+    },
+    {
+     "type": "rule",
+     "text": "Met online? Every number is fake",
+     "kind": "bad",
+     "in": "s8"
+    }
+   ]
+  },
+  {
+   "name": "story-daniel",
+   "narration": [
+    "Imagine Daniel. He matches with Mia on a dating app.",
+    "For six weeks, they talk every day. She says she runs a small fashion business in another city, and trades crypto on the side.",
+    "She shows him her account: up forty thousand dollars this month.",
+    "Daniel starts with one thousand dollars. A week later, his screen shows thirteen hundred.",
+    "He withdraws two hundred to test it, and it arrives.",
+    "So he moves eighty-five thousand dollars in: his savings, plus a loan. His balance climbs to one hundred and ninety thousand.",
+    "Mia is excited. She talks about the house they'll buy together.",
+    "Then Daniel tries to withdraw. And that's when the trap closes."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "IMAGINE THIS",
+     "color": "yellow",
+     "in": 0
+    },
+    {
+     "type": "person",
+     "x": 330,
+     "y": 480,
+     "scale": 0.95,
+     "in": 0.2,
+     "label": "Daniel",
+     "color": "green"
+    },
+    {
+     "type": "person",
+     "x": 1560,
+     "y": 480,
+     "scale": 0.95,
+     "in": 1.2,
+     "out": "s4",
+     "label": "Mia",
+     "color": "yellow"
+    },
+    {
+     "type": "icon",
+     "kind": "messenger",
+     "x": 945,
+     "y": 440,
+     "size": 120,
+     "color": "blue",
+     "in": "s1+1.5",
+     "out": "s3",
+     "label": "dating app match"
+    },
+    {
+     "type": "tag",
+     "x": 945,
+     "y": 720,
+     "text": "6 weeks, every day",
+     "color": "yellow",
+     "in": "s2+0.5",
+     "size": 40,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 945,
+     "y": 580,
+     "scale": 0.95,
+     "in": "s3",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "Mia's account"
+      },
+      {
+       "type": "balance",
+       "label": "This month",
+       "value": [
+        [
+         0,
+         0
+        ],
+        [
+         "s3+1.5",
+         40000
+        ]
+       ],
+       "decimals": 0,
+       "prefix": "+$",
+       "color": "green"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 945,
+     "y": 580,
+     "scale": 0.95,
+     "in": "s4",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s8+1.5",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "Daniel's account"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         0
+        ],
+        [
+         "s4+0.6",
+         1000
+        ],
+        [
+         "s4+3.0",
+         1300
+        ],
+        [
+         "s5+0.6",
+         1100
+        ],
+        [
+         "s6+1.0",
+         86100
+        ],
+        [
+         "s6+5.0",
+         190000
+        ]
+       ],
+       "decimals": 0,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s8+1.5",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Withdrawal $200",
+         "amount": "Received",
+         "color": "green",
+         "in": "s5+0.8"
+        },
+        {
+         "label": "Deposit $85,000",
+         "amount": "Sent",
+         "color": "yellow",
+         "in": "s6+1.0"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Deposit",
+         "green"
+        ],
+        [
+         "s8",
+         "Withdraw",
+         "yellow"
+        ],
+        [
+         "s8+1.5",
+         "Frozen",
+         "red"
+        ]
+       ]
+      }
+     ],
+     "shake": "s8+1.5"
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 420,
+     "text": "+30% in a week",
+     "color": "green",
+     "in": "s4+3.0",
+     "size": 40,
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 420,
+     "text": "the test works",
+     "color": "green",
+     "in": "s5+1.0",
+     "size": 40,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 380,
+     "text": "savings + loan",
+     "color": "yellow",
+     "in": "s6+1.0",
+     "size": 40,
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 480,
+     "text": "balance: $190,000",
+     "color": "green",
+     "in": "s6+5.0",
+     "size": 40,
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 1500,
+     "y": 420,
+     "text": "\"our future house\"",
+     "color": "yellow",
+     "in": "s7+0.5",
+     "size": 40,
+     "out": "s8"
+    },
+    {
+     "type": "flash",
+     "at": "s8+1.5",
+     "strength": 0.6
+    },
+    {
+     "type": "stamp",
+     "x": 1540,
+     "y": 520,
+     "text": "TRAP",
+     "in": "s8+1.8",
+     "size": 120,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "name": "step5-pressure",
+   "narration": [
+    "Step five: the pressure.",
+    "Before the ending, they push for more. A special event, a VIP level, a window that closes tonight.",
+    "Deposit fifty thousand more, and your profit rate doubles.",
+    "If you hesitate, the tone changes. Don't you trust me? I thought we were building a future.",
+    "Victims are pushed to empty retirement accounts, take out loans, and even borrow from family.",
+    "Here's the rule: any deadline on an investment is a pressure tactic. Real opportunities don't expire in an hour.",
+    "If you feel rushed, that's your signal to slow down, close the app, and talk to someone."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 5,
+     "title": "The pressure",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "red",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "VIP event"
+      },
+      {
+       "type": "text",
+       "text": "Closes in 01:59:41",
+       "size": 34,
+       "color": "red",
+       "weight": "bold"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "VIP 1 · now",
+         "amount": "2x rate",
+         "color": "muted",
+         "in": "s3"
+        },
+        {
+         "label": "VIP 2 · +$50,000",
+         "amount": "4x rate",
+         "color": "yellow",
+         "in": "s3+1.2"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Upgrade now",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s2+0.8",
+       "title": "VIP event ends tonight",
+       "sub": "Last chance to upgrade",
+       "color": "red",
+       "icon": "warn",
+       "out": "s3"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "special event",
+     "color": "yellow",
+     "in": "s2+1.2",
+     "size": 40,
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "VIP level",
+     "color": "yellow",
+     "in": "s2+2.6",
+     "size": 40,
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 620,
+     "text": "closes tonight",
+     "color": "red",
+     "in": "s2+4.0",
+     "size": 40,
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 760,
+     "text": "+$50,000 = rate doubles",
+     "color": "red",
+     "in": "s3+1.2",
+     "size": 40,
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s4",
+     "accent": "red",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Mia",
+         "white"
+        ]
+       ],
+       "sub": "online"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Don't you trust me?",
+         "side": "l",
+         "in": "s4+2.0"
+        },
+        {
+         "text": "I thought we were building a future.",
+         "side": "l",
+         "in": "s4+3.4"
+        }
+       ]
+      }
+     ],
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 450,
+     "text": "the tone changes",
+     "color": "yellow",
+     "in": "s4+0.3",
+     "size": 44,
+     "out": "s4+2.2"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 450,
+     "text": "guilt",
+     "color": "red",
+     "in": "s4+2.4",
+     "size": 56,
+     "out": "s5"
+    },
+    {
+     "type": "bullets",
+     "x": 640,
+     "y": 380,
+     "gap": 140,
+     "size": 56,
+     "title": "Pushed to use:",
+     "in": "s5",
+     "out": "s6",
+     "items": [
+      {
+       "text": "Retirement savings",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+0.8"
+      },
+      {
+       "text": "Loans",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+2.6"
+      },
+      {
+       "text": "Money from family",
+       "kind": "x",
+       "color": "red",
+       "in": "s5+3.6"
+      }
+     ]
+    },
+    {
+     "type": "icon",
+     "kind": "warn",
+     "x": 960,
+     "y": 380,
+     "size": 150,
+     "color": "yellow",
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Deadline = pressure tactic",
+     "y": 640,
+     "in": "s6+1.0",
+     "size": 72,
+     "glow": "red"
+    },
+    {
+     "type": "rule",
+     "text": "Real opportunities don't expire in an hour",
+     "kind": "bad",
+     "in": "s6+4.0",
+     "out": "s7"
+    },
+    {
+     "type": "rule",
+     "text": "Rushed? Slow down and ask someone",
+     "kind": "ok",
+     "in": "s7"
+    }
+   ]
+  },
+  {
+   "name": "step6-butchering",
+   "narration": [
+    "Step six: the butchering.",
+    "When you try to withdraw, your account is suddenly frozen.",
+    "To unlock it, you have to pay a tax. Then a security deposit. Then an anti-money-laundering fee.",
+    "Every fee is paid in crypto, to them. And none of it unlocks anything.",
+    "When you finally stop paying, the platform disappears, and so does the person you trusted. The profile, the chat, the website: all gone overnight.",
+    "For Daniel, the one hundred and ninety thousand on his screen never existed. He lost his savings, the loan, and every fee he paid."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "STEP",
+     "num": 6,
+     "title": "The butchering",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": [
+      [
+       0,
+       "yellow"
+      ],
+      [
+       "s2+1.6",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "Withdrawal"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": 190000,
+       "decimals": 0,
+       "color": "red"
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Withdraw",
+         "yellow"
+        ],
+        [
+         "s2+1.6",
+         "Frozen",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s2+1.8",
+       "title": "Account frozen",
+       "sub": "Pay 20% tax to unlock",
+       "color": "red",
+       "icon": "lock"
+      }
+     ],
+     "out": "s5",
+     "shake": "s2+1.6"
+    },
+    {
+     "type": "bullets",
+     "x": 1100,
+     "y": 360,
+     "gap": 130,
+     "size": 50,
+     "title": "To unlock, pay:",
+     "in": "s3",
+     "out": "s5",
+     "items": [
+      {
+       "text": "\"Tax\"",
+       "kind": "x",
+       "color": "red",
+       "in": "s3+1.0"
+      },
+      {
+       "text": "\"Security deposit\"",
+       "kind": "x",
+       "color": "red",
+       "in": "s3+2.6"
+      },
+      {
+       "text": "\"AML fee\"",
+       "kind": "x",
+       "color": "red",
+       "in": "s3+4.0"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 840,
+     "text": "unlocks nothing",
+     "color": "red",
+     "in": "s4+2.0",
+     "size": 44,
+     "out": "s5"
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 250,
+     "w": 800,
+     "h": 300,
+     "in": "s5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "cryptogainpro.net",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Site not found",
+       "size": 64,
+       "weight": "black"
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 680,
+     "text": "Mia: account deleted",
+     "color": "red",
+     "in": "s5+2.5",
+     "size": 44,
+     "out": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "$190,000 never existed.",
+     "y": 400,
+     "in": "s6",
+     "size": 96,
+     "glow": "red",
+     "color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 580,
+     "text": "real loss: savings + loan + every fee",
+     "color": "red",
+     "in": "s6+3.5",
+     "size": 44
+    }
+   ]
+  },
+  {
+   "name": "who-behind",
+   "narration": [
+    "So who is on the other side of the chat?",
+    "According to U.S. authorities, much of this is run by criminal groups based in Southeast Asia.",
+    "They work from large compounds, and many of the people typing the messages were trafficked there and forced to work.",
+    "In October 2025, the U.S. Justice Department moved to seize about one hundred and twenty-seven thousand bitcoin from one such network. That was worth around fifteen billion dollars at the time.",
+    "Prosecutors called it the largest forfeiture action in the department's history.",
+    "This is an industry, with scripts, shifts and targets. You are not up against one lonely liar.",
+    "Every compliment, every photo and every chart you see is planned to get you to deposit more."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Who is on the other side?",
+     "y": 470,
+     "in": 0.2,
+     "size": 84,
+     "out": "s2",
+     "glow": "yellow"
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 280,
+     "w": 800,
+     "h": 380,
+     "in": "s2",
+     "color": "blue",
+     "lines": [
+      {
+       "text": "U.S. authorities",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Criminal groups",
+       "size": 64,
+       "weight": "black"
+      },
+      {
+       "text": "based in Southeast Asia",
+       "size": 40,
+       "color": "white",
+       "weight": "semi"
+      }
+     ],
+     "out": "s3"
+    },
+    {
+     "type": "person",
+     "x": 520,
+     "y": 440,
+     "scale": 0.8,
+     "in": "s3",
+     "out": "s4",
+     "color": "yellow"
+    },
+    {
+     "type": "person",
+     "x": 960,
+     "y": 440,
+     "scale": 0.8,
+     "in": "s3+0.3",
+     "out": "s4",
+     "color": "yellow"
+    },
+    {
+     "type": "person",
+     "x": 1400,
+     "y": 440,
+     "scale": 0.8,
+     "in": "s3+0.6",
+     "out": "s4",
+     "color": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 820,
+     "text": "many were trafficked and forced to work",
+     "color": "red",
+     "in": "s3+3.0",
+     "size": 44,
+     "out": "s4"
+    },
+    {
+     "type": "counter",
+     "x": 960,
+     "y": 360,
+     "size": 150,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s4+4.0",
+       127000
+      ]
+     ],
+     "decimals": 0,
+     "suffix": " BTC",
+     "color": "yellow",
+     "in": "s4",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 520,
+     "text": "≈ $15 billion at the time",
+     "color": "yellow",
+     "in": "s4+7.0",
+     "size": 44,
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 620,
+     "text": "U.S. Justice Department · Oct 2025",
+     "color": "muted",
+     "in": "s4+1.0",
+     "size": 30,
+     "out": "s6"
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 800,
+     "text": "LARGEST FORFEITURE",
+     "in": "s5+0.5",
+     "out": "s6",
+     "size": 80,
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "An industry, not one liar",
+     "y": 220,
+     "in": "s6",
+     "size": 76,
+     "glow": "red"
+    },
+    {
+     "type": "bullets",
+     "x": 760,
+     "y": 400,
+     "gap": 130,
+     "size": 56,
+     "in": "s6+1.0",
+     "items": [
+      {
+       "text": "Scripts",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s6+1.8"
+      },
+      {
+       "text": "Shifts",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s6+2.4"
+      },
+      {
+       "text": "Targets",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s6+3.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "myth-naive",
+   "narration": [
+    "Myth: only lonely or naive people fall for this.",
+    "Victims come from every age group and background, including people who are usually careful with money.",
+    "The scam doesn't target your intelligence. It targets your trust, built slowly, over months.",
+    "In 2025, people over sixty alone reported four point four billion dollars in crypto fraud losses to the FBI.",
+    "So if this happens to you, or someone you love, it's not stupidity. It's a professional operation.",
+    "Shame is what keeps victims quiet, and silence is exactly what the scammers count on."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "MYTH",
+     "num": 1,
+     "title": "\"Only naive people fall for it\"",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "person",
+     "x": 520,
+     "y": 440,
+     "scale": 0.8,
+     "in": "s2",
+     "out": "s3",
+     "color": "green",
+     "label": "age 27"
+    },
+    {
+     "type": "person",
+     "x": 960,
+     "y": 440,
+     "scale": 0.8,
+     "in": "s2+0.8",
+     "out": "s3",
+     "color": "blue",
+     "label": "age 44"
+    },
+    {
+     "type": "person",
+     "x": 1400,
+     "y": 440,
+     "scale": 0.8,
+     "in": "s2+1.6",
+     "out": "s3",
+     "color": "yellow",
+     "label": "age 68"
+    },
+    {
+     "type": "card",
+     "x": 330,
+     "y": 300,
+     "w": 560,
+     "h": 360,
+     "in": "s3",
+     "color": "muted",
+     "lines": [
+      {
+       "text": "It doesn't target",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Intelligence",
+       "size": 60,
+       "weight": "black"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "card",
+     "x": 1030,
+     "y": 300,
+     "w": 560,
+     "h": 360,
+     "in": "s3+2.6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "It targets",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Trust",
+       "size": 72,
+       "weight": "black"
+      },
+      {
+       "text": "built over months",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "counter",
+     "x": 960,
+     "y": 420,
+     "size": 160,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s4+2.5",
+       4.4
+      ]
+     ],
+     "decimals": 1,
+     "prefix": "$",
+     "suffix": "B",
+     "color": "red",
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 600,
+     "text": "crypto fraud losses, age 60+, 2025",
+     "color": "red",
+     "in": "s4+2.0",
+     "size": 40,
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 720,
+     "text": "source: FBI IC3 annual report",
+     "color": "muted",
+     "in": "s4+3.0",
+     "size": 28,
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 400,
+     "size": 140,
+     "color": "yellow",
+     "in": "s5"
+    },
+    {
+     "type": "rule",
+     "text": "Not stupidity: a professional operation",
+     "kind": "warn",
+     "in": "s5+1.5",
+     "out": "s6"
+    },
+    {
+     "type": "rule",
+     "text": "Talk about it. Silence helps them.",
+     "kind": "ok",
+     "in": "s6"
+    }
+   ]
+  },
+  {
+   "name": "tip-rules",
+   "narration": [
+    "Here's how to protect yourself. Five rules.",
+    "One: never invest because someone you met online told you to.",
+    "Two: never send crypto to a platform or an address that someone else gave you.",
+    "Three: search their photos with a reverse image search. Scammers often steal pictures from real people.",
+    "Four: before you deposit anywhere, check that the company is registered, using official government websites, not the site itself.",
+    "Five: talk to someone you trust before you move money. Scammers want you to keep it secret.",
+    "If they ask you not to tell your family, that alone tells you everything.",
+    "A real partner, and a real investment, can survive a second opinion."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "num": 1,
+     "title": "5 rules that stop it",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "checklist",
+     "y": 250,
+     "row_h": 125,
+     "out": "s7",
+     "items": [
+      {
+       "text": "No investing on an online contact's advice",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Never send crypto to their platform",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "Reverse image search their photos",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Check registration on official sites",
+       "in": "s5",
+       "done": "s5e"
+      },
+      {
+       "text": "Talk to someone you trust first",
+       "in": "s6",
+       "done": "s6e"
+      }
+     ]
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s7",
+     "accent": "red",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Mia",
+         "white"
+        ]
+       ],
+       "sub": "online"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Don't tell your family yet. They won't understand.",
+         "side": "l",
+         "in": "s7+0.5"
+        }
+       ]
+      }
+     ],
+     "out": "s8"
+    },
+    {
+     "type": "stamp",
+     "x": 1360,
+     "y": 480,
+     "text": "SCAM",
+     "in": "s7+2.5",
+     "out": "s8",
+     "size": 150,
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "Get a second opinion",
+     "y": 420,
+     "in": "s8",
+     "size": 84,
+     "glow": "green"
+    },
+    {
+     "type": "rule",
+     "text": "Real trust survives a second opinion",
+     "kind": "ok",
+     "in": "s8"
+    }
+   ]
+  },
+  {
+   "name": "tip-caught",
+   "narration": [
+    "And if you think you're already in one, do this.",
+    "Stop sending money, no matter what fee or deadline they give you.",
+    "Stop talking to them, and don't try to argue them into giving your money back.",
+    "Report it to the FBI at ic3.gov, and to the FTC at reportfraud.ftc.gov.",
+    "Tell your bank and your exchange, and save every chat, address and transaction ID.",
+    "Then watch out for part two: people who promise to recover your crypto for a fee. That's almost always another scam.",
+    "Real law enforcement will never charge you to get your money back."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "num": 2,
+     "title": "Already in one? Do this",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "checklist",
+     "y": 270,
+     "row_h": 125,
+     "out": "s6",
+     "items": [
+      {
+       "text": "Stop sending money",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Stop talking to them",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "Report: ic3.gov · reportfraud.ftc.gov",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Tell bank + exchange, save proof",
+       "in": "s5",
+       "done": "s5e"
+      }
+     ]
+    },
+    {
+     "type": "person",
+     "x": 700,
+     "y": 480,
+     "scale": 0.95,
+     "hood": true,
+     "in": "s6",
+     "label": "\"recovery expert\"",
+     "color": "red"
+    },
+    {
+     "type": "stamp",
+     "x": 1320,
+     "y": 460,
+     "text": "SCAM, PART 2",
+     "in": "s6+4.0",
+     "size": 90,
+     "color": "red"
+    },
+    {
+     "type": "rule",
+     "text": "Real police never charge you upfront",
+     "kind": "bad",
+     "in": "s7"
+    }
+   ]
+  },
+  {
+   "name": "recap",
+   "narration": [
+    "Let's recap the six stages.",
+    "One: an accidental hello, like a wrong number text.",
+    "Two: a friendship that moves to a private app.",
+    "Three: a hint about how much they're making.",
+    "Four: a fake platform, with fake profits and a small test withdrawal.",
+    "Five: pressure and deadlines to deposit more.",
+    "Six: fees to withdraw, and then they disappear.",
+    "And the one rule that beats every stage: never take investment advice from someone you only know online."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Pig butchering: 6 stages",
+     "y": 120,
+     "in": 0,
+     "size": 62,
+     "glow": "red"
+    },
+    {
+     "type": "checklist",
+     "y": 230,
+     "row_h": 108,
+     "size": 38,
+     "items": [
+      {
+       "text": "\"Wrong number\" hello",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Friendship moves to a private app",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "A hint about their profits",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Fake platform + small withdrawal",
+       "in": "s5",
+       "done": "s5e"
+      },
+      {
+       "text": "Pressure and deadlines",
+       "in": "s6",
+       "done": "s6e"
+      },
+      {
+       "text": "Fees to withdraw, then gone",
+       "in": "s7",
+       "done": "s7e"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "Online-only contact + investment advice = stop",
+     "kind": "ok",
+     "in": "s8"
+    }
+   ]
+  },
+  {
+   "name": "outro",
+   "hold": 11,
+   "narration": [
+    "If this helped, subscribe, and share it with someone who's been chatting with a stranger online.",
+    "Next, I'll explain wallet drainer scams, and how one click on approve can empty your wallet.",
+    "And tell me in the comments: have you ever gotten a wrong number text like this?"
+   ],
+   "elements": [
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 260,
+     "size": 100,
+     "in": 0,
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "subscribe",
+     "y": 500,
+     "in": 0.6,
+     "click": "s1+1.5",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 660,
+     "text": "NEXT VIDEO",
+     "color": "green",
+     "in": "s2",
+     "size": 26,
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "heading",
+     "text": "Wallet drainer scams explained",
+     "y": 760,
+     "in": "s2+0.3",
+     "size": 58,
+     "out": "s3e+0.6",
+     "weight": "bold"
+    },
+    {
+     "type": "comment",
+     "text": "Ever gotten a \"wrong number\" text like this?",
+     "y": 920,
+     "in": "s3",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "endscreen",
+     "in": "s3e+0.8"
+    }
+   ]
+  }
+ ]
+}

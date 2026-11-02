@@ -1,0 +1,203 @@
+{
+ "id": "2026-11-02-pig-butchering-2",
+ "format": "short",
+ "topic": "pig-butchering",
+ "voice": "blend",
+ "publish": {
+  "title": "This $200 withdrawal cost him $85,000 #shorts",
+  "description": "Fake crypto platforms let you withdraw a small amount on purpose, so you trust them with much more. A small withdrawal proves nothing.\n\nFull video on the channel: search \"What Is a Pig Butchering Scam? How Crypto Romance Scams Work\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #pigbutchering #shorts",
+  "tags": [
+   "fake crypto platform",
+   "pig butchering scam",
+   "crypto withdrawal scam",
+   "crypto scam",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "This two hundred dollar withdrawal cost him everything.",
+    "Imagine Dan. An online friend shows him a crypto platform.",
+    "He deposits a thousand. He withdraws two hundred to test it, and it arrives.",
+    "So he deposits eighty-five thousand. Then his account is frozen.",
+    "The small withdrawal was bait. It proves nothing.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "$200 OUT. $85,000 GONE.",
+     "y": 310,
+     "size": 84,
+     "w": 900,
+     "glow": "red",
+     "color": "red",
+     "out": "s2"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "\"my online friend's platform\"",
+     "color": "yellow",
+     "size": 40,
+     "in": "s2",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "the test works...",
+     "color": "green",
+     "size": 48,
+     "in": "s3+2.0",
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 920,
+     "scale": 1.1,
+     "in": 0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s4+2.0",
+       "red"
+      ]
+     ],
+     "shake": "s4+2.0",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoGainPro",
+       "sub": "Dan's account"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         0
+        ],
+        [
+         "s3+0.5",
+         1000
+        ],
+        [
+         "s3+2.5",
+         800
+        ],
+        [
+         "s4+0.5",
+         85800
+        ]
+       ],
+       "decimals": 0,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s4+2.0",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Withdrawal $200",
+         "amount": "Received",
+         "color": "green",
+         "in": "s3+2.5"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Deposit",
+         "green"
+        ],
+        [
+         "s4+2.0",
+         "Frozen",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s4+2.0",
+       "title": "Account frozen",
+       "sub": "Pay a fee to unlock",
+       "color": "red",
+       "icon": "lock"
+      }
+     ]
+    },
+    {
+     "type": "flash",
+     "at": "s4+2.0",
+     "strength": 0.6
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "frozen",
+     "color": "red",
+     "size": 56,
+     "in": "s4+2.0",
+     "out": "s5"
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 560,
+     "text": "BAIT",
+     "in": "s5",
+     "size": 170,
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "A small withdrawal proves nothing.",
+     "y": 860,
+     "size": 80,
+     "w": 860,
+     "in": "s5+0.6",
+     "glow": "yellow"
+    }
+   ]
+  }
+ ]
+}

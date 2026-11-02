@@ -198,6 +198,20 @@
     "specs/shorts/2026-10-31-fake-crypto-sites-2.json",
     "specs/shorts/2026-10-31-fake-crypto-sites-3.json"
    ]
+  },
+  {
+   "date": "2026-11-02",
+   "type": "video",
+   "id": "2026-11-02-pig-butchering",
+   "title": "What Is a Pig Butchering Scam? How Crypto Romance Scams Work",
+   "metricool_post": 414148610,
+   "status": "scheduled 2026-11-02 15:30 America/New_York (00:30 Nov 3 Yerevan)",
+   "duration_s": 532.9,
+   "shorts_queued": [
+    "specs/shorts/2026-11-02-pig-butchering-1.json",
+    "specs/shorts/2026-11-02-pig-butchering-2.json",
+    "specs/shorts/2026-11-02-pig-butchering-3.json"
+   ]
   }
  ]
 }

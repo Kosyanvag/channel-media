@@ -1,0 +1,193 @@
+{
+ "id": "2026-11-02-pig-butchering-3",
+ "format": "short",
+ "topic": "pig-butchering",
+ "voice": "blend",
+ "publish": {
+  "title": "Real or scam? \"My uncle sends me trading signals\" #shorts",
+  "description": "An online friend you have never met who offers to teach you crypto trading on their platform is a classic pig butchering setup. Never take investment advice from someone you only know online.\n\nFull video on the channel: search \"What Is a Pig Butchering Scam? How Crypto Romance Scams Work\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #realorscam #shorts",
+  "tags": [
+   "real or scam",
+   "pig butchering scam",
+   "crypto romance scam",
+   "crypto trading signals scam",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Your online friend sends you this. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's a scam setup. Next comes a link to a fake platform with fake profits.",
+    "The clue: you have never met this person, and they're giving you investment advice.",
+    "Never take investment tips from someone you only know online.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 52,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 960,
+     "scale": 1.0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s3",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Mia",
+         "white"
+        ]
+       ],
+       "sub": "online · met on a dating app"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Made $8,000 this week!",
+         "side": "l",
+         "in": 0.1
+        },
+        {
+         "text": "My uncle is an analyst. He sends me trading signals.",
+         "side": "l",
+         "in": 0.8
+        },
+        {
+         "text": "I can teach you on my platform",
+         "side": "l",
+         "in": 1.6
+        },
+        {
+         "text": "cryptogainpro.net",
+         "side": "l",
+         "in": "s3+0.8",
+         "color": "blue"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 1250,
+     "size": 200,
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ],
+     "color": "yellow",
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 1250,
+     "text": "SCAM",
+     "in": "s3",
+     "out": "s4",
+     "size": 200,
+     "color": "red"
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "strength": 0.6
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "never met in person",
+     "color": "red",
+     "size": 48,
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 540,
+     "y": 560,
+     "size": 130,
+     "in": "s5",
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "No investment tips from online-only friends.",
+     "y": 820,
+     "size": 76,
+     "w": 860,
+     "in": "s5",
+     "glow": "red",
+     "color": "white"
+    },
+    {
+     "type": "comment",
+     "text": "Did you get it right?",
+     "y": 1150,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}

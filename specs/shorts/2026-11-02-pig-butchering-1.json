@@ -1,0 +1,187 @@
+{
+ "id": "2026-11-02-pig-butchering-1",
+ "format": "short",
+ "topic": "pig-butchering",
+ "voice": "blend",
+ "publish": {
+  "title": "Real or scam? A \"wrong number\" text #shorts",
+  "description": "A friendly \"wrong number\" text is how many pig butchering scams begin: weeks of chatting, then a fake crypto platform. Don't reply to unknown numbers, just delete and block.\n\nFull video on the channel: search \"What Is a Pig Butchering Scam? How Crypto Romance Scams Work\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #realorscam #shorts",
+  "tags": [
+   "real or scam",
+   "wrong number text scam",
+   "pig butchering scam",
+   "crypto romance scam",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "You get this text from a stranger. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's very likely a scam. This is how pig butchering scams begin.",
+    "Reply, and the stranger chats with you for weeks, then shows you a crypto platform.",
+    "Don't reply to unknown numbers. Delete and block.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 52,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 960,
+     "scale": 1.0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s3",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "+1 (555) 014-7731",
+         "white"
+        ]
+       ],
+       "sub": "Text message"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Hi David, are we still on for golf on Saturday?",
+         "side": "l",
+         "in": 0.1
+        },
+        {
+         "text": "Sorry, wrong number!",
+         "side": "r",
+         "in": "s4+0.5"
+        },
+        {
+         "text": "Oh, so sorry! You seem kind. I'm Mark :)",
+         "side": "l",
+         "in": "s4+1.8"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 1180,
+     "size": 220,
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ],
+     "color": "yellow",
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 1180,
+     "text": "SCAM",
+     "in": "s3",
+     "out": "s4",
+     "size": 200,
+     "color": "red"
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "strength": 0.6
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "pig butchering, step 1",
+     "color": "red",
+     "size": 44,
+     "in": "s3",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 540,
+     "y": 560,
+     "size": 130,
+     "in": "s5",
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "Don't reply. Delete and block.",
+     "y": 820,
+     "size": 84,
+     "w": 860,
+     "in": "s5",
+     "glow": "red",
+     "color": "white"
+    },
+    {
+     "type": "comment",
+     "text": "Did you get it right?",
+     "y": 1150,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}
