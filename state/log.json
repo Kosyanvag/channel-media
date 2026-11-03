@@ -212,6 +212,21 @@
     "specs/shorts/2026-11-02-pig-butchering-2.json",
     "specs/shorts/2026-11-02-pig-butchering-3.json"
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "type": "short",
+   "news": true,
+   "format": "quiz",
+   "id": "2026-11-03-news-withdrawal-help-scam",
+   "title": "Real or scam? Support will speed up your withdrawal #shorts",
+   "metricool_post": 415159668,
+   "providers": [
+    "youtube"
+   ],
+   "status": "scheduled 2026-11-03 18:30 America/New_York",
+   "duration_s": 31.4,
+   "news_check": "Exchange $6.3B hack follow-up: Nov 2 advisory warning of support-impersonation / priority-withdrawal / fake compensation scams (CryptoSlate, Gokhshtein News; hack confirmed by PBS). 1 news short in last 7 days -> news short; queue untouched"
   }
  ]
 }
