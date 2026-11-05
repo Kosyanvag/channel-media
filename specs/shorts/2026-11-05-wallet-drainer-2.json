@@ -1,0 +1,207 @@
+{
+ "id": "2026-11-05-wallet-drainer-2",
+ "format": "short",
+ "topic": "wallet-drainer",
+ "voice": "blend",
+ "publish": {
+  "title": "One free signature emptied her crypto wallet #shorts",
+  "description": "No fee, no transaction, just a signature to \"verify your wallet\". Some signatures are permissions in disguise. Treat every signature like a payment.\n\nFull video on the channel: search \"Wallet Drainer Scam: How One Click on Approve Empties Your Wallet\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #walletdrainer #shorts",
+  "tags": [
+   "wallet drainer scam",
+   "permit signature scam",
+   "crypto wallet drained",
+   "crypto scam",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "One free signature emptied her wallet.",
+    "Imagine Priya. Her trusted crypto group posts a token claim.",
+    "The site asks her to sign, to verify her wallet. No fee.",
+    "She signs. The next morning, her wallet is empty.",
+    "Some signatures let others spend your tokens. Treat every signature like a payment.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s6"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "1 FREE SIGNATURE. WALLET EMPTY.",
+     "y": 310,
+     "size": 80,
+     "w": 900,
+     "glow": "red",
+     "color": "red",
+     "out": "s2"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "\"trusted\" group chat",
+     "color": "yellow",
+     "size": 44,
+     "in": "s2",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "network fee: $0",
+     "color": "green",
+     "size": 48,
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 300,
+     "text": "next morning",
+     "color": "red",
+     "size": 52,
+     "in": "s4+1.4",
+     "out": "s5"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 920,
+     "scale": 1.1,
+     "in": 0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "yellow"
+      ],
+      [
+       "s4+1.6",
+       "red"
+      ]
+     ],
+     "shake": "s4+1.6",
+     "screens": [
+      {
+       "in": 0,
+       "out": "s4+1.4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "Wallet",
+         "sub": "Signature request"
+        },
+        {
+         "type": "text",
+         "text": "Sign to verify your wallet",
+         "size": 26,
+         "color": "white",
+         "weight": "bold"
+        },
+        {
+         "type": "text",
+         "text": "Network fee: $0",
+         "size": 24,
+         "color": "green",
+         "weight": "bold"
+        },
+        {
+         "type": "button",
+         "label": [
+          [
+           0,
+           "Sign",
+           "green"
+          ],
+          [
+           "s4+0.4",
+           "Signed",
+           "gray"
+          ]
+         ],
+         "press": "s4+0.2"
+        }
+       ]
+      },
+      {
+       "in": "s4+1.4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "My Wallet",
+         "sub": "Next morning"
+        },
+        {
+         "type": "balance",
+         "label": "Balance",
+         "value": [
+          [
+           0,
+           4000
+          ],
+          [
+           "s4+1.6",
+           0
+          ]
+         ],
+         "decimals": 0,
+         "color": [
+          [
+           0,
+           "green"
+          ],
+          [
+           "s4+1.6",
+           "red"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "flash",
+     "at": "s4+1.6",
+     "strength": 0.6
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 560,
+     "text": "SIGN = PAY",
+     "in": "s5",
+     "size": 140,
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "Can't read it? Don't sign it.",
+     "y": 880,
+     "size": 80,
+     "w": 860,
+     "in": "s5+1.0",
+     "glow": "yellow"
+    }
+   ]
+  }
+ ]
+}

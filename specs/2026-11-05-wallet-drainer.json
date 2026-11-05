@@ -1,0 +1,2949 @@
+{
+ "id": "2026-11-05-wallet-drainer",
+ "format": "long",
+ "topic": "wallet-drainer",
+ "voice": "blend",
+ "publish": {
+  "title": "Wallet Drainer Scam: How One Click on Approve Empties Your Wallet",
+  "description": "What is a wallet drainer scam? A fake site gets you to click approve or sign a message, and a smart contract empties your wallet in seconds, without your seed phrase. In this beginner guide you'll see how token approvals work, the four places drainers hide (fake airdrops, hacked accounts, fake search ads and free signatures), five habits that make you hard to drain, and how to check and revoke your approvals.\n\n{chapters}\n\nReport crypto fraud: ic3.gov\n\nThis video is for educational purposes only and is not financial advice.\n\n#cryptoscam #walletdrainer #crypto",
+  "tags": [
+   "wallet drainer scam",
+   "what is a wallet drainer",
+   "crypto wallet drained",
+   "token approval scam",
+   "how to revoke token approvals",
+   "fake airdrop scam",
+   "permit signature scam",
+   "crypto scam",
+   "crypto for beginners"
+  ],
+  "category": "EDUCATION",
+  "chapters": [
+   "Intro",
+   "How one click steals",
+   "How big is it",
+   "Scam 1: Fake airdrops",
+   "Scam 2: Hacked accounts",
+   "Scam 3: Fake search ads",
+   "Scam 4: Free signatures",
+   "Priya's story",
+   "Myth: Hardware wallets",
+   "5 habits that stop drainers",
+   "How to revoke approvals",
+   "Already approved? Do this",
+   "Recap"
+  ]
+ },
+ "thumbnail": {
+  "scene": 0,
+  "at": "s3+0.8",
+  "shift": 300,
+  "x": 1400,
+  "lines": [
+   {
+    "text": "ONE CLICK",
+    "y": 330,
+    "size": 150,
+    "color": "white",
+    "glow": "yellow"
+   },
+   {
+    "text": "= WALLET",
+    "y": 520,
+    "size": 150,
+    "color": "white",
+    "glow": "yellow"
+   },
+   {
+    "text": "EMPTY",
+    "y": 730,
+    "size": 200,
+    "color": "red",
+    "glow": "red"
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "name": "hook",
+   "narration": [
+    "Sam saw a post: claim your free tokens before the airdrop ends.",
+    "He opened the link, connected his wallet, and a box popped up asking him to approve.",
+    "He clicked approve. It looked like every other crypto app he had used.",
+    "Two minutes later, every token in his wallet was gone. He never typed his seed phrase. He never sent a thing.",
+    "That's a wallet drainer. In this video, you'll see how one click empties a wallet, the four places drainers hide, and the habits that make you very hard to drain."
+   ],
+   "elements": [
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": 0.2,
+     "accent": "blue",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Airdrop News",
+         "white"
+        ]
+       ],
+       "sub": "Channel post"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Claim your free tokens before the airdrop ends!",
+         "side": "l",
+         "in": "s1+0.5"
+        },
+        {
+         "text": "cryptoclaim-app.xyz",
+         "side": "l",
+         "in": "s1+1.8",
+         "color": "blue"
+        }
+       ]
+      }
+     ],
+     "out": "s2"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "free tokens",
+     "color": "green",
+     "size": 40,
+     "in": "s1+1.0",
+     "out": "s2"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "\"ends today\"",
+     "color": "red",
+     "size": 40,
+     "in": "s1+2.4",
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Wallet",
+       "sub": "cryptoclaim-app.xyz"
+      },
+      {
+       "type": "text",
+       "text": "This site wants permission to spend your tokens:",
+       "size": 22,
+       "color": "white",
+       "weight": "semi"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Token",
+         "amount": "USDT",
+         "color": "muted"
+        },
+        {
+         "label": "Spending cap",
+         "amount": "Unlimited",
+         "color": "red",
+         "in": "s2+2.6"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Approve",
+         "green"
+        ]
+       ],
+       "press": "s3+0.3"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "connect wallet",
+     "color": "green",
+     "size": 40,
+     "in": "s2+0.6",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "\"approve?\"",
+     "color": "yellow",
+     "size": 40,
+     "in": "s2+2.4",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 450,
+     "text": "looks normal",
+     "color": "green",
+     "size": 40,
+     "in": "s3+1.2",
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s4",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s4+1.2",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "My Wallet",
+       "sub": "2 minutes later"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         2840
+        ],
+        [
+         "s4+1.2",
+         0
+        ]
+       ],
+       "decimals": 0,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s4+1.2",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Sent: USDT",
+         "amount": "-2,840",
+         "color": "red",
+         "in": "s4+1.0"
+        },
+        {
+         "label": "Sent: ETH",
+         "amount": "-0.41",
+         "color": "red",
+         "in": "s4+1.6"
+        }
+       ]
+      }
+     ],
+     "out": "s5",
+     "shake": "s4+1.2"
+    },
+    {
+     "type": "flash",
+     "at": "s4+1.2",
+     "strength": 0.6
+    },
+    {
+     "type": "stamp",
+     "x": 1360,
+     "y": 400,
+     "text": "DRAINED",
+     "in": "s4+1.4",
+     "size": 110,
+     "color": "red",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 620,
+     "text": "no seed phrase typed",
+     "color": "yellow",
+     "size": 40,
+     "in": "s4+3.2",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 740,
+     "text": "nothing sent by him",
+     "color": "yellow",
+     "size": 40,
+     "in": "s4+4.8",
+     "out": "s5"
+    },
+    {
+     "type": "heading",
+     "text": "The wallet drainer",
+     "y": 300,
+     "in": "s5",
+     "size": 88,
+     "glow": "red"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 480,
+     "text": "how one click works",
+     "color": "white",
+     "size": 44,
+     "in": "s5+3.0"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 590,
+     "text": "4 places they hide",
+     "color": "yellow",
+     "size": 44,
+     "in": "s5+5.2"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 700,
+     "text": "habits that stop them",
+     "color": "green",
+     "size": 44,
+     "in": "s5+7.0"
+    }
+   ]
+  },
+  {
+   "name": "how",
+   "narration": [
+    "First, how can one click steal anything?",
+    "When you use a crypto app, it often needs permission to move your tokens. For example, to swap them.",
+    "So your wallet asks you to approve. You're giving that app's smart contract a key to your tokens. Connecting alone only shows your address. The approve step is what hands over the key.",
+    "Many apps ask for an unlimited amount, so they never have to ask again. That saves a small fee each time, but it also means the app can move every token of that type.",
+    "On a real app, that's normal. On a fake one, the contract belongs to a thief.",
+    "And here's the important part: that permission doesn't expire. It stays active until you remove it.",
+    "A wallet drainer is a fake site built around this trick. It gets you to approve, then takes everything it can, in seconds."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "How can one click steal?",
+     "y": 470,
+     "in": 0.2,
+     "size": 84,
+     "out": "s2",
+     "glow": "yellow"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoSwap",
+       "sub": "Swap USDT to ETH"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "From",
+         "amount": "500 USDT",
+         "color": "muted"
+        },
+        {
+         "label": "To",
+         "amount": "0.16 ETH",
+         "color": "muted"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Swap",
+         "green"
+        ]
+       ]
+      }
+     ],
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 450,
+     "text": "the app needs permission",
+     "color": "yellow",
+     "size": 40,
+     "in": "s2+2.0",
+     "out": "s3"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3",
+     "color": "green",
+     "lines": [
+      {
+       "text": "You",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Your tokens",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      480
+     ],
+     "to": [
+      1230,
+      480
+     ],
+     "color": "yellow",
+     "in": "s3+3.0",
+     "out": "s4",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3+3.0",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "App's contract",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Gets a key",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "icon",
+     "kind": "unlock",
+     "x": 960,
+     "y": 790,
+     "size": 90,
+     "color": "yellow",
+     "in": "s3+3.0",
+     "out": "s4",
+     "open": "s3+3.6"
+    },
+    {
+     "type": "heading",
+     "text": "Spending cap: Unlimited",
+     "y": 400,
+     "in": "s4",
+     "size": 80,
+     "out": "s5",
+     "glow": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 560,
+     "text": "so it never asks again",
+     "color": "yellow",
+     "size": 44,
+     "in": "s4+2.0",
+     "out": "s5"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s5",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Real app",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Normal",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      480
+     ],
+     "to": [
+      1230,
+      480
+     ],
+     "color": "red",
+     "in": "s5+2.0",
+     "out": "s6",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s5+2.0",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Fake app",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "A thief's key",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Approvals don't expire",
+     "y": 380,
+     "in": "s6",
+     "size": 84,
+     "out": "s7",
+     "glow": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 540,
+     "text": "active until you remove it",
+     "color": "red",
+     "size": 44,
+     "in": "s6+3.0",
+     "out": "s7"
+    },
+    {
+     "type": "icon",
+     "kind": "lock",
+     "x": 960,
+     "y": 720,
+     "size": 90,
+     "color": "yellow",
+     "in": "s6+1.0",
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "Wallet drainer",
+     "y": 360,
+     "in": "s7",
+     "size": 96,
+     "glow": "red",
+     "color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 520,
+     "text": "fake site + your approval",
+     "color": "white",
+     "size": 44,
+     "in": "s7+1.5"
+    },
+    {
+     "type": "rule",
+     "text": "Approve, and it empties the wallet in seconds",
+     "kind": "bad",
+     "in": "s7+4.0"
+    }
+   ]
+  },
+  {
+   "name": "numbers",
+   "narration": [
+    "How big is this?",
+    "According to the security firm Scam Sniffer, wallet drainers took about eighty-four million dollars in 2025, from around one hundred and six thousand victims.",
+    "That's far less than the year before, when losses were close to five hundred million.",
+    "But look at the average: about seven hundred and ninety dollars per victim.",
+    "Drainers aren't only hunting rich wallets. They go after normal people, at scale.",
+    "And many drainers are sold as ready-made kits. The criminals who write the code take a cut of everything their customers steal.",
+    "So let's look at where these fake approve buttons are waiting for you."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "How big is this?",
+     "y": 470,
+     "in": 0.2,
+     "size": 84,
+     "out": "s2",
+     "glow": "yellow"
+    },
+    {
+     "type": "counter",
+     "x": 960,
+     "y": 360,
+     "size": 170,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s2+3.5",
+       84
+      ]
+     ],
+     "decimals": 0,
+     "prefix": "$",
+     "suffix": "M",
+     "color": "red",
+     "in": "s2+2.0",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 530,
+     "text": "taken by wallet drainers in 2025",
+     "color": "red",
+     "size": 42,
+     "in": "s2+3.0",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 640,
+     "text": "~106,000 victims",
+     "color": "yellow",
+     "size": 42,
+     "in": "s2+6.0",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "source: Scam Sniffer 2025 report",
+     "color": "muted",
+     "size": 28,
+     "in": "s2+1.0",
+     "out": "s3"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3",
+     "color": "red",
+     "lines": [
+      {
+       "text": "2024",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "~$494M",
+       "size": 64,
+       "weight": "black"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      480
+     ],
+     "to": [
+      1230,
+      480
+     ],
+     "color": "green",
+     "in": "s3+2.0",
+     "out": "s4",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3+2.0",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "2025",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "~$84M",
+       "size": 64,
+       "weight": "black"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "counter",
+     "x": 960,
+     "y": 380,
+     "size": 170,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s4+2.5",
+       790
+      ]
+     ],
+     "decimals": 0,
+     "prefix": "$",
+     "suffix": "",
+     "color": "yellow",
+     "in": "s4",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 550,
+     "text": "average loss per victim",
+     "color": "yellow",
+     "size": 44,
+     "in": "s4+2.0",
+     "out": "s5"
+    },
+    {
+     "type": "phone_grid",
+     "in": "s5",
+     "out": "s6",
+     "turn_from": "s5+1.0",
+     "turn_to": "s5+3.5",
+     "ratio": 0.35,
+     "turn_color": "red"
+    },
+    {
+     "type": "rule",
+     "text": "Normal wallets, at scale",
+     "kind": "bad",
+     "in": "s5+2.0",
+     "out": "s6"
+    },
+    {
+     "type": "person",
+     "x": 520,
+     "y": 470,
+     "scale": 0.95,
+     "hood": true,
+     "in": "s6",
+     "out": "s7",
+     "label": "kit seller",
+     "color": "red"
+    },
+    {
+     "type": "card",
+     "x": 860,
+     "y": 300,
+     "w": 860,
+     "h": 360,
+     "in": "s6+0.8",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Drainer-as-a-service",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Ready-made kits",
+       "size": 64,
+       "weight": "black"
+      },
+      {
+       "text": "the coders take a cut",
+       "size": 36,
+       "color": "white",
+       "weight": "semi"
+      }
+     ],
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "Where the fake buttons hide",
+     "y": 420,
+     "in": "s7",
+     "size": 80,
+     "glow": "yellow"
+    },
+    {
+     "type": "rule",
+     "text": "4 places to watch",
+     "kind": "warn",
+     "in": "s7+1.5"
+    }
+   ]
+  },
+  {
+   "name": "scam1-airdrop",
+   "narration": [
+    "Scam number one: the free airdrop.",
+    "An airdrop is when a project gives away tokens, often to reward early users. Real ones exist, which is why fake ones work.",
+    "You get a message: you're eligible for twelve hundred tokens. Claim before midnight.",
+    "The claim page looks perfect. Same logo, same colors, a countdown timer.",
+    "You connect, you click claim, and your wallet asks to approve your stablecoins. But claiming free tokens should never need access to your money. And if the airdrop isn't announced on the project's real website, it doesn't exist.",
+    "Sometimes the bait even shows up in your wallet: a random token with a website in its name. Don't visit it.",
+    "The rule: if free tokens require you to approve anything, close the page."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 1,
+     "title": "The free airdrop",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "icon",
+     "kind": "coin",
+     "x": 960,
+     "y": 400,
+     "size": 80,
+     "color": "green",
+     "in": "s2",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 600,
+     "text": "real airdrops exist",
+     "color": "green",
+     "size": 44,
+     "in": "s2+1.5",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 710,
+     "text": "so fakes work too",
+     "color": "red",
+     "size": 44,
+     "in": "s2+4.0",
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s3",
+     "out": "s6",
+     "accent": [
+      [
+       0,
+       "blue"
+      ],
+      [
+       "s5",
+       "yellow"
+      ]
+     ],
+     "screens": [
+      {
+       "in": 0,
+       "out": "s4",
+       "widgets": [
+        {
+         "type": "chat_header",
+         "name": [
+          [
+           0,
+           "CryptoProject",
+           "white"
+          ]
+         ],
+         "sub": "Message"
+        },
+        {
+         "type": "bubbles",
+         "items": [
+          {
+           "text": "You're eligible for 1,200 tokens!",
+           "side": "l",
+           "in": "s3+0.4"
+          },
+          {
+           "text": "Claim before midnight",
+           "side": "l",
+           "in": "s3+2.4"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "in": "s4",
+       "out": "s5+1.4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "CryptoProject",
+         "sub": "claim-cryptoproject.xyz"
+        },
+        {
+         "type": "text",
+         "text": "Claim 1,200 tokens",
+         "size": 32,
+         "color": "white",
+         "weight": "bold"
+        },
+        {
+         "type": "text",
+         "text": "Ends in 02:14:09",
+         "size": 26,
+         "color": "red",
+         "weight": "bold"
+        },
+        {
+         "type": "skeleton",
+         "rows": 2
+        },
+        {
+         "type": "button",
+         "label": [
+          [
+           0,
+           "Claim now",
+           "green"
+          ]
+         ],
+         "press": "s5+1.2"
+        }
+       ]
+      },
+      {
+       "in": "s5+1.4",
+       "widgets": [
+        {
+         "type": "header",
+         "title": "Wallet",
+         "sub": "Approval request"
+        },
+        {
+         "type": "text",
+         "text": "claim-cryptoproject.xyz wants to spend:",
+         "size": 22,
+         "color": "white",
+         "weight": "semi"
+        },
+        {
+         "type": "rows",
+         "items": [
+          {
+           "label": "Token",
+           "amount": "USDT",
+           "color": "muted"
+          },
+          {
+           "label": "Spending cap",
+           "amount": "Unlimited",
+           "color": "red",
+           "in": "s5+2.4"
+          }
+         ]
+        },
+        {
+         "type": "button",
+         "label": [
+          [
+           0,
+           "Approve",
+           "yellow"
+          ]
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "\"you're eligible!\"",
+     "color": "yellow",
+     "size": 40,
+     "in": "s3+1.0",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "deadline",
+     "color": "red",
+     "size": 40,
+     "in": "s3+2.8",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "same logo",
+     "color": "green",
+     "size": 40,
+     "in": "s4+1.4",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "same colors",
+     "color": "green",
+     "size": 40,
+     "in": "s4+2.4",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 620,
+     "text": "countdown timer",
+     "color": "red",
+     "size": 40,
+     "in": "s4+3.4",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "free tokens...",
+     "color": "green",
+     "size": 40,
+     "in": "s5+3.0",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "...need your USDT?",
+     "color": "red",
+     "size": 40,
+     "in": "s5+4.6",
+     "out": "s6"
+    },
+    {
+     "type": "stamp",
+     "x": 1360,
+     "y": 700,
+     "text": "RED FLAG",
+     "in": "s5+6.0",
+     "size": 100,
+     "color": "red",
+     "out": "s6"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s6",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "My Wallet",
+       "sub": "Tokens"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "ETH",
+         "amount": "0.41",
+         "color": "muted"
+        },
+        {
+         "label": "USDT",
+         "amount": "2,840",
+         "color": "muted"
+        },
+        {
+         "label": "Visit claim-reward.xyz",
+         "amount": "+5,000",
+         "color": "yellow",
+         "in": "s6+1.8"
+        }
+       ]
+      }
+     ],
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 420,
+     "text": "a website in its name",
+     "color": "yellow",
+     "size": 40,
+     "in": "s6+2.6",
+     "out": "s7"
+    },
+    {
+     "type": "stamp",
+     "x": 1360,
+     "y": 620,
+     "text": "DON'T VISIT",
+     "in": "s6+4.5",
+     "size": 90,
+     "color": "red",
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "Free tokens + \"approve\"",
+     "y": 380,
+     "in": "s7",
+     "size": 84,
+     "glow": "red"
+    },
+    {
+     "type": "stamp",
+     "x": 960,
+     "y": 620,
+     "text": "CLOSE THE PAGE",
+     "in": "s7+2.5",
+     "size": 110,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "name": "scam2-hacked",
+   "narration": [
+    "Scam number two: the hacked official account.",
+    "Drainer crews take over real social media accounts. Projects, influencers, sometimes well-known companies.",
+    "Then they post: surprise mint is live, or claim your refund now, with a link.",
+    "The account is real. The check mark is real. The link is not.",
+    "The same happens in group chats, when an admin account is taken over and posts an urgent announcement.",
+    "Before you click, open the project's website from a bookmark you saved yourself, and see if the same news is there.",
+    "Urgent plus a link is the pattern. Real launches don't need you to rush."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 2,
+     "title": "The hacked official account",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "person",
+     "x": 620,
+     "y": 470,
+     "scale": 0.95,
+     "in": "s2",
+     "out": "s3",
+     "label": "official account",
+     "color": "blue"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      1250,
+      470
+     ],
+     "to": [
+      800,
+      470
+     ],
+     "color": "red",
+     "in": "s2+2.0",
+     "out": "s3",
+     "draw": 0.8
+    },
+    {
+     "type": "person",
+     "x": 1360,
+     "y": 470,
+     "scale": 0.95,
+     "hood": true,
+     "in": "s2+1.0",
+     "out": "s3",
+     "label": "drainer crew",
+     "color": "red"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s3",
+     "accent": "blue",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "CryptoProject",
+         "blue"
+        ]
+       ],
+       "sub": "Official account",
+       "verified": true
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Surprise mint is LIVE!",
+         "side": "l",
+         "in": "s3+0.3"
+        },
+        {
+         "text": "Or claim your refund now",
+         "side": "l",
+         "in": "s3+2.0"
+        },
+        {
+         "text": "cryptoproject-mint.xyz",
+         "side": "l",
+         "in": "s3+3.4",
+         "color": "blue"
+        }
+       ]
+      }
+     ],
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "account: real",
+     "color": "green",
+     "size": 40,
+     "in": "s4+0.2",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "check mark: real",
+     "color": "green",
+     "size": 40,
+     "in": "s4+1.2",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 620,
+     "text": "link: fake",
+     "color": "red",
+     "size": 40,
+     "in": "s4+2.4",
+     "out": "s5"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s5",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "CryptoProject Fans",
+         "white"
+        ]
+       ],
+       "sub": "Group chat · 12,400 members"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "ADMIN: Urgent! Migrate your tokens in the next hour",
+         "side": "l",
+         "in": "s5+0.8"
+        },
+        {
+         "text": "migrate-cryptoproject.xyz",
+         "side": "l",
+         "in": "s5+2.2",
+         "color": "blue"
+        }
+       ]
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 450,
+     "text": "admin account taken over",
+     "color": "red",
+     "size": 40,
+     "in": "s5+3.0",
+     "out": "s6"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s6",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Link in a post",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Don't click",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s7"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      480
+     ],
+     "to": [
+      1230,
+      480
+     ],
+     "color": "green",
+     "in": "s6+2.5",
+     "out": "s7",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s6+2.5",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Your own bookmark",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Check there",
+       "size": 54,
+       "weight": "black"
+      }
+     ],
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "same news on the real site?",
+     "color": "yellow",
+     "size": 44,
+     "in": "s6+5.0",
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "Urgent + link = drainer pattern",
+     "y": 380,
+     "in": "s7",
+     "size": 76,
+     "glow": "red"
+    },
+    {
+     "type": "rule",
+     "text": "Real launches don't rush you",
+     "kind": "ok",
+     "in": "s7+2.5"
+    }
+   ]
+  },
+  {
+   "name": "scam3-ads",
+   "narration": [
+    "Scam number three: the fake search result.",
+    "You search for a wallet or an app you already use, and the top result is an ad.",
+    "It leads to a copy of the real site, with one letter changed in the address.",
+    "Everything looks the same, until you connect your wallet and approve. Design is free to copy, so check the address bar, not the logo.",
+    "Scammers pay for ads too, so being first on the page proves nothing.",
+    "The fix: save the real sites as bookmarks, and only open them from there. Never from an ad.",
+    "The next one is the hardest to spot, because it doesn't even cost a fee."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 3,
+     "title": "The fake search result",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "blue",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Search",
+       "sub": "cryptoapp wallet"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Ad · cryptoaap.com",
+         "amount": "Sponsored",
+         "color": "yellow",
+         "in": "s2+0.8"
+        },
+        {
+         "label": "cryptoapp.com",
+         "amount": "",
+         "color": "muted",
+         "in": "s2+1.6"
+        }
+       ]
+      }
+     ],
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 450,
+     "text": "top result = an ad",
+     "color": "yellow",
+     "size": 40,
+     "in": "s2+2.4",
+     "out": "s3"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Real",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "cryptoapp.com",
+       "size": 48,
+       "weight": "black"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      480
+     ],
+     "to": [
+      1230,
+      480
+     ],
+     "color": "red",
+     "in": "s3+1.5",
+     "out": "s4",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 330,
+     "w": 480,
+     "h": 280,
+     "in": "s3+1.5",
+     "color": "red",
+     "lines": [
+      {
+       "text": "Fake",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "cryptoaap.com",
+       "size": 48,
+       "weight": "black"
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "one letter changed",
+     "color": "red",
+     "size": 44,
+     "in": "s3+3.0",
+     "out": "s4"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s4",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s4+3.4",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "CryptoApp",
+       "sub": "cryptoaap.com"
+      },
+      {
+       "type": "skeleton",
+       "rows": 3
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Connect wallet",
+         "green"
+        ],
+        [
+         "s4+2.4",
+         "Approve",
+         "yellow"
+        ]
+       ],
+       "press": "s4+2.0"
+      }
+     ],
+     "out": "s5",
+     "shake": "s4+3.4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 400,
+     "text": "looks the same",
+     "color": "green",
+     "size": 40,
+     "in": "s4+0.6",
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 540,
+     "text": "until you approve",
+     "color": "red",
+     "size": 40,
+     "in": "s4+2.6",
+     "out": "s5"
+    },
+    {
+     "type": "heading",
+     "text": "First result proves nothing",
+     "y": 400,
+     "in": "s5",
+     "size": 78,
+     "out": "s6",
+     "glow": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 560,
+     "text": "scammers pay for ads too",
+     "color": "red",
+     "size": 44,
+     "in": "s5+1.5",
+     "out": "s6"
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 260,
+     "w": 800,
+     "h": 360,
+     "in": "s6",
+     "color": "green",
+     "lines": [
+      {
+       "text": "The fix",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Your bookmarks",
+       "size": 70,
+       "weight": "black"
+      },
+      {
+       "text": "open real sites only from there",
+       "size": 36,
+       "color": "white",
+       "weight": "semi"
+      }
+     ],
+     "out": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "never from an ad",
+     "color": "red",
+     "size": 44,
+     "in": "s6+4.0",
+     "out": "s7"
+    },
+    {
+     "type": "heading",
+     "text": "Next: the hardest one to spot",
+     "y": 440,
+     "in": "s7",
+     "size": 76,
+     "glow": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 600,
+     "text": "it doesn't even cost a fee",
+     "color": "yellow",
+     "size": 44,
+     "in": "s7+2.5"
+    }
+   ]
+  },
+  {
+   "name": "scam4-signature",
+   "narration": [
+    "Scam number four: the free signature.",
+    "Not every request is a transaction. Sometimes your wallet just asks you to sign a message.",
+    "There's no network fee. Just a block of text and a sign button. It feels like logging in. Watch for words like permit, spender, or a very long number. That number often means unlimited.",
+    "But some signatures are permissions in disguise. A permit signature, for example, can let someone spend your tokens, and they can use it right away.",
+    "In 2025, the largest single theft in Scam Sniffer's report, six and a half million dollars, came from one malicious permit signature.",
+    "So treat a signature like a payment. If you don't understand what you're signing, don't sign it."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "SCAM",
+     "num": 4,
+     "title": "The free signature",
+     "color": "red",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Wallet",
+       "sub": "Signature request"
+      },
+      {
+       "type": "text",
+       "text": "claim-cryptoproject.xyz asks you to sign:",
+       "size": 22,
+       "color": "white",
+       "weight": "semi"
+      },
+      {
+       "type": "text",
+       "text": "Permit · spender 0x7a3...f19 · value 115792089237316... · nonce 0 · deadline 1793...",
+       "size": 18,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "type": "text",
+       "text": "Network fee: $0",
+       "size": 24,
+       "color": "green",
+       "weight": "bold"
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Sign",
+         "green"
+        ]
+       ]
+      }
+     ],
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "not a transaction",
+     "color": "yellow",
+     "size": 40,
+     "in": "s2+1.0",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "network fee: $0",
+     "color": "green",
+     "size": 40,
+     "in": "s3+0.6",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 620,
+     "text": "feels like logging in",
+     "color": "yellow",
+     "size": 40,
+     "in": "s3+3.6",
+     "out": "s4"
+    },
+    {
+     "type": "heading",
+     "text": "A permission in disguise",
+     "y": 220,
+     "in": "s4",
+     "size": 72,
+     "out": "s5",
+     "glow": "red"
+    },
+    {
+     "type": "card",
+     "x": 180,
+     "y": 320,
+     "w": 480,
+     "h": 280,
+     "in": "s4+1.0",
+     "color": "yellow",
+     "lines": [
+      {
+       "text": "What you see",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "\"Sign message\"",
+       "size": 46,
+       "weight": "black"
+      }
+     ],
+     "out": "s5"
+    },
+    {
+     "type": "arrow",
+     "from": [
+      690,
+      470
+     ],
+     "to": [
+      1230,
+      470
+     ],
+     "color": "red",
+     "in": "s4+4.0",
+     "out": "s5",
+     "draw": 0.8
+    },
+    {
+     "type": "card",
+     "x": 1260,
+     "y": 320,
+     "w": 480,
+     "h": 280,
+     "in": "s4+4.0",
+     "color": "red",
+     "lines": [
+      {
+       "text": "What it can do",
+       "size": 34,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Spend your tokens",
+       "size": 46,
+       "weight": "black"
+      }
+     ],
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 760,
+     "text": "usable right away",
+     "color": "red",
+     "size": 44,
+     "in": "s4+7.0",
+     "out": "s5"
+    },
+    {
+     "type": "counter",
+     "x": 960,
+     "y": 380,
+     "size": 170,
+     "value": [
+      [
+       0,
+       0
+      ],
+      [
+       "s5+3.5",
+       6.5
+      ]
+     ],
+     "decimals": 1,
+     "prefix": "$",
+     "suffix": "M",
+     "color": "red",
+     "in": "s5+2.5",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 550,
+     "text": "one malicious permit signature",
+     "color": "red",
+     "size": 44,
+     "in": "s5+4.0",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 660,
+     "text": "largest single theft of 2025 · Scam Sniffer",
+     "color": "muted",
+     "size": 30,
+     "in": "s5+1.0",
+     "out": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Signature = payment",
+     "y": 380,
+     "in": "s6",
+     "size": 90,
+     "glow": "yellow"
+    },
+    {
+     "type": "rule",
+     "text": "Don't understand it? Don't sign it.",
+     "kind": "bad",
+     "in": "s6+2.5"
+    }
+   ]
+  },
+  {
+   "name": "story-priya",
+   "narration": [
+    "Imagine Priya. She keeps about four thousand dollars of crypto in a browser wallet.",
+    "In a crypto group chat she trusts, the admin posts: our token claim is live, only for the next two hours.",
+    "Priya clicks. The site asks her to sign, to verify her wallet. There's no fee, so it feels harmless.",
+    "She signs. Nothing seems to happen. She closes the tab and goes to sleep. While she sleeps, the drainer uses her signature.",
+    "The next morning, her balance is zero. The admin's account had been hacked the night before.",
+    "Priya didn't do anything strange. A familiar place, a deadline, and a free signature. That's the whole recipe."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "IMAGINE THIS",
+     "color": "yellow",
+     "in": 0
+    },
+    {
+     "type": "person",
+     "x": 330,
+     "y": 480,
+     "scale": 0.95,
+     "in": 0.2,
+     "label": "Priya",
+     "color": "green"
+    },
+    {
+     "type": "phone",
+     "x": 945,
+     "y": 580,
+     "scale": 0.95,
+     "in": "s1+1.0",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "My Wallet",
+       "sub": "Browser wallet"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": 4000,
+       "decimals": 0,
+       "color": "green"
+      },
+      {
+       "type": "skeleton",
+       "rows": 2
+      }
+     ],
+     "out": "s2"
+    },
+    {
+     "type": "phone",
+     "x": 945,
+     "y": 580,
+     "scale": 0.95,
+     "in": "s2",
+     "accent": "blue",
+     "widgets": [
+      {
+       "type": "chat_header",
+       "name": [
+        [
+         0,
+         "Crypto Traders Group",
+         "white"
+        ]
+       ],
+       "sub": "Admin · group chat"
+      },
+      {
+       "type": "bubbles",
+       "items": [
+        {
+         "text": "Our token claim is live! Only 2 hours left",
+         "side": "l",
+         "in": "s2+0.8"
+        },
+        {
+         "text": "claim-tradersgroup.xyz",
+         "side": "l",
+         "in": "s2+2.2",
+         "color": "blue"
+        }
+       ]
+      }
+     ],
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1520,
+     "y": 380,
+     "text": "a group she trusts",
+     "color": "green",
+     "size": 40,
+     "in": "s2+1.0",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1520,
+     "y": 500,
+     "text": "2 hours left",
+     "color": "red",
+     "size": 40,
+     "in": "s2+3.8",
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 945,
+     "y": 580,
+     "scale": 0.95,
+     "in": "s3",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Wallet",
+       "sub": "Signature request"
+      },
+      {
+       "type": "text",
+       "text": "Sign to verify your wallet",
+       "size": 26,
+       "color": "white",
+       "weight": "bold"
+      },
+      {
+       "type": "text",
+       "text": "Network fee: $0",
+       "size": 24,
+       "color": "green",
+       "weight": "bold"
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Sign",
+         "green"
+        ],
+        [
+         "s4+0.6",
+         "Signed",
+         "gray"
+        ]
+       ],
+       "press": "s4+0.3"
+      }
+     ],
+     "out": "s5"
+    },
+    {
+     "type": "tag",
+     "x": 1520,
+     "y": 420,
+     "text": "no fee = harmless?",
+     "color": "yellow",
+     "size": 40,
+     "in": "s3+3.4",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1520,
+     "y": 420,
+     "text": "nothing seems to happen",
+     "color": "muted",
+     "size": 40,
+     "in": "s4+1.2",
+     "out": "s5"
+    },
+    {
+     "type": "phone",
+     "x": 945,
+     "y": 580,
+     "scale": 0.95,
+     "in": "s5",
+     "accent": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s5+1.2",
+       "red"
+      ]
+     ],
+     "widgets": [
+      {
+       "type": "header",
+       "title": "My Wallet",
+       "sub": "Next morning"
+      },
+      {
+       "type": "balance",
+       "label": "Balance",
+       "value": [
+        [
+         0,
+         4000
+        ],
+        [
+         "s5+1.2",
+         0
+        ]
+       ],
+       "decimals": 0,
+       "color": [
+        [
+         0,
+         "green"
+        ],
+        [
+         "s5+1.2",
+         "red"
+        ]
+       ]
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "Sent: all tokens",
+         "amount": "-$4,000",
+         "color": "red",
+         "in": "s5+1.0"
+        }
+       ]
+      }
+     ],
+     "out": "s6",
+     "shake": "s5+1.2"
+    },
+    {
+     "type": "flash",
+     "at": "s5+1.2",
+     "strength": 0.6
+    },
+    {
+     "type": "stamp",
+     "x": 1540,
+     "y": 420,
+     "text": "DRAINED",
+     "in": "s5+1.4",
+     "size": 100,
+     "color": "red",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1540,
+     "y": 640,
+     "text": "the admin was hacked",
+     "color": "red",
+     "size": 40,
+     "in": "s5+3.2",
+     "out": "s6"
+    },
+    {
+     "type": "bullets",
+     "x": 760,
+     "y": 380,
+     "gap": 140,
+     "size": 56,
+     "title": "The recipe:",
+     "in": "s6+0.3",
+     "items": [
+      {
+       "text": "A familiar place",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s6+2.0"
+      },
+      {
+       "text": "A deadline",
+       "kind": "warn",
+       "color": "yellow",
+       "in": "s6+3.0"
+      },
+      {
+       "text": "A free signature",
+       "kind": "x",
+       "color": "red",
+       "in": "s6+4.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "myth-hardware",
+   "narration": [
+    "Myth: my hardware wallet makes me drain-proof.",
+    "A hardware wallet keeps your keys away from hackers and malware. That part is real, and it's still one of the best ways to protect savings.",
+    "But if you press confirm on a drainer's request, the device signs it. It does exactly what you approve.",
+    "The same goes for any wallet. No wallet can protect you from a permission you gave yourself.",
+    "What helps is reading the screen. Many wallets now show a preview or a warning before you confirm. Never click past it. And keep your hardware wallet for savings, not for testing every new site."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "MYTH",
+     "num": 1,
+     "title": "\"My hardware wallet makes me drain-proof\"",
+     "color": "yellow",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "device",
+     "kind": "hw",
+     "x": 620,
+     "y": 520,
+     "scale": 1.3,
+     "in": "s2",
+     "out": "s4",
+     "screen": [
+      [
+       0,
+       "Keys offline",
+       "green"
+      ],
+      [
+       "s3",
+       "Approve USDT?",
+       "yellow"
+      ],
+      [
+       "s3+3.2",
+       "Signed",
+       "red"
+      ]
+     ],
+     "press": "s3+2.6",
+     "color": [
+      [
+       0,
+       "green"
+      ],
+      [
+       "s3+3.2",
+       "red"
+      ]
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 400,
+     "text": "protects your keys",
+     "color": "green",
+     "size": 40,
+     "in": "s2+1.0",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 520,
+     "text": "from malware",
+     "color": "green",
+     "size": 40,
+     "in": "s2+2.6",
+     "out": "s3"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 400,
+     "text": "you press confirm...",
+     "color": "yellow",
+     "size": 40,
+     "in": "s3+1.0",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 520,
+     "text": "...it signs",
+     "color": "red",
+     "size": 40,
+     "in": "s3+3.2",
+     "out": "s4"
+    },
+    {
+     "type": "heading",
+     "text": "No wallet blocks a permission",
+     "y": 380,
+     "in": "s4",
+     "size": 72,
+     "out": "s5",
+     "glow": "yellow"
+    },
+    {
+     "type": "heading",
+     "text": "you gave yourself",
+     "y": 480,
+     "in": "s4+0.6",
+     "size": 72,
+     "out": "s5",
+     "color": "red"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s5",
+     "accent": "yellow",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Wallet",
+       "sub": "Transaction preview"
+      },
+      {
+       "type": "spacer",
+       "h": 70
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "You give",
+         "amount": "ALL USDT",
+         "color": "red",
+         "in": "s5+0.5"
+        },
+        {
+         "label": "To",
+         "amount": "0x7a3...f19",
+         "color": "muted",
+         "in": "s5+0.9"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Reject",
+         "green"
+        ]
+       ]
+      },
+      {
+       "type": "notification",
+       "in": "s5+2.5",
+       "title": "Warning: risky request",
+       "sub": "This may drain your wallet",
+       "color": "red",
+       "icon": "warn"
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 420,
+     "text": "read the preview",
+     "color": "yellow",
+     "size": 40,
+     "in": "s5+2.0"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 540,
+     "text": "never click past a warning",
+     "color": "red",
+     "size": 40,
+     "in": "s5+5.0"
+    },
+    {
+     "type": "rule",
+     "text": "Read the screen before you confirm",
+     "kind": "ok",
+     "in": "s5+6.0"
+    }
+   ]
+  },
+  {
+   "name": "tip-habits",
+   "narration": [
+    "Here are five habits that make you very hard to drain.",
+    "One: open crypto sites only from your own bookmarks. Never from DMs, ads, or urgent posts.",
+    "Two: before you click approve, read the amount. Unlimited, or access to all your items, is a red flag on any site you don't fully trust.",
+    "Three: treat signatures like payments. If it says permit, or you can't read it, reject it.",
+    "Four: use two wallets. A small one for trying new sites, and a main one for savings that never connects to anything new. If the small one gets drained, you lose a little, not everything.",
+    "Five: check your approvals every month, and remove the ones you don't use.",
+    "That last habit is easy, so let me show you how."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "num": 1,
+     "title": "5 habits that stop drainers",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "checklist",
+     "y": 250,
+     "row_h": 125,
+     "out": "s7",
+     "items": [
+      {
+       "text": "Open crypto sites from your bookmarks",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Read the amount: \"Unlimited\" = red flag",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "Treat signatures like payments",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Small wallet for new sites, main for savings",
+       "in": "s5",
+       "done": "s5e"
+      },
+      {
+       "text": "Check and revoke approvals monthly",
+       "in": "s6",
+       "done": "s6e"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Habit 5, step by step",
+     "y": 420,
+     "in": "s7",
+     "size": 84,
+     "glow": "green"
+    }
+   ]
+  },
+  {
+   "name": "tip-revoke",
+   "narration": [
+    "Here's how to check your approvals.",
+    "Use a token approval checker. Many block explorers have one, and there are dedicated revoke tools too.",
+    "Open it from a bookmark and paste your wallet address. You'll see every app that can move your tokens, and how much.",
+    "Old apps, names you don't recognize, or unlimited amounts you don't need: click revoke.",
+    "Revoking is a transaction, so it costs a small network fee. And never revoke through a link someone sends you. Scammers copy revoke tools too.",
+    "And it only stops future access. It can't bring back tokens that are already gone.",
+    "That's why you check before something goes wrong, not after."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "num": 2,
+     "title": "How to check and revoke approvals",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "card",
+     "x": 560,
+     "y": 280,
+     "w": 800,
+     "h": 380,
+     "in": "s2",
+     "color": "green",
+     "lines": [
+      {
+       "text": "Use a",
+       "size": 36,
+       "color": "muted",
+       "weight": "semi"
+      },
+      {
+       "text": "Approval checker",
+       "size": 70,
+       "weight": "black"
+      },
+      {
+       "text": "block explorer or revoke tool",
+       "size": 36,
+       "color": "white",
+       "weight": "semi"
+      }
+     ],
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 600,
+     "y": 545,
+     "scale": 0.95,
+     "in": "s3",
+     "accent": "green",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "Approval Checker",
+       "sub": "0x4b2...9e1"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "CryptoSwap · USDT",
+         "amount": "1,000",
+         "color": "muted",
+         "in": "s3+3.0"
+        },
+        {
+         "label": "Unknown · USDT",
+         "amount": "Unlimited",
+         "color": "red",
+         "in": "s3+4.0"
+        },
+        {
+         "label": "OldGame · NFTs",
+         "amount": "All items",
+         "color": "yellow",
+         "in": "s3+5.0"
+        }
+       ]
+      },
+      {
+       "type": "button",
+       "label": [
+        [
+         0,
+         "Revoke",
+         "red"
+        ],
+        [
+         "s4+5.2",
+         "Revoked",
+         "green"
+        ]
+       ],
+       "press": "s4+4.8"
+      }
+     ],
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "paste your address",
+     "color": "green",
+     "size": 40,
+     "in": "s3+1.0",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 380,
+     "text": "old apps",
+     "color": "yellow",
+     "size": 40,
+     "in": "s4+0.4",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 500,
+     "text": "names you don't know",
+     "color": "red",
+     "size": 40,
+     "in": "s4+1.6",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 620,
+     "text": "unlimited amounts",
+     "color": "red",
+     "size": 40,
+     "in": "s4+3.0",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 760,
+     "text": "costs a small network fee",
+     "color": "yellow",
+     "size": 40,
+     "in": "s5+0.5",
+     "out": "s6"
+    },
+    {
+     "type": "tag",
+     "x": 1360,
+     "y": 880,
+     "text": "never revoke via a link sent to you",
+     "color": "red",
+     "size": 36,
+     "in": "s5+3.0",
+     "out": "s6"
+    },
+    {
+     "type": "heading",
+     "text": "Revoking stops future access",
+     "y": 380,
+     "in": "s6",
+     "size": 76,
+     "out": "s7",
+     "glow": "yellow"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 540,
+     "text": "it can't undo a theft",
+     "color": "red",
+     "size": 44,
+     "in": "s6+2.5",
+     "out": "s7"
+    },
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 420,
+     "size": 150,
+     "color": "green",
+     "in": "s7"
+    },
+    {
+     "type": "rule",
+     "text": "Check before, not after",
+     "kind": "ok",
+     "in": "s7+1.0"
+    }
+   ]
+  },
+  {
+   "name": "tip-caught",
+   "narration": [
+    "And if you think you already approved a drainer, move fast.",
+    "First, revoke that approval right away, from a trusted approval checker. Drainers often come back for tokens you receive later.",
+    "Second, move what's left to a brand-new wallet, with a new seed phrase, that has never touched that site.",
+    "If you ever typed your seed phrase into a website, the whole wallet is compromised. Revoking won't help. Move everything.",
+    "Third, report it to the FBI at ic3.gov, and save the site address and your transaction IDs.",
+    "And ignore anyone who offers to recover your crypto for a fee. That's the second scam waiting for every victim."
+   ],
+   "elements": [
+    {
+     "type": "section",
+     "kicker": "TIP",
+     "num": 3,
+     "title": "Already approved? Do this",
+     "color": "green",
+     "in": 0,
+     "out": "s2"
+    },
+    {
+     "type": "checklist",
+     "y": 250,
+     "row_h": 125,
+     "out": "s6",
+     "items": [
+      {
+       "text": "Revoke the approval right away",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Move the rest to a brand-new wallet",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "Typed your seed phrase? Move everything",
+       "in": "s4",
+       "done": "s4e",
+       "kind": "x"
+      },
+      {
+       "text": "Report: ic3.gov · save address + tx IDs",
+       "in": "s5",
+       "done": "s5e"
+      }
+     ]
+    },
+    {
+     "type": "person",
+     "x": 700,
+     "y": 480,
+     "scale": 0.95,
+     "hood": true,
+     "in": "s6",
+     "label": "\"recovery expert\"",
+     "color": "red"
+    },
+    {
+     "type": "stamp",
+     "x": 1320,
+     "y": 460,
+     "text": "SCAM, PART 2",
+     "in": "s6+3.6",
+     "size": 90,
+     "color": "red"
+    },
+    {
+     "type": "rule",
+     "text": "Real recovery never starts with a fee",
+     "kind": "bad",
+     "in": "s6+5.0"
+    }
+   ]
+  },
+  {
+   "name": "recap",
+   "narration": [
+    "Let's recap.",
+    "A wallet drainer is a fake site that tricks you into approving or signing.",
+    "It hides in free airdrops, hacked accounts, fake ads, and free signatures.",
+    "Open crypto sites only from your bookmarks.",
+    "Read every approval and every signature before you confirm.",
+    "Keep your savings in a wallet that never connects to new sites.",
+    "And check and revoke your approvals regularly.",
+    "One click can empty a wallet. One pause can save it."
+   ],
+   "elements": [
+    {
+     "type": "heading",
+     "text": "Wallet drainers: recap",
+     "y": 120,
+     "in": 0,
+     "size": 62,
+     "glow": "red"
+    },
+    {
+     "type": "checklist",
+     "y": 230,
+     "row_h": 108,
+     "size": 38,
+     "items": [
+      {
+       "text": "Drainer = fake approve or sign request",
+       "in": "s2",
+       "done": "s2e"
+      },
+      {
+       "text": "Airdrops, hacked accounts, ads, signatures",
+       "in": "s3",
+       "done": "s3e"
+      },
+      {
+       "text": "Open sites from your bookmarks",
+       "in": "s4",
+       "done": "s4e"
+      },
+      {
+       "text": "Read before you confirm",
+       "in": "s5",
+       "done": "s5e"
+      },
+      {
+       "text": "Savings wallet never connects",
+       "in": "s6",
+       "done": "s6e"
+      },
+      {
+       "text": "Check and revoke approvals",
+       "in": "s7",
+       "done": "s7e"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "One click can empty it. One pause saves it.",
+     "kind": "ok",
+     "in": "s8"
+    }
+   ]
+  },
+  {
+   "name": "outro",
+   "hold": 11,
+   "narration": [
+    "If this helped, subscribe, and send it to a friend who's always claiming airdrops.",
+    "Next, I'll explain Bitcoin ATM scams, and why anyone telling you to pay at a crypto ATM is a scammer.",
+    "And tell me in the comments: have you ever seen a fake airdrop or a fake claim page?"
+   ],
+   "elements": [
+    {
+     "type": "icon",
+     "kind": "shield",
+     "x": 960,
+     "y": 260,
+     "size": 100,
+     "color": "green",
+     "in": 0,
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "subscribe",
+     "y": 500,
+     "in": 0.6,
+     "click": "s1+1.5",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "tag",
+     "x": 960,
+     "y": 660,
+     "text": "NEXT VIDEO",
+     "color": "green",
+     "size": 26,
+     "in": "s2",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "heading",
+     "text": "Bitcoin ATM scams explained",
+     "y": 760,
+     "in": "s2+0.3",
+     "size": 58,
+     "out": "s3e+0.6",
+     "weight": "bold"
+    },
+    {
+     "type": "comment",
+     "text": "Ever seen a fake airdrop or claim page?",
+     "y": 920,
+     "in": "s3",
+     "out": "s3e+0.6"
+    },
+    {
+     "type": "endscreen",
+     "in": "s3e+0.8"
+    }
+   ]
+  }
+ ]
+}

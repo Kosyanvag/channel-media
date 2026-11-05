@@ -1,0 +1,201 @@
+{
+ "id": "2026-11-05-wallet-drainer-3",
+ "format": "short",
+ "topic": "wallet-drainer",
+ "voice": "blend",
+ "publish": {
+  "title": "Real or scam? Free tokens appeared in my wallet #shorts",
+  "description": "Random tokens with a website in their name are bait for a wallet drainer site. Don't visit the link and don't try to claim or sell them.\n\nFull video on the channel: search \"Wallet Drainer Scam: How One Click on Approve Empties Your Wallet\"\n\nEducational content, not financial advice.\n\n#crypto #cryptoscam #walletdrainer #shorts",
+  "tags": [
+   "real or scam",
+   "random tokens in wallet",
+   "fake airdrop scam",
+   "wallet drainer scam",
+   "shorts"
+  ]
+ },
+ "scenes": [
+  {
+   "name": "short",
+   "pad": 1.0,
+   "narration": [
+    "Five thousand free tokens just appeared. Real or scam? Decide before I tell you.",
+    "Time's up.",
+    "It's bait. The name tells you to visit a website.",
+    "That site asks you to approve a claim, and a drainer empties your wallet.",
+    "Ignore the token. Never visit the link.",
+    "Comment if you got it right.",
+    "Follow for one crypto safety tip every day."
+   ],
+   "elements": [
+    {
+     "type": "label",
+     "text": "CRYPTO SAFETY TIP",
+     "color": "green",
+     "y": 150,
+     "out": "s7"
+    },
+    {
+     "type": "label",
+     "text": "FOLLOW FOR DAILY TIPS",
+     "color": "white",
+     "y": 150,
+     "in": "s7"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 290,
+     "text": "REAL OR SCAM?",
+     "color": "yellow",
+     "size": 52,
+     "out": "s3"
+    },
+    {
+     "type": "phone",
+     "x": 540,
+     "y": 900,
+     "scale": 1.0,
+     "out": "s5",
+     "accent": [
+      [
+       0,
+       "muted"
+      ],
+      [
+       "s3",
+       "red"
+      ]
+     ],
+     "shake": "s3",
+     "widgets": [
+      {
+       "type": "header",
+       "title": "My Wallet",
+       "sub": "Tokens"
+      },
+      {
+       "type": "rows",
+       "items": [
+        {
+         "label": "ETH",
+         "amount": "0.41",
+         "color": "muted"
+        },
+        {
+         "label": "USDT",
+         "amount": "2,840",
+         "color": "muted"
+        },
+        {
+         "label": "Visit claim-reward.xyz",
+         "amount": "+5,000",
+         "color": [
+          [
+           0,
+           "yellow"
+          ],
+          [
+           "s3",
+           "red"
+          ]
+         ],
+         "in": 0.2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "counter",
+     "x": 540,
+     "y": 1240,
+     "size": 220,
+     "value": [
+      [
+       0,
+       3
+      ],
+      [
+       "s1e-1.6",
+       2
+      ],
+      [
+       "s1e-0.8",
+       1
+      ],
+      [
+       "s2",
+       0
+      ]
+     ],
+     "color": "yellow",
+     "in": "s1e-2.4",
+     "out": "s2e",
+     "fade": 0.2,
+     "dur": 0.2
+    },
+    {
+     "type": "flash",
+     "at": "s3",
+     "strength": 0.6
+    },
+    {
+     "type": "stamp",
+     "x": 540,
+     "y": 1240,
+     "text": "BAIT",
+     "in": "s3",
+     "out": "s4",
+     "size": 200,
+     "color": "red"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 290,
+     "text": "a website in its name",
+     "color": "red",
+     "size": 48,
+     "in": "s3",
+     "out": "s4"
+    },
+    {
+     "type": "tag",
+     "x": 540,
+     "y": 290,
+     "text": "claim page = drainer",
+     "color": "red",
+     "size": 48,
+     "in": "s4+0.4",
+     "out": "s5"
+    },
+    {
+     "type": "icon",
+     "kind": "x",
+     "x": 540,
+     "y": 560,
+     "size": 130,
+     "in": "s5",
+     "color": "red"
+    },
+    {
+     "type": "heading",
+     "text": "Ignore it. Never visit the link.",
+     "y": 840,
+     "size": 80,
+     "w": 860,
+     "in": "s5",
+     "glow": "red",
+     "color": "white"
+    },
+    {
+     "type": "comment",
+     "text": "Did you get it right?",
+     "y": 1150,
+     "in": "s6"
+    }
+   ]
+  }
+ ]
+}

@@ -227,6 +227,20 @@
    "status": "scheduled 2026-11-03 18:30 America/New_York",
    "duration_s": 31.4,
    "news_check": "Exchange $6.3B hack follow-up: Nov 2 advisory warning of support-impersonation / priority-withdrawal / fake compensation scams (CryptoSlate, Gokhshtein News; hack confirmed by PBS). 1 news short in last 7 days -> news short; queue untouched"
+  },
+  {
+   "date": "2026-11-05",
+   "type": "video",
+   "id": "2026-11-05-wallet-drainer",
+   "title": "Wallet Drainer Scam: How One Click on Approve Empties Your Wallet",
+   "metricool_post": 417816506,
+   "status": "scheduled 2026-11-05 15:30 America/New_York (00:30 Nov 6 Yerevan)",
+   "duration_s": 500.2,
+   "shorts_queued": [
+    "specs/shorts/2026-11-05-wallet-drainer-1.json",
+    "specs/shorts/2026-11-05-wallet-drainer-2.json",
+    "specs/shorts/2026-11-05-wallet-drainer-3.json"
+   ]
   }
  ]
 }

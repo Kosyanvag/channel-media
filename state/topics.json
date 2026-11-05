@@ -46,9 +46,9 @@
   {
    "slug": "wallet-drainer",
    "idea": "Wallet drainer scams: how one click on 'approve' empties your wallet",
-   "status": "todo",
-   "video": null,
-   "date": null
+   "status": "scheduled",
+   "video": "2026-11-05-wallet-drainer",
+   "date": "2026-11-05"
   },
   {
    "slug": "bitcoin-atm-scam",
